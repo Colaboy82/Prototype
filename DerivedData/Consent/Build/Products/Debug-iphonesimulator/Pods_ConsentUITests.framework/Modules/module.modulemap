@@ -1,0 +1,6 @@
+framework module Pods_ConsentUITests {
+  umbrella header "Pods-ConsentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

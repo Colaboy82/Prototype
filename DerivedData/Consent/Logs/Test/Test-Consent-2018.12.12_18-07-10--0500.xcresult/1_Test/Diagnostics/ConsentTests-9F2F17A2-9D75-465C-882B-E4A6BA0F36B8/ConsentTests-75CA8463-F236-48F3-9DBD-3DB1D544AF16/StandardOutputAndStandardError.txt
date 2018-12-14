@@ -1,0 +1,22 @@
+2018-12-12 18:07:27.353694-0500 Consent[41868:4987565]  - <AppMeasurement>[I-ACS036002] Analytics screen reporting is enabled. Call +[FIRAnalytics setScreenName:setScreenClass:] to set the screen name or override the default screen class name. To disable screen reporting, set the flag FirebaseScreenReportingEnabled to NO (boolean) in the Info.plist
+2018-12-12 18:07:27.441217-0500 Consent[41868:4987574] 5.7.0 - [Firebase/Analytics][I-ACS023007] Analytics v.50101000 started
+2018-12-12 18:07:27.441411-0500 Consent[41868:4987574] 5.7.0 - [Firebase/Analytics][I-ACS023008] To enable debug logging set the following application argument: -FIRAnalyticsDebugEnabled (see http://goo.gl/RfcP7r)
+Test Suite 'All tests' started at 2018-12-12 18:07:28.280
+Test Suite 'ConsentTests.xctest' started at 2018-12-12 18:07:28.281
+Test Suite 'ConsentTests' started at 2018-12-12 18:07:28.282
+Test Case '-[ConsentTests.ConsentTests testExample]' started.
+Test Case '-[ConsentTests.ConsentTests testExample]' passed (0.001 seconds).
+Test Case '-[ConsentTests.ConsentTests testPerformanceExample]' started.
+/Users/derrickmu/Desktop/Consent/ConsentTests/ConsentTests.swift:29: Test Case '-[ConsentTests.ConsentTests testPerformanceExample]' measured [Time, seconds] average: 0.000, relative standard deviation: 116.069%, values: [0.000003, 0.000001, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000], performanceMetricID:com.apple.XCTPerformanceMetric_WallClockTime, baselineName: "", baselineAverage: , maxPercentRegression: 10.000%, maxPercentRelativeStandardDeviation: 10.000%, maxRegression: 0.100, maxStandardDeviation: 0.100
+Test Case '-[ConsentTests.ConsentTests testPerformanceExample]' passed (0.318 seconds).
+Test Suite 'ConsentTests' passed at 2018-12-12 18:07:28.602.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.319 (0.320) seconds
+Test Suite 'ConsentTests.xctest' passed at 2018-12-12 18:07:28.602.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.319 (0.321) seconds
+Test Suite 'All tests' passed at 2018-12-12 18:07:28.602.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.319 (0.322) seconds
+
+
+Test session results and logs:
+	/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Logs/Test/Test-Consent-2018.12.12_18-07-10--0500.xcresult
+

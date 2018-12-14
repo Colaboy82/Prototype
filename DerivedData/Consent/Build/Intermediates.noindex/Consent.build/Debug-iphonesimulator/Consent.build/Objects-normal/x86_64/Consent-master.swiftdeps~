@@ -1,0 +1,8 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "ce005fad760461b1a921bcf93d4d9283"
+build_time: [1544661868, 831523000]
+inputs:
+  "/Users/derrickmu/Desktop/Consent/Consent/Main/ViewController.swift": [1539022817, 0]
+  "/Users/derrickmu/Desktop/Consent/Consent/UserLogin/SignUpVC.swift": [1544661867, 0]
+  "/Users/derrickmu/Desktop/Consent/Consent/UserLogin/SignInVC.swift": [1544661856, 0]
+  "/Users/derrickmu/Desktop/Consent/Consent/AppDelegate.swift": [1539025115, 0]

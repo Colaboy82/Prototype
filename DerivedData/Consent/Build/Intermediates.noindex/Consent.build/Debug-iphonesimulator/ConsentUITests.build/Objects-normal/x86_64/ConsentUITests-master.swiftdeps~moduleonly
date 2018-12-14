@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "4476a7c855385c42a3df87da2a41e1ae"
+build_time: [1544656036, 886948000]
+inputs:
+  "/Users/derrickmu/Desktop/Consent/ConsentUITests/ConsentUITests.swift": [1539022818, 0]

@@ -1,0 +1,234 @@
+18:07:22.197 Xcode[39855:4879271] Beginning test session ConsentTests-25F7CF2E-6352-4D02-8F74-EF9B411CBC76 at 2018-12-12 18:07:22.197 with Xcode 10B61 on target <DVTiPhoneSimulator: 0x7fe0e8aeed10> {
+		SimDevice: iPhone X (9B6F726B-4B08-430A-A255-122D54AFB9FF, iOS 12.1, Booted)
+} (12.1 (16B91))
+18:07:22.197 Xcode[39855:4879271] Launching with Xcode.DebuggerFoundation.Launcher.LLDB
+18:07:22.198 Xcode[39855:4879271] Test standard output and standard error is at /Users/derrickmu/Desktop/Consent/DerivedData/Consent/Logs/Test/Test-Consent-2018.12.12_18-07-10--0500.xcresult/1_Test/Diagnostics/ConsentTests-9F2F17A2-9D75-465C-882B-E4A6BA0F36B8/ConsentTests-75CA8463-F236-48F3-9DBD-3DB1D544AF16/StandardOutputAndStandardError.txt
+18:07:22.273 Xcode[39855:4879271] Launch session started.
+18:07:22.379 Xcode[39855:4879271] Setting up test runner session
+18:07:22.379 Xcode[39855:4987313] Sim iPhone X: Unregistering for sim device notification with token 23
+18:07:22.379 Xcode[39855:4987313] Calling -[SimDevice getenv:error:] for TESTMANAGERD_SIM_SOCK
+18:07:22.380 Xcode[39855:4987313] Sim iPhone X has testmanagerd socket at /private/tmp/com.apple.launchd.ndlF9QKtB6/com.apple.testmanagerd.unix-domain.socket
+18:07:22.380 Xcode[39855:4987313] Validating test connection socket path (/private/tmp/com.apple.launchd.ndlF9QKtB6/com.apple.testmanagerd.unix-domain.socket)
+18:07:22.380 Xcode[39855:4987313] Constructing transport for test connection socket
+18:07:22.380 Xcode[39855:4987313] Connected socket 80 to testmanagerd for Sim iPhone X
+18:07:22.381 Xcode[39855:4987315] Received connection for test runner session
+18:07:22.381 Xcode[39855:4987315] Listening for proxy connection request from the test bundle
+18:07:22.381 Xcode[39855:4879271] Sending notification: NSConcreteNotification 0x7fe0dda0a530 {name = com.apple.iphonesimulator.startSession; userInfo = {
+    deviceUDID = "9B6F726B-4B08-430A-A255-122D54AFB9FF";
+}}
+18:07:22.382 Xcode[39855:4985805] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> simulator was claimed by LaunchSessionClaim_0x7fe0de214280
+18:07:22.382 Xcode[39855:4987315] Initiating session with identifier: 25F7CF2E-6352-4D02-8F74-EF9B411CBC76
+18:07:22.384 Xcode[39855:4879271] Test runner session acquired connection.
+18:07:22.384 Xcode[39855:4879271] Waiting for test process to launch.
+18:07:22.401 Xcode[39855:4879271] Sending notification: NSConcreteNotification 0x7fe0dd6a4dc0 {name = com.apple.iphonesimulator.startSession; userInfo = {
+    deviceUDID = "9B6F726B-4B08-430A-A255-122D54AFB9FF";
+}}
+18:07:22.401 Xcode[39855:4987316] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> simulator was claimed by LaunchSessionClaim_0x7fe0de214280
+18:07:22.401 Xcode[39855:4987316] 9B6F726B-4B08-430A-A255-122D54AFB9FF: Registered for sim device notification, got token 25
+18:07:22.401 Xcode[39855:4987317] 9B6F726B-4B08-430A-A255-122D54AFB9FF: Unregistering for sim device notification with token 25
+18:07:22.402 Xcode[39855:4987318] 9B6F726B-4B08-430A-A255-122D54AFB9FF: Installing app at path: /Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/Consent.app and options: (null)
+18:07:22.748 Xcode[39855:4987318] 9B6F726B-4B08-430A-A255-122D54AFB9FF: Installed app at path: /Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/Consent.app and options: (null)
+18:07:22.750 Xcode[39855:4987318] 9B6F726B-4B08-430A-A255-122D54AFB9FF: Launching app with identifier: com.MuSquared.Consent and options: {
+    "activate_suspended" = 0;
+    arguments =     (
+        "-NSTreatUnknownArgumentsAsOpen",
+        NO,
+        "-ApplePersistenceIgnoreState",
+        YES
+    );
+    environment =     {
+        "CA_ASSERT_MAIN_THREAD_TRANSACTIONS" = 0;
+        "CA_DEBUG_TRANSACTIONS" = 0;
+        "DYLD_FRAMEWORK_PATH" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator:";
+        "DYLD_INSERT_LIBRARIES" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/Developer/Library/PrivateFrameworks/DTDDISupport.framework/libViewDebuggerSupport.dylib:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestBundleInject.dylib:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libMainThreadChecker.dylib";
+        "DYLD_LIBRARY_PATH" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator";
+        "MTC_CRASH_ON_REPORT" = 1;
+        NSUnbufferedIO = YES;
+        "OS_ACTIVITY_DT_MODE" = YES;
+        "SQLITE_ENABLE_THREAD_ASSERTIONS" = 1;
+        XCInjectBundleInto = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/Consent.app/Consent";
+        XCTestConfigurationFilePath = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Logs/Test/Test-Consent-2018.12.12_18-07-10--0500.xcresult/1_Test/Diagnostics/ConsentTests-9F2F17A2-9D75-465C-882B-E4A6BA0F36B8/ConsentTests-75CA8463-F236-48F3-9DBD-3DB1D544AF16/LaunchSessions/25F7CF2E-6352-4D02-8F74-EF9B411CBC76/remote-container/tmp/ConsentTests-25F7CF2E-6352-4D02-8F74-EF9B411CBC76.xctestconfiguration";
+        "__XCODE_BUILT_PRODUCTS_DIR_PATHS" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator";
+        "__XPC_DYLD_FRAMEWORK_PATH" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator";
+        "__XPC_DYLD_LIBRARY_PATH" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator";
+    };
+    stderr = "/dev/ttys000";
+    stdout = "/dev/ttys000";
+    "wait_for_debugger" = 1;
+}
+18:07:24.849 Xcode[39855:4987313] 9B6F726B-4B08-430A-A255-122D54AFB9FF: Launched app with identifier: com.MuSquared.Consent (pid = 41868)
+18:07:24.849 Xcode[39855:4987313] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> tracking pid 41868
+18:07:24.849 Xcode[39855:4987313] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> checking to see if pid 41868 is valid: kill(pid, 0) = 0 (YES, it's still running)
+18:07:24.850 Xcode[39855:4879271] Test process runnable PID is 41868.
+18:07:25.677 Xcode[39855:4879271] Waiting for test process to check in..., will wait up to 120s
+2018-12-12 18:07:27.353694-0500 Consent[41868:4987565]  - <AppMeasurement>[I-ACS036002] Analytics screen reporting is enabled. Call +[FIRAnalytics setScreenName:setScreenClass:] to set the screen name or override the default screen class name. To disable screen reporting, set the flag FirebaseScreenReportingEnabled to NO (boolean) in the Info.plist
+2018-12-12 18:07:27.441217-0500 Consent[41868:4987574] 5.7.0 - [Firebase/Analytics][I-ACS023007] Analytics v.50101000 started
+2018-12-12 18:07:27.441411-0500 Consent[41868:4987574] 5.7.0 - [Firebase/Analytics][I-ACS023008] To enable debug logging set the following application argument: -FIRAnalyticsDebugEnabled (see http://goo.gl/RfcP7r)
+18:07:27.833 Xcode[39855:4987315] Got reply to session initiation request with identifier 25F7CF2E-6352-4D02-8F74-EF9B411CBC76 (result:error): 29: (null)
+18:07:27.838 Xcode[39855:4984205] Handling proxy channel request from test runner
+18:07:27.842 Xcode[39855:4984205] Test runner is ready, running protocol 29, requires at least version 7. Control framework is running 29 and requires at least 7
+18:07:27.842 Xcode[39855:4879271] Test runner session successfully initiated.
+18:07:27.842 Xcode[39855:4879271] Whitelisting test process ID 41868
+18:07:28.158 Xcode[39855:4879271] Got whitelisting response from test daemon: Success
+18:07:28.158 Xcode[39855:4879271] Registering/updating daemon-based crash report observer for process names (
+    SpringBoard,
+    Consent,
+    backboardd,
+    xctest
+)
+18:07:28.162 Xcode[39855:4879271] Telling test runner to start executing tests.
+18:07:27.600 Consent[41868:4987517] Linked XCTest.framework from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/XCTest, built with Xcode 1010(10B43a), modified on Friday, October 19, 2018 at 9:33:20 PM Eastern Daylight Time
+XCTest.framework bundle version: 14460.20
+18:07:27.608 Consent[41868:4987517] System uptime: 32:34
+18:07:27.608 Consent[41868:4987517] Process arguments: (
+    "/Users/derrickmu/Library/Developer/CoreSimulator/Devices/9B6F726B-4B08-430A-A255-122D54AFB9FF/data/Containers/Bundle/Application/849D5EAF-101F-4D82-8C23-EA89ECF92C39/Consent.app/Consent",
+    "-NSTreatUnknownArgumentsAsOpen",
+    NO,
+    "-ApplePersistenceIgnoreState",
+    YES
+)
+18:07:27.608 Consent[41868:4987517] Process environment: {
+    "CA_ASSERT_MAIN_THREAD_TRANSACTIONS" = 0;
+    "CA_DEBUG_TRANSACTIONS" = 0;
+    "CFFIXED_USER_HOME" = "/Users/derrickmu/Library/Developer/CoreSimulator/Devices/9B6F726B-4B08-430A-A255-122D54AFB9FF/data/Containers/Data/Application/A3845231-E894-4933-98F2-0A88063A43C9";
+    CLASSIC = 0;
+    "CUPS_SERVER" = "/private/tmp/com.apple.launchd.0VU0FKeucx/Listeners";
+    "DYLD_FALLBACK_FRAMEWORK_PATH" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks";
+    "DYLD_FALLBACK_LIBRARY_PATH" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/lib";
+    "DYLD_FRAMEWORK_PATH" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator:";
+    "DYLD_LIBRARY_PATH" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator";
+    "DYLD_ROOT_PATH" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot";
+    HOME = "/Users/derrickmu/Library/Developer/CoreSimulator/Devices/9B6F726B-4B08-430A-A255-122D54AFB9FF/data/Containers/Data/Application/A3845231-E894-4933-98F2-0A88063A43C9";
+    "IOS_SIMULATOR_SYSLOG_SOCKET" = "/tmp/com.apple.CoreSimulator.SimDevice.9B6F726B-4B08-430A-A255-122D54AFB9FF/syslogsock";
+    "IPHONE_SHARED_RESOURCES_DIRECTORY" = "/Users/derrickmu/Library/Developer/CoreSimulator/Devices/9B6F726B-4B08-430A-A255-122D54AFB9FF/data";
+    "IPHONE_SIMULATOR_ROOT" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot";
+    "IPHONE_TVOUT_EXTENDED_PROPERTIES" = "/Users/derrickmu/Library/Developer/CoreSimulator/Devices/9B6F726B-4B08-430A-A255-122D54AFB9FF/data/Library/Application Support/Simulator/extended_display.plist";
+    "MTC_CRASH_ON_REPORT" = 1;
+    NSUnbufferedIO = YES;
+    "OS_ACTIVITY_DT_MODE" = YES;
+    PATH = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/sbin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/sbin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/local/bin";
+    "RWI_LISTEN_SOCKET" = "/private/tmp/com.apple.launchd.KYnl5a8QHC/com.apple.webinspectord_sim.socket";
+    "SIMULATOR_AUDIO_DEVICES_PLIST_PATH" = "/Users/derrickmu/Library/Developer/CoreSimulator/Devices/9B6F726B-4B08-430A-A255-122D54AFB9FF/data/var/run/com.apple.coresimulator.audio.plist";
+    "SIMULATOR_AUDIO_SETTINGS_PATH" = "/Users/derrickmu/Library/Developer/CoreSimulator/Devices/9B6F726B-4B08-430A-A255-122D54AFB9FF/data/var/run/simulatoraudio/audiosettings.plist";
+    "SIMULATOR_BOOT_TIME" = 1544654093;
+    "SIMULATOR_CAPABILITIES" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/DeviceTypes/iPhone X.simdevicetype/Contents/Resources/capabilities.plist";
+    "SIMULATOR_DEVICE_NAME" = "iPhone X";
+    "SIMULATOR_EXTENDED_DISPLAY_PROPERTIES" = "/Users/derrickmu/Library/Developer/CoreSimulator/Devices/9B6F726B-4B08-430A-A255-122D54AFB9FF/data/Library/Application Support/Simulator/extended_display.plist";
+    "SIMULATOR_HID_SYSTEM_MANAGER" = "/Library/Developer/PrivateFrameworks/CoreSimulator.framework/Resources/Platforms/iphoneos/Library/Frameworks/SimulatorHID.framework";
+    "SIMULATOR_HOST_HOME" = "/Users/derrickmu";
+    "SIMULATOR_LEGACY_ASSET_SUFFIX" = iphone;
+    "SIMULATOR_LOG_ROOT" = "/Users/derrickmu/Library/Logs/CoreSimulator/9B6F726B-4B08-430A-A255-122D54AFB9FF";
+    "SIMULATOR_MAINSCREEN_HEIGHT" = 2436;
+    "SIMULATOR_MAINSCREEN_PITCH" = "458.000000";
+    "SIMULATOR_MAINSCREEN_SCALE" = "3.000000";
+    "SIMULATOR_MAINSCREEN_WIDTH" = 1125;
+    "SIMULATOR_MEMORY_WARNINGS" = "/Users/derrickmu/Library/Developer/CoreSimulator/Devices/9B6F726B-4B08-430A-A255-122D54AFB9FF/data/var/run/memory_warning_simulation";
+    "SIMULATOR_MODEL_IDENTIFIER" = "iPhone10,6";
+    "SIMULATOR_PRODUCT_CLASS" = D22;
+    "SIMULATOR_ROOT" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot";
+    "SIMULATOR_RUNTIME_BUILD_VERSION" = 16B91;
+    "SIMULATOR_RUNTIME_VERSION" = "12.1";
+    "SIMULATOR_SHARED_RESOURCES_DIRECTORY" = "/Users/derrickmu/Library/Developer/CoreSimulator/Devices/9B6F726B-4B08-430A-A255-122D54AFB9FF/data";
+    "SIMULATOR_UDID" = "9B6F726B-4B08-430A-A255-122D54AFB9FF";
+    "SIMULATOR_VERSION_INFO" = "CoreSimulator 581.2 - Device: iPhone X - Runtime: iOS 12.1 (16B91) - DeviceType: iPhone X";
+    "SQLITE_ENABLE_THREAD_ASSERTIONS" = 1;
+    "TESTMANAGERD_SIM_SOCK" = "/private/tmp/com.apple.launchd.ndlF9QKtB6/com.apple.testmanagerd.unix-domain.socket";
+    TMPDIR = "/Users/derrickmu/Library/Developer/CoreSimulator/Devices/9B6F726B-4B08-430A-A255-122D54AFB9FF/data/Containers/Data/Application/A3845231-E894-4933-98F2-0A88063A43C9/tmp";
+    XCInjectBundleInto = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/Consent.app/Consent";
+    XCTestConfigurationFilePath = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Logs/Test/Test-Consent-2018.12.12_18-07-10--0500.xcresult/1_Test/Diagnostics/ConsentTests-9F2F17A2-9D75-465C-882B-E4A6BA0F36B8/ConsentTests-75CA8463-F236-48F3-9DBD-3DB1D544AF16/LaunchSessions/25F7CF2E-6352-4D02-8F74-EF9B411CBC76/remote-container/tmp/ConsentTests-25F7CF2E-6352-4D02-8F74-EF9B411CBC76.xctestconfiguration";
+    "XPC_FLAGS" = 0x0;
+    "XPC_SERVICE_NAME" = "UIKitApplication:com.MuSquared.Consent[0xfa17][40561]";
+    "XPC_SIMULATOR_LAUNCHD_NAME" = "com.apple.CoreSimulator.SimDevice.9B6F726B-4B08-430A-A255-122D54AFB9FF";
+    "__XCODE_BUILT_PRODUCTS_DIR_PATHS" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator";
+    "__XPC_DYLD_FRAMEWORK_PATH" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator";
+    "__XPC_DYLD_LIBRARY_PATH" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator";
+}
+18:07:27.609 Consent[41868:4987517] App Sandbox active: NO
+18:07:27.609 Consent[41868:4987517] Loading test bundle at: file:///Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/Consent.app/PlugIns/ConsentTests.xctest/
+18:07:27.609 Consent[41868:4987517] Finished loading test bundle
+18:07:27.609 Consent[41868:4987517] Readying IDE session
+18:07:27.611 Consent[41868:4987517] Creating future for 'Exchange protocol versions with daemon' with timeout 15.00
+18:07:27.611 Consent[41868:4987517] <XCTWaiter: 0x6000013d5fa0, state: XCTWaiterStateInProgress> entering wait loop for 15.00s with expectations: `Exchange protocol versions with daemon`
+18:07:27.825 Consent[41868:4987583] <XCTWaiter: 0x6000013d5fa0, state: XCTWaiterStateSucceeded>: cancelWaiting
+18:07:27.825 Consent[41868:4987517] <XCTWaiter: 0x6000013d5fa0, state: XCTWaiterStateSucceeded> done waiting
+18:07:27.825 Consent[41868:4987517] Canceling watchdog for <XCTWaiter: 0x6000013d5fa0, state: XCTWaiterStateInProgress>.
+18:07:27.826 Consent[41868:4987517] <XCTWaiter: 0x6000013d5fa0, state: XCTWaiterStateSucceeded> cleaning up `Exchange protocol versions with daemon`
+18:07:27.826 Consent[41868:4987517] Got daemon protocol version 26
+18:07:27.826 Consent[41868:4987517] Requesting IDE connection transport
+18:07:27.826 Consent[41868:4987517] <XCTWaiter: 0x6000013d5f60, state: XCTWaiterStateInProgress> entering wait loop for 60.00s with expectations: `Transport for IDE session acquired`
+18:07:27.836 Consent[41868:4987574] Creating transport with received transport data
+18:07:27.836 Consent[41868:4987574] <XCTWaiter: 0x6000013d5f60, state: XCTWaiterStateSucceeded>: cancelWaiting
+18:07:27.836 Consent[41868:4987517] <XCTWaiter: 0x6000013d5f60, state: XCTWaiterStateSucceeded> done waiting
+18:07:27.836 Consent[41868:4987517] Canceling watchdog for <XCTWaiter: 0x6000013d5f60, state: XCTWaiterStateInProgress>.
+18:07:27.836 Consent[41868:4987517] <XCTWaiter: 0x6000013d5f60, state: XCTWaiterStateSucceeded> cleaning up `Transport for IDE session acquired`
+18:07:27.836 Consent[41868:4987517] Creating connection with transport <DTXFileDescriptorTransport: 0x600003fc3600>
+18:07:27.837 Consent[41868:4987517] Creating the proxy channel with connection <DTXConnection 0x600002dc4800 : x1>
+18:07:27.837 Consent[41868:4987517] Creating future for 'IDE session ready for test plan' with timeout 60.00
+18:07:27.837 Consent[41868:4987517] Messaging IDE proxy - _XCT_testBundleReadyWithProtocolVersion:29 minimumVersion:7
+18:07:27.838 Consent[41868:4987517] <XCTWaiter: 0x6000013efd90, state: XCTWaiterStateInProgress> entering wait loop for 60.00s with expectations: `IDE session ready for test plan`
+18:07:27.842 Consent[41868:4987578] _XCT_testBundleReadyWithProtocolVersion:minimumVersion: reply received
+18:07:28.163 Consent[41868:4987574] _IDE_startExecutingTestPlanWithProtocolVersion:29
+18:07:28.163 Consent[41868:4987574] <XCTWaiter: 0x6000013efd90, state: XCTWaiterStateSucceeded>: cancelWaiting
+18:07:28.163 Consent[41868:4987517] <XCTWaiter: 0x6000013efd90, state: XCTWaiterStateSucceeded> done waiting
+18:07:28.163 Consent[41868:4987517] Canceling watchdog for <XCTWaiter: 0x6000013efd90, state: XCTWaiterStateInProgress>.
+18:07:28.163 Consent[41868:4987517] <XCTWaiter: 0x6000013efd90, state: XCTWaiterStateSucceeded> cleaning up `IDE session ready for test plan`
+18:07:28.168 Xcode[39855:4879271] Starting test plan, clearing initialization timeout timer.
+18:07:28.167 Consent[41868:4987517] Entering test execution event loop
+18:07:28.168 Consent[41868:4987517] -[XCTRunnerIDESession testBundleWillStart:]
+18:07:28.168 Consent[41868:4987517] Loading test suite...
+18:07:28.280 Consent[41868:4987517] Finished loading test suite, took 0.113s
+Test Suite 'All tests' started at 2018-12-12 18:07:28.280
+18:07:28.280 Consent[41868:4987517] Running suite...
+18:07:28.281 Consent[41868:4987517] -[XCTRunnerIDESession testSuiteWillStart:]
+Test Suite 'ConsentTests.xctest' started at 2018-12-12 18:07:28.281
+Test Suite 'ConsentTests' started at 2018-12-12 18:07:28.282
+Test Case '-[ConsentTests.ConsentTests testExample]' started.
+Test Case '-[ConsentTests.ConsentTests testExample]' passed (0.001 seconds).
+Test Case '-[ConsentTests.ConsentTests testPerformanceExample]' started.
+18:07:28.299 Xcode[39855:4879271] _XCT_testSuite:All tests didStartAt:2018-12-12 23:07:28 +0000
+18:07:28.300 Xcode[39855:4879271] _XCT_testSuite:ConsentTests.xctest didStartAt:2018-12-12 23:07:28 +0000
+18:07:28.281 Consent[41868:4987517] -[XCTRunnerIDESession testSuiteWillStart:]
+18:07:28.300 Xcode[39855:4879271] _XCT_testSuite:ConsentTests didStartAt:2018-12-12 23:07:28 +0000
+18:07:28.282 Consent[41868:4987517] -[XCTRunnerIDESession testSuiteWillStart:]
+18:07:28.282 Consent[41868:4987517] -[XCTRunnerIDESession testCaseWillStart:] ConsentTests.ConsentTests testExample
+18:07:28.300 Xcode[39855:4879271] _XCT_testCaseDidStartForTestClass:ConsentTests.ConsentTests method:testExample
+18:07:28.283 Consent[41868:4987517] -[XCTRunnerIDESession testCaseDidFinish:]
+18:07:28.300 Xcode[39855:4879271] _XCT_testCaseDidFinishForTestClass:ConsentTests.ConsentTests method:testExample withStatus:passed duration:0.0008660554885864258
+18:07:28.300 Xcode[39855:4879271] _XCT_testCaseDidStartForTestClass:ConsentTests.ConsentTests method:testPerformanceExample
+18:07:28.283 Consent[41868:4987517] -[XCTRunnerIDESession testCaseWillStart:] ConsentTests.ConsentTests testPerformanceExample
+18:07:28.601 Consent[41868:4987517] -[XCTRunnerIDESession _testCase:didMeasureValues:forPerformanceMetricID:name:unitsOfMeasurement:baselineName:baselineAverage:maxPercentRegression:maxPercentRelativeStandardDeviation:maxRegression:maxStandardDeviation:file:line:]
+18:07:28.601 Xcode[39855:4879271] -[XCTTestRunnerSession _XCT_testMethod:ofClass:didMeasureMetric:file:line:]_block_invoke
+18:07:28.601 Consent[41868:4987517] -[XCTRunnerIDESession testCaseDidFinish:]
+18:07:28.603 Xcode[39855:4879271] _XCT_testCaseDidFinishForTestClass:ConsentTests.ConsentTests method:testPerformanceExample withStatus:passed duration:0.3181959390640259
+18:07:28.602 Consent[41868:4987517] -[XCTRunnerIDESession testSuiteDidFinish:]
+18:07:28.603 Xcode[39855:4879271] _XCT_testSuite:ConsentTests didFinishAt:2018-12-12 23:07:28 +0000 runCount:2 withFailures:0 unexpected:0 testDuration:0.3190619945526123 totalDuration:0.3200230598449707
+18:07:28.602 Consent[41868:4987517] -[XCTRunnerIDESession testSuiteDidFinish:]
+18:07:28.603 Xcode[39855:4879271] _XCT_testSuite:ConsentTests.xctest didFinishAt:2018-12-12 23:07:28 +0000 runCount:2 withFailures:0 unexpected:0 testDuration:0.3190619945526123 totalDuration:0.3208309412002563
+18:07:28.602 Consent[41868:4987517] -[XCTRunnerIDESession testSuiteDidFinish:]
+18:07:28.603 Xcode[39855:4879271] _XCT_testSuite:All tests didFinishAt:2018-12-12 23:07:28 +0000 runCount:2 withFailures:0 unexpected:0 testDuration:0.3190619945526123 totalDuration:0.3219120502471924
+18:07:28.603 Consent[41868:4987517] Finished running suite.
+18:07:28.604 Xcode[39855:4879271] -[XCTTestRunnerSession _XCT_didFinishExecutingTestPlan]_block_invoke
+18:07:28.603 Consent[41868:4987517] -[XCTRunnerIDESession testBundleDidFinish:], Flushing connection to IDE...
+18:07:28.603 Consent[41868:4987517] Exited test execution event loop
+18:07:28.603 Consent[41868:4987517] Calling completion.
+18:07:28.603 Consent[41868:4987517] <XCTWaiter: 0x6000013c39a0, state: XCTWaiterStateInProgress> entering wait loop for 15.00s with expectations: `IDE confirmed the end of session`
+18:07:28.604 Consent[41868:4987574] <XCTWaiter: 0x6000013c39a0, state: XCTWaiterStateSucceeded>: cancelWaiting
+18:07:28.604 Consent[41868:4987517] <XCTWaiter: 0x6000013c39a0, state: XCTWaiterStateSucceeded> done waiting
+18:07:28.604 Consent[41868:4987517] Canceling watchdog for <XCTWaiter: 0x6000013c39a0, state: XCTWaiterStateInProgress>.
+18:07:28.604 Consent[41868:4987517] <XCTWaiter: 0x6000013c39a0, state: XCTWaiterStateSucceeded> cleaning up `IDE confirmed the end of session`
+18:07:28.620 Xcode[39855:4984205] Closing socket 80 to testmanagerd for Sim iPhone X
+/Users/derrickmu/Desktop/Consent/ConsentTests/ConsentTests.swift:29: Test Case '-[ConsentTests.ConsentTests testPerformanceExample]' measured [Time, seconds] average: 0.000, relative standard deviation: 116.069%, values: [0.000003, 0.000001, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000], performanceMetricID:com.apple.XCTPerformanceMetric_WallClockTime, baselineName: "", baselineAverage: , maxPercentRegression: 10.000%, maxPercentRelativeStandardDeviation: 10.000%, maxRegression: 0.100, maxStandardDeviation: 0.100
+Test Case '-[ConsentTests.ConsentTests testPerformanceExample]' passed (0.318 seconds).
+Test Suite 'ConsentTests' passed at 2018-12-12 18:07:28.602.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.319 (0.320) seconds
+Test Suite 'ConsentTests.xctest' passed at 2018-12-12 18:07:28.602.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.319 (0.321) seconds
+Test Suite 'All tests' passed at 2018-12-12 18:07:28.602.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.319 (0.322) seconds
+18:07:28.623 Xcode[39855:4879271] Test process exited with exit code 0
+18:07:28.634 Xcode[39855:4879271] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> claim LaunchSessionClaim_0x7fe0de214280 on simulator was relinquished
+18:07:28.634 Xcode[39855:4879271] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> claim LaunchSessionClaim_0x7fe0de214280 on simulator was relinquished
+18:07:28.681 Xcode[39855:4879271] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> got death notice for pid 41868, removing from SimulatorSessionMap
+18:07:28.879 Xcode[39855:4879271] <IDETestOperationCoordinator: 0x7fe0de1ca260> finished receiving data from testing launch session
+18:07:28.879 Xcode[39855:4879271] <IDETestOperationCoordinator: 0x7fe0de1ca260>: _considerFlushingDelegateBlockQueue - nothing to flush
+18:07:28.879 Xcode[39855:4879271] _finishWithError:(null)

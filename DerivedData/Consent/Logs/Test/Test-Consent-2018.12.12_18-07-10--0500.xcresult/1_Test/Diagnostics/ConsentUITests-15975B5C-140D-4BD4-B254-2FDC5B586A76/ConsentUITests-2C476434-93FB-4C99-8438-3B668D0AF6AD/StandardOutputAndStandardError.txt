@@ -1,0 +1,5 @@
+2018-12-12 18:07:31.099647-0500 ConsentUITests-Runner[41872:4987723] Running tests...
+2018-12-12 18:07:31.122949-0500 ConsentUITests-Runner[41872:4987723] The bundle “ConsentUITests” couldn’t be loaded because it is damaged or missing necessary resources. Try reinstalling the bundle.
+2018-12-12 18:07:31.123071-0500 ConsentUITests-Runner[41872:4987723] (dlopen_preflight(/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/ConsentUITests-Runner.app/PlugIns/ConsentUITests.xctest/ConsentUITests): Library not loaded: @rpath/GTMSessionFetcher.framework/GTMSessionFetcher
+  Referenced from: /Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/ConsentUITests-Runner.app/PlugIns/ConsentUITests.xctest/ConsentUITests
+  Reason: image not found)

@@ -1,0 +1,75 @@
+18:07:28.890 Xcode[39855:4879271] Beginning test session ConsentUITests-43732448-1BA8-4586-8931-9D3FC38D64A9 at 2018-12-12 18:07:28.890 with Xcode 10B61 on target <DVTiPhoneSimulator: 0x7fe0e8aeed10> {
+		SimDevice: iPhone X (9B6F726B-4B08-430A-A255-122D54AFB9FF, iOS 12.1, Booted)
+} (12.1 (16B91))
+18:07:28.890 Xcode[39855:4879271] Launching with Xcode.DebuggerFoundation.Launcher.LLDB
+18:07:28.891 Xcode[39855:4879271] Test standard output and standard error is at /Users/derrickmu/Desktop/Consent/DerivedData/Consent/Logs/Test/Test-Consent-2018.12.12_18-07-10--0500.xcresult/1_Test/Diagnostics/ConsentUITests-15975B5C-140D-4BD4-B254-2FDC5B586A76/ConsentUITests-2C476434-93FB-4C99-8438-3B668D0AF6AD/StandardOutputAndStandardError.txt
+18:07:28.900 Xcode[39855:4879271] Setting up test runner session
+18:07:28.900 Xcode[39855:4986570] Sim iPhone X: Unregistering for sim device notification with token 26
+18:07:28.900 Xcode[39855:4986570] Calling -[SimDevice getenv:error:] for TESTMANAGERD_SIM_SOCK
+18:07:28.901 Xcode[39855:4986570] Sim iPhone X has testmanagerd socket at /private/tmp/com.apple.launchd.ndlF9QKtB6/com.apple.testmanagerd.unix-domain.socket
+18:07:28.901 Xcode[39855:4986570] Validating test connection socket path (/private/tmp/com.apple.launchd.ndlF9QKtB6/com.apple.testmanagerd.unix-domain.socket)
+18:07:28.901 Xcode[39855:4986570] Constructing transport for test connection socket
+18:07:28.901 Xcode[39855:4986570] Connected socket 80 to testmanagerd for Sim iPhone X
+18:07:28.901 Xcode[39855:4984205] Received connection for test runner session
+18:07:28.902 Xcode[39855:4984205] Listening for proxy connection request from the test bundle
+18:07:28.902 Xcode[39855:4984205] Initiating session with identifier: 43732448-1BA8-4586-8931-9D3FC38D64A9
+18:07:28.903 Xcode[39855:4984205] Got reply to session initiation request with identifier 43732448-1BA8-4586-8931-9D3FC38D64A9 (result:error): 29: (null)
+18:07:28.914 Xcode[39855:4879271] Launch session started.
+18:07:28.983 Xcode[39855:4879271] Test runner session acquired connection.
+18:07:28.983 Xcode[39855:4879271] Waiting for test process to launch.
+18:07:29.002 Xcode[39855:4879271] Sending notification: NSConcreteNotification 0x7fe0ec5d5af0 {name = com.apple.iphonesimulator.startSession; userInfo = {
+    deviceUDID = "9B6F726B-4B08-430A-A255-122D54AFB9FF";
+}}
+18:07:29.002 Xcode[39855:4987313] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> simulator was claimed by LaunchSessionClaim_0x7fe0de2adf90
+18:07:29.021 Xcode[39855:4879271] Sending notification: NSConcreteNotification 0x7fe0df929330 {name = com.apple.iphonesimulator.startSession; userInfo = {
+    deviceUDID = "9B6F726B-4B08-430A-A255-122D54AFB9FF";
+}}
+18:07:29.021 Xcode[39855:4987316] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> simulator was claimed by LaunchSessionClaim_0x7fe0de2adf90
+18:07:29.021 Xcode[39855:4987316] 9B6F726B-4B08-430A-A255-122D54AFB9FF: Registered for sim device notification, got token 29
+18:07:29.021 Xcode[39855:4987318] 9B6F726B-4B08-430A-A255-122D54AFB9FF: Unregistering for sim device notification with token 29
+18:07:29.023 Xcode[39855:4987318] 9B6F726B-4B08-430A-A255-122D54AFB9FF: Installing app at path: /Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/ConsentUITests-Runner.app and options: (null)
+18:07:30.265 Xcode[39855:4987318] 9B6F726B-4B08-430A-A255-122D54AFB9FF: Installed app at path: /Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/ConsentUITests-Runner.app and options: (null)
+18:07:30.266 Xcode[39855:4987318] 9B6F726B-4B08-430A-A255-122D54AFB9FF: Launching app with identifier: com.apple.test.ConsentUITests-Runner and options: {
+    "activate_suspended" = 1;
+    arguments =     (
+        "-NSTreatUnknownArgumentsAsOpen",
+        NO,
+        "-ApplePersistenceIgnoreState",
+        YES
+    );
+    environment =     {
+        "CA_ASSERT_MAIN_THREAD_TRANSACTIONS" = 0;
+        "CA_DEBUG_TRANSACTIONS" = 0;
+        "DYLD_FRAMEWORK_PATH" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator:";
+        "DYLD_INSERT_LIBRARIES" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libMainThreadChecker.dylib";
+        "DYLD_LIBRARY_PATH" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator";
+        "MTC_CRASH_ON_REPORT" = 1;
+        NSUnbufferedIO = YES;
+        "OS_ACTIVITY_DT_MODE" = YES;
+        "SQLITE_ENABLE_THREAD_ASSERTIONS" = 1;
+        XCTestConfigurationFilePath = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Logs/Test/Test-Consent-2018.12.12_18-07-10--0500.xcresult/1_Test/Diagnostics/ConsentUITests-15975B5C-140D-4BD4-B254-2FDC5B586A76/ConsentUITests-2C476434-93FB-4C99-8438-3B668D0AF6AD/LaunchSessions/43732448-1BA8-4586-8931-9D3FC38D64A9/remote-container/tmp/ConsentUITests-43732448-1BA8-4586-8931-9D3FC38D64A9.xctestconfiguration";
+        "__XCODE_BUILT_PRODUCTS_DIR_PATHS" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator";
+        "__XPC_DYLD_FRAMEWORK_PATH" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator";
+        "__XPC_DYLD_LIBRARY_PATH" = "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator";
+    };
+    stderr = "/dev/ttys000";
+    stdout = "/dev/ttys000";
+    "wait_for_debugger" = 1;
+}
+18:07:30.295 Xcode[39855:4984205] 9B6F726B-4B08-430A-A255-122D54AFB9FF: Launched app with identifier: com.apple.test.ConsentUITests-Runner (pid = 41872)
+18:07:30.295 Xcode[39855:4984205] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> tracking pid 41872
+18:07:30.295 Xcode[39855:4984205] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> checking to see if pid 41872 is valid: kill(pid, 0) = 0 (YES, it's still running)
+18:07:30.296 Xcode[39855:4879271] Test process runnable PID is 41872.
+18:07:31.138 Xcode[39855:4879271] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> got death notice for pid 41872, removing from SimulatorSessionMap
+18:07:31.184 Xcode[39855:4879271] Test process exited with exit code 82
+18:07:31.190 Xcode[39855:4879271] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> claim LaunchSessionClaim_0x7fe0de2adf90 on simulator was relinquished
+18:07:31.190 Xcode[39855:4879271] 📱<DVTiPhoneSimulator (0x7fe0e8aeed10), iPhone X, unknown class, 12.1 (16B91), 9B6F726B-4B08-430A-A255-122D54AFB9FF> claim LaunchSessionClaim_0x7fe0de2adf90 on simulator was relinquished
+2018-12-12 18:07:31.099647-0500 ConsentUITests-Runner[41872:4987723] Running tests...
+2018-12-12 18:07:31.122949-0500 ConsentUITests-Runner[41872:4987723] The bundle “ConsentUITests” couldn’t be loaded because it is damaged or missing necessary resources. Try reinstalling the bundle.
+2018-12-12 18:07:31.123071-0500 ConsentUITests-Runner[41872:4987723] (dlopen_preflight(/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/ConsentUITests-Runner.app/PlugIns/ConsentUITests.xctest/ConsentUITests): Library not loaded: @rpath/GTMSessionFetcher.framework/GTMSessionFetcher
+  Referenced from: /Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/ConsentUITests-Runner.app/PlugIns/ConsentUITests.xctest/ConsentUITests
+  Reason: image not found)
+18:07:32.915 Xcode[39855:4879271] <IDETestOperationCoordinator: 0x7fe0de76f520> finished receiving data from testing launch session
+18:07:32.915 Xcode[39855:4879271] <IDETestOperationCoordinator: 0x7fe0de76f520>: _considerFlushingDelegateBlockQueue - nothing to flush
+18:07:33.282 Xcode[39855:4879271] Test operation failure: The test runner failed to load the test bundle. Executable cannot be loaded for some other reason, such as a problem with a library it depends on or a code signature/entitlements mismatch.
+18:07:33.282 Xcode[39855:4879271] _finishWithError:Error Domain=IDETestOperationsObserverErrorDomain Code=5 "The test runner failed to load the test bundle. Executable cannot be loaded for some other reason, such as a problem with a library it depends on or a code signature/entitlements mismatch." UserInfo={NSLocalizedDescription=The test runner failed to load the test bundle. Executable cannot be loaded for some other reason, such as a problem with a library it depends on or a code signature/entitlements mismatch.}

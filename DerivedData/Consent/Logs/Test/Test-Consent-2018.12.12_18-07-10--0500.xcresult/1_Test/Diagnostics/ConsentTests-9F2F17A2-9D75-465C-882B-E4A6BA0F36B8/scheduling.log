@@ -1,0 +1,5 @@
+2018-12-12 23:07:22 +0000: Received worker from worker provider: 0x7fe0df010f90 [0: iPhone X (9B6F726B-4B08-430A-A255-122D54AFB9FF)]
+2018-12-12 23:07:28 +0000: Worker 0x7fe0df010f90 [41868: iPhone X (9B6F726B-4B08-430A-A255-122D54AFB9FF)] finished bootstrapping
+2018-12-12 23:07:28 +0000: Parallelization disabled; test execution driven by the test process
+2018-12-12 23:07:28 +0000: Worker 0x7fe0df010f90 [41868: iPhone X (9B6F726B-4B08-430A-A255-122D54AFB9FF)] finished successfully
+2018-12-12 23:07:28 +0000: Finished executing tests (cancelled: No)
