@@ -26,7 +26,6 @@
 		3DAF746321C1CA1E00235E9C /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF745021C1CA1E00235E9C /* Montserrat-Italic.ttf */; };
 		3DAF746421C1CA1E00235E9C /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF745121C1CA1E00235E9C /* Montserrat-SemiBoldItalic.ttf */; };
 		3DAF746521C1CA1E00235E9C /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF745221C1CA1E00235E9C /* Montserrat-ExtraBoldItalic.ttf */; };
-		3DCA03E421B087ED0063B38E /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03E321B087ED0063B38E /* checked.png */; };
 		3DCA03E621B088350063B38E /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03E521B088350063B38E /* reload.png */; };
 		3DCA03E821B0883C0063B38E /* return.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03E721B0883C0063B38E /* return.png */; };
 		3DCA03EA21B0884E0063B38E /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03E921B0884E0063B38E /* key.png */; };
@@ -48,6 +47,16 @@
 		5CA17889326CC6F0B14D89A6 /* Pods_ConsentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74A8BFBD00AB8360D1C7AA6 /* Pods_ConsentUITests.framework */; };
 		CA1A23499A2393BD755B3936 /* Pods_Consent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5C0BBF66DFCD16F1BAB55A /* Pods_Consent.framework */; };
 		D75554C587BD8C0240876613 /* Pods_ConsentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE8A4FF3F5653241F96EF9F /* Pods_ConsentTests.framework */; };
+		ECA08CCE21D4700700565DC5 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA08CCD21D4700700565DC5 /* checked.png */; };
+		ECA08CD321D470A100565DC5 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CD121D470A000565DC5 /* TextField.swift */; };
+		ECA08CD421D470A100565DC5 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CD221D470A000565DC5 /* Button.swift */; };
+		ECA08CD821D470C200565DC5 /* PWReset.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA08CD621D470BF00565DC5 /* PWReset.storyboard */; };
+		ECA08CD921D470C200565DC5 /* PWResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CD721D470C200565DC5 /* PWResetVC.swift */; };
+		ECA08CDF21D48D4C00565DC5 /* PopUpTemplate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA08CDE21D48D4C00565DC5 /* PopUpTemplate.storyboard */; };
+		ECA08CE121D48FDF00565DC5 /* SuccessPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CE021D48FDF00565DC5 /* SuccessPopUp.swift */; };
+		ECA08CE521D4992500565DC5 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CE421D4992500565DC5 /* Label.swift */; };
+		ECA08CE821D4A8B800565DC5 /* UniversalVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CE721D4A8B800565DC5 /* UniversalVar.swift */; };
+		ECA08CEA21D4AB3600565DC5 /* AccountValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CE921D4AB3600565DC5 /* AccountValidation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +97,6 @@
 		3DAF745021C1CA1E00235E9C /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
 		3DAF745121C1CA1E00235E9C /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		3DAF745221C1CA1E00235E9C /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		3DCA03E321B087ED0063B38E /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checked.png; path = "../../../../Downloads/263048-miscellaneous-elements/png/checked.png"; sourceTree = "<group>"; };
 		3DCA03E521B088350063B38E /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
 		3DCA03E721B0883C0063B38E /* return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = return.png; sourceTree = "<group>"; };
 		3DCA03E921B0884E0063B38E /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
@@ -118,6 +126,16 @@
 		9FE8A4FF3F5653241F96EF9F /* Pods_ConsentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConsentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC7465C59EDBD1682A49E73 /* Pods-ConsentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConsentUITests/Pods-ConsentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B296413CAF02CE6820BA5421 /* Pods-ConsentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConsentTests/Pods-ConsentTests.release.xcconfig"; sourceTree = "<group>"; };
+		ECA08CCD21D4700700565DC5 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		ECA08CD121D470A000565DC5 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		ECA08CD221D470A000565DC5 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		ECA08CD621D470BF00565DC5 /* PWReset.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PWReset.storyboard; sourceTree = "<group>"; };
+		ECA08CD721D470C200565DC5 /* PWResetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWResetVC.swift; sourceTree = "<group>"; };
+		ECA08CDE21D48D4C00565DC5 /* PopUpTemplate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUpTemplate.storyboard; sourceTree = "<group>"; };
+		ECA08CE021D48FDF00565DC5 /* SuccessPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPopUp.swift; sourceTree = "<group>"; };
+		ECA08CE421D4992500565DC5 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		ECA08CE721D4A8B800565DC5 /* UniversalVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalVar.swift; sourceTree = "<group>"; };
+		ECA08CE921D4AB3600565DC5 /* AccountValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountValidation.swift; sourceTree = "<group>"; };
 		EE5C0BBF66DFCD16F1BAB55A /* Pods_Consent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Consent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F258033CE93E794121F2D326 /* Pods-Consent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Consent.release.xcconfig"; path = "Pods/Target Support Files/Pods-Consent/Pods-Consent.release.xcconfig"; sourceTree = "<group>"; };
 		F74A8BFBD00AB8360D1C7AA6 /* Pods_ConsentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConsentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +211,7 @@
 				3DCA03EF21B0886B0063B38E /* id-card.png */,
 				3DCA03F121B08CE70063B38E /* flag.png */,
 				3DCA03ED21B0885C0063B38E /* phone-call.png */,
-				3DCA03E321B087ED0063B38E /* checked.png */,
+				ECA08CCD21D4700700565DC5 /* checked.png */,
 				3DCA03EB21B088550063B38E /* message-1.png */,
 				3DCA03E521B088350063B38E /* reload.png */,
 				3DCA03E721B0883C0063B38E /* return.png */,
@@ -229,7 +247,10 @@
 			children = (
 				3DF76579216BD76100E78EE0 /* AppDelegate.swift */,
 				3DF765AE216BD93B00E78EE0 /* Main */,
+				ECA08CDD21D47A1B00565DC5 /* PopUps */,
+				ECA08CD521D470AA00565DC5 /* Helper Functions */,
 				3DF765A7216BD7E200E78EE0 /* UserLogin */,
+				ECA08CDA21D470C800565DC5 /* PwReset */,
 				3DCA03E221B087C90063B38E /* Icons */,
 				3DF76580216BD76200E78EE0 /* Assets.xcassets */,
 				3DF76582216BD76200E78EE0 /* LaunchScreen.storyboard */,
@@ -288,6 +309,36 @@
 				AFC7465C59EDBD1682A49E73 /* Pods-ConsentUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		ECA08CD521D470AA00565DC5 /* Helper Functions */ = {
+			isa = PBXGroup;
+			children = (
+				ECA08CD221D470A000565DC5 /* Button.swift */,
+				ECA08CD121D470A000565DC5 /* TextField.swift */,
+				ECA08CE421D4992500565DC5 /* Label.swift */,
+				ECA08CE721D4A8B800565DC5 /* UniversalVar.swift */,
+				ECA08CE921D4AB3600565DC5 /* AccountValidation.swift */,
+			);
+			path = "Helper Functions";
+			sourceTree = "<group>";
+		};
+		ECA08CDA21D470C800565DC5 /* PwReset */ = {
+			isa = PBXGroup;
+			children = (
+				ECA08CD721D470C200565DC5 /* PWResetVC.swift */,
+				ECA08CD621D470BF00565DC5 /* PWReset.storyboard */,
+			);
+			path = PwReset;
+			sourceTree = "<group>";
+		};
+		ECA08CDD21D47A1B00565DC5 /* PopUps */ = {
+			isa = PBXGroup;
+			children = (
+				ECA08CE021D48FDF00565DC5 /* SuccessPopUp.swift */,
+				ECA08CDE21D48D4C00565DC5 /* PopUpTemplate.storyboard */,
+			);
+			path = PopUps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,17 +454,19 @@
 				3DAF745821C1CA1E00235E9C /* Montserrat-ExtraLight.ttf in Resources */,
 				3DAF745E21C1CA1E00235E9C /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				3DCA03EA21B0884E0063B38E /* key.png in Resources */,
+				ECA08CCE21D4700700565DC5 /* checked.png in Resources */,
 				3DAF745421C1CA1E00235E9C /* Montserrat-Medium.ttf in Resources */,
 				3DAF745621C1CA1E00235E9C /* Montserrat-Light.ttf in Resources */,
 				3DF76584216BD76200E78EE0 /* LaunchScreen.storyboard in Resources */,
 				3DAF745D21C1CA1E00235E9C /* Montserrat-SemiBold.ttf in Resources */,
 				3DF76581216BD76200E78EE0 /* Assets.xcassets in Resources */,
+				ECA08CD821D470C200565DC5 /* PWReset.storyboard in Resources */,
 				3DAF745C21C1CA1E00235E9C /* Montserrat-BlackItalic.ttf in Resources */,
 				3DF765B3216BDACC00E78EE0 /* GoogleService-Info.plist in Resources */,
-				3DCA03E421B087ED0063B38E /* checked.png in Resources */,
 				3DAF746021C1CA1E00235E9C /* OFL.txt in Resources */,
 				3DF765AD216BD82C00E78EE0 /* SignUp.storyboard in Resources */,
 				3DAF746321C1CA1E00235E9C /* Montserrat-Italic.ttf in Resources */,
+				ECA08CDF21D48D4C00565DC5 /* PopUpTemplate.storyboard in Resources */,
 				3DCA03F021B0886B0063B38E /* id-card.png in Resources */,
 				3DAF746521C1CA1E00235E9C /* Montserrat-ExtraBoldItalic.ttf in Resources */,
 				3DAF745921C1CA1E00235E9C /* Montserrat-Thin.ttf in Resources */,
@@ -533,9 +586,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA08CD921D470C200565DC5 /* PWResetVC.swift in Sources */,
+				ECA08CE821D4A8B800565DC5 /* UniversalVar.swift in Sources */,
 				3DF7657C216BD76100E78EE0 /* ViewController.swift in Sources */,
+				ECA08CE121D48FDF00565DC5 /* SuccessPopUp.swift in Sources */,
+				ECA08CD421D470A100565DC5 /* Button.swift in Sources */,
 				3DF765A9216BD80900E78EE0 /* SignUpVC.swift in Sources */,
+				ECA08CEA21D4AB3600565DC5 /* AccountValidation.swift in Sources */,
 				3DF765AB216BD81900E78EE0 /* SignInVC.swift in Sources */,
+				ECA08CD321D470A100565DC5 /* TextField.swift in Sources */,
+				ECA08CE521D4992500565DC5 /* Label.swift in Sources */,
 				3DF7657A216BD76100E78EE0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

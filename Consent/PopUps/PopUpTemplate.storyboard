@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Error-->
+        <scene sceneID="ysc-Xa-XBf">
+            <objects>
+                <viewController storyboardIdentifier="Error" title="Error" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qCQ-lX-lRe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MDD-tt-0GJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qmW-Br-GFE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCA-kQ-uvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="169"/>
+        </scene>
+        <!--Success-->
+        <scene sceneID="ujV-X7-zv9">
+            <objects>
+                <viewController storyboardIdentifier="Success" title="Success" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DMo-hb-x7J" customClass="SuccessPopUp" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tD3-vy-dAL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3S-vM-IlI">
+                                <rect key="frame" x="55" y="203.5" width="265" height="260"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQE-lq-XF8">
+                                        <rect key="frame" x="8" y="210" width="249" height="40"/>
+                                        <color key="backgroundColor" name="Button"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Ud4-OP-6lA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="21"/>
+                                        <state key="normal" title="Ok">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closePopUp:" destination="DMo-hb-x7J" eventType="touchUpInside" id="0Pa-eF-rvU"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fCt-YO-bPR">
+                                        <rect key="frame" x="10" y="102" width="245" height="103"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="245" id="Cj2-lj-zOi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked.png" translatesAutoresizingMaskIntoConstraints="NO" id="eEd-zA-vFA">
+                                        <rect key="frame" x="70" y="8" width="125" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="86" id="I4o-Fg-sXM"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="Secondary Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="265" id="7ux-Gr-Wvd"/>
+                                    <constraint firstItem="fCt-YO-bPR" firstAttribute="leading" secondItem="O3S-vM-IlI" secondAttribute="leading" constant="10" id="AAX-nJ-Ihi"/>
+                                    <constraint firstAttribute="bottom" secondItem="MQE-lq-XF8" secondAttribute="bottom" constant="10" id="CB2-wI-y1P"/>
+                                    <constraint firstItem="MQE-lq-XF8" firstAttribute="leading" secondItem="O3S-vM-IlI" secondAttribute="leading" constant="8" id="GoT-A0-vcz"/>
+                                    <constraint firstItem="eEd-zA-vFA" firstAttribute="top" secondItem="O3S-vM-IlI" secondAttribute="top" constant="8" id="IpW-Ry-xzB"/>
+                                    <constraint firstItem="eEd-zA-vFA" firstAttribute="leading" secondItem="O3S-vM-IlI" secondAttribute="leading" constant="70" id="KiS-Hb-gFV"/>
+                                    <constraint firstItem="MQE-lq-XF8" firstAttribute="top" secondItem="fCt-YO-bPR" secondAttribute="bottom" constant="5" id="Kng-7k-pXO"/>
+                                    <constraint firstItem="eEd-zA-vFA" firstAttribute="top" secondItem="O3S-vM-IlI" secondAttribute="top" constant="8" id="Q5u-vo-mYu"/>
+                                    <constraint firstItem="fCt-YO-bPR" firstAttribute="top" secondItem="eEd-zA-vFA" secondAttribute="bottom" constant="8" id="ZCv-dE-ctC"/>
+                                    <constraint firstAttribute="trailing" secondItem="MQE-lq-XF8" secondAttribute="trailing" constant="8" id="ZmN-bs-Yh3"/>
+                                    <constraint firstAttribute="trailing" secondItem="eEd-zA-vFA" secondAttribute="trailing" constant="70" id="d2K-MG-gl3"/>
+                                    <constraint firstAttribute="height" constant="260" id="kfH-Ah-jox"/>
+                                    <constraint firstAttribute="trailing" secondItem="fCt-YO-bPR" secondAttribute="trailing" constant="10" id="rUp-bO-u0r"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Secondary Background"/>
+                        <constraints>
+                            <constraint firstItem="O3S-vM-IlI" firstAttribute="centerX" secondItem="tD3-vy-dAL" secondAttribute="centerX" id="ivx-fk-7gl"/>
+                            <constraint firstItem="O3S-vM-IlI" firstAttribute="centerY" secondItem="tD3-vy-dAL" secondAttribute="centerY" id="ybc-oY-aAY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ShW-P1-7BK"/>
+                    </view>
+                    <connections>
+                        <outlet property="dismissPopUpB" destination="MQE-lq-XF8" id="1iD-p7-0b7"/>
+                        <outlet property="image" destination="eEd-zA-vFA" id="dR6-vt-VMj"/>
+                        <outlet property="msgText" destination="fCt-YO-bPR" id="exJ-tb-UQg"/>
+                        <outlet property="popUpView" destination="O3S-vM-IlI" id="kgv-9R-MQT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="113-aA-xfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720.79999999999995" y="168.6656671664168"/>
+        </scene>
+        <!--Loading-->
+        <scene sceneID="cVR-rF-M73">
+            <objects>
+                <viewController storyboardIdentifier="Loading" title="Loading" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ioQ-a2-XbP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xlz-oa-4Cg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9Mq-3c-8yH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAa-3c-NtD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1415" y="169"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checked.png" width="59" height="61"/>
+        <namedColor name="Button">
+            <color red="0.20784313725490197" green="0.36470588235294116" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Secondary Background">
+            <color red="0.42352941176470588" green="0.35686274509803922" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

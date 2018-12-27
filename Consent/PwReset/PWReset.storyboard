@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--PWResetVC-->
+        <scene sceneID="yVF-fj-UJm">
+            <objects>
+                <viewController storyboardIdentifier="PWResetVC" title="PWResetVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="t23-EI-Y0Z" customClass="PWResetVC" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lmC-7C-P8y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRy-zb-AZW">
+                                <rect key="frame" x="16" y="610" width="35" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back" image="return.png"/>
+                                <connections>
+                                    <action selector="back:" destination="t23-EI-Y0Z" eventType="touchUpInside" id="fIE-yo-q2j"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jql-S6-Iwk">
+                                <rect key="frame" x="16" y="231.5" width="343" height="204"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-Ts-sG5">
+                                        <rect key="frame" x="8" y="46" width="327" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCQ-RH-2uv">
+                                        <rect key="frame" x="92" y="125" width="159" height="50"/>
+                                        <color key="backgroundColor" red="0.24216049910000001" green="0.35818958280000002" blue="0.4784591198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dkz-bY-wog"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                        <state key="normal" title="Send Reset Email">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetPW:" destination="t23-EI-Y0Z" eventType="touchUpInside" id="YKw-CE-f5m"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="204" id="0yP-Id-trK"/>
+                                    <constraint firstAttribute="trailing" secondItem="dCQ-RH-2uv" secondAttribute="trailing" constant="92" id="1Hp-tm-nw8"/>
+                                    <constraint firstItem="dCQ-RH-2uv" firstAttribute="leading" secondItem="jql-S6-Iwk" secondAttribute="leading" constant="92" id="Sah-TA-32M"/>
+                                    <constraint firstItem="F4n-Ts-sG5" firstAttribute="top" secondItem="jql-S6-Iwk" secondAttribute="top" constant="46" id="Uhj-Xd-cEf"/>
+                                    <constraint firstAttribute="trailing" secondItem="F4n-Ts-sG5" secondAttribute="trailing" constant="8" id="pRS-jX-uPK"/>
+                                    <constraint firstItem="F4n-Ts-sG5" firstAttribute="leading" secondItem="jql-S6-Iwk" secondAttribute="leading" constant="8" id="uai-XF-FMC"/>
+                                    <constraint firstItem="dCQ-RH-2uv" firstAttribute="top" secondItem="F4n-Ts-sG5" secondAttribute="bottom" constant="49" id="zed-qS-uhz"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reset Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2I-oJ-mzN">
+                                <rect key="frame" x="69" y="48" width="236" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="jql-S6-Iwk" firstAttribute="leading" secondItem="iY5-Yd-ks7" secondAttribute="leading" constant="16" id="80o-Eq-Pvo"/>
+                            <constraint firstItem="jql-S6-Iwk" firstAttribute="centerY" secondItem="lmC-7C-P8y" secondAttribute="centerY" id="Ua7-vF-Fws"/>
+                            <constraint firstItem="jql-S6-Iwk" firstAttribute="centerX" secondItem="lmC-7C-P8y" secondAttribute="centerX" id="jml-bb-Fow"/>
+                            <constraint firstItem="iY5-Yd-ks7" firstAttribute="trailing" secondItem="jql-S6-Iwk" secondAttribute="trailing" constant="16" id="n9E-mW-hc3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iY5-Yd-ks7"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="F4n-Ts-sG5" id="9Kc-VZ-dHd"/>
+                        <outlet property="resetB" destination="dCQ-RH-2uv" id="q0h-tz-vjY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eo6-HU-Mzl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156" y="-156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="return.png" width="512" height="512"/>
+        <namedColor name="Background">
+            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

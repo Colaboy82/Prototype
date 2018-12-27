@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class SignUpVC: UIViewController, UITextFieldDelegate {
-
+    
     @IBOutlet weak var nextB: UIButton!
     @IBOutlet weak var backB: UIButton!
     
@@ -23,6 +23,8 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     
     var currentPg = 1.0
     var timer: Timer!
+    var textField = TextField.init()
+    var button = Button.init()
     
     //Pg 1
     @IBOutlet weak var email: UITextField!
@@ -51,25 +53,23 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         self.view.layer.borderColor = #colorLiteral(red: 0.7607843137, green: 0.7647058824, blue: 0.7725490196, alpha: 1)
         self.view.layer.borderWidth = 2
         
-        setTextFields(field: firstName)
-        setTextFields(field: middleName)
-        setTextFields(field: lastName)
-        setTextFields(field: phoneNum)
+        textField.setTextFields(field: firstName)
+        textField.setTextFields(field: middleName)
+        textField.setTextFields(field: lastName)
+        textField.setTextFields(field: phoneNum)
         
-        setTextFields(field: email)
-        setTextFields(field: pw)
-        setTextFields(field: pwConfirm)
+        textField.setTextFields(field: email)
+        textField.setTextFields(field: pw)
+        textField.setTextFields(field: pwConfirm)
         
         setupPgViews(view: pg1View)
         setupPgViews(view: pg2View)
         setupPgViews(view: pg3View)
-
+        
         backB.isHidden = false
         setPage(currPg: Float(currentPg))
         
-        nextB.layer.cornerRadius = 15
-        nextB.clipsToBounds = true
-        nextB.layer.backgroundColor = UIColor.red.cgColor
+        button.setButton(btn: nextB, color: #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
         
         super.viewDidLoad()
     }
@@ -77,22 +77,15 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         if(shouldEnableNext()){
             nextB.layer.backgroundColor = #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1)
         }else{
-            nextB.layer.backgroundColor = UIColor.red.cgColor
+            nextB.layer.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
         }
         nextB.isEnabled = shouldEnableNext()
-    }
-    func setTextFields(field:UITextField!){
-        //field.layer.borderWidth = 1
-        field.layer.borderColor = #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1)
-        field.layer.cornerRadius = 15
-        field.clipsToBounds = true
-        field.delegate = self
     }
     func setupPgViews(view:UIView!){
         view.layer.cornerRadius = 20
     }
     func setPage(currPg: Float){
-       if(currPg == 3.0){
+        if(currPg == 3.0){
             pg3View.isHidden = false
             pg2View.isHidden = true
             pg1View.isHidden = true
@@ -103,20 +96,20 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             pg3View.isHidden = true
             pg2View.isHidden = false
             pg1View.isHidden = true
- 
+            
         }else if(currPg == 1.0){
             pg3View.isHidden = true
             pg2View.isHidden = true
             pg1View.isHidden = false
-        
+            
             email.text = ""
             pw.text = ""
             pwConfirm.text = ""
-        
+            
             checkL.image = UIImage.init(named: "flag.png")
             checkU.image = UIImage.init(named: "flag.png")
             checkM.image = UIImage.init(named: "flag.png")
-
+            
             timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(SignUpVC.enableNextBtn), userInfo: nil, repeats: true)
         }else{
             timer.invalidate()
@@ -168,7 +161,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     func shouldEnableNext() -> Bool {
         if currentPg == 1.0 {
             if let emailField = email.text {
-                if emailField.isEmpty || emailField.contains("@") == false {
+                if emailField.isEmpty || AccountValidation.isValidEmail(email: emailField) == false {
                     return false
                 }
             } else {

@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="205" width="375" height="257"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An email has been sent with instructions to confirm your account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf9-VC-OcV">
-                                        <rect key="frame" x="33" y="73" width="309" height="80"/>
+                                        <rect key="frame" x="33" y="72" width="309" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="DvI-ne-S3W"/>
                                         </constraints>
@@ -37,13 +37,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioa-kF-q1E">
-                                        <rect key="frame" x="125" y="22" width="125" height="21"/>
+                                        <rect key="frame" x="125" y="22" width="125" height="20"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7T-oO-Pdg">
-                                        <rect key="frame" x="118" y="185" width="138" height="33"/>
+                                        <rect key="frame" x="118" y="184" width="138" height="32"/>
                                         <color key="backgroundColor" red="0.24216049910000001" green="0.35818958280000002" blue="0.4784591198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="Resend Email">
@@ -83,19 +83,19 @@
                                         <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Must be at least 8 characters long" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0p-ia-Obr">
-                                        <rect key="frame" x="13" y="191" width="223" height="16"/>
+                                        <rect key="frame" x="13" y="191" width="198" height="15.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
                                         <color key="textColor" red="0.96856360919999995" green="1" blue="0.97804454870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Must contain at least 1 upper case letter" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIH-eA-q8U">
-                                        <rect key="frame" x="13" y="212" width="261.5" height="16"/>
+                                        <rect key="frame" x="13" y="212" width="234" height="15.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
                                         <color key="textColor" red="0.96856360919999995" green="1" blue="0.97804454870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passwords must match" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqq-Xf-0zH">
-                                        <rect key="frame" x="13" y="233" width="154.5" height="16"/>
+                                        <rect key="frame" x="13" y="232.5" width="137" height="15.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
                                         <color key="textColor" red="0.96856360919999995" green="1" blue="0.97804454870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -108,21 +108,21 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked.png" translatesAutoresizingMaskIntoConstraints="NO" id="yMZ-Ch-rkJ">
-                                        <rect key="frame" x="244" y="192" width="20" height="20"/>
+                                        <rect key="frame" x="219" y="192" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="1Lb-kE-l2l"/>
                                             <constraint firstAttribute="height" constant="20" id="Ztr-w9-zI8"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked.png" translatesAutoresizingMaskIntoConstraints="NO" id="S9r-qx-0Cq">
-                                        <rect key="frame" x="282.5" y="211" width="20" height="20"/>
+                                        <rect key="frame" x="255" y="211" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="lDP-Po-0o7"/>
                                             <constraint firstAttribute="height" constant="20" id="mrJ-9g-FWh"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fyt-t9-yir">
-                                        <rect key="frame" x="175.5" y="232" width="20" height="20"/>
+                                        <rect key="frame" x="158" y="231.5" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="ZL3-De-ibV"/>
                                             <constraint firstAttribute="height" constant="20" id="lCY-h6-Bxs"/>
@@ -215,7 +215,7 @@
                                 <color key="progressTintColor" red="0.24216049910000001" green="0.35818958280000002" blue="0.4784591198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4R-ZV-nXA">
-                                <rect key="frame" x="103" y="529" width="168" height="33"/>
+                                <rect key="frame" x="103" y="530" width="168" height="32"/>
                                 <color key="backgroundColor" red="0.24216049910000001" green="0.35818958280000002" blue="0.4784591198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="Next">
@@ -389,7 +389,7 @@
                                         <fragment content="Privacy Policy">
                                             <attributes>
                                                 <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="12" name="Montserrat-Medium"/>
+                                                <font key="NSFont" metaFont="cellTitle"/>
                                                 <integer key="NSUnderline" value="1"/>
                                             </attributes>
                                         </fragment>
@@ -442,7 +442,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checked.png" width="512" height="512"/>
+        <image name="checked.png" width="59" height="61"/>
         <image name="key.png" width="512" height="512"/>
         <image name="return.png" width="512" height="512"/>
         <namedColor name="Background">
