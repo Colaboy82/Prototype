@@ -10,6 +10,7 @@
 //CREDIT AUTHOR FOR ICONS
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class SignInVC: UIViewController, UITextFieldDelegate {
         
@@ -37,12 +38,24 @@ class SignInVC: UIViewController, UITextFieldDelegate {
         let nextVC = sb.instantiateViewController(withIdentifier: "SignUpVC")
         self.present(nextVC, animated:true, completion:nil)
         
-        //self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)//removes previous view controller
-        
     }
     
     @IBAction func login(_ sender: Any){
-        
+        Auth.auth().signIn(withEmail: email.text!, password: password.text!){(user, error) in
+            if error == nil {
+                let sb = UIStoryboard(name: "Main", bundle:nil)
+                
+                let nextVC = sb.instantiateViewController(withIdentifier: "MainVC")
+                self.present(nextVC, animated:true, completion:nil)
+                
+            }else{
+                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                
+                let nextVC = sb.instantiateViewController(withIdentifier: "Error")
+                Constants.ErrorType = .LoginFail
+                self.present(nextVC, animated:true, completion:nil)
+            }
+        }
     }
     @IBAction func forgotPW(_ sender: Any){
         let sb = UIStoryboard(name: "PWReset", bundle:nil)

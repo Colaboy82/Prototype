@@ -20,7 +20,7 @@ class SuccessPopUp: UIViewController {
      - null: Not an alert type
      */
     enum SuccessType {
-        case RPW, Submit, REmail, null
+        case RPW, Submit, REmail, AccountMade, null
     }
     
     @IBOutlet weak var dismissPopUpB: UIButtonX!
@@ -36,6 +36,7 @@ class SuccessPopUp: UIViewController {
         
         popUpView.layer.cornerRadius = 20
         popUpView.layer.masksToBounds = true
+        image.image = #imageLiteral(resourceName: "SuccessIcon")
         
         SetFuncs.setLblSettings(lbl: msgText)
         
@@ -48,6 +49,8 @@ class SuccessPopUp: UIViewController {
             msgText.text = "Email Confirmation has been Resent"
         }else if(type == .Submit){
             msgText.text = "Submitted Successfully"
+        }else if(type == .AccountMade){
+            msgText.text = "Lorem Ipsum Stuff"
         }else{
             msgText.text = "Error with App. Please Reset or Contact Employee"
         }

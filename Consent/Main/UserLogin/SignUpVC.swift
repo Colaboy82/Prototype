@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class SignUpVC: UIViewController, UITextFieldDelegate {
     
@@ -29,6 +30,9 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     weak var pg2: Pg2View!
     weak var pg3: Pg3View!
     weak var pg4: Pg4View!
+    
+    var email = " "
+    var pw = " "
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,20 +91,22 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             pg2View.isHidden = true
             pg1View.isHidden = true
             backB.isHidden = true
-            
+            createAccount()
+
             timer.invalidate()
         }else if(currPg == 3.0){
             pg4View.isHidden = true
             pg3View.isHidden = false
             pg2View.isHidden = true
             pg1View.isHidden = true
-
         }else if(currPg == 2.0){
             pg4View.isHidden = true
             pg3View.isHidden = true
             pg2View.isHidden = false
             pg1View.isHidden = true
             
+            email = pg1.email.text!
+            pw = pg1.pw.text!
         }else if(currPg == 1.0){
             pg4View.isHidden = true
             pg3View.isHidden = true
@@ -111,9 +117,9 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             pg1.pw.text = ""
             pg1.pwConfirm.text = ""
             
-            pg1.checkL.image = UIImage.init(named: "flag.png")
-            pg1.checkU.image = UIImage.init(named: "flag.png")
-            pg1.checkM.image = UIImage.init(named: "flag.png")
+            pg1.checkL.image = #imageLiteral(resourceName: "ErrorIcon")
+            pg1.checkU.image = #imageLiteral(resourceName: "ErrorIcon")
+            pg1.checkM.image = #imageLiteral(resourceName: "ErrorIcon")
             
             timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(SignUpVC.enableNextBtn), userInfo: nil, repeats: true)
         }else{
@@ -136,28 +142,28 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         let capitalresult = capTest.evaluate(with: PW)
         
         if(PW.count > 8){
-            pg1.checkL.image = #imageLiteral(resourceName: "SuccessIcon")//UIImage.init(named: "checked.png")
+            pg1.checkL.image = #imageLiteral(resourceName: "SuccessIcon")
         }
         if(capitalresult){
-            pg1.checkU.image = #imageLiteral(resourceName: "SuccessIcon")//UIImage.init(named: "checked.png")
+            pg1.checkU.image = #imageLiteral(resourceName: "SuccessIcon")
         }
         if(PW.elementsEqual(PWC) && !(PW.isEmpty)){
-            pg1.checkM.image = #imageLiteral(resourceName: "SuccessIcon")//UIImage.init(named: "checked.png")
+            pg1.checkM.image = #imageLiteral(resourceName: "SuccessIcon")
         }else{
-            pg1.checkM.image = #imageLiteral(resourceName: "ErrorIcon")//UIImage.init(named: "flag.png")
+            pg1.checkM.image = #imageLiteral(resourceName: "ErrorIcon")
         }
         
         if(PW.count <= 8){
-            pg1.checkL.image = #imageLiteral(resourceName: "ErrorIcon")//UIImage.init(named: "flag.png")
+            pg1.checkL.image = #imageLiteral(resourceName: "ErrorIcon")
             return false
         }else if(!capitalresult){
-            pg1.checkU.image = #imageLiteral(resourceName: "ErrorIcon")//UIImage.init(named: "flag.png")
+            pg1.checkU.image = #imageLiteral(resourceName: "ErrorIcon")
             return false
         }else if(PW.isEmpty){
-            pg1.checkM.image = #imageLiteral(resourceName: "ErrorIcon")//UIImage.init(named: "flag.png")
+            pg1.checkM.image = #imageLiteral(resourceName: "ErrorIcon")
             return false
         }else if(!PW.elementsEqual(PWC)){
-            pg1.checkM.image = #imageLiteral(resourceName: "ErrorIcon")//UIImage.init(named: "flag.png")
+            pg1.checkM.image = #imageLiteral(resourceName: "ErrorIcon")
             return false
         }else{
             return true
@@ -183,8 +189,31 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
                 return false
             }
             return true
+        } else if currentPg == 4.0 {
+            if Auth.auth().currentUser == nil {
+                return false
+            }
+            return true
         }
         return false
+    }
+    func createAccount(){
+        Auth.auth().createUser(withEmail: email, password: pw) { (user, error) in
+            if error == nil {
+                print("You have successfully signed up")
+                
+                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                let nextVC = sb.instantiateViewController(withIdentifier: "Success")
+                Constants.SuccessType = .AccountMade
+                self.present(nextVC, animated: true, completion: nil)
+                
+            } else {
+                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                let nextVC = sb.instantiateViewController(withIdentifier: "Error")
+                Constants.ErrorType = .AccountMadeFail
+                self.present(nextVC, animated: true, completion: nil)
+            }
+        }
     }
     
     @IBAction func next(_ sender: Any){
@@ -217,8 +246,6 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         
         let nextVC = sb.instantiateViewController(withIdentifier: "Success")
         Constants.SuccessType = .REmail
-        //successType.SuccessType = SuccessPopUp.SuccessType.REmail
-        //SuccessPopUp.init().setSuccessType(type: SuccessPopUp.SuccessType.RPW)
         self.present(nextVC, animated:true, completion:nil)
     }
 }
@@ -256,21 +283,21 @@ class Pg3View: UIViewX{
     
     func setGenderBtnPic(){
         if(otherB.isSelected == true){
-            SetFuncs.setButtonImg(btn: maleB, image: UIImage(named: "UncheckedBox.png")!)
-            SetFuncs.setButtonImg(btn: femaleB, image: UIImage(named: "UncheckedBox.png")!)
-            SetFuncs.setButtonImg(btn: otherB, image: UIImage(named: "CheckedBox.png")!)
+            SetFuncs.setButtonImg(btn: maleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
+            SetFuncs.setButtonImg(btn: femaleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
+            SetFuncs.setButtonImg(btn: otherB, image: #imageLiteral(resourceName: "SelectedIcon"))
         }else if(maleB.isSelected == true){
-            SetFuncs.setButtonImg(btn: maleB, image: UIImage(named: "CheckedBox.png")!)
-            SetFuncs.setButtonImg(btn: femaleB, image: UIImage(named: "UncheckedBox.png")!)
-            SetFuncs.setButtonImg(btn: otherB, image: UIImage(named: "UncheckedBox.png")!)
+            SetFuncs.setButtonImg(btn: maleB, image: #imageLiteral(resourceName: "SelectedIcon"))
+            SetFuncs.setButtonImg(btn: femaleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
+            SetFuncs.setButtonImg(btn: otherB, image: #imageLiteral(resourceName: "UnselectedIcon"))
         }else if(femaleB.isSelected == true){
-            SetFuncs.setButtonImg(btn: maleB, image: UIImage(named: "UncheckedBox.png")!)
-            SetFuncs.setButtonImg(btn: femaleB, image: UIImage(named: "CheckedBox.png")!)
-            SetFuncs.setButtonImg(btn: otherB, image: UIImage(named: "UncheckedBox.png")!)
+            SetFuncs.setButtonImg(btn: maleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
+            SetFuncs.setButtonImg(btn: femaleB, image: #imageLiteral(resourceName: "SelectedIcon"))
+            SetFuncs.setButtonImg(btn: otherB, image: #imageLiteral(resourceName: "UnselectedIcon"))
         }else{
-            SetFuncs.setButtonImg(btn: maleB, image: UIImage(named: "UncheckedBox.png")!)
-            SetFuncs.setButtonImg(btn: femaleB, image: UIImage(named: "UncheckedBox.png")!)
-            SetFuncs.setButtonImg(btn: otherB, image: UIImage(named: "UncheckedBox.png")!)
+            SetFuncs.setButtonImg(btn: maleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
+            SetFuncs.setButtonImg(btn: femaleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
+            SetFuncs.setButtonImg(btn: otherB, image: #imageLiteral(resourceName: "UnselectedIcon"))
         }
     }
     func isGenderSelected() -> Bool{

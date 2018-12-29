@@ -89,6 +89,7 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.41185247899999999" green="0.3582993746" blue="0.4745283723" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" name="Tint"/>
                                 <constraints>
                                     <constraint firstItem="K1Y-LU-SXH" firstAttribute="centerX" secondItem="VP6-tE-WLr" secondAttribute="centerX" id="4OR-Fz-YgL"/>
                                     <constraint firstAttribute="trailing" secondItem="nZD-qf-mGH" secondAttribute="trailing" constant="13" id="7uG-nH-SKE"/>
@@ -158,6 +159,7 @@
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" name="Secondary Background"/>
+                                <color key="tintColor" name="Tint"/>
                                 <constraints>
                                     <constraint firstItem="Sw0-mz-UYB" firstAttribute="leading" secondItem="DPA-8X-G6B" secondAttribute="leading" constant="13" id="1Ae-jB-oN4"/>
                                     <constraint firstAttribute="trailing" secondItem="m2T-CN-zki" secondAttribute="trailing" constant="13" id="2C1-xQ-iBi"/>
@@ -248,6 +250,7 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" name="Secondary Background"/>
+                                <color key="tintColor" name="Tint"/>
                                 <constraints>
                                     <constraint firstItem="O4Z-WJ-4ZN" firstAttribute="leading" secondItem="aAI-2g-NSW" secondAttribute="trailing" constant="5" id="6eK-2g-ZHK"/>
                                     <constraint firstAttribute="trailing" secondItem="NjR-7e-VZA" secondAttribute="trailing" constant="8" id="7Oh-aY-fZT"/>
@@ -318,6 +321,7 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="Secondary Background"/>
+                                <color key="tintColor" name="Tint"/>
                                 <constraints>
                                     <constraint firstItem="N7T-oO-Pdg" firstAttribute="top" secondItem="yf9-VC-OcV" secondAttribute="bottom" constant="32" id="FTl-3s-X5X"/>
                                     <constraint firstItem="ioa-kF-q1E" firstAttribute="top" secondItem="J9J-KZ-i0P" secondAttribute="top" constant="22" id="IbQ-FW-3UR"/>
@@ -351,7 +355,7 @@
                                 <color key="progressTintColor" red="0.24216049910000001" green="0.35818958280000002" blue="0.4784591198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4R-ZV-nXA">
-                                <rect key="frame" x="103" y="529" width="168" height="33"/>
+                                <rect key="frame" x="103" y="534" width="168" height="33"/>
                                 <color key="backgroundColor" red="0.24216049910000001" green="0.35818958280000002" blue="0.4784591198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="Next">
@@ -367,9 +371,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0G-5a-NQ8">
-                                <rect key="frame" x="16" y="610" width="35" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0G-5a-NQ8">
+                                <rect key="frame" x="20" y="610" width="35" height="37"/>
                                 <state key="normal" title="Back" image="return.png"/>
                                 <connections>
                                     <action selector="back:" destination="i79-gJ-zEO" eventType="touchUpInside" id="kvB-PN-cKd"/>
@@ -377,11 +380,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
+                        <color key="tintColor" name="Tint"/>
                         <constraints>
                             <constraint firstItem="VP6-tE-WLr" firstAttribute="trailing" secondItem="HOf-tz-9fg" secondAttribute="trailing" id="1In-V4-pcd"/>
                             <constraint firstItem="qIY-t1-23L" firstAttribute="centerY" secondItem="hvH-qW-Oml" secondAttribute="centerY" id="3JP-ag-z5B"/>
+                            <constraint firstItem="HOf-tz-9fg" firstAttribute="bottom" secondItem="h0G-5a-NQ8" secondAttribute="bottom" constant="20" id="4uD-eA-5xm"/>
+                            <constraint firstItem="HOf-tz-9fg" firstAttribute="trailing" secondItem="h0G-5a-NQ8" secondAttribute="trailing" constant="320" id="56A-rF-bWk"/>
                             <constraint firstItem="qIY-t1-23L" firstAttribute="trailing" secondItem="HOf-tz-9fg" secondAttribute="trailing" id="5Ua-mp-gaN"/>
                             <constraint firstItem="VP6-tE-WLr" firstAttribute="centerX" secondItem="hvH-qW-Oml" secondAttribute="centerX" id="68P-ag-v4b"/>
+                            <constraint firstItem="h0G-5a-NQ8" firstAttribute="leading" secondItem="HOf-tz-9fg" secondAttribute="leading" constant="20" id="8nj-io-XWk"/>
                             <constraint firstItem="DPA-8X-G6B" firstAttribute="centerY" secondItem="hvH-qW-Oml" secondAttribute="centerY" id="Da6-UT-5EU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cl1-f6-ygM" secondAttribute="trailing" constant="85" id="Hhv-Aa-Iqb"/>
                             <constraint firstItem="qIY-t1-23L" firstAttribute="leading" secondItem="HOf-tz-9fg" secondAttribute="leading" id="K9F-89-cEG"/>
@@ -389,12 +396,13 @@
                             <constraint firstItem="VP6-tE-WLr" firstAttribute="centerY" secondItem="hvH-qW-Oml" secondAttribute="centerY" id="NHG-yO-e6R"/>
                             <constraint firstItem="VP6-tE-WLr" firstAttribute="top" secondItem="cl1-f6-ygM" secondAttribute="bottom" constant="32" id="NY7-cH-jLp"/>
                             <constraint firstItem="HOf-tz-9fg" firstAttribute="bottom" secondItem="VP6-tE-WLr" secondAttribute="bottom" constant="205" id="Q8G-8a-Qgb"/>
+                            <constraint firstItem="h0G-5a-NQ8" firstAttribute="top" secondItem="VP6-tE-WLr" secondAttribute="bottom" constant="148" id="S46-as-JTB"/>
                             <constraint firstItem="fxc-Gx-OBF" firstAttribute="top" secondItem="HOf-tz-9fg" secondAttribute="top" constant="115" id="Trn-N9-uyi"/>
                             <constraint firstItem="cl1-f6-ygM" firstAttribute="top" secondItem="fxc-Gx-OBF" secondAttribute="bottom" constant="12" id="USa-Lm-Cwe"/>
                             <constraint firstItem="VP6-tE-WLr" firstAttribute="leading" secondItem="HOf-tz-9fg" secondAttribute="leading" id="WKg-dW-cBU"/>
                             <constraint firstItem="281-Ub-sV0" firstAttribute="centerX" secondItem="hvH-qW-Oml" secondAttribute="centerX" id="XTK-s8-cLJ"/>
                             <constraint firstItem="HOf-tz-9fg" firstAttribute="trailing" secondItem="fxc-Gx-OBF" secondAttribute="trailing" constant="158" id="ZDi-r8-fVM"/>
-                            <constraint firstItem="HOf-tz-9fg" firstAttribute="bottom" secondItem="P4R-ZV-nXA" secondAttribute="bottom" constant="105" id="ZyQ-Ty-rV4"/>
+                            <constraint firstItem="HOf-tz-9fg" firstAttribute="bottom" secondItem="P4R-ZV-nXA" secondAttribute="bottom" constant="100" id="ZyQ-Ty-rV4"/>
                             <constraint firstItem="DPA-8X-G6B" firstAttribute="top" secondItem="cl1-f6-ygM" secondAttribute="bottom" constant="32" id="bv3-xI-U4b"/>
                             <constraint firstItem="HOf-tz-9fg" firstAttribute="trailing" secondItem="281-Ub-sV0" secondAttribute="trailing" id="bxq-Zv-E4n"/>
                             <constraint firstItem="281-Ub-sV0" firstAttribute="leading" secondItem="HOf-tz-9fg" secondAttribute="leading" id="eWO-hh-24s"/>
@@ -455,6 +463,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N2o-yG-jcL" customClass="UITextFieldX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="8" y="20" width="327" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="Tint"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
@@ -462,6 +471,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XQh-bL-mAv" customClass="UITextFieldX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="8" y="75" width="327" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="Tint"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
@@ -549,6 +559,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
+                        <color key="tintColor" name="Tint"/>
                         <constraints>
                             <constraint firstItem="mPB-ra-aUY" firstAttribute="trailing" secondItem="qeF-uD-dBC" secondAttribute="trailing" constant="122" id="0uz-Io-z4d"/>
                             <constraint firstItem="qeF-uD-dBC" firstAttribute="top" secondItem="xYx-c1-KVz" secondAttribute="bottom" constant="37" id="7zr-cf-S10"/>
@@ -587,6 +598,9 @@
         </namedColor>
         <namedColor name="Secondary Background">
             <color red="0.42352941176470588" green="0.35686274509803922" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Tint">
+            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

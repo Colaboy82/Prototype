@@ -29,6 +29,7 @@ class SetFuncs{
         field.clipsToBounds = true
         field.delegate = self as? UITextFieldDelegate
         if(img != nil){
+            field.leftPadding = 5
             field.leftImage = img
         }
     }

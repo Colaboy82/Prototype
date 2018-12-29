@@ -11,11 +11,55 @@ import Firebase
 
 class ErrorPopUp: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    /**
+     Type of Success Pop Up.
+     
+     - LoginFail: Reset Password
+     - SubmitFail: submitted succesfully
+     - REmailFail: resent Email
+     - AccountMadeFail: error in creating account
+     - RPWFail: error in resetting password
+     - null: Not an alert type
+     */
+    enum ErrorType {
+        case LoginFail, SubmitFail, REmailFail, AccountMadeFail, RPWFail, null
     }
     
+    @IBOutlet weak var dismissPopUpB: UIButtonX!
+    @IBOutlet weak var image: UIImageViewX!
+    @IBOutlet weak var msgText: UILabelX!
+    @IBOutlet weak var popUpView: UIViewX!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        SetFuncs.setButton(btn: dismissPopUpB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
+        image.image = #imageLiteral(resourceName: "ErrorIcon")
+        
+        popUpView.layer.cornerRadius = 20
+        popUpView.layer.masksToBounds = true
+        
+        SetFuncs.setLblSettings(lbl: msgText)
+        
+        setMsgText(type: Constants.ErrorType)
+    }
+    func setMsgText(type: ErrorType){
+        if(type == .LoginFail){
+            msgText.text = "Error with logging in. Please check all fields are correct"
+        }else if(type == .SubmitFail){
+            msgText.text = "Error with submission. Please check network connection or that you have filled in all required fields"
+        }else if(type == .REmailFail){
+            msgText.text = "Error when resending the confirmation email. Please Refresh and Try Again"
+        }else if(type == .AccountMadeFail){
+            msgText.text = "Error with Creating Account. Please Refresh and Try Again"
+        }else if(type == .RPWFail){
+            msgText.text = "Error with Resetting Password. Please Refresh and Try Again"
+        }else{
+            msgText.text = "Error with App. Please Reset or Contact Employee"
+        }
+    }
+    @IBAction func closePopUp(_ sender: Any){
+        dismiss(animated: true, completion: nil)
+    }
 
 }

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class PWResetVC: UIViewController, UITextFieldDelegate {
     
@@ -18,7 +20,7 @@ class PWResetVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SetFuncs.setTextFields(field: email, img: nil)
+        SetFuncs.setTextFields(field: email, img: #imageLiteral(resourceName: "EmailIcon"))
         SetFuncs.setButton(btn: resetB, color:#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
         
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self,
@@ -44,28 +46,41 @@ class PWResetVC: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func resetPW(_ sender: Any){
-        timer.invalidate()
-        let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
-        
-        let nextVC = sb.instantiateViewController(withIdentifier: "Success")
-        Constants.SuccessType = .RPW
-        //successType.SuccessType = SuccessPopUp.SuccessType.RPW
-        //SuccessPopUp.init().setSuccessType(type: SuccessPopUp.SuccessType.RPW)
-        self.present(nextVC, animated:true, completion:nil)
+        Auth.auth().sendPasswordReset(withEmail: email.text!, completion:{ (error) in
+            if(error != nil){
+                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                
+                let nextVC = sb.instantiateViewController(withIdentifier: "Error")
+                Constants.ErrorType = .RPWFail
+                self.present(nextVC, animated:true, completion:nil)
+                print((error?.localizedDescription)!)
+            }else{
+                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                
+                let nextVC = sb.instantiateViewController(withIdentifier: "Success")
+                Constants.SuccessType = .RPW
+                self.present(nextVC, animated:true, completion:nil)
+                self.email.text = ""
+            }
+        })
     }
     
     @IBAction func back(_ sender: Any){
-        //If not logged in
-        let sb = UIStoryboard(name: "SignUp", bundle:nil)
-        
-        let nextVC = sb.instantiateViewController(withIdentifier: "LoginVC")
-        self.present(nextVC, animated:true, completion:nil)
-        
-        /*
-        *
-         If already logged in
-        *
-        */
+        timer.invalidate()
+        if Auth.auth().currentUser != nil{//         If already logged in
+            do{
+                
+                
+                
+            }catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        }else{//not logged in
+            let sb = UIStoryboard(name: "SignUp", bundle:nil)
+            
+            let nextVC = sb.instantiateViewController(withIdentifier: "LoginVC")
+            self.present(nextVC, animated:true, completion:nil)
+        }
     }
 
 }
