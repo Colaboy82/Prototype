@@ -19,8 +19,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var signUpB: UIButtonX!
     
     override func viewDidLoad() {
-        SetFuncs.setTextFields(field: email)
-        SetFuncs.setTextFields(field: password)
+        SetFuncs.setTextFields(field: email, img: #imageLiteral(resourceName: "EmailIcon"))
+        SetFuncs.setTextFields(field: password, img: #imageLiteral(resourceName: "PasswordIcon"))
         
         SetFuncs.setButton(btn:loginB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
         
@@ -46,7 +46,6 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     }
     @IBAction func forgotPW(_ sender: Any){
         let sb = UIStoryboard(name: "PWReset", bundle:nil)
-        
         let nextVC = sb.instantiateViewController(withIdentifier: "PWResetVC")
         self.present(nextVC, animated:true, completion:nil)
     }

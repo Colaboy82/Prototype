@@ -18,7 +18,7 @@ class PWResetVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SetFuncs.setTextFields(field: email)
+        SetFuncs.setTextFields(field: email, img: nil)
         SetFuncs.setButton(btn: resetB, color:#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
         
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self,
@@ -48,7 +48,8 @@ class PWResetVC: UIViewController, UITextFieldDelegate {
         let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
         
         let nextVC = sb.instantiateViewController(withIdentifier: "Success")
-        successType.SuccessType = SuccessPopUp.SuccessType.RPW
+        Constants.SuccessType = .RPW
+        //successType.SuccessType = SuccessPopUp.SuccessType.RPW
         //SuccessPopUp.init().setSuccessType(type: SuccessPopUp.SuccessType.RPW)
         self.present(nextVC, animated:true, completion:nil)
     }

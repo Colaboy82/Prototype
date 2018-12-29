@@ -39,14 +39,14 @@ class SuccessPopUp: UIViewController {
         
         SetFuncs.setLblSettings(lbl: msgText)
         
-        setMsgText(type: successType.SuccessType)
+        setMsgText(type: Constants.SuccessType)
     }
     func setMsgText(type: SuccessType){
-        if(type == SuccessType.RPW){
+        if(type == .RPW){
             msgText.text = "Email Sent Successfully. Check Email to Continue Resetting Password"
-        }else if(type == SuccessType.REmail){
+        }else if(type == .REmail){
             msgText.text = "Email Confirmation has been Resent"
-        }else if(type == SuccessType.Submit){
+        }else if(type == .Submit){
             msgText.text = "Submitted Successfully"
         }else{
             msgText.text = "Error with App. Please Reset or Contact Employee"

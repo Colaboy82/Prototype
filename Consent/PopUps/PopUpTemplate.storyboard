@@ -50,7 +50,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked.png" translatesAutoresizingMaskIntoConstraints="NO" id="eEd-zA-vFA">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuccessIcon" translatesAutoresizingMaskIntoConstraints="NO" id="eEd-zA-vFA" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="70" y="8" width="125" height="86"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="86" id="I4o-Fg-sXM"/>
@@ -125,7 +125,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag.png" translatesAutoresizingMaskIntoConstraints="NO" id="DKp-cM-cDb">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ErrorIcon" translatesAutoresizingMaskIntoConstraints="NO" id="DKp-cM-cDb">
                                         <rect key="frame" x="70" y="8" width="125" height="86"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="86" id="Hdt-3i-RCL"/>
@@ -243,8 +243,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checked.png" width="26" height="26"/>
-        <image name="flag.png" width="512" height="512"/>
+        <image name="ErrorIcon" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="SuccessIcon" width="19.5" height="19.5"/>
         <image name="reload.png" width="512" height="512"/>
         <namedColor name="Button">
             <color red="0.20784313725490197" green="0.36470588235294116" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

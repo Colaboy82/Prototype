@@ -66,7 +66,7 @@
 		ECA08CD921D470C200565DC5 /* PWResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CD721D470C200565DC5 /* PWResetVC.swift */; };
 		ECA08CDF21D48D4C00565DC5 /* PopUpTemplate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA08CDE21D48D4C00565DC5 /* PopUpTemplate.storyboard */; };
 		ECA08CE121D48FDF00565DC5 /* SuccessPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CE021D48FDF00565DC5 /* SuccessPopUp.swift */; };
-		ECA08CE821D4A8B800565DC5 /* UniversalVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CE721D4A8B800565DC5 /* UniversalVar.swift */; };
+		ECA08CE821D4A8B800565DC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CE721D4A8B800565DC5 /* Constants.swift */; };
 		ECA08CEA21D4AB3600565DC5 /* AccountValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CE921D4AB3600565DC5 /* AccountValidation.swift */; };
 		ECA08CEC21D525B600565DC5 /* ErrorPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CEB21D525B600565DC5 /* ErrorPopUp.swift */; };
 		ECA08CEE21D525D100565DC5 /* LoadingPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CED21D525D100565DC5 /* LoadingPopUp.swift */; };
@@ -158,7 +158,7 @@
 		ECA08CD721D470C200565DC5 /* PWResetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWResetVC.swift; sourceTree = "<group>"; };
 		ECA08CDE21D48D4C00565DC5 /* PopUpTemplate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUpTemplate.storyboard; sourceTree = "<group>"; };
 		ECA08CE021D48FDF00565DC5 /* SuccessPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPopUp.swift; sourceTree = "<group>"; };
-		ECA08CE721D4A8B800565DC5 /* UniversalVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalVar.swift; sourceTree = "<group>"; };
+		ECA08CE721D4A8B800565DC5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ECA08CE921D4AB3600565DC5 /* AccountValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountValidation.swift; sourceTree = "<group>"; };
 		ECA08CEB21D525B600565DC5 /* ErrorPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPopUp.swift; sourceTree = "<group>"; };
 		ECA08CED21D525D100565DC5 /* LoadingPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPopUp.swift; sourceTree = "<group>"; };
@@ -274,12 +274,11 @@
 			isa = PBXGroup;
 			children = (
 				3DF76579216BD76100E78EE0 /* AppDelegate.swift */,
+				ECA08CE721D4A8B800565DC5 /* Constants.swift */,
 				EC27E46D21D725F4005B5A78 /* DesignableX */,
-				3DF765AE216BD93B00E78EE0 /* Main */,
 				ECA08CDD21D47A1B00565DC5 /* PopUps */,
 				ECA08CD521D470AA00565DC5 /* Helper Functions */,
-				3DF765A7216BD7E200E78EE0 /* UserLogin */,
-				ECA08CDA21D470C800565DC5 /* PwReset */,
+				3DF765AE216BD93B00E78EE0 /* Main */,
 				3DCA03E221B087C90063B38E /* Icons */,
 				3DF76580216BD76200E78EE0 /* Assets.xcassets */,
 				3DF76582216BD76200E78EE0 /* LaunchScreen.storyboard */,
@@ -323,6 +322,8 @@
 			children = (
 				3DF7657B216BD76100E78EE0 /* ViewController.swift */,
 				3DF7657D216BD76100E78EE0 /* Main.storyboard */,
+				3DF765A7216BD7E200E78EE0 /* UserLogin */,
+				ECA08CDA21D470C800565DC5 /* PwReset */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -361,7 +362,6 @@
 			isa = PBXGroup;
 			children = (
 				ECA08CD221D470A000565DC5 /* Extensions.swift */,
-				ECA08CE721D4A8B800565DC5 /* UniversalVar.swift */,
 				ECA08CE921D4AB3600565DC5 /* AccountValidation.swift */,
 				EC27E48221D728E0005B5A78 /* SetFuncs.swift */,
 			);
@@ -636,7 +636,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA08CD921D470C200565DC5 /* PWResetVC.swift in Sources */,
-				ECA08CE821D4A8B800565DC5 /* UniversalVar.swift in Sources */,
+				ECA08CE821D4A8B800565DC5 /* Constants.swift in Sources */,
 				EC27E47C21D725FF005B5A78 /* UIVisualEffectViewX.swift in Sources */,
 				3DF7657C216BD76100E78EE0 /* ViewController.swift in Sources */,
 				ECA08CE121D48FDF00565DC5 /* SuccessPopUp.swift in Sources */,

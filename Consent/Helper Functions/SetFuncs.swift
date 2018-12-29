@@ -22,12 +22,15 @@ class SetFuncs{
         btn.setImage(image, for: .normal)
     }
 
-    public static func setTextFields(field: UITextFieldX){
+    public static func setTextFields(field: UITextFieldX, img: UIImage?){
         //field.layer.borderWidth = 1
         field.layer.borderColor = #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1)
         field.layer.cornerRadius = 15
         field.clipsToBounds = true
         field.delegate = self as? UITextFieldDelegate
+        if(img != nil){
+            field.leftImage = img
+        }
     }
 
     public static func setLblSettings(lbl: UILabelX){

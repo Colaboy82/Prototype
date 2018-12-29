@@ -43,19 +43,19 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         self.view.layer.borderColor = #colorLiteral(red: 0.7607843137, green: 0.7647058824, blue: 0.7725490196, alpha: 1)
         self.view.layer.borderWidth = 2
         
-        SetFuncs.setTextFields(field: pg1.email)
-        SetFuncs.setTextFields(field: pg1.pw)
-        SetFuncs.setTextFields(field: pg1.pwConfirm)
+        SetFuncs.setTextFields(field: pg1.email, img: #imageLiteral(resourceName: "EmailIcon"))
+        SetFuncs.setTextFields(field: pg1.pw, img: #imageLiteral(resourceName: "PasswordIcon"))
+        SetFuncs.setTextFields(field: pg1.pwConfirm, img: #imageLiteral(resourceName: "PasswordIcon"))
         
-        SetFuncs.setTextFields(field: pg2.firstName)
-        SetFuncs.setTextFields(field: pg2.middleName)
-        SetFuncs.setTextFields(field: pg2.lastName)
-        SetFuncs.setTextFields(field: pg2.phoneNum)
+        SetFuncs.setTextFields(field: pg2.firstName, img: #imageLiteral(resourceName: "NameIcon"))
+        SetFuncs.setTextFields(field: pg2.middleName, img: #imageLiteral(resourceName: "NameIcon"))
+        SetFuncs.setTextFields(field: pg2.lastName, img: #imageLiteral(resourceName: "NameIcon"))
+        SetFuncs.setTextFields(field: pg2.phoneNum, img: #imageLiteral(resourceName: "PhoneNumIcon"))
         
-        SetFuncs.setTextFields(field: pg3.otherText)
-        SetFuncs.setButtonImg(btn: pg3.maleB, image: UIImage(named: "UncheckedBox.png")!)
-        SetFuncs.setButtonImg(btn: pg3.femaleB, image: UIImage(named: "UncheckedBox.png")!)
-        SetFuncs.setButtonImg(btn: pg3.otherB, image: UIImage(named: "UncheckedBox.png")!)
+        SetFuncs.setTextFields(field: pg3.otherText, img: nil)
+        SetFuncs.setButtonImg(btn: pg3.maleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
+        SetFuncs.setButtonImg(btn: pg3.femaleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
+        SetFuncs.setButtonImg(btn: pg3.otherB, image: #imageLiteral(resourceName: "UnselectedIcon"))
         
         SetFuncs.setButton(btn: pg4.resendB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
         
@@ -136,28 +136,28 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         let capitalresult = capTest.evaluate(with: PW)
         
         if(PW.count > 8){
-            pg1.checkL.image = UIImage.init(named: "checked.png")
+            pg1.checkL.image = #imageLiteral(resourceName: "SuccessIcon")//UIImage.init(named: "checked.png")
         }
         if(capitalresult){
-            pg1.checkU.image = UIImage.init(named: "checked.png")
+            pg1.checkU.image = #imageLiteral(resourceName: "SuccessIcon")//UIImage.init(named: "checked.png")
         }
         if(PW.elementsEqual(PWC) && !(PW.isEmpty)){
-            pg1.checkM.image = UIImage.init(named: "checked.png")
+            pg1.checkM.image = #imageLiteral(resourceName: "SuccessIcon")//UIImage.init(named: "checked.png")
         }else{
-            pg1.checkM.image = UIImage.init(named: "flag.png")
+            pg1.checkM.image = #imageLiteral(resourceName: "ErrorIcon")//UIImage.init(named: "flag.png")
         }
         
         if(PW.count <= 8){
-            pg1.checkL.image = UIImage.init(named: "flag.png")
+            pg1.checkL.image = #imageLiteral(resourceName: "ErrorIcon")//UIImage.init(named: "flag.png")
             return false
         }else if(!capitalresult){
-            pg1.checkU.image = UIImage.init(named: "flag.png")
+            pg1.checkU.image = #imageLiteral(resourceName: "ErrorIcon")//UIImage.init(named: "flag.png")
             return false
         }else if(PW.isEmpty){
-            pg1.checkM.image = UIImage.init(named: "flag.png")
+            pg1.checkM.image = #imageLiteral(resourceName: "ErrorIcon")//UIImage.init(named: "flag.png")
             return false
         }else if(!PW.elementsEqual(PWC)){
-            pg1.checkM.image = UIImage.init(named: "flag.png")
+            pg1.checkM.image = #imageLiteral(resourceName: "ErrorIcon")//UIImage.init(named: "flag.png")
             return false
         }else{
             return true
@@ -216,7 +216,8 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
         
         let nextVC = sb.instantiateViewController(withIdentifier: "Success")
-        successType.SuccessType = SuccessPopUp.SuccessType.REmail
+        Constants.SuccessType = .REmail
+        //successType.SuccessType = SuccessPopUp.SuccessType.REmail
         //SuccessPopUp.init().setSuccessType(type: SuccessPopUp.SuccessType.RPW)
         self.present(nextVC, animated:true, completion:nil)
     }
