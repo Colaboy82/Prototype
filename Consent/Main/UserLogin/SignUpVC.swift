@@ -197,16 +197,31 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         }
         return false
     }
+    func sendEmailVerification(){
+        Auth.auth().currentUser?.sendEmailVerification { (error) in
+            if error == nil{
+                
+            }else{
+                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                let nextVC = sb.instantiateViewController(withIdentifier: "Error")
+                Constants.ErrorType = .REmailFail
+                self.present(nextVC, animated: true, completion: nil)
+            }
+        }
+    }
     func createAccount(){
         Auth.auth().createUser(withEmail: email, password: pw) { (user, error) in
             if error == nil {
                 print("You have successfully signed up")
                 
+                let u = UserModel.init(email: self.email, pw: self.pw, firstName: self.pg2.firstName.text!, midName: self.pg2.middleName.text!, lastName: self.pg2.lastName.text!, phoneNum: self.pg2.phoneNum.text!, gender: self.pg3.chosenGender(), user: Auth.auth().currentUser!)
+                u.setValues()
+                
                 let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
                 let nextVC = sb.instantiateViewController(withIdentifier: "Success")
                 Constants.SuccessType = .AccountMade
                 self.present(nextVC, animated: true, completion: nil)
-                
+                self.sendEmailVerification()
             } else {
                 let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
                 let nextVC = sb.instantiateViewController(withIdentifier: "Error")
@@ -280,6 +295,18 @@ class Pg3View: UIViewX{
     @IBOutlet weak var femaleLbl: UILabelX!
     @IBOutlet weak var otherLbl: UILabelX!
     @IBOutlet weak var genderLbl: UILabelX!
+    
+    func chosenGender() -> String{
+        var gender = ""
+        if(otherB.isSelected == true){
+            gender = otherText.text!
+        }else if(maleB.isSelected == true){
+            gender = "Male"
+        }else if(femaleB.isSelected == true){
+            gender = "Female"
+        }
+        return gender
+    }
     
     func setGenderBtnPic(){
         if(otherB.isSelected == true){

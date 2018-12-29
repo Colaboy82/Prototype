@@ -35,7 +35,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jql-S6-Iwk">
                                 <rect key="frame" x="16" y="231.5" width="343" height="204"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-Ts-sG5">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-Ts-sG5" customClass="UITextFieldX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="8" y="46" width="327" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="textColor"/>
@@ -77,6 +77,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
+                        <color key="tintColor" name="Tint"/>
                         <constraints>
                             <constraint firstItem="jql-S6-Iwk" firstAttribute="leading" secondItem="iY5-Yd-ks7" secondAttribute="leading" constant="16" id="80o-Eq-Pvo"/>
                             <constraint firstItem="jql-S6-Iwk" firstAttribute="centerY" secondItem="lmC-7C-P8y" secondAttribute="centerY" id="Ua7-vF-Fws"/>
@@ -98,6 +99,9 @@
     <resources>
         <image name="return.png" width="512" height="512"/>
         <namedColor name="Background">
+            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Tint">
             <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>

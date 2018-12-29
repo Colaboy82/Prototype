@@ -61,6 +61,7 @@
 		EC27E48021D725FF005B5A78 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27E47621D725FF005B5A78 /* UIViewX.swift */; };
 		EC27E48121D725FF005B5A78 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27E47721D725FF005B5A78 /* UIImageViewX.swift */; };
 		EC27E48321D728E0005B5A78 /* SetFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27E48221D728E0005B5A78 /* SetFuncs.swift */; };
+		EC27E48621D824A1005B5A78 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27E48521D824A1005B5A78 /* UserModel.swift */; };
 		ECA08CD421D470A100565DC5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CD221D470A000565DC5 /* Extensions.swift */; };
 		ECA08CD821D470C200565DC5 /* PWReset.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA08CD621D470BF00565DC5 /* PWReset.storyboard */; };
 		ECA08CD921D470C200565DC5 /* PWResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CD721D470C200565DC5 /* PWResetVC.swift */; };
@@ -153,6 +154,7 @@
 		EC27E47621D725FF005B5A78 /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
 		EC27E47721D725FF005B5A78 /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
 		EC27E48221D728E0005B5A78 /* SetFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetFuncs.swift; sourceTree = "<group>"; };
+		EC27E48521D824A1005B5A78 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		ECA08CD221D470A000565DC5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ECA08CD621D470BF00565DC5 /* PWReset.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PWReset.storyboard; sourceTree = "<group>"; };
 		ECA08CD721D470C200565DC5 /* PWResetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWResetVC.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 				3DF76579216BD76100E78EE0 /* AppDelegate.swift */,
 				ECA08CE721D4A8B800565DC5 /* Constants.swift */,
 				EC27E46D21D725F4005B5A78 /* DesignableX */,
+				EC27E48421D82491005B5A78 /* Models */,
 				ECA08CDD21D47A1B00565DC5 /* PopUps */,
 				ECA08CD521D470AA00565DC5 /* Helper Functions */,
 				3DF765AE216BD93B00E78EE0 /* Main */,
@@ -356,6 +359,14 @@
 				EC27E47221D725FE005B5A78 /* UIVisualEffectViewX.swift */,
 			);
 			path = DesignableX;
+			sourceTree = "<group>";
+		};
+		EC27E48421D82491005B5A78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC27E48521D824A1005B5A78 /* UserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		ECA08CD521D470AA00565DC5 /* Helper Functions */ = {
@@ -561,12 +572,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Consent/Pods-Consent-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,6 +656,7 @@
 				ECA08CEC21D525B600565DC5 /* ErrorPopUp.swift in Sources */,
 				ECA08CD421D470A100565DC5 /* Extensions.swift in Sources */,
 				3DF765A9216BD80900E78EE0 /* SignUpVC.swift in Sources */,
+				EC27E48621D824A1005B5A78 /* UserModel.swift in Sources */,
 				EC27E47E21D725FF005B5A78 /* UITextFieldX.swift in Sources */,
 				EC27E47F21D725FF005B5A78 /* UIViewControllerX.swift in Sources */,
 				ECA08CEA21D4AB3600565DC5 /* AccountValidation.swift in Sources */,
