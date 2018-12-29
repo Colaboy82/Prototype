@@ -23,23 +23,21 @@ class SuccessPopUp: UIViewController {
         case RPW, Submit, REmail, null
     }
     
-    @IBOutlet weak var dismissPopUpB: UIButton!
-    @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var msgText: UILabel!
-    @IBOutlet weak var popUpView: UIView!
+    @IBOutlet weak var dismissPopUpB: UIButtonX!
+    @IBOutlet weak var image: UIImageViewX!
+    @IBOutlet weak var msgText: UILabelX!
+    @IBOutlet weak var popUpView: UIViewX!
 
-    var button = Button.init()
-    var label = Label.init()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        button.setButton(btn: dismissPopUpB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
+        SetFuncs.setButton(btn: dismissPopUpB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
         
         popUpView.layer.cornerRadius = 20
         popUpView.layer.masksToBounds = true
         
-        label.setLblSettings(lbl: msgText)
+        SetFuncs.setLblSettings(lbl: msgText)
         
         setMsgText(type: successType.SuccessType)
     }
@@ -55,10 +53,6 @@ class SuccessPopUp: UIViewController {
         }
     }
     @IBAction func closePopUp(_ sender: Any){
-        //dismiss(animated: true, completion: nil)
-        let sb = UIStoryboard(name: "PWReset", bundle:nil)
-        
-        let nextVC = sb.instantiateViewController(withIdentifier: "PWResetVC")
-        self.present(nextVC, animated:true, completion:nil)
+        dismiss(animated: true, completion: nil)
     }
 }

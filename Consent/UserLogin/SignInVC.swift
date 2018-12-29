@@ -12,20 +12,17 @@ import UIKit
 import Firebase
 
 class SignInVC: UIViewController, UITextFieldDelegate {
-    
-    var textField = TextField.init()
-    var button = Button.init()
-    
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var loginB: UIButton!
-    @IBOutlet weak var signUpB: UIButton!
+        
+    @IBOutlet weak var email: UITextFieldX!
+    @IBOutlet weak var password: UITextFieldX!
+    @IBOutlet weak var loginB: UIButtonX!
+    @IBOutlet weak var signUpB: UIButtonX!
     
     override func viewDidLoad() {
-        textField.setTextFields(field: email)
-        textField.setTextFields(field: password)
+        SetFuncs.setTextFields(field: email)
+        SetFuncs.setTextFields(field: password)
         
-        button.setButton(btn: loginB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
+        SetFuncs.setButton(btn:loginB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
         
         //signUpB.layer.cornerRadius = 15
         signUpB.clipsToBounds = true

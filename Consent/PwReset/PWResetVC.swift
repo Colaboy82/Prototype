@@ -10,18 +10,16 @@ import UIKit
 
 class PWResetVC: UIViewController, UITextFieldDelegate {
     
-    var textField = TextField.init()
-    var button = Button.init()
     var timer: Timer!
 
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var resetB: UIButton!
+    @IBOutlet weak var email: UITextFieldX!
+    @IBOutlet weak var resetB: UIButtonX!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textField.setTextFields(field: email)
-        button.setButton(btn: resetB, color:#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
+        SetFuncs.setTextFields(field: email)
+        SetFuncs.setButton(btn: resetB, color:#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
         
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self,
                     selector: #selector(PWResetVC.enableBtn), userInfo: nil, repeats: true)
