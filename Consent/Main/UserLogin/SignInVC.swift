@@ -42,7 +42,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func login(_ sender: Any){
         Auth.auth().signIn(withEmail: email.text!, password: password.text!){(user, error) in
-            if error == nil {
+            let authUser = user?.user
+            if error == nil && (authUser?.isEmailVerified)!{
                 let sb = UIStoryboard(name: "Main", bundle:nil)
                 
                 let nextVC = sb.instantiateViewController(withIdentifier: "MainVC")

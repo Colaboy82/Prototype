@@ -10,8 +10,8 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class SignUpVC: UIViewController, UITextFieldDelegate {
-    
+class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
     @IBOutlet weak var nextB: UIButtonX!
     @IBOutlet weak var backB: UIButtonX!
     
@@ -19,20 +19,27 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var pg2View: UIViewX!
     @IBOutlet weak var pg3View: UIViewX!
     @IBOutlet weak var pg4View: UIViewX!
+    @IBOutlet weak var pg5View: UIViewX!
     
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var progressBarLbl: UILabelX!
     
     var currentPg = 1.0
+    var numOfPgs = 5
     var timer: Timer!
     
     weak var pg1: Pg1View!
     weak var pg2: Pg2View!
     weak var pg3: Pg3View!
     weak var pg4: Pg4View!
+    weak var pg5: Pg5View!
     
     var email = " "
     var pw = " "
+    
+    //Pg4 Variables (Camera)
+    var imagePicker: UIImagePickerController!
+    var defaultImageName = "id-card.png"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +48,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         pg2 = pg2View as? Pg2View
         pg3 = pg3View as? Pg3View
         pg4 = pg4View as? Pg4View
+        pg5 = pg5View as? Pg5View
         
         progressBar.setProgress(0, animated: true)
         
@@ -61,12 +69,12 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         SetFuncs.setButtonImg(btn: pg3.femaleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
         SetFuncs.setButtonImg(btn: pg3.otherB, image: #imageLiteral(resourceName: "UnselectedIcon"))
         
-        SetFuncs.setButton(btn: pg4.resendB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
+        SetFuncs.setButton(btn: pg5.resendB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
         
         setupPgViews(view: pg1View)
         setupPgViews(view: pg2View)
         setupPgViews(view: pg3View)
-        setupPgViews(view: pg4View)
+        setupPgViews(view: pg5View)
         
         backB.isHidden = false
         setPage(currPg: Float(currentPg))
@@ -85,21 +93,32 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         view.layer.cornerRadius = 20
     }
     func setPage(currPg: Float){
-        if(currPg == 4.0){
-            pg4View.isHidden = false
+        if(currPg == 5.0){
+            pg5View.isHidden = false
+            pg4View.isHidden = true
             pg3View.isHidden = true
             pg2View.isHidden = true
             pg1View.isHidden = true
             backB.isHidden = true
+            pg4.savePhoto()
             createAccount()
-
+            
             timer.invalidate()
+        }else if(currPg == 4.0){
+            pg5View.isHidden = true
+            pg4View.isHidden = false
+            pg3View.isHidden = true
+            pg2View.isHidden = true
+            pg1View.isHidden = true
+            
         }else if(currPg == 3.0){
+            pg5View.isHidden = true
             pg4View.isHidden = true
             pg3View.isHidden = false
             pg2View.isHidden = true
             pg1View.isHidden = true
         }else if(currPg == 2.0){
+            pg5View.isHidden = true
             pg4View.isHidden = true
             pg3View.isHidden = true
             pg2View.isHidden = false
@@ -108,6 +127,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             email = pg1.email.text!
             pw = pg1.pw.text!
         }else if(currPg == 1.0){
+            pg5View.isHidden = true
             pg4View.isHidden = true
             pg3View.isHidden = true
             pg2View.isHidden = true
@@ -131,9 +151,9 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             self.present(nextVC, animated:true, completion:nil)
         }
         
-        progressBar.progress = currPg/4
+        progressBar.progress = currPg/Float(numOfPgs)
         progressBar.setProgress(progressBar.progress, animated: true)
-        progressBarLbl.text = String(Int(currPg)) + " / 4"
+        progressBarLbl.text = String(Int(currPg)) + " / \(numOfPgs)"
     }
     
     func checkPW(PW: String, PWC: String) -> Bool{
@@ -190,6 +210,12 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             }
             return true
         } else if currentPg == 4.0 {
+            let img = UIImage(named: defaultImageName)
+            if pg4.profilePicPreview.image!.isEqual(img) {
+                return false
+            }
+            return true
+        }else if currentPg == 5.0 {
             if Auth.auth().currentUser == nil {
                 return false
             }
@@ -199,8 +225,14 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     }
     func sendEmailVerification(){
         Auth.auth().currentUser?.sendEmailVerification { (error) in
-            if error == nil{
+            if error == nil && self.currentPg == 4.0{
+                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
                 
+                let nextVC = sb.instantiateViewController(withIdentifier: "Success")
+                Constants.SuccessType = .REmail
+                self.present(nextVC, animated:true, completion:nil)
+            }else if error == nil{
+                //NOTHING
             }else{
                 let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
                 let nextVC = sb.instantiateViewController(withIdentifier: "Error")
@@ -244,6 +276,9 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             setPage(currPg: 2.0)
             currentPg-=1.0
         }else if(currentPg == 4.0){
+            setPage(currPg: 3.0)
+            currentPg-=1.0
+        }else if(currentPg == 5.0){
             backB.isHidden = true
         }else{
             let sb = UIStoryboard(name: "SignUp", bundle:nil)
@@ -253,15 +288,36 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             self.present(nextVC, animated:true, completion:nil)
         }
     }
-    
-    //Pg4 View IBAction
+    //pg4 code
+    @IBAction func openCam(_ sender: UIButtonX) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self as UIImagePickerControllerDelegate & UINavigationControllerDelegate
+            imagePicker.sourceType = .camera
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true)
+        }
+    }
+    @IBAction func openLib(_ sender: UIButtonX) {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self as UIImagePickerControllerDelegate & UINavigationControllerDelegate
+            imagePicker.sourceType = .photoLibrary
+            imagePicker.allowsEditing = true
+            self.present(imagePicker, animated: true)
+        }
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let image = info[.originalImage] else {
+            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        }
+        pg4.profilePicPreview.image = image as? UIImage
+        dismiss(animated:true, completion: nil)
+    }
+    //pg5 View IBAction
     @IBAction func resendConfirmation(_ sender: UIButtonX){
-        pg4.resendB.isHidden = true
-        let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
-        
-        let nextVC = sb.instantiateViewController(withIdentifier: "Success")
-        Constants.SuccessType = .REmail
-        self.present(nextVC, animated:true, completion:nil)
+        pg5.resendB.isHidden = true
+        self.sendEmailVerification()
     }
 }
 
@@ -366,8 +422,26 @@ class Pg3View: UIViewX{
         setGenderBtnPic()
     }
 }
-
 class Pg4View: UIViewX{
-    @IBOutlet weak var resendB: UIButtonX!
+    @IBOutlet weak var profilePicPreview: UIImageViewX!
+    @IBOutlet weak var titleLbl: UILabelX!
+    @IBOutlet weak var openCamB: UIButtonX!
+    @IBOutlet weak var openLibB: UIButtonX!
     
+    func savePhoto(){
+        let imageData = profilePicPreview.image?.jpegData(compressionQuality: 0.6)
+        let compressedJPGImage = UIImage(data: imageData!)
+        UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
+        
+        let alert = UIAlertView(title: "Wow",
+                                message: "Your image has been saved to Photo Library!",
+                                delegate: nil,
+                                cancelButtonTitle: "Ok")
+        alert.show()
+    }
+    
+}
+class Pg5View: UIViewX{
+    @IBOutlet weak var resendB: UIButtonX!
+
 }

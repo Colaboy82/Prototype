@@ -22,3 +22,4 @@ extension String {
         return (self.count > length) ? self.prefix(length) + trailing : self
     }
 }
+

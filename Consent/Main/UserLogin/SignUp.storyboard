@@ -290,7 +290,7 @@
                                     <outlet property="otherText" destination="NjR-7e-VZA" id="JRj-1g-Cnt"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="281-Ub-sV0" customClass="Pg4View" customModule="Consent" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="281-Ub-sV0" customClass="Pg5View" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="205" width="375" height="257"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An email has been sent with instructions to confirm your account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf9-VC-OcV" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
@@ -308,30 +308,25 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7T-oO-Pdg" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="118" y="185" width="138" height="33"/>
-                                        <color key="backgroundColor" red="0.24216049910000001" green="0.35818958280000002" blue="0.4784591198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
-                                        <state key="normal" title="Resend Email">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3My-M2-apT" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="123" y="184" width="133" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                        <state key="normal" title="Resend Email"/>
                                         <connections>
-                                            <action selector="resendConfirmation:" destination="i79-gJ-zEO" eventType="touchUpInside" id="RyZ-3m-0f3"/>
+                                            <action selector="resendConfirmation:" destination="i79-gJ-zEO" eventType="touchUpInside" id="ISg-A2-a8p"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="Secondary Background"/>
                                 <color key="tintColor" name="Tint"/>
                                 <constraints>
-                                    <constraint firstItem="N7T-oO-Pdg" firstAttribute="top" secondItem="yf9-VC-OcV" secondAttribute="bottom" constant="32" id="FTl-3s-X5X"/>
                                     <constraint firstItem="ioa-kF-q1E" firstAttribute="top" secondItem="J9J-KZ-i0P" secondAttribute="top" constant="22" id="IbQ-FW-3UR"/>
                                     <constraint firstItem="J9J-KZ-i0P" firstAttribute="trailing" secondItem="yf9-VC-OcV" secondAttribute="trailing" constant="33" id="Ito-eT-3KR"/>
-                                    <constraint firstItem="J9J-KZ-i0P" firstAttribute="trailing" secondItem="N7T-oO-Pdg" secondAttribute="trailing" constant="119" id="OxC-CK-noQ"/>
                                     <constraint firstItem="ioa-kF-q1E" firstAttribute="leading" secondItem="J9J-KZ-i0P" secondAttribute="leading" constant="125" id="Ozh-xn-eIF"/>
                                     <constraint firstItem="yf9-VC-OcV" firstAttribute="leading" secondItem="J9J-KZ-i0P" secondAttribute="leading" constant="33" id="PoF-Ik-2JV"/>
                                     <constraint firstItem="J9J-KZ-i0P" firstAttribute="trailing" secondItem="ioa-kF-q1E" secondAttribute="trailing" constant="125" id="Trp-Pe-jB7"/>
                                     <constraint firstItem="yf9-VC-OcV" firstAttribute="top" secondItem="ioa-kF-q1E" secondAttribute="bottom" constant="30" id="lqP-fY-eKP"/>
-                                    <constraint firstItem="N7T-oO-Pdg" firstAttribute="leading" secondItem="J9J-KZ-i0P" secondAttribute="leading" constant="118" id="rF0-aI-Tvi"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="J9J-KZ-i0P"/>
                                 <userDefinedRuntimeAttributes>
@@ -340,7 +335,55 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="resendB" destination="N7T-oO-Pdg" id="IDS-8e-RHj"/>
+                                    <outlet property="resendB" destination="3My-M2-apT" id="A0p-uL-4yh"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLD-UT-1lS" customClass="Pg4View" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="205" width="375" height="257"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRG-xQ-Pjs" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="125" y="8" width="124" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="id-card.png" translatesAutoresizingMaskIntoConstraints="NO" id="IdB-nd-7KN" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="118" y="36" width="140" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvi-MQ-Y10" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="128" y="174" width="121" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                        <state key="normal" title="Open Camera"/>
+                                        <connections>
+                                            <action selector="openCam:" destination="i79-gJ-zEO" eventType="touchUpInside" id="ccO-gc-t8T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cv-qz-zcW" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="215" width="135" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                        <state key="normal" title="Import Picture"/>
+                                        <connections>
+                                            <action selector="openLib:" destination="i79-gJ-zEO" eventType="touchUpInside" id="kFL-BS-BLj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="Secondary Background"/>
+                                <color key="tintColor" name="Tint"/>
+                                <viewLayoutGuide key="safeArea" id="L3V-Oj-kbg"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="openCamB" destination="Vvi-MQ-Y10" id="ZIR-8k-P5b"/>
+                                    <outlet property="openLibB" destination="2Cv-qz-zcW" id="ys6-8e-e9u"/>
+                                    <outlet property="profilePicPreview" destination="IdB-nd-7KN" id="RWx-8t-eLE"/>
+                                    <outlet property="titleLbl" destination="eRG-xQ-Pjs" id="Lzj-Fo-GyG"/>
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logo with some nice animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EH5-E2-aBf">
@@ -382,6 +425,7 @@
                         <color key="backgroundColor" name="Background"/>
                         <color key="tintColor" name="Tint"/>
                         <constraints>
+                            <constraint firstItem="sLD-UT-1lS" firstAttribute="trailing" secondItem="HOf-tz-9fg" secondAttribute="trailing" id="19a-2O-x46"/>
                             <constraint firstItem="VP6-tE-WLr" firstAttribute="trailing" secondItem="HOf-tz-9fg" secondAttribute="trailing" id="1In-V4-pcd"/>
                             <constraint firstItem="qIY-t1-23L" firstAttribute="centerY" secondItem="hvH-qW-Oml" secondAttribute="centerY" id="3JP-ag-z5B"/>
                             <constraint firstItem="HOf-tz-9fg" firstAttribute="bottom" secondItem="h0G-5a-NQ8" secondAttribute="bottom" constant="20" id="4uD-eA-5xm"/>
@@ -403,19 +447,24 @@
                             <constraint firstItem="281-Ub-sV0" firstAttribute="centerX" secondItem="hvH-qW-Oml" secondAttribute="centerX" id="XTK-s8-cLJ"/>
                             <constraint firstItem="HOf-tz-9fg" firstAttribute="trailing" secondItem="fxc-Gx-OBF" secondAttribute="trailing" constant="158" id="ZDi-r8-fVM"/>
                             <constraint firstItem="HOf-tz-9fg" firstAttribute="bottom" secondItem="P4R-ZV-nXA" secondAttribute="bottom" constant="100" id="ZyQ-Ty-rV4"/>
+                            <constraint firstItem="sLD-UT-1lS" firstAttribute="top" secondItem="cl1-f6-ygM" secondAttribute="bottom" constant="32" id="av6-FG-ITG"/>
                             <constraint firstItem="DPA-8X-G6B" firstAttribute="top" secondItem="cl1-f6-ygM" secondAttribute="bottom" constant="32" id="bv3-xI-U4b"/>
                             <constraint firstItem="HOf-tz-9fg" firstAttribute="trailing" secondItem="281-Ub-sV0" secondAttribute="trailing" id="bxq-Zv-E4n"/>
                             <constraint firstItem="281-Ub-sV0" firstAttribute="leading" secondItem="HOf-tz-9fg" secondAttribute="leading" id="eWO-hh-24s"/>
                             <constraint firstItem="281-Ub-sV0" firstAttribute="centerY" secondItem="hvH-qW-Oml" secondAttribute="centerY" id="fPe-B5-e4J"/>
+                            <constraint firstItem="sLD-UT-1lS" firstAttribute="centerY" secondItem="hvH-qW-Oml" secondAttribute="centerY" id="gIp-li-xoh"/>
                             <constraint firstItem="HOf-tz-9fg" firstAttribute="trailing" secondItem="DPA-8X-G6B" secondAttribute="trailing" id="gTX-Pv-kP9"/>
                             <constraint firstItem="HOf-tz-9fg" firstAttribute="bottom" secondItem="281-Ub-sV0" secondAttribute="bottom" constant="205" id="gaR-Qf-FwU"/>
                             <constraint firstItem="DPA-8X-G6B" firstAttribute="centerX" secondItem="hvH-qW-Oml" secondAttribute="centerX" id="hBl-QJ-nVh"/>
                             <constraint firstItem="cl1-f6-ygM" firstAttribute="leading" secondItem="hvH-qW-Oml" secondAttribute="leadingMargin" constant="85" id="iGp-18-TCV"/>
                             <constraint firstItem="281-Ub-sV0" firstAttribute="top" secondItem="cl1-f6-ygM" secondAttribute="bottom" constant="32" id="jG0-EI-ZOV"/>
                             <constraint firstItem="HOf-tz-9fg" firstAttribute="bottom" secondItem="DPA-8X-G6B" secondAttribute="bottom" constant="205" id="l0W-Da-fVA"/>
+                            <constraint firstItem="sLD-UT-1lS" firstAttribute="leading" secondItem="HOf-tz-9fg" secondAttribute="leading" id="o8t-9D-Hgs"/>
+                            <constraint firstItem="sLD-UT-1lS" firstAttribute="centerX" secondItem="hvH-qW-Oml" secondAttribute="centerX" id="p5t-BS-6ZI"/>
                             <constraint firstItem="fxc-Gx-OBF" firstAttribute="leading" secondItem="HOf-tz-9fg" secondAttribute="leading" constant="157" id="rh5-vR-7rW"/>
                             <constraint firstItem="HOf-tz-9fg" firstAttribute="bottom" secondItem="qIY-t1-23L" secondAttribute="bottom" constant="205" id="sCN-lR-bM1"/>
                             <constraint firstItem="qIY-t1-23L" firstAttribute="centerX" secondItem="hvH-qW-Oml" secondAttribute="centerX" id="uCY-yo-zBO"/>
+                            <constraint firstItem="HOf-tz-9fg" firstAttribute="bottom" secondItem="sLD-UT-1lS" secondAttribute="bottom" constant="205" id="xX4-pG-Kuq"/>
                             <constraint firstItem="qIY-t1-23L" firstAttribute="top" secondItem="cl1-f6-ygM" secondAttribute="bottom" constant="32" id="xbv-0h-c38"/>
                             <constraint firstItem="DPA-8X-G6B" firstAttribute="leading" secondItem="HOf-tz-9fg" secondAttribute="leading" id="xdW-09-EM7"/>
                             <constraint firstItem="HOf-tz-9fg" firstAttribute="trailing" secondItem="P4R-ZV-nXA" secondAttribute="trailing" constant="104" id="zrl-oW-OoS"/>
@@ -428,7 +477,8 @@
                         <outlet property="pg1View" destination="VP6-tE-WLr" id="bdr-0a-s8N"/>
                         <outlet property="pg2View" destination="DPA-8X-G6B" id="H4W-kE-cUY"/>
                         <outlet property="pg3View" destination="qIY-t1-23L" id="e0c-HL-ecT"/>
-                        <outlet property="pg4View" destination="281-Ub-sV0" id="5Ae-ce-gew"/>
+                        <outlet property="pg4View" destination="sLD-UT-1lS" id="n1d-io-Wgu"/>
+                        <outlet property="pg5View" destination="281-Ub-sV0" id="Tqv-oO-vN9"/>
                         <outlet property="progressBar" destination="cl1-f6-ygM" id="hF8-6c-T8A"/>
                         <outlet property="progressBarLbl" destination="fxc-Gx-OBF" id="rHV-dV-qHp"/>
                     </connections>
@@ -591,6 +641,7 @@
         <image name="CheckedBox.png" width="52" height="52"/>
         <image name="UncheckedBox.png" width="52" height="52"/>
         <image name="checked.png" width="26" height="26"/>
+        <image name="id-card.png" width="512" height="512"/>
         <image name="key.png" width="512" height="512"/>
         <image name="return.png" width="512" height="512"/>
         <namedColor name="Background">

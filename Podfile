@@ -8,7 +8,8 @@ target 'Consent' do
   # Pods for Consent
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
-  pod 'Firebase/Database'	
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'	
 
   target 'ConsentTests' do
     inherit! :search_paths

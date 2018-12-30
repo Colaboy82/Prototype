@@ -313,8 +313,8 @@
 		3DF765A7216BD7E200E78EE0 /* UserLogin */ = {
 			isa = PBXGroup;
 			children = (
-				3DF765A8216BD80900E78EE0 /* SignUpVC.swift */,
 				3DF765AA216BD81900E78EE0 /* SignInVC.swift */,
+				3DF765A8216BD80900E78EE0 /* SignUpVC.swift */,
 				3DF765AC216BD82C00E78EE0 /* SignUp.storyboard */,
 			);
 			path = UserLogin;
