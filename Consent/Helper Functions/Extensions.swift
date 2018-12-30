@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Firebase
+import RSKImageCropper
 
 extension String {
     /*
@@ -20,6 +21,26 @@ extension String {
      */
     func trunc(length: Int, trailing: String = "") -> String {
         return (self.count > length) ? self.prefix(length) + trailing : self
+    }
+}
+
+extension UIImageViewX {
+    
+    func setRounded() {
+        let radius = (self.frame.height) / 2
+        self.layer.cornerRadius = radius
+        self.layer.masksToBounds = true
+    }
+}
+
+extension SignUpVC: RSKImageCropViewControllerDelegate {
+    func imageCropViewController(_ controller: RSKImageCropViewController, didCropImage croppedImage: UIImage, usingCropRect cropRect: CGRect, rotationAngle: CGFloat) {
+        self.pg4.profilePicPreview.image = croppedImage
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func imageCropViewControllerDidCancelCrop(_ controller: RSKImageCropViewController) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 

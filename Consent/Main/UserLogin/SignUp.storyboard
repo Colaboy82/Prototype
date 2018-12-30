@@ -308,9 +308,8 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3My-M2-apT" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="123" y="184" width="133" height="36"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3My-M2-apT" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="118" y="184" width="138" height="36"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
                                         <state key="normal" title="Resend Email"/>
                                         <connections>
@@ -327,6 +326,9 @@
                                     <constraint firstItem="yf9-VC-OcV" firstAttribute="leading" secondItem="J9J-KZ-i0P" secondAttribute="leading" constant="33" id="PoF-Ik-2JV"/>
                                     <constraint firstItem="J9J-KZ-i0P" firstAttribute="trailing" secondItem="ioa-kF-q1E" secondAttribute="trailing" constant="125" id="Trp-Pe-jB7"/>
                                     <constraint firstItem="yf9-VC-OcV" firstAttribute="top" secondItem="ioa-kF-q1E" secondAttribute="bottom" constant="30" id="lqP-fY-eKP"/>
+                                    <constraint firstItem="3My-M2-apT" firstAttribute="leading" secondItem="J9J-KZ-i0P" secondAttribute="leading" constant="118" id="qFo-I1-lHq"/>
+                                    <constraint firstItem="3My-M2-apT" firstAttribute="top" secondItem="yf9-VC-OcV" secondAttribute="bottom" constant="31" id="wCx-Qk-u8O"/>
+                                    <constraint firstItem="J9J-KZ-i0P" firstAttribute="trailing" secondItem="3My-M2-apT" secondAttribute="trailing" constant="119" id="xOM-Mg-WiI"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="J9J-KZ-i0P"/>
                                 <userDefinedRuntimeAttributes>
@@ -341,29 +343,28 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLD-UT-1lS" customClass="Pg4View" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="205" width="375" height="257"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRG-xQ-Pjs" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRG-xQ-Pjs" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="125" y="8" width="124" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="id-card.png" translatesAutoresizingMaskIntoConstraints="NO" id="IdB-nd-7KN" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="118" y="36" width="140" height="140"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="id-card.png" translatesAutoresizingMaskIntoConstraints="NO" id="IdB-nd-7KN" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="118" y="58.5" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="IdB-nd-7KN" secondAttribute="height" multiplier="1:1" id="GzJ-l4-quQ"/>
+                                        </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvi-MQ-Y10" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="128" y="174" width="121" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvi-MQ-Y10" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="174" width="135" height="33"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="Open Camera"/>
                                         <connections>
                                             <action selector="openCam:" destination="i79-gJ-zEO" eventType="touchUpInside" id="ccO-gc-t8T"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cv-qz-zcW" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cv-qz-zcW" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="120" y="215" width="135" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="Import Picture"/>
                                         <connections>
@@ -373,6 +374,20 @@
                                 </subviews>
                                 <color key="backgroundColor" name="Secondary Background"/>
                                 <color key="tintColor" name="Tint"/>
+                                <constraints>
+                                    <constraint firstItem="Vvi-MQ-Y10" firstAttribute="leading" secondItem="L3V-Oj-kbg" secondAttribute="leading" constant="120" id="0vG-0G-ky6"/>
+                                    <constraint firstItem="L3V-Oj-kbg" firstAttribute="bottom" secondItem="2Cv-qz-zcW" secondAttribute="bottom" constant="9" id="2Ad-3R-hZo"/>
+                                    <constraint firstItem="L3V-Oj-kbg" firstAttribute="trailing" secondItem="2Cv-qz-zcW" secondAttribute="trailing" constant="120" id="5Ot-Hm-JA6"/>
+                                    <constraint firstItem="2Cv-qz-zcW" firstAttribute="leading" secondItem="L3V-Oj-kbg" secondAttribute="leading" constant="120" id="7z4-B9-Mbl"/>
+                                    <constraint firstItem="2Cv-qz-zcW" firstAttribute="top" secondItem="Vvi-MQ-Y10" secondAttribute="bottom" constant="8" id="CBX-Ls-f0g"/>
+                                    <constraint firstItem="L3V-Oj-kbg" firstAttribute="trailing" secondItem="IdB-nd-7KN" secondAttribute="trailing" constant="117" id="TEa-su-3r3"/>
+                                    <constraint firstItem="L3V-Oj-kbg" firstAttribute="trailing" secondItem="eRG-xQ-Pjs" secondAttribute="trailing" constant="126" id="c5i-6S-Ke0"/>
+                                    <constraint firstItem="IdB-nd-7KN" firstAttribute="centerY" secondItem="sLD-UT-1lS" secondAttribute="centerY" id="dEJ-1i-UMb"/>
+                                    <constraint firstItem="eRG-xQ-Pjs" firstAttribute="leading" secondItem="L3V-Oj-kbg" secondAttribute="leading" constant="125" id="erT-5F-4Oa"/>
+                                    <constraint firstItem="L3V-Oj-kbg" firstAttribute="trailing" secondItem="Vvi-MQ-Y10" secondAttribute="trailing" constant="120" id="fCL-co-uLA"/>
+                                    <constraint firstItem="IdB-nd-7KN" firstAttribute="leading" secondItem="L3V-Oj-kbg" secondAttribute="leading" constant="118" id="sq4-he-0kv"/>
+                                    <constraint firstItem="eRG-xQ-Pjs" firstAttribute="top" secondItem="L3V-Oj-kbg" secondAttribute="top" constant="8" id="udW-qf-NQg"/>
+                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="L3V-Oj-kbg"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

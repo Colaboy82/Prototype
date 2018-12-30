@@ -29,7 +29,6 @@ class SignInVC: UIViewController, UITextFieldDelegate {
         signUpB.clipsToBounds = true
         
         super.viewDidLoad()
-        
     }
     
     @IBAction func signUp(_ sender: Any){

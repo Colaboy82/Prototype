@@ -73,12 +73,14 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - RSKImageCropper (2.2.1)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - RSKImageCropper
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -95,6 +97,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - RSKImageCropper
 
 SPEC CHECKSUMS:
   Firebase: 8bb9268bff82374f2cbaaabb143e725743c316ae
@@ -110,7 +113,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
 
-PODFILE CHECKSUM: 07ec3cd5aa4a2b0098a3377b5d4ecb3a9ffef3e4
+PODFILE CHECKSUM: 1aa933ecc594fff1725159a7701e7d15228b87da
 
 COCOAPODS: 1.5.3

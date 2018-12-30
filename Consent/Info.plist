@@ -46,5 +46,7 @@
 	<string>You can take photos to take profile pictures and film consent.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>You can choose photos to use as a profile picture.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>You can choose photos to use as a profile picture.</string>
 </dict>
 </plist>

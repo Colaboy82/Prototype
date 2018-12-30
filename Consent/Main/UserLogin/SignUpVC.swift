@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import RSKImageCropper
 
 class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -24,7 +25,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var progressBarLbl: UILabelX!
     
-    var currentPg = 1.0
+    var currentPg = 4.0
     var numOfPgs = 5
     var timer: Timer!
     
@@ -68,6 +69,10 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
         SetFuncs.setButtonImg(btn: pg3.maleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
         SetFuncs.setButtonImg(btn: pg3.femaleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
         SetFuncs.setButtonImg(btn: pg3.otherB, image: #imageLiteral(resourceName: "UnselectedIcon"))
+        
+        SetFuncs.setButton(btn: pg4.openCamB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
+        SetFuncs.setButton(btn: pg4.openLibB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
+        pg4.setPicImageView()
         
         SetFuncs.setButton(btn: pg5.resendB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
         
@@ -292,27 +297,49 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     @IBAction func openCam(_ sender: UIButtonX) {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self as UIImagePickerControllerDelegate & UINavigationControllerDelegate
+            imagePicker.delegate = self as UIImagePickerControllerDelegate & UINavigationControllerDelegate & RSKImageCropViewControllerDelegate
             imagePicker.sourceType = .camera
             imagePicker.allowsEditing = false
+            imagePicker.modalTransitionStyle = .crossDissolve
             self.present(imagePicker, animated: true)
         }
     }
     @IBAction func openLib(_ sender: UIButtonX) {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self as UIImagePickerControllerDelegate & UINavigationControllerDelegate
+            imagePicker.delegate = self as UIImagePickerControllerDelegate & UINavigationControllerDelegate & RSKImageCropViewControllerDelegate
             imagePicker.sourceType = .photoLibrary
             imagePicker.allowsEditing = true
+            imagePicker.modalTransitionStyle = .crossDissolve
             self.present(imagePicker, animated: true)
         }
     }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        guard let image = info[.originalImage] else {
-            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        var selectedImage: UIImage?
+        if let editedImage = info[.editedImage] as? UIImage {
+            selectedImage = editedImage
+            picker.dismiss(animated: true, completion: { () -> Void in
+                var imageCropVC : RSKImageCropViewController!
+                imageCropVC = RSKImageCropViewController(image: selectedImage!, cropMode: RSKImageCropMode.circle)
+                imageCropVC.delegate = self
+                self.modalTransitionStyle = .crossDissolve
+                imageCropVC.modalTransitionStyle = .crossDissolve
+                self.present(imageCropVC, animated: true)
+                
+            })
+        } else if let originalImage = info[.originalImage] as? UIImage {
+            selectedImage = originalImage
+            picker.dismiss(animated: true, completion: { () -> Void in
+                var imageCropVC : RSKImageCropViewController!
+                imageCropVC = RSKImageCropViewController(image: selectedImage!, cropMode: RSKImageCropMode.circle)
+                imageCropVC.delegate = self
+                self.modalTransitionStyle = .crossDissolve
+                imageCropVC.modalTransitionStyle = .crossDissolve
+                self.present(imageCropVC, animated: true)
+            })
         }
-        pg4.profilePicPreview.image = image as? UIImage
-        dismiss(animated:true, completion: nil)
+        //pg4.savePhoto()
     }
     //pg5 View IBAction
     @IBAction func resendConfirmation(_ sender: UIButtonX){
@@ -427,6 +454,13 @@ class Pg4View: UIViewX{
     @IBOutlet weak var titleLbl: UILabelX!
     @IBOutlet weak var openCamB: UIButtonX!
     @IBOutlet weak var openLibB: UIButtonX!
+    
+    func setPicImageView(){
+        profilePicPreview.setRounded()
+        profilePicPreview.borderWidth = 1
+        profilePicPreview.borderColor = #colorLiteral(red: 0.7607843137, green: 0.7647058824, blue: 0.7725490196, alpha: 1)
+        profilePicPreview.contentMode = .scaleAspectFill
+    }
     
     func savePhoto(){
         let imageData = profilePicPreview.image?.jpegData(compressionQuality: 0.6)

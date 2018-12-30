@@ -9,7 +9,8 @@ target 'Consent' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
-  pod 'Firebase/Storage'	
+  pod 'Firebase/Storage'
+  pod 'RSKImageCropper'	
 
   target 'ConsentTests' do
     inherit! :search_paths
