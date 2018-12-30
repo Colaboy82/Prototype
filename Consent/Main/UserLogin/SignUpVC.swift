@@ -309,7 +309,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self as UIImagePickerControllerDelegate & UINavigationControllerDelegate & RSKImageCropViewControllerDelegate
             imagePicker.sourceType = .photoLibrary
-            imagePicker.allowsEditing = true
+            imagePicker.allowsEditing = false
             imagePicker.modalTransitionStyle = .crossDissolve
             self.present(imagePicker, animated: true)
         }
@@ -319,22 +319,20 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
         var selectedImage: UIImage?
         if let editedImage = info[.editedImage] as? UIImage {
             selectedImage = editedImage
-            picker.dismiss(animated: true, completion: { () -> Void in
+            picker.dismiss(animated: false, completion: { () -> Void in
                 var imageCropVC : RSKImageCropViewController!
                 imageCropVC = RSKImageCropViewController(image: selectedImage!, cropMode: RSKImageCropMode.circle)
                 imageCropVC.delegate = self
-                self.modalTransitionStyle = .crossDissolve
                 imageCropVC.modalTransitionStyle = .crossDissolve
                 self.present(imageCropVC, animated: true)
                 
             })
         } else if let originalImage = info[.originalImage] as? UIImage {
             selectedImage = originalImage
-            picker.dismiss(animated: true, completion: { () -> Void in
+            picker.dismiss(animated: false, completion: { () -> Void in
                 var imageCropVC : RSKImageCropViewController!
                 imageCropVC = RSKImageCropViewController(image: selectedImage!, cropMode: RSKImageCropMode.circle)
                 imageCropVC.delegate = self
-                self.modalTransitionStyle = .crossDissolve
                 imageCropVC.modalTransitionStyle = .crossDissolve
                 self.present(imageCropVC, animated: true)
             })
