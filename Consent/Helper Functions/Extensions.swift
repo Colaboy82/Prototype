@@ -36,6 +36,7 @@ extension UIImageViewX {
 extension SignUpVC: RSKImageCropViewControllerDelegate {
     func imageCropViewController(_ controller: RSKImageCropViewController, didCropImage croppedImage: UIImage, usingCropRect cropRect: CGRect, rotationAngle: CGFloat) {
         self.pg4.profilePicPreview.image = croppedImage
+        self.pg4.savePhoto(img: croppedImage)
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -43,4 +44,14 @@ extension SignUpVC: RSKImageCropViewControllerDelegate {
         self.dismiss(animated: true, completion: nil)
     }
 }
-
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}

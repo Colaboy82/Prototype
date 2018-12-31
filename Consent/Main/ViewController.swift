@@ -12,9 +12,15 @@ import FirebaseAuth
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var testImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.hideKeyboardWhenTappedAround()
+        
+        var profilePicRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("profile_images").child("user/\(Auth.auth().currentUser?.uid)")
+        
+        
     }
     
     @IBAction func signOut(){

@@ -12,5 +12,6 @@ class Constants {
     
     static var SuccessType = SuccessPopUp.SuccessType.null
     static var ErrorType = ErrorPopUp.ErrorType.null
+    static var errorDescription = ""
     
 }

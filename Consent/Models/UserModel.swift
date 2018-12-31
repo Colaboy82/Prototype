@@ -21,10 +21,11 @@ class UserModel{
     
     let gender: String
     
-    let user: User
-    //let pic:
+    let profilePic: String
     
-    init(email: String, pw: String, firstName: String, midName: String, lastName: String, phoneNum: String, gender: String, user: User){
+    let user: User
+        
+    init(email: String, pw: String, firstName: String, midName: String, lastName: String, phoneNum: String, gender: String, profilePic: String, user: User){
         self.email = email
         self.pw = pw
         self.firstName = firstName
@@ -33,6 +34,7 @@ class UserModel{
         self.phoneNum = phoneNum
         self.gender = gender
         self.user = user
+        self.profilePic = profilePic
     }
     func setValues(){
         let userRef = Database.database().reference().child("users").child(user.uid)
@@ -42,14 +44,13 @@ class UserModel{
                       "lastName": lastName,
                       "phoneNum": phoneNum,
                       "gender": gender,
-                      "UserID": user.uid.trunc(length: 10)]
+                      "ProfilePic": profilePic,
+                      "UserID": user.uid.trunc(length: 15)] as [String : Any]
         userRef.updateChildValues(values, withCompletionBlock: { (error, ref) in
             if error != nil{
                 print(error!)
                 return
             }
         })
-        
     }
-    
 }

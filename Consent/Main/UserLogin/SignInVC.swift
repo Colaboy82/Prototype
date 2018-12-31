@@ -20,6 +20,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var signUpB: UIButtonX!
     
     override func viewDidLoad() {
+        self.hideKeyboardWhenTappedAround()
+
         SetFuncs.setTextFields(field: email, img: #imageLiteral(resourceName: "EmailIcon"))
         SetFuncs.setTextFields(field: password, img: #imageLiteral(resourceName: "PasswordIcon"))
         

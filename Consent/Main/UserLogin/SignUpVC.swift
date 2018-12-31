@@ -25,7 +25,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var progressBarLbl: UILabelX!
     
-    var currentPg = 4.0
+    var currentPg = 1.0
     var numOfPgs = 5
     var timer: Timer!
     
@@ -45,6 +45,8 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        self.hideKeyboardWhenTappedAround()
+        
         pg1 = pg1View as? Pg1View
         pg2 = pg2View as? Pg2View
         pg3 = pg3View as? Pg3View
@@ -105,7 +107,6 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
             pg2View.isHidden = true
             pg1View.isHidden = true
             backB.isHidden = true
-            pg4.savePhoto()
             createAccount()
             
             timer.invalidate()
@@ -215,8 +216,8 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
             }
             return true
         } else if currentPg == 4.0 {
-            let img = UIImage(named: defaultImageName)
-            if pg4.profilePicPreview.image!.isEqual(img) {
+            //let img = UIImage(named: defaultImageName)
+            if pg4.savedProfilePic == nil {
                 return false
             }
             return true
@@ -248,17 +249,43 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     }
     func createAccount(){
         Auth.auth().createUser(withEmail: email, password: pw) { (user, error) in
+            
+            func uploadProfilePic(_ img: UIImage, completion: @escaping (_ url: String?) -> ()){
+                guard let uid = Auth.auth().currentUser?.uid else { return }
+                let profilePicRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("profile_images").child("user/\(uid)")
+                
+                guard let imageData = img.jpegData(compressionQuality: 0.5)else { return }
+                
+                let metaData = StorageMetadata()
+                metaData.contentType = "image/jpg"
+                
+                profilePicRef.putData(imageData, metadata: metaData) { (metaData, error) in
+                    if error == nil, metaData != nil{
+                        profilePicRef.downloadURL(completion: { (url, error) in
+                            completion(url?.absoluteString)
+                        })
+                    }else{
+                        print(error?.localizedDescription as Any)
+                        completion(nil)
+                    }
+                }
+            }
+            
             if error == nil {
                 print("You have successfully signed up")
                 
-                let u = UserModel.init(email: self.email, pw: self.pw, firstName: self.pg2.firstName.text!, midName: self.pg2.middleName.text!, lastName: self.pg2.lastName.text!, phoneNum: self.pg2.phoneNum.text!, gender: self.pg3.chosenGender(), user: Auth.auth().currentUser!)
-                u.setValues()
-                
-                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
-                let nextVC = sb.instantiateViewController(withIdentifier: "Success")
-                Constants.SuccessType = .AccountMade
-                self.present(nextVC, animated: true, completion: nil)
-                self.sendEmailVerification()
+                uploadProfilePic(self.pg4.savedProfilePic, completion: { (url) in
+                    self.pg4.profilePicUrl = url
+                    
+                    let u = UserModel.init(email: self.email, pw: self.pw, firstName: self.pg2.firstName.text!, midName: self.pg2.middleName.text!, lastName: self.pg2.lastName.text!, phoneNum: self.pg2.phoneNum.text!, gender: self.pg3.chosenGender(), profilePic: self.pg4!.profilePicUrl, user: Auth.auth().currentUser!)
+                    u.setValues()
+                    
+                    let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                    let nextVC = sb.instantiateViewController(withIdentifier: "Success")
+                    Constants.SuccessType = .AccountMade
+                    self.present(nextVC, animated: true, completion: nil)
+                    self.sendEmailVerification()
+                })
             } else {
                 let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
                 let nextVC = sb.instantiateViewController(withIdentifier: "Error")
@@ -301,7 +328,16 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
             imagePicker.sourceType = .camera
             imagePicker.allowsEditing = false
             imagePicker.modalTransitionStyle = .crossDissolve
+            //pg4.createCameraOverlay(imagePicker: imagePicker)
+            imagePicker.cameraCaptureMode = .photo
+            imagePicker.cameraDevice = .front
             self.present(imagePicker, animated: true)
+        }else{
+            let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+            
+            let nextVC = sb.instantiateViewController(withIdentifier: "Error")
+            Constants.ErrorType = .CamE
+            self.present(nextVC, animated:true, completion:nil)
         }
     }
     @IBAction func openLib(_ sender: UIButtonX) {
@@ -316,6 +352,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        //called when a picture is taken or chosen
         var selectedImage: UIImage?
         if let editedImage = info[.editedImage] as? UIImage {
             selectedImage = editedImage
@@ -325,7 +362,6 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
                 imageCropVC.delegate = self
                 imageCropVC.modalTransitionStyle = .crossDissolve
                 self.present(imageCropVC, animated: true)
-                
             })
         } else if let originalImage = info[.originalImage] as? UIImage {
             selectedImage = originalImage
@@ -337,7 +373,6 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
                 self.present(imageCropVC, animated: true)
             })
         }
-        //pg4.savePhoto()
     }
     //pg5 View IBAction
     @IBAction func resendConfirmation(_ sender: UIButtonX){
@@ -453,23 +488,52 @@ class Pg4View: UIViewX{
     @IBOutlet weak var openCamB: UIButtonX!
     @IBOutlet weak var openLibB: UIButtonX!
     
+    var savedProfilePic: UIImage!
+    var profilePicUrl: String!
+    
     func setPicImageView(){
         profilePicPreview.setRounded()
         profilePicPreview.borderWidth = 1
         profilePicPreview.borderColor = #colorLiteral(red: 0.7607843137, green: 0.7647058824, blue: 0.7725490196, alpha: 1)
         profilePicPreview.contentMode = .scaleAspectFill
     }
-    
-    func savePhoto(){
+    func savePhoto(img: UIImage!){
+        savedProfilePic = img
+    }
+    /*func savePhoto(){
         let imageData = profilePicPreview.image?.jpegData(compressionQuality: 0.6)
         let compressedJPGImage = UIImage(data: imageData!)
-        UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
+        //UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
         
-        let alert = UIAlertView(title: "Wow",
-                                message: "Your image has been saved to Photo Library!",
-                                delegate: nil,
-                                cancelButtonTitle: "Ok")
-        alert.show()
+     
+    }*/
+    func createCameraOverlay(imagePicker: UIImagePickerController){
+        //Create camera overlay
+        let pickerFrame = CGRect(x:0, y: UIApplication.shared.statusBarFrame.size.height, width: imagePicker.view.bounds.width, height: imagePicker.view.bounds.height - imagePicker.navigationBar.bounds.size.height - imagePicker.toolbar.bounds.size.height)
+        let squareFrame = CGRect(x: pickerFrame.width/2 - 200/2, y: pickerFrame.height/2 - 200/2, width: profilePicPreview.frame.width, height: profilePicPreview.frame.height)
+        //let squareFrame = CGRect(x: pickerFrame.width/2 - 200/2, y: pickerFrame.height/2 - 200/2, width: 200, height: 200)
+        UIGraphicsBeginImageContext(pickerFrame.size)
+        
+        let context = UIGraphicsGetCurrentContext()
+        context!.saveGState()
+        context!.addRect((context?.boundingBoxOfClipPath)!)
+        context?.move(to: CGPoint(x: squareFrame.origin.x, y: squareFrame.origin.y))
+        context?.addLine(to: CGPoint(x:squareFrame.origin.x + squareFrame.width,y:squareFrame.origin.y))
+        context?.addLine(to: CGPoint(x: squareFrame.origin.x + squareFrame.width, y:squareFrame.origin.y + squareFrame.size.height))
+        context?.addLine(to:CGPoint(x: squareFrame.origin.x, y: squareFrame.origin.y + squareFrame.size.height))
+        context?.addLine(to: CGPoint(x: squareFrame.origin.x, y: squareFrame.origin.y))
+        context?.clip(using: .evenOdd)
+        context?.move(to: CGPoint(x: pickerFrame.origin.x, y: pickerFrame.origin.y))
+        context!.setFillColor(red: 0, green: 0, blue: 0, alpha: 0.25)
+        context!.fill(pickerFrame)
+        context!.restoreGState()
+        
+        let overlayImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext();
+        
+        let overlayView = UIImageView(frame: pickerFrame)
+        overlayView.image = overlayImage
+        imagePicker.cameraOverlayView = overlayView
     }
     
 }

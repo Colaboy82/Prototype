@@ -19,6 +19,7 @@ class PWResetVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         
         SetFuncs.setTextFields(field: email, img: #imageLiteral(resourceName: "EmailIcon"))
         SetFuncs.setButton(btn: resetB, color:#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))

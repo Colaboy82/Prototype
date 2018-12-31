@@ -19,10 +19,12 @@ class ErrorPopUp: UIViewController {
      - REmailFail: resent Email
      - AccountMadeFail: error in creating account
      - RPWFail: error in resetting password
+     - CamE: No Camera
+     - PermE: Permission error
      - null: Not an alert type
      */
     enum ErrorType {
-        case LoginFail, SubmitFail, REmailFail, AccountMadeFail, RPWFail, null
+        case LoginFail, SubmitFail, REmailFail, AccountMadeFail, RPWFail, CamE, PermE, null
     }
     
     @IBOutlet weak var dismissPopUpB: UIButtonX!
@@ -54,6 +56,10 @@ class ErrorPopUp: UIViewController {
             msgText.text = "Error with Creating Account. Please Refresh and Try Again"
         }else if(type == .RPWFail){
             msgText.text = "Error with Resetting Password. Please Refresh and Try Again"
+        }else if(type == .CamE){
+            msgText.text = "Your camera seems to not be functional"
+        }else if(type == .PermE){
+            msgText.text = "It appears we do not have that permission. Please go into your settings and give us access"
         }else{
             msgText.text = "Error with App. Please Reset or Contact Employee"
         }
