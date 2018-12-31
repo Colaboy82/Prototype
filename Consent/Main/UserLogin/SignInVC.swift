@@ -53,6 +53,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
             }else{
                 let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
                 
+                print(error?.localizedDescription as Any)
+                
                 let nextVC = sb.instantiateViewController(withIdentifier: "Error")
                 Constants.ErrorType = .LoginFail
                 self.present(nextVC, animated:true, completion:nil)
