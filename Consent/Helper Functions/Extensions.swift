@@ -55,3 +55,20 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+
+extension UIButtonX {
+    func setRounded() {
+        let radius = (self.frame.height) / 2
+        self.layer.cornerRadius = radius
+        self.layer.masksToBounds = true
+        self.clipsToBounds = true
+    }
+    //must set image on button to current image
+    func toggleButtonImage(onImage: UIImage, offImage: UIImage) {
+        if self.currentImage == offImage {
+            self.setImage(onImage, for: .normal)
+        }else{
+            self.setImage(offImage, for: .normal)
+        }
+    }
+}

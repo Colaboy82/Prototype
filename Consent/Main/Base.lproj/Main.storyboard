@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +14,7 @@
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainVC" title="MainVC" id="BYZ-38-t0r" customClass="ViewController" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" title="MainVC" id="BYZ-38-t0r" customClass="MainVC" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,30 +26,90 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBX-Wt-5fw" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="161" y="282" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Button"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOut" destination="BYZ-38-t0r" eventType="touchUpInside" id="thb-AA-1a1"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RGb-cY-Wug" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="121" y="403" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="RGb-cY-Wug" secondAttribute="height" multiplier="1:1" id="8J3-4V-RGg"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBX-Wt-5fw" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="161" y="282" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Out"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCh-bs-u25" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="200" y="603" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="YtT-gV-hn8"/>
+                                    <constraint firstAttribute="width" secondItem="BCh-bs-u25" secondAttribute="height" multiplier="1:1" id="j1j-qr-iZP"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ProfileIcon"/>
                                 <connections>
-                                    <action selector="signOut" destination="BYZ-38-t0r" eventType="touchUpInside" id="thb-AA-1a1"/>
+                                    <action selector="profileBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Btq-QC-0Md"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAd-Wm-Bdd" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="212" y="527" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="EG5-l5-Biq"/>
+                                    <constraint firstAttribute="width" secondItem="TAd-Wm-Bdd" secondAttribute="height" multiplier="1:1" id="VGo-2x-BFa"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="InfoIcon"/>
+                                <connections>
+                                    <action selector="infoBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zme-0A-fJp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efv-fC-qPg" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="297" y="487" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Efv-fC-qPg" secondAttribute="height" multiplier="1:1" id="AiR-FE-Pia"/>
+                                    <constraint firstAttribute="width" constant="54" id="CLh-xb-T7Y"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="AddEntryIcon"/>
+                                <connections>
+                                    <action selector="addEntryBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZP-m8-xNG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3p5-Q1-fcz" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="278" y="570" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3p5-Q1-fcz" secondAttribute="height" multiplier="1:1" id="YIJ-Kj-mAM"/>
+                                    <constraint firstAttribute="width" constant="90" id="dlJ-uV-kbR"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="MainMenuB"/>
+                                <connections>
+                                    <action selector="mainBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m2V-sG-hJE"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <color key="tintColor" name="Tint"/>
                         <constraints>
+                            <constraint firstItem="3p5-Q1-fcz" firstAttribute="leading" secondItem="TAd-Wm-Bdd" secondAttribute="trailing" constant="12" id="5Oi-ew-fHq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3p5-Q1-fcz" secondAttribute="trailing" constant="7" id="9WF-WN-PG0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3p5-Q1-fcz" secondAttribute="bottom" constant="7" id="Eyk-1N-ZKT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BCh-bs-u25" secondAttribute="bottom" constant="10" id="V4h-49-7j4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RGb-cY-Wug" secondAttribute="bottom" constant="124" id="WtF-7a-hcO"/>
+                            <constraint firstItem="3p5-Q1-fcz" firstAttribute="leading" secondItem="BCh-bs-u25" secondAttribute="trailing" constant="24" id="Y5v-OU-256"/>
+                            <constraint firstItem="BCh-bs-u25" firstAttribute="top" secondItem="TAd-Wm-Bdd" secondAttribute="bottom" constant="22" id="ZZZ-ly-Wpy"/>
+                            <constraint firstItem="3p5-Q1-fcz" firstAttribute="top" secondItem="Efv-fC-qPg" secondAttribute="bottom" constant="29" id="q0W-b2-jFk"/>
+                            <constraint firstItem="Efv-fC-qPg" firstAttribute="leading" secondItem="TAd-Wm-Bdd" secondAttribute="trailing" constant="31" id="rM6-Ji-OWI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RGb-cY-Wug" secondAttribute="trailing" constant="114" id="rQa-wn-YTs"/>
                             <constraint firstItem="RGb-cY-Wug" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="rhK-ML-3vm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="addEntryB" destination="Efv-fC-qPg" id="Zn6-Ja-I79"/>
+                        <outlet property="infoB" destination="TAd-Wm-Bdd" id="aSf-Gc-OJe"/>
+                        <outlet property="mainMenuB" destination="3p5-Q1-fcz" id="O7F-Xp-Zzd"/>
+                        <outlet property="profileB" destination="BCh-bs-u25" id="IzU-wo-Dbk"/>
                         <outlet property="testImage" destination="RGb-cY-Wug" id="suR-WP-nHJ"/>
                     </connections>
                 </viewController>
@@ -57,4 +118,19 @@
             <point key="canvasLocation" x="140" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AddEntryIcon" width="41" height="41"/>
+        <image name="InfoIcon" width="39" height="39"/>
+        <image name="MainMenuB" width="68" height="66"/>
+        <image name="ProfileIcon" width="41" height="41"/>
+        <namedColor name="Background">
+            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Button">
+            <color red="0.20784313725490197" green="0.36470588235294116" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Tint">
+            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
