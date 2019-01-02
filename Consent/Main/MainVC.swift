@@ -98,13 +98,22 @@ class MainVC: UIViewController, UITextFieldDelegate {
         sender.isSelected = !sender.isSelected
     }
     @IBAction func infoBClicked(_ sender: UIButtonX){
-    
+        let sb = UIStoryboard(name: "InfoPage", bundle:nil)
+        let nextVC = sb.instantiateViewController(withIdentifier: "InfoPage")
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated:true, completion:nil)
     }
     @IBAction func profileBClicked(_ sender: UIButtonX){
-        
+        let sb = UIStoryboard(name: "ProfilePage", bundle:nil)
+        let nextVC = sb.instantiateViewController(withIdentifier: "ProfilePage")
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated:true, completion:nil)
     }
     @IBAction func addEntryBClicked(_ sender: UIButtonX){
-        
+        let sb = UIStoryboard(name: "AddEntry", bundle:nil)
+        let nextVC = sb.instantiateViewController(withIdentifier: "AddEntry")
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated:true, completion:nil)
     }
     @IBAction func switchSearchType(_ sender: UIButtonX){
         if(!nameType){
@@ -114,21 +123,6 @@ class MainVC: UIViewController, UITextFieldDelegate {
         }
         nameType = !nameType
     }
-    @IBAction func signOut(){
-        if Auth.auth().currentUser != nil{
-            do{
-                try Auth.auth().signOut()
-                
-                let sb = UIStoryboard(name: "SignUp", bundle:nil)
-                let nextVC = sb.instantiateViewController(withIdentifier: "LoginVC")
-                self.present(nextVC, animated:true, completion:nil)
-                
-            }catch let error as NSError {
-                print(error.localizedDescription)
-            }
-        }
-    }
-
 
 }
 

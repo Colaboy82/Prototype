@@ -10,11 +10,17 @@ import UIKit
 import Firebase
 
 class AddEntryVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
+    }
+    @IBAction func back(_ sender: UIButtonX){
+        let sb = UIStoryboard(name: "Main", bundle:nil)
+        let nextVC = sb.instantiateViewController(withIdentifier: "MainVC")
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated:true, completion:nil)
     }
     
 }
