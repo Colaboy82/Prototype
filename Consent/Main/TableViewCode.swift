@@ -9,13 +9,21 @@
 import UIKit
 import Firebase
 
-class TableView: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
+extension MainVC: UITableViewDelegate, UITableViewDataSource {
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableViewU.dequeueReusableCell(withIdentifier: "cell")! //1.
+        
+        let text = "test \(indexPath.row)"  //2.
+        
+        cell.textLabel?.text = text //3.
+        
+        return cell //4.
     }
     
     

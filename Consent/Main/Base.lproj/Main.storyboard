@@ -10,6 +10,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
@@ -19,15 +24,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are logged in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXf-ZJ-hEN" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="121" y="128" width="133" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBX-Wt-5fw" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="161" y="282" width="60" height="30"/>
+                                <rect key="frame" x="16" y="12" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="Button"/>
                                 <state key="normal" title="Sign Out">
@@ -37,12 +35,22 @@
                                     <action selector="signOut" destination="BYZ-38-t0r" eventType="touchUpInside" id="thb-AA-1a1"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RGb-cY-Wug" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="121" y="403" width="140" height="140"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="RGb-cY-Wug" secondAttribute="height" multiplier="1:1" id="8J3-4V-RGg"/>
-                                </constraints>
-                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Ac-2z-Nwl">
+                                <rect key="frame" x="0.0" y="134" width="375" height="533"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" name="Background"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="156" id="gc6-n5-LBf">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gc6-n5-LBf" id="K0T-vG-agT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="155.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Background"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCh-bs-u25" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="200" y="603" width="54" height="54"/>
                                 <constraints>
@@ -87,6 +95,25 @@
                                     <action selector="mainBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m2V-sG-hJE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IL-yn-SeG" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="129" y="89" width="116" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Button"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Name">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchSearchType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HEi-JA-MYr"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEl-Ma-bUR" customClass="UITextFieldX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="43" y="51" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
                         <color key="tintColor" name="Tint"/>
@@ -95,13 +122,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3p5-Q1-fcz" secondAttribute="trailing" constant="7" id="9WF-WN-PG0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3p5-Q1-fcz" secondAttribute="bottom" constant="7" id="Eyk-1N-ZKT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BCh-bs-u25" secondAttribute="bottom" constant="10" id="V4h-49-7j4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RGb-cY-Wug" secondAttribute="bottom" constant="124" id="WtF-7a-hcO"/>
+                            <constraint firstAttribute="bottom" secondItem="8Ac-2z-Nwl" secondAttribute="bottom" id="VN8-S8-Gi7"/>
                             <constraint firstItem="3p5-Q1-fcz" firstAttribute="leading" secondItem="BCh-bs-u25" secondAttribute="trailing" constant="24" id="Y5v-OU-256"/>
                             <constraint firstItem="BCh-bs-u25" firstAttribute="top" secondItem="TAd-Wm-Bdd" secondAttribute="bottom" constant="22" id="ZZZ-ly-Wpy"/>
+                            <constraint firstItem="8Ac-2z-Nwl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bKm-xo-tCq"/>
+                            <constraint firstItem="8Ac-2z-Nwl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ksS-jC-OGM"/>
+                            <constraint firstItem="8Ac-2z-Nwl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="114" id="oVm-PR-nwX"/>
                             <constraint firstItem="3p5-Q1-fcz" firstAttribute="top" secondItem="Efv-fC-qPg" secondAttribute="bottom" constant="29" id="q0W-b2-jFk"/>
                             <constraint firstItem="Efv-fC-qPg" firstAttribute="leading" secondItem="TAd-Wm-Bdd" secondAttribute="trailing" constant="31" id="rM6-Ji-OWI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RGb-cY-Wug" secondAttribute="trailing" constant="114" id="rQa-wn-YTs"/>
-                            <constraint firstItem="RGb-cY-Wug" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="rhK-ML-3vm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -110,7 +138,9 @@
                         <outlet property="infoB" destination="TAd-Wm-Bdd" id="aSf-Gc-OJe"/>
                         <outlet property="mainMenuB" destination="3p5-Q1-fcz" id="O7F-Xp-Zzd"/>
                         <outlet property="profileB" destination="BCh-bs-u25" id="IzU-wo-Dbk"/>
-                        <outlet property="testImage" destination="RGb-cY-Wug" id="suR-WP-nHJ"/>
+                        <outlet property="searchBar" destination="eEl-Ma-bUR" id="h2y-G1-Tq5"/>
+                        <outlet property="searchTypeB" destination="8IL-yn-SeG" id="mDA-JR-PJx"/>
+                        <outlet property="tableViewU" destination="8Ac-2z-Nwl" id="51Y-90-dc8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

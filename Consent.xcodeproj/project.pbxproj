@@ -72,7 +72,8 @@
 		EC58511821DC5FAB00D53BF5 /* AddEntry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC58511721DC5FAB00D53BF5 /* AddEntry.storyboard */; };
 		EC58511A21DC5FBD00D53BF5 /* InfoPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC58511921DC5FBD00D53BF5 /* InfoPage.storyboard */; };
 		EC58511C21DC5FC600D53BF5 /* ProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC58511B21DC5FC600D53BF5 /* ProfilePage.storyboard */; };
-		EC58511E21DC5FFD00D53BF5 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58511D21DC5FFD00D53BF5 /* TableView.swift */; };
+		EC58511E21DC5FFD00D53BF5 /* TableViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58511D21DC5FFD00D53BF5 /* TableViewCode.swift */; };
+		EC58512021DC7AA400D53BF5 /* SearchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EC58511F21DC7AA400D53BF5 /* SearchIcon.png */; };
 		ECA08CD421D470A100565DC5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CD221D470A000565DC5 /* Extensions.swift */; };
 		ECA08CD821D470C200565DC5 /* PWReset.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA08CD621D470BF00565DC5 /* PWReset.storyboard */; };
 		ECA08CD921D470C200565DC5 /* PWResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CD721D470C200565DC5 /* PWResetVC.swift */; };
@@ -177,7 +178,8 @@
 		EC58511721DC5FAB00D53BF5 /* AddEntry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddEntry.storyboard; sourceTree = "<group>"; };
 		EC58511921DC5FBD00D53BF5 /* InfoPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoPage.storyboard; sourceTree = "<group>"; };
 		EC58511B21DC5FC600D53BF5 /* ProfilePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilePage.storyboard; sourceTree = "<group>"; };
-		EC58511D21DC5FFD00D53BF5 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		EC58511D21DC5FFD00D53BF5 /* TableViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCode.swift; sourceTree = "<group>"; };
+		EC58511F21DC7AA400D53BF5 /* SearchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SearchIcon.png; sourceTree = "<group>"; };
 		ECA08CD221D470A000565DC5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ECA08CD621D470BF00565DC5 /* PWReset.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PWReset.storyboard; sourceTree = "<group>"; };
 		ECA08CD721D470C200565DC5 /* PWResetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWResetVC.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 		3DCA03E221B087C90063B38E /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				EC58511F21DC7AA400D53BF5 /* SearchIcon.png */,
 				EC58510921DC1F0E00D53BF5 /* AddEntryIcon.png */,
 				EC58510821DC1F0E00D53BF5 /* InfoIcon.png */,
 				EC58510A21DC1F0E00D53BF5 /* ProfileIcon.png */,
@@ -352,7 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				3DF7657B216BD76100E78EE0 /* MainVC.swift */,
-				EC58511D21DC5FFD00D53BF5 /* TableView.swift */,
+				EC58511D21DC5FFD00D53BF5 /* TableViewCode.swift */,
 				3DF7657D216BD76100E78EE0 /* Main.storyboard */,
 				EC58511021DC5E8E00D53BF5 /* AddEntryPage */,
 				EC58510F21DC5E7F00D53BF5 /* InfoPage */,
@@ -598,6 +601,7 @@
 				EC27E46321D53000005B5A78 /* UncheckedBox.png in Resources */,
 				3DF7657F216BD76100E78EE0 /* Main.storyboard in Resources */,
 				EC58511821DC5FAB00D53BF5 /* AddEntry.storyboard in Resources */,
+				EC58512021DC7AA400D53BF5 /* SearchIcon.png in Resources */,
 				3DAF746421C1CA1E00235E9C /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				3DAF745721C1CA1E00235E9C /* Montserrat-ThinItalic.ttf in Resources */,
 				3DAF745F21C1CA1E00235E9C /* Montserrat-ExtraBold.ttf in Resources */,
@@ -720,7 +724,7 @@
 				ECA08CE821D4A8B800565DC5 /* Constants.swift in Sources */,
 				EC27E47C21D725FF005B5A78 /* UIVisualEffectViewX.swift in Sources */,
 				3DF7657C216BD76100E78EE0 /* MainVC.swift in Sources */,
-				EC58511E21DC5FFD00D53BF5 /* TableView.swift in Sources */,
+				EC58511E21DC5FFD00D53BF5 /* TableViewCode.swift in Sources */,
 				ECA08CE121D48FDF00565DC5 /* SuccessPopUp.swift in Sources */,
 				EC58511621DC5F9900D53BF5 /* AddEntryVC.swift in Sources */,
 				ECA08CEC21D525B600565DC5 /* ErrorPopUp.swift in Sources */,

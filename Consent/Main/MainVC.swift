@@ -10,15 +10,17 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class MainVC: UIViewController {
+class MainVC: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var testImage: UIImageViewX!
     @IBOutlet weak var mainMenuB: UIButtonX!
     @IBOutlet weak var infoB: UIButtonX!
     @IBOutlet weak var profileB: UIButtonX!
     @IBOutlet weak var addEntryB: UIButtonX!
-
     
+    @IBOutlet weak var searchBar: UITextFieldX!
+    @IBOutlet weak var searchTypeB: UIButtonX!
+    @IBOutlet weak var tableViewU: UITableView!
+
     var userRef = Database.database().reference()
     var profilePicRef = Storage.storage().reference()
     
@@ -29,34 +31,26 @@ class MainVC: UIViewController {
     var timer: Timer!
     var counter = 0
     
+    var nameType = true
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
-        //setting references
-        profilePicRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("profile_images").child("user/\(String(describing: Auth.auth().currentUser?.uid)))")
-        userRef = userRef.child("users").child((Auth.auth().currentUser?.uid)!).child("ProfilePic")
         DispatchQueue.global(qos: .userInteractive).async {
             //background thread
-            self.userRef.observe(.value, with: {(snapshot) in
-                // Get download URL from snapshot
-                let downloadURL = snapshot.value as! String
-                // Create a storage reference from the URL
-                let storageRef = Storage.storage().reference(forURL: downloadURL)
-                // Download the data, assuming a max size of 1MB (you can change this as necessary)
-                storageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) -> Void in
-                    // Create a UIImage, add it to the array
-                    let pic = UIImage(data: data!)
-                    self.testImage.image = pic
-                }
-            })
             DispatchQueue.main.async {
                 //UI thread
-                self.testImage.setRounded()
+                /*self.testImage.setRounded()
                 self.testImage.borderWidth = 1
                 self.testImage.borderColor = #colorLiteral(red: 0.7607843137, green: 0.7647058824, blue: 0.7725490196, alpha: 1)
-                self.testImage.contentMode = .scaleAspectFill
+                self.testImage.contentMode = .scaleAspectFill*/
+                
+                SetFuncs.setTextFields(field: self.searchBar, img: #imageLiteral(resourceName: "SearchIcon.png"))
+                SetFuncs.setButton(btn: self.searchTypeB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
+                
+                self.tableViewU.dataSource = self
                 
                 self.mainMenuB.setRounded()
                 self.mainMenuB.isSelected = false
@@ -67,8 +61,6 @@ class MainVC: UIViewController {
                 
             }
         }
-        
-        
     }
     override func viewDidLayoutSubviews() {
         infoBCenter = infoB.center
@@ -113,6 +105,14 @@ class MainVC: UIViewController {
     }
     @IBAction func addEntryBClicked(_ sender: UIButtonX){
         
+    }
+    @IBAction func switchSearchType(_ sender: UIButtonX){
+        if(!nameType){
+            sender.setTitle("Date", for: .normal)
+        }else if nameType{
+            sender.setTitle("Name", for: .normal)
+        }
+        nameType = !nameType
     }
     @IBAction func signOut(){
         if Auth.auth().currentUser != nil{
