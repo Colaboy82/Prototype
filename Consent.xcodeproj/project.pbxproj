@@ -66,6 +66,13 @@
 		EC58510B21DC1F0F00D53BF5 /* InfoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EC58510821DC1F0E00D53BF5 /* InfoIcon.png */; };
 		EC58510C21DC1F0F00D53BF5 /* AddEntryIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EC58510921DC1F0E00D53BF5 /* AddEntryIcon.png */; };
 		EC58510D21DC1F0F00D53BF5 /* ProfileIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EC58510A21DC1F0E00D53BF5 /* ProfileIcon.png */; };
+		EC58511221DC5F7A00D53BF5 /* ProfilePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58511121DC5F7A00D53BF5 /* ProfilePageVC.swift */; };
+		EC58511421DC5F8700D53BF5 /* InfoPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58511321DC5F8700D53BF5 /* InfoPageVC.swift */; };
+		EC58511621DC5F9900D53BF5 /* AddEntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58511521DC5F9900D53BF5 /* AddEntryVC.swift */; };
+		EC58511821DC5FAB00D53BF5 /* AddEntry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC58511721DC5FAB00D53BF5 /* AddEntry.storyboard */; };
+		EC58511A21DC5FBD00D53BF5 /* InfoPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC58511921DC5FBD00D53BF5 /* InfoPage.storyboard */; };
+		EC58511C21DC5FC600D53BF5 /* ProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC58511B21DC5FC600D53BF5 /* ProfilePage.storyboard */; };
+		EC58511E21DC5FFD00D53BF5 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58511D21DC5FFD00D53BF5 /* TableView.swift */; };
 		ECA08CD421D470A100565DC5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CD221D470A000565DC5 /* Extensions.swift */; };
 		ECA08CD821D470C200565DC5 /* PWReset.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA08CD621D470BF00565DC5 /* PWReset.storyboard */; };
 		ECA08CD921D470C200565DC5 /* PWResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CD721D470C200565DC5 /* PWResetVC.swift */; };
@@ -164,6 +171,13 @@
 		EC58510821DC1F0E00D53BF5 /* InfoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoIcon.png; sourceTree = "<group>"; };
 		EC58510921DC1F0E00D53BF5 /* AddEntryIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddEntryIcon.png; sourceTree = "<group>"; };
 		EC58510A21DC1F0E00D53BF5 /* ProfileIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ProfileIcon.png; sourceTree = "<group>"; };
+		EC58511121DC5F7A00D53BF5 /* ProfilePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageVC.swift; sourceTree = "<group>"; };
+		EC58511321DC5F8700D53BF5 /* InfoPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageVC.swift; sourceTree = "<group>"; };
+		EC58511521DC5F9900D53BF5 /* AddEntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryVC.swift; sourceTree = "<group>"; };
+		EC58511721DC5FAB00D53BF5 /* AddEntry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddEntry.storyboard; sourceTree = "<group>"; };
+		EC58511921DC5FBD00D53BF5 /* InfoPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoPage.storyboard; sourceTree = "<group>"; };
+		EC58511B21DC5FC600D53BF5 /* ProfilePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilePage.storyboard; sourceTree = "<group>"; };
+		EC58511D21DC5FFD00D53BF5 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		ECA08CD221D470A000565DC5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ECA08CD621D470BF00565DC5 /* PWReset.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PWReset.storyboard; sourceTree = "<group>"; };
 		ECA08CD721D470C200565DC5 /* PWResetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWResetVC.swift; sourceTree = "<group>"; };
@@ -338,7 +352,11 @@
 			isa = PBXGroup;
 			children = (
 				3DF7657B216BD76100E78EE0 /* MainVC.swift */,
+				EC58511D21DC5FFD00D53BF5 /* TableView.swift */,
 				3DF7657D216BD76100E78EE0 /* Main.storyboard */,
+				EC58511021DC5E8E00D53BF5 /* AddEntryPage */,
+				EC58510F21DC5E7F00D53BF5 /* InfoPage */,
+				EC58510E21DC5E6D00D53BF5 /* ProfilePage */,
 				3DF765A7216BD7E200E78EE0 /* UserLogin */,
 				ECA08CDA21D470C800565DC5 /* PwReset */,
 			);
@@ -381,6 +399,33 @@
 				EC27E48521D824A1005B5A78 /* UserModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EC58510E21DC5E6D00D53BF5 /* ProfilePage */ = {
+			isa = PBXGroup;
+			children = (
+				EC58511121DC5F7A00D53BF5 /* ProfilePageVC.swift */,
+				EC58511B21DC5FC600D53BF5 /* ProfilePage.storyboard */,
+			);
+			path = ProfilePage;
+			sourceTree = "<group>";
+		};
+		EC58510F21DC5E7F00D53BF5 /* InfoPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC58511321DC5F8700D53BF5 /* InfoPageVC.swift */,
+				EC58511921DC5FBD00D53BF5 /* InfoPage.storyboard */,
+			);
+			path = InfoPage;
+			sourceTree = "<group>";
+		};
+		EC58511021DC5E8E00D53BF5 /* AddEntryPage */ = {
+			isa = PBXGroup;
+			children = (
+				EC58511521DC5F9900D53BF5 /* AddEntryVC.swift */,
+				EC58511721DC5FAB00D53BF5 /* AddEntry.storyboard */,
+			);
+			path = AddEntryPage;
 			sourceTree = "<group>";
 		};
 		ECA08CD521D470AA00565DC5 /* Helper Functions */ = {
@@ -548,9 +593,11 @@
 				3DAF745521C1CA1E00235E9C /* Montserrat-BoldItalic.ttf in Resources */,
 				3DCA03E821B0883C0063B38E /* return.png in Resources */,
 				3DAF745321C1CA1E00235E9C /* Montserrat-LightItalic.ttf in Resources */,
+				EC58511A21DC5FBD00D53BF5 /* InfoPage.storyboard in Resources */,
 				3DCA03EC21B088560063B38E /* message-1.png in Resources */,
 				EC27E46321D53000005B5A78 /* UncheckedBox.png in Resources */,
 				3DF7657F216BD76100E78EE0 /* Main.storyboard in Resources */,
+				EC58511821DC5FAB00D53BF5 /* AddEntry.storyboard in Resources */,
 				3DAF746421C1CA1E00235E9C /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				3DAF745721C1CA1E00235E9C /* Montserrat-ThinItalic.ttf in Resources */,
 				3DAF745F21C1CA1E00235E9C /* Montserrat-ExtraBold.ttf in Resources */,
@@ -560,6 +607,7 @@
 				EC27E46921D5307F005B5A78 /* checked.png in Resources */,
 				3DCA03E621B088350063B38E /* reload.png in Resources */,
 				EC58510B21DC1F0F00D53BF5 /* InfoIcon.png in Resources */,
+				EC58511C21DC5FC600D53BF5 /* ProfilePage.storyboard in Resources */,
 				3DAF745A21C1CA1E00235E9C /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,9 +720,12 @@
 				ECA08CE821D4A8B800565DC5 /* Constants.swift in Sources */,
 				EC27E47C21D725FF005B5A78 /* UIVisualEffectViewX.swift in Sources */,
 				3DF7657C216BD76100E78EE0 /* MainVC.swift in Sources */,
+				EC58511E21DC5FFD00D53BF5 /* TableView.swift in Sources */,
 				ECA08CE121D48FDF00565DC5 /* SuccessPopUp.swift in Sources */,
+				EC58511621DC5F9900D53BF5 /* AddEntryVC.swift in Sources */,
 				ECA08CEC21D525B600565DC5 /* ErrorPopUp.swift in Sources */,
 				ECA08CD421D470A100565DC5 /* Extensions.swift in Sources */,
+				EC58511421DC5F8700D53BF5 /* InfoPageVC.swift in Sources */,
 				3DF765A9216BD80900E78EE0 /* SignUpVC.swift in Sources */,
 				EC27E48621D824A1005B5A78 /* UserModel.swift in Sources */,
 				EC27E47E21D725FF005B5A78 /* UITextFieldX.swift in Sources */,
@@ -689,6 +740,7 @@
 				EC27E48121D725FF005B5A78 /* UIImageViewX.swift in Sources */,
 				EC27E47D21D725FF005B5A78 /* UIViewAnchorPoint.swift in Sources */,
 				3DF7657A216BD76100E78EE0 /* AppDelegate.swift in Sources */,
+				EC58511221DC5F7A00D53BF5 /* ProfilePageVC.swift in Sources */,
 				EC27E48321D728E0005B5A78 /* SetFuncs.swift in Sources */,
 				EC27E47A21D725FF005B5A78 /* UILabelX.swift in Sources */,
 			);
