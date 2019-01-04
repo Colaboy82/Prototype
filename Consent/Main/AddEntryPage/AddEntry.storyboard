@@ -6,9 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--AddEntry-->
         <scene sceneID="tGz-ko-gJn">
@@ -18,25 +24,136 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtH-n6-hcI">
-                                <rect key="frame" x="0.0" y="556" width="126" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtH-n6-hcI">
+                                <rect key="frame" x="0.0" y="606" width="67" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="E2N-L0-O3H"/>
+                                    <constraint firstAttribute="height" constant="61" id="q7C-q7-Zdk"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="return.png"/>
                                 <connections>
                                     <action selector="back:" destination="aEd-S2-FPF" eventType="touchUpInside" id="Wxd-oJ-UfV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I hereby agree to the following actions listed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoZ-fp-MUZ" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="16" y="54" width="343" height="19"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sc7-R8-Hir">
+                                <rect key="frame" x="16" y="81" width="343" height="207"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sc7-R8-Hir" secondAttribute="height" multiplier="343:207" id="4Dz-EC-5zb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter User ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g5Y-8W-LRL" customClass="UITextFieldX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="16" y="338" width="343" height="30"/>
+                                <color key="tintColor" name="Tint"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VidIcon" translatesAutoresizingMaskIntoConstraints="NO" id="so8-31-uj8" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="51" y="410" width="72" height="71"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVi-em-IqT" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="142" y="437" width="124.5" height="33"/>
+                                <color key="backgroundColor" name="Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KVi-em-IqT" secondAttribute="height" multiplier="49:13" id="paE-ug-EXl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="record:" destination="aEd-S2-FPF" eventType="touchUpInside" id="fZf-G5-y7K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rod-1h-SMS" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="95" y="571" width="185" height="33"/>
+                                <color key="backgroundColor" name="Button"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="aEd-S2-FPF" eventType="touchUpInside" id="Pc9-wX-ELv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Saved: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZ8-3c-uMO" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="127" y="487" width="121" height="22"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ErrorIcon" translatesAutoresizingMaskIntoConstraints="NO" id="dmK-X1-Kx2" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="256" y="479" width="46" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dmK-X1-Kx2" secondAttribute="height" multiplier="46:39" id="6JF-fE-6Cz"/>
+                                    <constraint firstAttribute="height" constant="39" id="yJg-zu-d80"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="qtH-n6-hcI" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" id="Bpc-3G-qDg"/>
+                            <constraint firstItem="qtH-n6-hcI" firstAttribute="bottom" secondItem="91j-bF-KKS" secondAttribute="bottom" id="K57-nS-gHl"/>
+                            <constraint firstItem="VZ8-3c-uMO" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" constant="127" id="QHu-gL-x7a"/>
+                            <constraint firstItem="WoZ-fp-MUZ" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" constant="16" id="QqI-H5-uZn"/>
+                            <constraint firstItem="rod-1h-SMS" firstAttribute="top" secondItem="so8-31-uj8" secondAttribute="bottom" constant="90" id="Ssb-8J-l5c"/>
+                            <constraint firstItem="sc7-R8-Hir" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" constant="16" id="VET-Qe-lCl"/>
+                            <constraint firstItem="g5Y-8W-LRL" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" constant="16" id="XQE-b1-yv3"/>
+                            <constraint firstItem="rod-1h-SMS" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" constant="95" id="Xf6-Fv-h28"/>
+                            <constraint firstItem="91j-bF-KKS" firstAttribute="trailing" secondItem="WoZ-fp-MUZ" secondAttribute="trailing" constant="16" id="Xwr-tS-7Gb"/>
+                            <constraint firstItem="91j-bF-KKS" firstAttribute="trailing" secondItem="g5Y-8W-LRL" secondAttribute="trailing" constant="16" id="Zm5-P9-qxV"/>
+                            <constraint firstItem="KVi-em-IqT" firstAttribute="leading" secondItem="so8-31-uj8" secondAttribute="trailing" constant="19" id="aRY-Fg-f4V"/>
+                            <constraint firstItem="g5Y-8W-LRL" firstAttribute="top" secondItem="sc7-R8-Hir" secondAttribute="bottom" constant="50" id="agK-dH-dSo"/>
+                            <constraint firstItem="WoZ-fp-MUZ" firstAttribute="top" secondItem="91j-bF-KKS" secondAttribute="top" constant="34" id="k4m-Ng-TZV"/>
+                            <constraint firstItem="dmK-X1-Kx2" firstAttribute="leading" secondItem="VZ8-3c-uMO" secondAttribute="trailing" constant="8" id="kMP-DM-ytO"/>
+                            <constraint firstItem="sc7-R8-Hir" firstAttribute="top" secondItem="WoZ-fp-MUZ" secondAttribute="bottom" constant="8" id="lCQ-gm-jfE"/>
+                            <constraint firstItem="dmK-X1-Kx2" firstAttribute="top" secondItem="KVi-em-IqT" secondAttribute="bottom" constant="9" id="obK-O0-w5N"/>
+                            <constraint firstItem="91j-bF-KKS" firstAttribute="bottom" secondItem="rod-1h-SMS" secondAttribute="bottom" constant="63" id="px9-Bk-Ybb"/>
+                            <constraint firstItem="VZ8-3c-uMO" firstAttribute="top" secondItem="KVi-em-IqT" secondAttribute="bottom" constant="17" id="qH4-2x-nIk"/>
+                            <constraint firstItem="so8-31-uj8" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" constant="51" id="teL-d0-YTe"/>
+                            <constraint firstItem="rod-1h-SMS" firstAttribute="top" secondItem="VZ8-3c-uMO" secondAttribute="bottom" constant="62" id="wa9-8x-Sn3"/>
+                            <constraint firstItem="91j-bF-KKS" firstAttribute="trailing" secondItem="rod-1h-SMS" secondAttribute="trailing" constant="95" id="xcV-y5-9NZ"/>
+                            <constraint firstItem="91j-bF-KKS" firstAttribute="trailing" secondItem="sc7-R8-Hir" secondAttribute="trailing" constant="16" id="zc9-Et-ail"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="91j-bF-KKS"/>
                     </view>
+                    <connections>
+                        <outlet property="agreedActionTextBox" destination="sc7-R8-Hir" id="BQT-SL-JNi"/>
+                        <outlet property="descriptionLbl" destination="WoZ-fp-MUZ" id="mkz-t6-D44"/>
+                        <outlet property="recordB" destination="KVi-em-IqT" id="GR8-9H-Ajr"/>
+                        <outlet property="submitB" destination="rod-1h-SMS" id="b3x-W1-cgQ"/>
+                        <outlet property="uidTextBox" destination="g5Y-8W-LRL" id="zJz-ZI-ydV"/>
+                        <outlet property="vidImgView" destination="so8-31-uj8" id="wAl-T6-6dG"/>
+                        <outlet property="vidSavedIcon" destination="dmK-X1-Kx2" id="0za-Zn-ocL"/>
+                        <outlet property="vidSavedLbl" destination="VZ8-3c-uMO" id="fIf-aU-Y1f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avQ-Cl-bDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="185" y="146"/>
+            <point key="canvasLocation" x="184.80000000000001" y="145.27736131934034"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ErrorIcon" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="VidIcon" width="72" height="71"/>
         <image name="return.png" width="512" height="512"/>
+        <namedColor name="Background">
+            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Button">
+            <color red="0.20784313725490197" green="0.36470588235294116" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Tint">
+            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

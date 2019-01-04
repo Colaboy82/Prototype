@@ -251,7 +251,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
         Auth.auth().createUser(withEmail: email, password: pw) { (user, error) in
             
             func uploadProfilePic(_ img: UIImage, completion: @escaping (_ url: String?) -> ()){
-                guard let uid = Auth.auth().currentUser?.uid else { return }
+                guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
                 let profilePicRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("profile_images").child("user/\(uid)")
                 
                 guard let imageData = img.jpegData(compressionQuality: 0.5)else { return }

@@ -37,7 +37,7 @@ class UserModel{
         self.profilePic = profilePic
     }
     func setValues(){
-        let userRef = Database.database().reference().child("users").child(user.uid)
+        let userRef = Database.database().reference().child("users").child(user.uid.trunc(length: SetFuncs.uidCharacterLength))
         let values = ["email": email,
                       "firstName": firstName,
                       "middleName": midName,
@@ -45,7 +45,7 @@ class UserModel{
                       "phoneNum": phoneNum,
                       "gender": gender,
                       "ProfilePic": profilePic,
-                      "UserID": user.uid.trunc(length: 15)] as [String : Any]
+                      "UserID": user.uid.trunc(length: SetFuncs.uidCharacterLength)] as [String : Any]
         userRef.updateChildValues(values, withCompletionBlock: { (error, ref) in
             if error != nil{
                 print(error!)

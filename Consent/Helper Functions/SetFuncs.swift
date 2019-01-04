@@ -12,6 +12,8 @@ import Firebase
 
 class SetFuncs{
 
+    public static var uidCharacterLength = 10
+    
     public static func setButton(btn: UIButtonX, color: CGColor!){
         btn.layer.cornerRadius = 15
         btn.clipsToBounds = true
@@ -45,6 +47,16 @@ class SetFuncs{
     
     public static func setTxt(lbl: UILabelX){//, type: AlertType){
     
+    }
+    
+    public static func setTextView(view: UITextView){
+        view.clipsToBounds = true
+        view.layer.cornerRadius = 15
+        view.layer.borderColor = #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1)
+        view.layer.borderWidth = 2
+        let fontSize = view.font!.pointSize
+        view.font = UIFont(name: "Montserrat Medium", size: fontSize)
+        view.adjustsFontForContentSizeCategory = true
     }
 
 }

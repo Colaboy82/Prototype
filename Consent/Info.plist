@@ -48,5 +48,7 @@
 	<string>You can choose photos to use as a profile picture.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>You can choose photos to use as a profile picture.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Please give access to microphone</string>
 </dict>
 </plist>
