@@ -250,6 +250,47 @@
             </objects>
             <point key="canvasLocation" x="2206" y="169"/>
         </scene>
+        <!--ConfirmConsent-->
+        <scene sceneID="Nrl-s2-cty">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmConsent" title="ConfirmConsent" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ian-aF-2HS" customClass="ConfirmConsentPopUp" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nI2-0p-CSy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jpr-da-BTQ" customClass="UIViewX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="28" y="61" width="319" height="545"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTU-gs-1rE" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="260" width="249" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="Button"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="21"/>
+                                        <state key="normal" title="Confirm">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closePopUp:" destination="Ian-aF-2HS" eventType="touchUpInside" id="qiF-xG-4QZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="Secondary Background"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Tint"/>
+                        <viewLayoutGuide key="safeArea" id="h4X-jg-9R3"/>
+                    </view>
+                    <connections>
+                        <outlet property="dismissPopUpB" destination="qTU-gs-1rE" id="JgO-rz-rw3"/>
+                        <outlet property="popUpView" destination="Jpr-da-BTQ" id="kGd-yC-fn9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gw-GU-eUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2880.8000000000002" y="168.6656671664168"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ErrorIcon" width="409.60000610351562" height="409.60000610351562"/>
