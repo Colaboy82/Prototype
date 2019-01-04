@@ -58,5 +58,29 @@ class SetFuncs{
         view.font = UIFont(name: "Montserrat Medium", size: fontSize)
         view.adjustsFontForContentSizeCategory = true
     }
-
+    
+    public static func getDate() -> String{
+        // get the current date and time
+        let currentDateTime = Date()
+        
+        // initialize the date formatter and set the style
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        formatter.dateStyle = .short
+        
+        // get the date time String from the date object
+        return formatter.string(from: currentDateTime) // 10/8/16 at 10:48 PM
+    }
+    public static func getFirebaseDate() -> String{
+        // get the current date and time
+        let currentDateTime = Date()
+        
+        // initialize the date formatter and set the style
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        formatter.dateStyle = .medium
+        
+        // get the date time String from the date object
+        return formatter.string(from: currentDateTime) // Oct 8, 2016 at 10:48 PM
+    }
 }

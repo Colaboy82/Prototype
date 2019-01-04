@@ -27,7 +27,6 @@ class AddEntryVC: UIViewController {
     var btnTimer: Timer!
     
     var vidController = UIImagePickerController()
-    let videoFileName = "/video.mp4"
     var savedVid: URL!
     
     var uidExists = false
@@ -101,6 +100,27 @@ class AddEntryVC: UIViewController {
     @IBAction func submit(_ sender: UIButtonX){
         btnTimer.invalidate()
         vidTimer.invalidate()
+        
+        uploadVid(vidURL: savedVid)
+        
+        let userRef = Database.database().reference().child("users").child(uidTextBox.text!)
+        userRef.observeSingleEvent(of: .value, with: {(snapshot) in
+            let e = ConsentEntryModel.init(user: Auth.auth().currentUser!,
+                                           date: SetFuncs.getDate(),
+                                           otherUserID: self.uidTextBox.text!,
+                                           vidUrl: self.savedVid!.absoluteString,
+                                           email: snapshot.childSnapshot(forPath: "email").value as! String,
+                                           firstName: snapshot.childSnapshot(forPath: "firstName").value as! String,
+                                           midName: snapshot.childSnapshot(forPath: "middleName").value as! String,
+                                           lastName: snapshot.childSnapshot(forPath: "lastName").value as! String,
+                                           phoneNum: snapshot.childSnapshot(forPath: "phoneNum").value as! String,
+                                           gender: snapshot.childSnapshot(forPath: "gender").value as! String,
+                                           profilePicUrl: snapshot.childSnapshot(forPath: "ProfilePic").value as! String,
+                                           agreedActions: self.agreedActionTextBox.text!)
+            e.createEntry()
+        })
+        self.modalTransitionStyle = .crossDissolve
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func record(_ sender: UIButtonX){
         takeVid()
@@ -124,6 +144,18 @@ extension AddEntryVC: UIImagePickerControllerDelegate, UINavigationControllerDel
             savedVid = selectedVideo
         }
         picker.dismiss(animated: true)
+    }
+    func uploadVid(vidURL: URL){
+        guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
+        let vidRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("consent_vids").child("user/\(uid)").child("\(uidTextBox.text!)").child(SetFuncs.getFirebaseDate())
+        
+        vidRef.putFile(from: vidURL, metadata: nil, completion: {(metadata, error) in
+            if error == nil {
+                print("Successful video upload")
+            } else {
+                print(error!.localizedDescription)
+            }
+        })
     }
     func takeVid(){
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
