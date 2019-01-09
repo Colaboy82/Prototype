@@ -60,30 +60,47 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
             confirmBtn.isEnabled = false
         }
     }
-    
+    func uploadSignature(completion: @escaping (_ url: String?) -> ()){
+        let entry = AddEntryVC.entryContent!
+        guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
+        let sigRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("consent_signatures").child("user/\(uid)").child("\(entry[2])").child(SetFuncs.getFirebaseDate())
+        
+        sigRef.putData(signatureView.getPDFSignature(), metadata: nil) { (metaData, error) in
+            if error == nil, metaData != nil{
+                sigRef.downloadURL(completion: { (url, error) in
+                    completion(url?.absoluteString)
+                })
+            }else{
+                print(error?.localizedDescription as Any)
+                completion(nil)
+            }
+        }
+    }
     @IBAction func confirm(_ sender: UIButtonX){
         timer.invalidate()
         
-        
-        signatureView.getPDFSignature()
-        
         let entry = AddEntryVC.entryContent!
+        let main = AddEntryVC()
+        main.uploadVid(vidURL: entry[12] as! URL)
         
-        let e = ConsentEntryModel.init(user: entry[0] as! User,
-                                       date: entry[1] as! String,
-                                       otherUserID: entry[2] as! String,
-                                       vidUrl: entry[3] as! String,
-                                       email: entry[4] as! String,
-                                       firstName: entry[5] as! String,
-                                       midName: entry[6] as! String,
-                                       lastName: entry[7] as! String,
-                                       phoneNum: entry[8] as! String,
-                                       gender: entry[9] as! String,
-                                       profilePicUrl: entry[10] as! String,
-                                       agreedActions: entry[11] as! String,
-                                       firstSignature: "",
-                                       secondSignature: "")
-        e.createEntry()
+        uploadSignature( completion: { (url) in
+            let e = ConsentEntryModel.init(user: entry[0] as! User,
+                                           date: entry[1] as! String,
+                                           otherUserID: entry[2] as! String,
+                                           vidUrl: entry[3] as! String,
+                                           email: entry[4] as! String,
+                                           firstName: entry[5] as! String,
+                                           midName: entry[6] as! String,
+                                           lastName: entry[7] as! String,
+                                           phoneNum: entry[8] as! String,
+                                           gender: entry[9] as! String,
+                                           profilePicUrl: entry[10] as! String,
+                                           agreedActions: entry[11] as! String,
+                                           firstSignature: url!,
+                                           secondSignature: "")
+            e.createEntry()
+        
+        })
         
         //dismiss(animated: true, completion: nil)
         let sb = UIStoryboard(name: "Main", bundle:nil)

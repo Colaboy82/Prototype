@@ -57,7 +57,7 @@ class AddEntryVC: UIViewController {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         // 1. replacementString is NOT empty means we are entering text or pasting text: perform the logic
         // 2. replacementString is empty means we are deleting text: return true
-        if (string.count > 0) {
+        if string.count > 0 {
             let allowedCharacters = CharacterSet.alphanumerics
             
             let unwantedStr = string.trimmingCharacters(in: allowedCharacters)
@@ -105,7 +105,7 @@ class AddEntryVC: UIViewController {
         btnTimer.invalidate()
         vidTimer.invalidate()
         
-        uploadVid(vidURL: savedVid)
+        //uploadVid(vidURL: savedVid)
         
         let userRef = Database.database().reference().child("users").child(uidTextBox.text!)
         userRef.observeSingleEvent(of: .value, with: {(snapshot) in
@@ -119,7 +119,8 @@ class AddEntryVC: UIViewController {
                                        snapshot.childSnapshot(forPath: "lastName").value as! String,
                                        snapshot.childSnapshot(forPath: "phoneNum").value as! String,
                                        snapshot.childSnapshot(forPath: "ProfilePic").value as! String,
-                                       self.agreedActionTextBox.text!]
+                                       self.agreedActionTextBox.text!,
+                                       self.savedVid]
         })
         let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
         let nextVC = sb.instantiateViewController(withIdentifier: "ConfirmConsent")
