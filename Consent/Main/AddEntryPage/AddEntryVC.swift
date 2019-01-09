@@ -33,9 +33,13 @@ class AddEntryVC: UIViewController {
     
     let userRef = Database.database().reference()
     
+    static var entryContent: Array<Any>?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        
+        AddEntryVC.entryContent = []
         
         setEntryFields()
         
@@ -51,9 +55,9 @@ class AddEntryVC: UIViewController {
         vidTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AddEntryVC.vidIconCheck), userInfo: nil, repeats: true)
     }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        /// 1. replacementString is NOT empty means we are entering text or pasting text: perform the logic
-        /// 2. replacementString is empty means we are deleting text: return true
-        if string.count > 0 {
+        // 1. replacementString is NOT empty means we are entering text or pasting text: perform the logic
+        // 2. replacementString is empty means we are deleting text: return true
+        if (string.count > 0) {
             let allowedCharacters = CharacterSet.alphanumerics
             
             let unwantedStr = string.trimmingCharacters(in: allowedCharacters)
@@ -62,16 +66,16 @@ class AddEntryVC: UIViewController {
         return true
     }
     @objc func vidIconCheck(){
-        if(savedVid != nil){
+        if (savedVid != nil){
             vidSavedIcon.image = #imageLiteral(resourceName: "SuccessIcon")
-        }else{
+        } else {
             vidSavedIcon.image = #imageLiteral(resourceName: "ErrorIcon")
         }
     }
     @objc func enableSubmitBtn(){
-        if(submitB.isEnabled){
+        if (submitB.isEnabled){
             submitB.backgroundColor = #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1)
-        }else{
+        } else {
             submitB.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
         }
         submitB.isEnabled = shouldEnableSubmit()
@@ -105,22 +109,22 @@ class AddEntryVC: UIViewController {
         
         let userRef = Database.database().reference().child("users").child(uidTextBox.text!)
         userRef.observeSingleEvent(of: .value, with: {(snapshot) in
-            let e = ConsentEntryModel.init(user: Auth.auth().currentUser!,
-                                           date: SetFuncs.getDate(),
-                                           otherUserID: self.uidTextBox.text!,
-                                           vidUrl: self.savedVid!.absoluteString,
-                                           email: snapshot.childSnapshot(forPath: "email").value as! String,
-                                           firstName: snapshot.childSnapshot(forPath: "firstName").value as! String,
-                                           midName: snapshot.childSnapshot(forPath: "middleName").value as! String,
-                                           lastName: snapshot.childSnapshot(forPath: "lastName").value as! String,
-                                           phoneNum: snapshot.childSnapshot(forPath: "phoneNum").value as! String,
-                                           gender: snapshot.childSnapshot(forPath: "gender").value as! String,
-                                           profilePicUrl: snapshot.childSnapshot(forPath: "ProfilePic").value as! String,
-                                           agreedActions: self.agreedActionTextBox.text!)
-            e.createEntry()
+            AddEntryVC.entryContent = [Auth.auth().currentUser!,
+                                       SetFuncs.getDate(),
+                                       self.uidTextBox.text!,
+                                       self.savedVid!.absoluteString,
+                                       snapshot.childSnapshot(forPath: "email").value as! String,
+                                       snapshot.childSnapshot(forPath: "firstName").value as! String,
+                                       snapshot.childSnapshot(forPath: "middleName").value as! String,
+                                       snapshot.childSnapshot(forPath: "lastName").value as! String,
+                                       snapshot.childSnapshot(forPath: "phoneNum").value as! String,
+                                       snapshot.childSnapshot(forPath: "ProfilePic").value as! String,
+                                       self.agreedActionTextBox.text!]
         })
-        self.modalTransitionStyle = .crossDissolve
-        self.dismiss(animated: true, completion: nil)
+        let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+        let nextVC = sb.instantiateViewController(withIdentifier: "ConfirmConsent")
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated:true, completion:nil)
     }
     @IBAction func record(_ sender: UIButtonX){
         takeVid()

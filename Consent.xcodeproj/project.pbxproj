@@ -87,6 +87,7 @@
 		ECA08CEA21D4AB3600565DC5 /* AccountValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CE921D4AB3600565DC5 /* AccountValidation.swift */; };
 		ECA08CEC21D525B600565DC5 /* ErrorPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CEB21D525B600565DC5 /* ErrorPopUp.swift */; };
 		ECA08CEE21D525D100565DC5 /* LoadingPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CED21D525D100565DC5 /* LoadingPopUp.swift */; };
+		ECCC233B21E565B500A77B41 /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC233A21E565B500A77B41 /* YPDrawSignatureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +198,7 @@
 		ECA08CE921D4AB3600565DC5 /* AccountValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountValidation.swift; sourceTree = "<group>"; };
 		ECA08CEB21D525B600565DC5 /* ErrorPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPopUp.swift; sourceTree = "<group>"; };
 		ECA08CED21D525D100565DC5 /* LoadingPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPopUp.swift; sourceTree = "<group>"; };
+		ECCC233A21E565B500A77B41 /* YPDrawSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPDrawSignatureView.swift; sourceTree = "<group>"; };
 		EE5C0BBF66DFCD16F1BAB55A /* Pods_Consent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Consent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F258033CE93E794121F2D326 /* Pods-Consent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Consent.release.xcconfig"; path = "Pods/Target Support Files/Pods-Consent/Pods-Consent.release.xcconfig"; sourceTree = "<group>"; };
 		F74A8BFBD00AB8360D1C7AA6 /* Pods_ConsentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConsentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -317,6 +319,7 @@
 				EC35BB8821D9700700929AB3 /* Consent-Bridging-Header.h */,
 				3DF76579216BD76100E78EE0 /* AppDelegate.swift */,
 				ECA08CE721D4A8B800565DC5 /* Constants.swift */,
+				ECCC233A21E565B500A77B41 /* YPDrawSignatureView.swift */,
 				EC27E46D21D725F4005B5A78 /* DesignableX */,
 				EC58512321DD1B0B00D53BF5 /* CellTypes */,
 				EC27E48421D82491005B5A78 /* Models */,
@@ -743,6 +746,7 @@
 			files = (
 				ECA08CD921D470C200565DC5 /* PWResetVC.swift in Sources */,
 				ECA08CE821D4A8B800565DC5 /* Constants.swift in Sources */,
+				ECCC233B21E565B500A77B41 /* YPDrawSignatureView.swift in Sources */,
 				EC27E47C21D725FF005B5A78 /* UIVisualEffectViewX.swift in Sources */,
 				3DF7657C216BD76100E78EE0 /* MainVC.swift in Sources */,
 				EC58511E21DC5FFD00D53BF5 /* TableViewCode.swift in Sources */,
