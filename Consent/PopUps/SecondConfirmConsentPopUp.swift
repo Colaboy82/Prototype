@@ -57,7 +57,7 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
             confirmBtn.backgroundColor = #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1)
             confirmBtn.isEnabled = true
         } else {
-            confirmBtn.backgroundColor = #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1)
+            confirmBtn.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
             confirmBtn.isEnabled = false
         }
     }

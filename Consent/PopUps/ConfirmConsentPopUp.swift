@@ -23,6 +23,7 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     @IBOutlet weak var popUpView: UIViewX!
     
     var timer: Timer!
+    var waitForArray: Timer!
     var userRef = Database.database().reference()
 
     override func viewDidLoad() {
@@ -30,11 +31,14 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         setUp()
         
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(shouldEnable), userInfo: nil, repeats: true)
+        waitForArray = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(wait), userInfo: nil, repeats: false)
+        
     }
     
     func setUp(){
         
         SetFuncs.setButton(btn: confirmBtn, color:#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
+        confirmBtn.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
         profilePic.setRounded()
         profilePic.borderWidth = 1
         profilePic.borderColor = #colorLiteral(red: 0.7607843137, green: 0.7647058824, blue: 0.7725490196, alpha: 1)
@@ -51,30 +55,36 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         
         popUpView.layer.cornerRadius = 20
         popUpView.layer.masksToBounds = true
-        
-        /*let entry = AddEntryVC.entryContent!
-        userRef = userRef.child("users").child(entry[2] as! String).child("ProfilePic")
-        userRef.observe(.value, with: {(snapshot) in
-            // Get download URL from snapshot
-            let downloadURL = snapshot.value as! String
-            // Create a storage reference from the URL
-            let storageRef = Storage.storage().reference(forURL: downloadURL)
-            // Download the data, assuming a max size of 1MB (you can change this as necessary)
-            storageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) -> Void in
-                // Create a UIImage, add it to the array
-                let pic = UIImage(data: data!)
-                self.profilePic.image = pic
-            }
-        })*/
-  
+
     }
-    
+    @objc func wait(){
+        let entry = AddEntryVC.entryContent!
+        userRef = userRef.child("users").child((Auth.auth().currentUser?.uid)!).child("ProfilePic")
+        
+        let name = (entry[5] as! String) + (entry[6] as! String) + (entry[7] as! String)
+        nameLbl.text = "Name: \(entry[5] as! String) \(entry[6] as! String) \(entry[7] as! String)"
+        let gender = entry[9] as! String
+        genderLbl.text = "Gender: \(gender)"
+        
+        // Create a storage reference from the URL
+        let storageRef = Storage.storage().reference(forURL: entry[10] as! String)
+        // Download the data, assuming a max size of 1MB (you can change this as necessary)
+        storageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) -> Void in
+            // Create a UIImage, add it to the array
+            let pic = UIImage(data: data!)
+            self.profilePic.image = pic
+        }
+        
+        
+    }
     @objc func shouldEnable(){
         if (signatureView.doesContainSignature){
             SetFuncs.setButton(btn: confirmBtn, color:#colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
+            confirmBtn.backgroundColor = #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1)
             confirmBtn.isEnabled = true
         } else {
             SetFuncs.setButton(btn: confirmBtn, color:#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
+            confirmBtn.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
             confirmBtn.isEnabled = false
         }
     }
