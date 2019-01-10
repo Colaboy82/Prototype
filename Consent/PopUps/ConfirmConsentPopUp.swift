@@ -61,7 +61,7 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         let entry = AddEntryVC.entryContent!
         userRef = userRef.child("users").child((Auth.auth().currentUser?.uid)!).child("ProfilePic")
         
-        let name = (entry[5] as! String) + (entry[6] as! String) + (entry[7] as! String)
+        //let name = (entry[5] as! String) + (entry[6] as! String) + (entry[7] as! String)
         nameLbl.text = "Name: \(entry[5] as! String) \(entry[6] as! String) \(entry[7] as! String)"
         let gender = entry[9] as! String
         genderLbl.text = "Gender: \(gender)"

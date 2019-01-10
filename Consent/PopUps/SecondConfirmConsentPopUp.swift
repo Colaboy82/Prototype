@@ -24,6 +24,10 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     
     var timer: Timer!
     
+    var userID = Auth.auth().currentUser?.uid.trunc(length: 10)
+    var userRef = Database.database().reference().child("users")
+    var entryRef = Database.database().reference().child("ConsentEntries")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
@@ -50,8 +54,37 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         
         popUpView.layer.cornerRadius = 20
         popUpView.layer.masksToBounds = true
+        
+        loadInfo()
     }
-    
+    func loadInfo(){
+        userRef.child(userID!).observe(.value, with: { (snapshot) in
+            let userRequesting = snapshot.childSnapshot(forPath: "RequestFromID").value as! String
+            //let date = snapshot.childSnapshot(forPath: "RequestDate").value as! String
+            
+            self.userRef.child(userRequesting).observe(.value, with: { (snapshot) in
+                let profilePicUrl = snapshot.childSnapshot(forPath: "ProfilePic").value as! String
+                
+                let storageRef = Storage.storage().reference(forURL: profilePicUrl)
+                // Download the data, assuming a max size of 1MB (you can change this as necessary)
+                storageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) -> Void in
+                    // Create a UIImage, add it to the array
+                    let pic = UIImage(data: data!)
+                    self.profilePic.image = pic
+                }
+                
+                let first = snapshot.childSnapshot(forPath: "firstName").value as! String
+                let mid = snapshot.childSnapshot(forPath: "middleName").value as! String
+                let last = snapshot.childSnapshot(forPath: "lastName").value as! String
+                
+                self.nameLbl.text = "Name: \(first) \(mid) \(last)"
+                let gender = snapshot.childSnapshot(forPath: "gender").value as! String
+                self.genderLbl.text = "Gender: \(gender)"
+                
+            })
+            
+        })
+    }
     @objc func shouldEnable(){
         if (signatureView.doesContainSignature){
             confirmBtn.backgroundColor = #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1)
@@ -63,7 +96,7 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     }
     func uploadSignature(completion: @escaping (_ url: String?) -> ()){
         guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
-        let userRef = Database.database().reference().child("users")
+        
         userRef.child(uid).child("RequestFromID").observeSingleEvent(of: .value, with: { (snapshot) in
             let userRequesting = snapshot.value as! String
             
@@ -86,9 +119,6 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     }
     @IBAction func confirm(_ sender: UIButtonX){
         timer.invalidate()
-        let userID = Auth.auth().currentUser?.uid.trunc(length: 10)
-        let userRef = Database.database().reference().child("users")
-        let entryRef = Database.database().reference().child("ConsentEntries")
         
         userRef.child(userID!).updateChildValues(["ConfirmPopUp":false])
 
@@ -97,7 +127,7 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
             let date = snapshot.childSnapshot(forPath: "RequestDate").value as! String
             
             self.uploadSignature( completion: { (url) in
-                let newRef = entryRef.child(userRequesting).child(userID!).child(date)
+                let newRef = self.entryRef.child(userRequesting).child(self.userID!).child(date)
                 newRef.updateChildValues(["secondSignature": url as Any,
                                               "Confirmed": true])
             })
@@ -112,9 +142,6 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     }
     
     @IBAction func cancel(_ sender: UIButtonX){
-        let userID = Auth.auth().currentUser?.uid.trunc(length: 10)
-        let userRef = Database.database().reference().child("users")
-        let entryRef = Database.database().reference().child("ConsentEntries")
         
         userRef.child(userID!).updateChildValues(["ConfirmPopUp":false])
         
@@ -123,7 +150,7 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
             let date = snapshot.childSnapshot(forPath: "RequestDate").value as! String
             
             self.uploadSignature( completion: { (url) in
-                let newRef = entryRef.child(userRequesting).child(userID!).child(date)
+                let newRef = self.entryRef.child(userRequesting).child(self.userID!).child(date)
                 newRef.updateChildValues(["secondSignature": url as Any,
                                           "Confirmed": true])
             })
