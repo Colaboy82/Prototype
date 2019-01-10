@@ -130,7 +130,6 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
                                            firstSignature: url!,
                                            secondSignature: "")
             e.createEntry()
-        
         })
         
         

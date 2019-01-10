@@ -26,11 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             sb = UIStoryboard(name: "Main", bundle: nil)
             initialSB = sb.instantiateViewController(withIdentifier: "MainVC")
         }
-        
+
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         window.rootViewController = initialSB
         window.makeKeyAndVisible()
+        
+        let mainVC = MainVC()
+        mainVC.checkForConfirmPopUp()
         
         return true
     }
