@@ -40,6 +40,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
         
         DispatchQueue.global(qos: .userInteractive).async {
             //background thread
+            self.checkForConfirmPopUp()
             DispatchQueue.main.async {
                 //UI thread
                 /*self.testImage.setRounded()
@@ -62,6 +63,21 @@ class MainVC: UIViewController, UITextFieldDelegate {
             }
         }
     }
+    func checkForConfirmPopUp(){
+        let user = Auth.auth().currentUser?.uid.trunc(length: 10)
+        userRef = Database.database().reference().child("users").child(user!).child("ConfirmPopUp")
+        userRef.observeSingleEvent(of: .value, with: {(snapshot) in
+            let bool = snapshot.value as! Bool
+            if(bool == true){
+                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                let nextVC = sb.instantiateViewController(withIdentifier: "SecondConfirmConsent")
+                nextVC.modalTransitionStyle = .crossDissolve
+                self.present(nextVC, animated:true, completion:nil)
+            }
+        })
+        
+    }
+    
     override func viewDidLayoutSubviews() {
         infoBCenter = infoB.center
         profileBCenter = profileB.center

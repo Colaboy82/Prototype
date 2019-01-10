@@ -118,10 +118,16 @@ class AddEntryVC: UIViewController {
                                        snapshot.childSnapshot(forPath: "middleName").value as! String,
                                        snapshot.childSnapshot(forPath: "lastName").value as! String,
                                        snapshot.childSnapshot(forPath: "phoneNum").value as! String,
+                                       snapshot.childSnapshot(forPath: "gender").value as! String,
                                        snapshot.childSnapshot(forPath: "ProfilePic").value as! String,
                                        self.agreedActionTextBox.text!,
                                        self.savedVid]
         })
+        
+        userRef.updateChildValues(["ConfirmPopUp": true,
+                                   "RequestFromID":Auth.auth().currentUser?.uid.trunc(length: 10) as Any,
+                                   "RequestDate": SetFuncs.getFirebaseDate()])
+        
         let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
         let nextVC = sb.instantiateViewController(withIdentifier: "ConfirmConsent")
         nextVC.modalTransitionStyle = .crossDissolve
@@ -150,9 +156,9 @@ extension AddEntryVC: UIImagePickerControllerDelegate, UINavigationControllerDel
         }
         picker.dismiss(animated: true)
     }
-    func uploadVid(vidURL: URL){
+    func uploadVid(vidURL: URL, otherUID: String){
         guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
-        let vidRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("consent_vids").child("user/\(uid)").child("\(uidTextBox.text!)").child(SetFuncs.getFirebaseDate())
+        let vidRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("consent_vids").child("user/\(uid)").child("\(otherUID)").child(SetFuncs.getFirebaseDate())
         
         vidRef.putFile(from: vidURL, metadata: nil, completion: {(metadata, error) in
             if error == nil {

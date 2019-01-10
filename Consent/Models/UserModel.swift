@@ -45,7 +45,9 @@ class UserModel{
                       "phoneNum": phoneNum,
                       "gender": gender,
                       "ProfilePic": profilePic,
-                      "UserID": user.uid.trunc(length: SetFuncs.uidCharacterLength)] as [String : Any]
+                      "UserID": user.uid.trunc(length: SetFuncs.uidCharacterLength),
+                      "ConfirmPopUp": false,
+                      "FailPopUp": false] as [String : Any]
         userRef.updateChildValues(values, withCompletionBlock: { (error, ref) in
             if error != nil{
                 print(error!)

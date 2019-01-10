@@ -23,7 +23,8 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     @IBOutlet weak var popUpView: UIViewX!
     
     var timer: Timer!
-    
+    var userRef = Database.database().reference()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
@@ -32,6 +33,7 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     }
     
     func setUp(){
+        
         SetFuncs.setButton(btn: confirmBtn, color:#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
         profilePic.setRounded()
         profilePic.borderWidth = 1
@@ -49,6 +51,22 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         
         popUpView.layer.cornerRadius = 20
         popUpView.layer.masksToBounds = true
+        
+        /*let entry = AddEntryVC.entryContent!
+        userRef = userRef.child("users").child(entry[2] as! String).child("ProfilePic")
+        userRef.observe(.value, with: {(snapshot) in
+            // Get download URL from snapshot
+            let downloadURL = snapshot.value as! String
+            // Create a storage reference from the URL
+            let storageRef = Storage.storage().reference(forURL: downloadURL)
+            // Download the data, assuming a max size of 1MB (you can change this as necessary)
+            storageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) -> Void in
+                // Create a UIImage, add it to the array
+                let pic = UIImage(data: data!)
+                self.profilePic.image = pic
+            }
+        })*/
+  
     }
     
     @objc func shouldEnable(){
@@ -65,7 +83,10 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
         let sigRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("consent_signatures").child("user/\(uid)").child("\(entry[2])").child(SetFuncs.getFirebaseDate())
         
-        sigRef.putData(signatureView.getPDFSignature(), metadata: nil) { (metaData, error) in
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/pdf"
+        
+        sigRef.putData(signatureView.getPDFSignature(), metadata: metaData) { (metaData, error) in
             if error == nil, metaData != nil{
                 sigRef.downloadURL(completion: { (url, error) in
                     completion(url?.absoluteString)
@@ -81,10 +102,10 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         
         let entry = AddEntryVC.entryContent!
         let main = AddEntryVC()
-        main.uploadVid(vidURL: entry[12] as! URL)
+        main.uploadVid(vidURL: entry[12] as! URL, otherUID: entry[2] as! String)
         
         uploadSignature( completion: { (url) in
-            let e = ConsentEntryModel.init(user: entry[0] as! User,
+         let e = ConsentEntryModel.init(user: entry[0] as! User,
                                            date: entry[1] as! String,
                                            otherUserID: entry[2] as! String,
                                            vidUrl: entry[3] as! String,
@@ -101,6 +122,7 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
             e.createEntry()
         
         })
+        
         
         //dismiss(animated: true, completion: nil)
         let sb = UIStoryboard(name: "Main", bundle:nil)
