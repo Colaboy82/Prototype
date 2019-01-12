@@ -124,8 +124,7 @@ class AddEntryVC: UIViewController {
                                        self.savedVid]
         })
         
-        userRef.updateChildValues(["ConfirmPopUp": true,
-                                   "RequestFromID":Auth.auth().currentUser?.uid.trunc(length: 10) as Any,
+        userRef.updateChildValues(["RequestFromID":Auth.auth().currentUser?.uid.trunc(length: 10) as Any,
                                    "RequestDate": SetFuncs.getFirebaseDate()])
         
         let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)

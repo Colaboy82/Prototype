@@ -122,7 +122,7 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
             let userRequesting = snapshot.childSnapshot(forPath: "RequestFromID").value as! String
             let date = snapshot.childSnapshot(forPath: "RequestDate").value as! String
             
-            self.entryRef.child(userRequesting).observeSingleEvent(of: .value, with: {(snapshot) in
+            self.entryRef.child(userRequesting).child(self.userID!).child(date).observe(.value, with: {(snapshot) in
                 let entryArray = [Auth.auth().currentUser!,
                                   snapshot.childSnapshot(forPath: "Date").value as! String,
                                   userRequesting,
@@ -133,6 +133,7 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
                                   snapshot.childSnapshot(forPath: "lastName").value as! String,
                                   snapshot.childSnapshot(forPath: "phoneNum").value as! String,
                                   snapshot.childSnapshot(forPath: "gender").value as! String,
+                                  snapshot.childSnapshot(forPath: "ProfilePic").value as! String,
                                   snapshot.childSnapshot(forPath: "AgreedActions").value as! String,
                                   snapshot.childSnapshot(forPath: "FirstSignature").value as! String,
                                   snapshot.childSnapshot(forPath: "secondSignature").value as! String] as [Any]
@@ -153,7 +154,7 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
                                                secondSignature: entryArray[13] as! String)
                 e.createEntry()
                 
-                let newRef = self.entryRef.child(self.userID!).child(date)
+                let newRef = self.entryRef.child(self.userID!).child(entryArray[2] as! String).child(date)
                 newRef.updateChildValues(["Confirmed": true])
             })
         })

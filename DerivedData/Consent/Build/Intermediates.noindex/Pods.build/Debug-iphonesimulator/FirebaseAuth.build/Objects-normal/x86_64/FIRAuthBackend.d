@@ -2,6 +2,12 @@ dependencies: \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthBackend.m \
   /Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseAuth.build/module.modulemap \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthBackend.h \
+  /Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap \
+  /Users/derrickmu/Desktop/Consent/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h \
+  /Users/derrickmu/Desktop/Consent/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h \
+  /Users/derrickmu/Desktop/Consent/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h \
+  /Users/derrickmu/Desktop/Consent/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h \
+  /Users/derrickmu/Desktop/Consent/Pods/Target\ Support\ Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthErrorUtils.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthGlobalWorkQueue.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FirebaseAuth.h \
@@ -16,6 +22,7 @@ dependencies: \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FirebaseAuthVersion.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIREmailAuthProvider.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRFacebookAuthProvider.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGameCenterAuthProvider.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGitHubAuthProvider.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGoogleAuthProvider.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIROAuthProvider.h \
@@ -37,6 +44,8 @@ dependencies: \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRDeleteAccountResponse.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetAccountInfoRequest.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetAccountInfoResponse.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSignInWithGameCenterRequest.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSignInWithGameCenterResponse.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetOOBConfirmationCodeRequest.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetOOBConfirmationCodeResponse.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetProjectConfigRequest.h \
@@ -64,10 +73,4 @@ dependencies: \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRVerifyPhoneNumberRequest.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthOperationType.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRVerifyPhoneNumberResponse.h \
-  /Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap \
-  /Users/derrickmu/Desktop/Consent/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h \
-  /Users/derrickmu/Desktop/Consent/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h \
-  /Users/derrickmu/Desktop/Consent/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h \
-  /Users/derrickmu/Desktop/Consent/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h \
-  /Users/derrickmu/Desktop/Consent/Pods/Target\ Support\ Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/../AuthProviders/Phone/FIRPhoneAuthCredential_Internal.h

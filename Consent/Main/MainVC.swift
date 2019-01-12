@@ -21,7 +21,6 @@ class MainVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var searchTypeB: UIButtonX!
     @IBOutlet weak var tableViewU: UITableView!
 
-    var userRef = Database.database().reference()
     var profilePicRef = Storage.storage().reference()
     
     var infoBCenter: CGPoint!
@@ -40,9 +39,12 @@ class MainVC: UIViewController, UITextFieldDelegate {
         
         DispatchQueue.global(qos: .userInteractive).async {
             //background thread
-            self.checkForConfirmPopUp()
+
             DispatchQueue.main.async {
                 //UI thread
+
+                self.checkForConfirmPopUp()
+                
                 /*self.testImage.setRounded()
                 self.testImage.borderWidth = 1
                 self.testImage.borderColor = #colorLiteral(red: 0.7607843137, green: 0.7647058824, blue: 0.7725490196, alpha: 1)
@@ -64,18 +66,21 @@ class MainVC: UIViewController, UITextFieldDelegate {
         }
     }
     func checkForConfirmPopUp(){
-        let user = Auth.auth().currentUser?.uid.trunc(length: 10)
-        userRef = Database.database().reference().child("users").child(user!).child("ConfirmPopUp")
-        userRef.observeSingleEvent(of: .value, with: {(snapshot) in
-            let bool = snapshot.value as! Bool
-            if(bool == true){
-                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
-                let nextVC = sb.instantiateViewController(withIdentifier: "SecondConfirmConsent")
-                nextVC.modalTransitionStyle = .crossDissolve
-                self.present(nextVC, animated:true, completion:nil)
-            }
-        })
+        if Auth.auth().currentUser != nil {
         
+            let user = Auth.auth().currentUser?.uid.trunc(length: 10)
+            let userRef = Database.database().reference().child("users").child(user!).child("ConfirmPopUp")
+                
+            userRef.observeSingleEvent(of: .value, with: {(snapshot) in
+                let bool = snapshot.value as! Bool
+                if(bool == true){
+                    let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                    let nextVC = sb.instantiateViewController(withIdentifier: "SecondConfirmConsent")
+                    nextVC.modalTransitionStyle = .crossDissolve
+                    self.present(nextVC, animated:true, completion:nil)
+                }
+            })
+        }
     }
     
     override func viewDidLayoutSubviews() {

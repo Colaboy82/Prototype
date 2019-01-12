@@ -68,6 +68,11 @@
         },
         {
           'type': 'file',
+          'name': "FIRGameCenterAuthProvider.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGameCenterAuthProvider.h"
+        },
+        {
+          'type': 'file',
           'name': "FIRGitHubAuthProvider.h",
           'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGitHubAuthProvider.h"
         },
@@ -289,6 +294,155 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRDataEventType.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataEventType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDataSnapshot.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataSnapshot.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDatabase.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabase.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDatabaseQuery.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseQuery.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDatabaseReference.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseReference.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRMutableData.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseDatabase/Firebase/Database/Public/FIRMutableData.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRServerValue.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseDatabase/Firebase/Database/Public/FIRServerValue.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRTransactionResult.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseDatabase/Firebase/Database/Public/FIRTransactionResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseDatabase-Swift.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseDatabase-umbrella.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/Target Support Files/FirebaseDatabase/FirebaseDatabase-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseDatabase.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseDatabase/Firebase/Database/Public/FirebaseDatabase.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseDatabase.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRStorage.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorage.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageConstants.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageDownloadTask.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageDownloadTask.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageMetadata.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageMetadata.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageObservableTask.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageObservableTask.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageReference.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageReference.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageTask.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageTask.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageTaskSnapshot.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageTaskSnapshot.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageUploadTask.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageUploadTask.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseStorage-Swift.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseStorage-umbrella.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/Target Support Files/FirebaseStorage/FirebaseStorage-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseStorage.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/FirebaseStorage/Firebase/Storage/Public/FirebaseStorage.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseStorage.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
       'contents': [
         {
@@ -444,6 +598,11 @@
           'type': 'file',
           'name': "GULSwizzler.h",
           'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/Private/GULSwizzler.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULUserDefaults.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/GoogleUtilities/GoogleUtilities/UserDefaults/Private/GULUserDefaults.h"
         }
       ]
     },
@@ -471,6 +630,170 @@
           'type': 'file',
           'name': "module.modulemap",
           'external-contents': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Pods-Consent.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CGGeometry+RSKImageCropper.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/RSKImageCropper/RSKImageCropper/CGGeometry+RSKImageCropper.h"
+        },
+        {
+          'type': 'file',
+          'name': "RSKImageCropViewController+Protected.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/RSKImageCropper/RSKImageCropper/RSKImageCropViewController+Protected.h"
+        },
+        {
+          'type': 'file',
+          'name': "RSKImageCropViewController.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/RSKImageCropper/RSKImageCropper/RSKImageCropViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "RSKImageCropper-Swift.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Headers/RSKImageCropper-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "RSKImageCropper.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/RSKImageCropper/RSKImageCropper/RSKImageCropper.h"
+        },
+        {
+          'type': 'file',
+          'name': "RSKImageScrollView.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/RSKImageCropper/RSKImageCropper/RSKImageScrollView.h"
+        },
+        {
+          'type': 'file',
+          'name': "RSKInternalUtility.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/RSKImageCropper/RSKImageCropper/RSKInternalUtility.h"
+        },
+        {
+          'type': 'file',
+          'name': "RSKTouchView.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/RSKImageCropper/RSKImageCropper/RSKTouchView.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIApplication+RSKImageCropper.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/RSKImageCropper/RSKImageCropper/UIApplication+RSKImageCropper.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+RSKImageCropper.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/RSKImageCropper/RSKImageCropper/UIImage+RSKImageCropper.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RSKImageCropper.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "c.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/c.h"
+        },
+        {
+          'type': 'file',
+          'name': "cache.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/cache.h"
+        },
+        {
+          'type': 'file',
+          'name': "comparator.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/comparator.h"
+        },
+        {
+          'type': 'file',
+          'name': "db.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/db.h"
+        },
+        {
+          'type': 'file',
+          'name': "dumpfile.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/dumpfile.h"
+        },
+        {
+          'type': 'file',
+          'name': "env.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/env.h"
+        },
+        {
+          'type': 'file',
+          'name': "filter_policy.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/filter_policy.h"
+        },
+        {
+          'type': 'file',
+          'name': "iterator.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/iterator.h"
+        },
+        {
+          'type': 'file',
+          'name': "leveldb-Swift.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Headers/leveldb-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "leveldb-library-umbrella.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/Target Support Files/leveldb-library/leveldb-library-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "options.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/options.h"
+        },
+        {
+          'type': 'file',
+          'name': "slice.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/slice.h"
+        },
+        {
+          'type': 'file',
+          'name': "status.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/status.h"
+        },
+        {
+          'type': 'file',
+          'name': "table.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/table.h"
+        },
+        {
+          'type': 'file',
+          'name': "table_builder.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/table_builder.h"
+        },
+        {
+          'type': 'file',
+          'name': "write_batch.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/leveldb-library/include/leveldb/write_batch.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/leveldb-library.build/module.modulemap"
         }
       ]
     },

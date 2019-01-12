@@ -163,6 +163,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
+@import CoreGraphics;
+@import Foundation;
+@import RSKImageCropper;
 @import UIKit;
 #endif
 
@@ -181,6 +184,40 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UILabelX;
+@class UITextView;
+@class UITextFieldX;
+@class UIImageViewX;
+@class UIButtonX;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC7Consent10AddEntryVC")
+@interface AddEntryVC : UIViewController
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified descriptionLbl;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified agreedActionTextBox;
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified uidTextBox;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified vidImgView;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified recordB;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified vidSavedLbl;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified vidSavedIcon;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified submitB;
+- (void)viewDidLoad;
+- (void)vidIconCheck;
+- (void)enableSubmitBtn;
+- (IBAction)submit:(UIButtonX * _Nonnull)sender;
+- (IBAction)record:(UIButtonX * _Nonnull)sender;
+- (IBAction)back:(UIButtonX * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImagePickerController;
+
+@interface AddEntryVC (SWIFT_EXTENSION(Consent)) <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+@end
+
 @class UIWindow;
 @class UIApplication;
 
@@ -196,17 +233,246 @@ SWIFT_CLASS("_TtC7Consent11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITextField;
-@class UIButton;
-@class NSBundle;
-@class NSCoder;
+
+/// <h2>YPDrawSignatureViewDelegate Protocol</h2>
+/// YPDrawSignatureViewDelegate:
+/// <ul>
+///   <li>
+///     optional didStart(_ view : YPDrawSignatureView)
+///   </li>
+///   <li>
+///     optional didFinish(_ view : YPDrawSignatureView)
+///   </li>
+/// </ul>
+SWIFT_PROTOCOL("_TtP7Consent19YPSignatureDelegate_")
+@protocol YPSignatureDelegate
+@end
+
+@class YPDrawSignatureView;
+@class UIViewX;
+
+SWIFT_CLASS("_TtC7Consent19ConfirmConsentPopUp")
+@interface ConfirmConsentPopUp : UIViewController <YPSignatureDelegate>
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified confirmBtn;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified cancelBtn;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified profilePic;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified nameLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified genderLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified agreeLbl;
+@property (nonatomic, weak) IBOutlet YPDrawSignatureView * _Null_unspecified signatureView;
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified popUpView;
+- (void)viewDidLoad;
+- (void)wait;
+- (void)shouldEnable;
+- (IBAction)confirm:(UIButtonX * _Nonnull)sender;
+- (IBAction)cancel:(UIButtonX * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImageView;
+
+SWIFT_CLASS("_TtC7Consent14ConsentSubCell")
+@interface ConsentSubCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified firstNameLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified middleNameLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified lastNameLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified dateLbl;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profilePicImg;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent10ErrorPopUp")
+@interface ErrorPopUp : UIViewController
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified dismissPopUpB;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified image;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified msgText;
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified popUpView;
+- (void)viewDidLoad;
+- (IBAction)closePopUp:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent10InfoPageVC")
+@interface InfoPageVC : UIViewController
+- (void)viewDidLoad;
+- (IBAction)back:(UIButtonX * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent12LoadingPopUp")
+@interface LoadingPopUp : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+
+SWIFT_CLASS("_TtC7Consent6MainVC")
+@interface MainVC : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified mainMenuB;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified infoB;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified profileB;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified addEntryB;
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified searchBar;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified searchTypeB;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableViewU;
+- (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
+- (IBAction)mainBClicked:(UIButtonX * _Nonnull)sender;
+- (IBAction)infoBClicked:(UIButtonX * _Nonnull)sender;
+- (IBAction)profileBClicked:(UIButtonX * _Nonnull)sender;
+- (IBAction)addEntryBClicked:(UIButtonX * _Nonnull)sender;
+- (IBAction)switchSearchType:(UIButtonX * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface MainVC (SWIFT_EXTENSION(Consent)) <UITableViewDataSource, UITableViewDelegate>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent9PWResetVC")
+@interface PWResetVC : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified email;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified resetB;
+- (void)viewDidLoad;
+- (void)enableBtn;
+- (IBAction)resetPW:(id _Nonnull)sender;
+- (IBAction)back:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIColor;
+
+SWIFT_CLASS("_TtC7Consent7UIViewX")
+@interface UIViewX : UIView
+@property (nonatomic, strong) UIColor * _Nonnull firstColor;
+@property (nonatomic, strong) UIColor * _Nonnull secondColor;
+@property (nonatomic) BOOL horizontalGradient;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
++ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+@property (nonatomic) CGFloat borderWidth;
+@property (nonatomic) CGFloat cornerRadius;
+@property (nonatomic) CGFloat shadowOpacity;
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+@property (nonatomic) CGFloat shadowRadius;
+@property (nonatomic) CGFloat shadowOffsetY;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent7Pg1View")
+@interface Pg1View : UIViewX
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified email;
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified pw;
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified pwConfirm;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified lengthE;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified upperE;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified matchE;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified checkL;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified checkU;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified checkM;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent7Pg2View")
+@interface Pg2View : UIViewX
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified firstName;
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified middleName;
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified lastName;
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified phoneNum;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent7Pg3View")
+@interface Pg3View : UIViewX
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified maleB;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified femaleB;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified otherB;
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified otherText;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified maleLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified femaleLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified otherLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified genderLbl;
+- (IBAction)setGender:(UIButtonX * _Nonnull)sender;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent7Pg4View")
+@interface Pg4View : UIViewX
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified profilePicPreview;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified titleLbl;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified openCamB;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified openLibB;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent7Pg5View")
+@interface Pg5View : UIViewX
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified resendB;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent13ProfilePageVC")
+@interface ProfilePageVC : UIViewController
+- (void)viewDidLoad;
+- (IBAction)back:(UIButtonX * _Nonnull)sender;
+- (IBAction)signOut;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent25SecondConfirmConsentPopUp")
+@interface SecondConfirmConsentPopUp : UIViewController <YPSignatureDelegate>
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified confirmBtn;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified cancelBtn;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified profilePic;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified nameLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified genderLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified agreeLbl;
+@property (nonatomic, weak) IBOutlet YPDrawSignatureView * _Null_unspecified signatureView;
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified popUpView;
+- (void)viewDidLoad;
+- (void)shouldEnable;
+- (IBAction)confirm:(UIButtonX * _Nonnull)sender;
+- (IBAction)cancel:(UIButtonX * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC7Consent8SignInVC")
 @interface SignInVC : UIViewController <UITextFieldDelegate>
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified email;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginB;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified signUpB;
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified email;
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified password;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified loginB;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified signUpB;
 - (void)viewDidLoad;
 - (IBAction)signUp:(id _Nonnull)sender;
 - (IBAction)login:(id _Nonnull)sender;
@@ -216,48 +482,232 @@ SWIFT_CLASS("_TtC7Consent8SignInVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIView;
 @class UIProgressView;
-@class UILabel;
-@class UIImageView;
 
 SWIFT_CLASS("_TtC7Consent8SignUpVC")
-@interface SignUpVC : UIViewController <UITextFieldDelegate>
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified nextB;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backB;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified pg1View;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified pg2View;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified pg3View;
+@interface SignUpVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified nextB;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified backB;
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified pg1View;
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified pg2View;
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified pg3View;
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified pg4View;
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified pg5View;
 @property (nonatomic, weak) IBOutlet UIProgressView * _Null_unspecified progressBar;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified progressBarLbl;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified email;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified pw;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified pwConfirm;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lengthE;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified upperE;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified matchE;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified checkL;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified checkU;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified checkM;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified firstName;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified middleName;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified lastName;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified phoneNum;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified progressBarLbl;
 - (void)viewDidLoad;
 - (void)enableNextBtn;
 - (IBAction)next:(id _Nonnull)sender;
 - (IBAction)back:(id _Nonnull)sender;
+- (IBAction)openCam:(UIButtonX * _Nonnull)sender;
+- (IBAction)openLib:(UIButtonX * _Nonnull)sender;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+- (IBAction)resendConfirmation:(UIButtonX * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class RSKImageCropViewController;
+@class UIImage;
 
-SWIFT_CLASS("_TtC7Consent14ViewController")
-@interface ViewController : UIViewController
+@interface SignUpVC (SWIFT_EXTENSION(Consent)) <RSKImageCropViewControllerDelegate>
+- (void)imageCropViewController:(RSKImageCropViewController * _Nonnull)controller didCropImage:(UIImage * _Nonnull)croppedImage usingCropRect:(CGRect)cropRect rotationAngle:(CGFloat)rotationAngle;
+- (void)imageCropViewControllerDidCancelCrop:(RSKImageCropViewController * _Nonnull)controller;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent12SuccessPopUp")
+@interface SuccessPopUp : UIViewController
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified dismissPopUpB;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified image;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified msgText;
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified popUpView;
 - (void)viewDidLoad;
+- (IBAction)closePopUp:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+@class UITouch;
+@class UIEvent;
+
+SWIFT_CLASS("_TtC7Consent9UIButtonX")
+@interface UIButtonX : UIButton
+@property (nonatomic) BOOL animate;
+@property (nonatomic) double animateDelay;
+@property (nonatomic) NSInteger animateFrom;
+@property (nonatomic) BOOL popIn;
+@property (nonatomic) double popInDelay;
+- (void)drawRect:(CGRect)rect;
+- (BOOL)beginTrackingWithTouch:(UITouch * _Nonnull)touch withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+- (void)endTrackingWithTouch:(UITouch * _Nullable)touch withEvent:(UIEvent * _Nullable)event;
+@property (nonatomic) CGFloat cornerRadius;
+@property (nonatomic) CGFloat borderWidth;
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+@property (nonatomic) CGFloat shadowOpacity;
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+@property (nonatomic) CGFloat shadowRadius;
+@property (nonatomic) CGSize shadowOffset;
+@property (nonatomic, strong) UIColor * _Nonnull firstColor;
+@property (nonatomic, strong) UIColor * _Nonnull secondColor;
+@property (nonatomic) BOOL horizontalGradient;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
++ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+SWIFT_CLASS("_TtC7Consent12UIImageViewX")
+@interface UIImageViewX : UIImageView
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+@property (nonatomic) CGFloat borderWidth;
+@property (nonatomic) CGFloat cornerRadius;
+@property (nonatomic) double pulseDelay;
+@property (nonatomic) BOOL popIn;
+@property (nonatomic) double popInDelay;
+@property (nonatomic) CGFloat shadowOpacity;
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+@property (nonatomic) CGFloat shadowRadius;
+@property (nonatomic) CGFloat shadowOffsetY;
+- (void)layoutSubviews;
+- (void)drawRect:(CGRect)rect;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+SWIFT_CLASS("_TtC7Consent8UILabelX")
+@interface UILabelX : UILabel
+@property (nonatomic) CGFloat cornerRadius;
+@property (nonatomic) CGFloat borderWidth;
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+@property (nonatomic) CGFloat rotationAngle;
+@property (nonatomic) CGFloat shadowOpacity;
+@property (nonatomic, strong) UIColor * _Nonnull shadowColorLayer;
+@property (nonatomic) CGFloat shadowRadius;
+@property (nonatomic) CGSize shadowOffsetLayer;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent9UISliderX")
+@interface UISliderX : UISlider
+@property (nonatomic, strong) UIImage * _Nullable thumbImage;
+@property (nonatomic, strong) UIImage * _Nullable thumbHighlightedImage;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent12UITextFieldX")
+@interface UITextFieldX : UITextField
+@property (nonatomic, strong) UIImage * _Nullable leftImage;
+@property (nonatomic) CGFloat leftPadding;
+@property (nonatomic, strong) UIImage * _Nullable rightImage;
+@property (nonatomic) CGFloat rightPadding;
+@property (nonatomic) CGFloat cornerRadius;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent17UIViewAnchorPoint")
+@interface UIViewAnchorPoint : UIView
+@property (nonatomic) BOOL showAnchorPoint;
+@property (nonatomic) CGPoint anchorPoint;
+- (void)drawRect:(CGRect)rect;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(Consent))
+- (void)dismissKeyboard;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent17UIViewControllerX")
+@interface UIViewControllerX : UIViewController
+@property (nonatomic) BOOL lightStatusBar;
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+SWIFT_CLASS("_TtC7Consent21UIViewXRadialGradient")
+@interface UIViewXRadialGradient : UIView
+@property (nonatomic, strong) UIColor * _Nonnull InsideColor;
+@property (nonatomic, strong) UIColor * _Nonnull OutsideColor;
+- (void)drawRect:(CGRect)rect;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIVisualEffect;
+
+SWIFT_CLASS("_TtC7Consent19UIVisualEffectViewX")
+@interface UIVisualEffectViewX : UIVisualEffectView
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+@property (nonatomic) CGFloat borderWidth;
+@property (nonatomic) CGFloat cornerRadius;
+- (nonnull instancetype)initWithEffect:(UIVisualEffect * _Nullable)effect OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+/// <h1>Class: YPDrawSignatureView</h1>
+/// Accepts touches and draws an image to an UIView
+/// <h2>Description</h2>
+/// This is an UIView based class for capturing a signature drawn by a finger in iOS.
+/// <h2>Usage</h2>
+/// Add the YPSignatureDelegate to the view to exploit the optional delegate methods
+/// <ul>
+///   <li>
+///     startedDrawing(_ view: YPDrawSignatureView)
+///   </li>
+///   <li>
+///     finishedDrawing(_ view: YPDrawSignatureView)
+///   </li>
+///   <li>
+///     Add an @IBOutlet, and set its delegate to self
+///   </li>
+///   <li>
+///     Clear the signature field by calling clear() to it
+///   </li>
+///   <li>
+///     Retrieve the signature from the field by either calling
+///   </li>
+///   <li>
+///     getSignature() or
+///   </li>
+///   <li>
+///     getCroppedSignature()
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC7Consent19YPDrawSignatureView")
+@interface YPDrawSignatureView : UIView
+@property (nonatomic) CGFloat strokeWidth;
+@property (nonatomic, strong) UIColor * _Nonnull strokeColor;
+@property (nonatomic, strong) UIColor * _Nonnull signatureBackgroundColor SWIFT_DEPRECATED_MSG("", "backgroundColor");
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)drawRect:(CGRect)rect;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+@end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

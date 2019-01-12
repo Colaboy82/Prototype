@@ -114,6 +114,9 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         let main = AddEntryVC()
         main.uploadVid(vidURL: entry[12] as! URL, otherUID: entry[2] as! String)
         
+        let userRef = Database.database().reference().child("users").child(entry[2] as! String)
+        userRef.updateChildValues(["ConfirmPopUp": true])
+        
         uploadSignature( completion: { (url) in
          let e = ConsentEntryModel.init(user: entry[0] as! User,
                                            date: entry[1] as! String,

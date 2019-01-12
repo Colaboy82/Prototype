@@ -49,6 +49,7 @@ dependencies: \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FirebaseAuthVersion.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIREmailAuthProvider.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRFacebookAuthProvider.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGameCenterAuthProvider.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGitHubAuthProvider.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGoogleAuthProvider.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIROAuthProvider.h \
@@ -66,6 +67,7 @@ dependencies: \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthRPCResponse.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIREmailLinkSignInRequest.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIREmailLinkSignInResponse.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProviders/GameCenter/FIRGameCenterAuthCredential.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetOOBConfirmationCodeRequest.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetOOBConfirmationCodeResponse.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRResetPasswordRequest.h \
@@ -74,6 +76,8 @@ dependencies: \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSendVerificationCodeResponse.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSetAccountInfoRequest.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSetAccountInfoResponse.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSignInWithGameCenterRequest.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSignInWithGameCenterResponse.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSignUpNewUserRequest.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSignUpNewUserResponse.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRVerifyAssertionRequest.h \

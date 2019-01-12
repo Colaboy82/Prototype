@@ -4,13 +4,29 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AddEntry.storyboardc/AddEntry.nib</key>
+		<data>
+		C6u1q1YPbMorq4ppQS6h+IzstVs=
+		</data>
+		<key>AddEntry.storyboardc/Info.plist</key>
+		<data>
+		hWikw+TVca/W/bkvtUo8GU+0qII=
+		</data>
+		<key>AddEntry.storyboardc/aEd-S2-FPF-view-sKc-Zg-QFr.nib</key>
+		<data>
+		r5A/8dtlwPMVqb++QOQd79XeJtc=
+		</data>
+		<key>AddEntryIcon.png</key>
+		<data>
+		N5N4eJndrl07JkQjDo+n2KgF5GA=
+		</data>
 		<key>Assets.car</key>
 		<data>
-		IkaUxEByFKOmHpWEFBVXX3dT4wc=
+		iY+cmMz1/9QMMPRqR2hY88ENzV4=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		FHCfjtnWWibE+HhMS/dFyBpGIqc=
+		Dxtol0aeX83vI6Xf3frURsT+NAM=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,11 +34,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		1Vs3OokeJ9+XZRJrEOV6yieAEm8=
+		9uIZp93ekNTIidbW7eXAAeltRlQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		9SWkbF1kJ27t+aJqmGLWsMKfJGs=
+		lbw5luNFfUwiG4pcxpqTbi0M84c=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,60 +46,464 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/MainVC.nib</key>
 		<data>
-		2DeUdF6Mmm01Joih2z5pG2NPQuU=
+		HK1adjrQxxQpDY/9IS0fiVOh9SU=
+		</data>
+		<key>CheckedBox.png</key>
+		<data>
+		dOWcZxixLGVEz4Fm87OBkNYkSW8=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<data>
-		+SMomGkmBi1CB11CGIc+GSicFa8=
+		6pBjkPoJeg1l91FqI5WmSyJqEwc=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
 		<data>
-		tf/AZ9vohyNR/XVIgghihynLHTM=
+		9xV9F1w1ScJy3VeoCON1pUB4Oxw=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/_CodeSignature/CodeResources</key>
 		<data>
-		8K94m6XORs8xKk7yaMl+CIJRsAg=
+		udUNyqSeHaeHOukTz+8YxJnT8BU=
 		</data>
 		<key>Frameworks/GoogleUtilities.framework/GoogleUtilities</key>
 		<data>
-		s+2WmGTdoEoRt4eJT2BzKCDAzRM=
+		vXciVyphWgoPmHbtwU6mGXvk9sA=
 		</data>
 		<key>Frameworks/GoogleUtilities.framework/Info.plist</key>
 		<data>
-		bi4ncgaSCLCkjwD0891XKIFgnno=
+		1gAQNL8yzIhKfN9Npo8r6NC+NjE=
 		</data>
 		<key>Frameworks/GoogleUtilities.framework/_CodeSignature/CodeResources</key>
 		<data>
-		o+yGwg/6793TFw/LxNFTzUIQG6c=
+		d08g+Ia1S3gSVCZt4RiF5U2zsBg=
 		</data>
-		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<key>Frameworks/RSKImageCropper.framework/Info.plist</key>
 		<data>
-		DQ4GPJ7FuM6H+FaCC/2wxhPSGCQ=
+		fHIgFQvOe11wmViS9sMl8vew5WQ=
 		</data>
-		<key>Frameworks/XCTest.framework/XCTest</key>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropper</key>
 		<data>
-		HK6asLJ70IK7E4e83e8R1gxACHo=
+		HCvTj1nWGNo6Q1aOC1g+JBDkz0Y=
 		</data>
-		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
-		<data>
-		/8LQToTPOL9FsEsYDaACQ21Day0=
-		</data>
-		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ar.lproj/RSKImageCropper.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			KRP5wWwCj9s1qV1nVr/MOo/x01I=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Frameworks/XCTest.framework/version.plist</key>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/bg.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V9Ldlisq2PmTglTS5zyxIo7HT98=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/bs.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9na2WGxPh8+AEvWHv0p6Y5lGS4s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ca.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8zZoXauX6I1ftj+F3D5eMvAMTXc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/cs.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cukPjVeX5e4yIYCOYNjpywgSc6c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/da.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b7oA//Bhw44B7+vIpX65TOM0Pyk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/de.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vIo9QfVbqLXmEvBsNwcpEpjA3s0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/el.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ejHOmZ0YRkT66oVSOa/+q8xwplg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/en.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wC7fgfMYe/UJLzf095t6Z0SmHdg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/es.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AYWW7pgXvcot6lrZux495Kfoz5w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/et.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			StAaFkl9Id1cII2LWAiaP0S7UUo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/fi.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v5Dc1KM00rxmnD1XtYC4brKD/fI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/fil.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			POIrCnouhangC1h2614pnf731wA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/fr.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Vo7WQ002cJnfSGJDUAETHpNM/0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/he.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NlQvxwTvR2cp3MhY8ReLmZH3hY8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/hi.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7xCLs50cv9NCZzUdr5TFHaSvoiU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/hr.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kAehbyC5Xq+72CS6/CeOHFAfDJo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/hu.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iUVXE77b9WE08mtbcEFVhtkhoN4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/id.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TLTlBmpGMx/hPImhMexr8YPj0TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/it.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4reikpoRRnwKSkSypIVHbGHlDBo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ja.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w3FQ6m5nvANm5d7x7bDd+7yzDQ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ko.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FOMaTkm4w1AmQREx0x4U0PA/sQw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/lt.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kOFGiOjcD0Wu59RSfKslumHXaqM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/lv.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Pk1MytA3aOYwSLhwYLxnC3w8z7U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/mk.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FxBcK0W7qWJME3nt1YDdRZGwaoo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ms.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iSIn5+shBvxY0/Bc6i0GdMcdKP8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/nb.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zgn7FkIFruOTU8tBORwD0tAl+UE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/nl.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/tv2/vK8l2k31SkmHKVEI8OQzDw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/pl.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fbR9pyb7rLxbI6T37y3gxRer6EA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/pt.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OxDqqdn7juh0hnMzbtraFCUrGNE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/pt_BR.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dFxTeXicC9xQNB7qQ36+UBJQ0e8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/pt_PT.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OxDqqdn7juh0hnMzbtraFCUrGNE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ro.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			y/WFLLgaErtSY1Z+ckIZtQH3MvQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ru.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PbiVh/+XMhwd6X0DJ072CXvJqQ0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/sk.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yfSTgvN4GhDdz34ZZgnBsKpAums=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/sl.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jFNzvbE7B8ir+v/Fv/cRuHYRJQc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/sr.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rE15Vo/9wLiLtMYOI1Ykpdm2k7c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/sv.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oaNMQzrpcAhA7qnaKHuaxyf3E1E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/th.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MiJ65gFMvVp30m42Xx8BHF3ZQAg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/tr.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TsIMaUDu/aHd+fArxSj3c5QjFqU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/uk.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			J5zx3AHF9HxCRRHBSloul8xB3Sk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/vi.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G63eIlfouDVI82p7ZaYBfmvRyq0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/zh-Hans.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PPELUpdxERx2+AcCQjL9kyO1U1E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/zh-Hant.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dVDrIg+B5InHGeC3QoWYm/KtpOc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/zh.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xIShFZwqWzVfpCP9Y7wet8fm2Rk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/_CodeSignature/CodeResources</key>
 		<data>
-		P6P66kW7+LvLIo4WHjXGltpT8CA=
+		/vIoJLWAK0CRXxlJTJn9PVjVrgQ=
 		</data>
-		<key>Frameworks/libXCTestBundleInject.dylib</key>
+		<key>Frameworks/leveldb.framework/Info.plist</key>
 		<data>
-		xKX69bDGMJa2TcU/BC9ypZ06rsI=
+		3zTFdjwgkSM9pNNqrVlEcYHjvAg=
+		</data>
+		<key>Frameworks/leveldb.framework/_CodeSignature/CodeResources</key>
+		<data>
+		yYE1QY6+xMBFb68DXcnybeCLI2E=
+		</data>
+		<key>Frameworks/leveldb.framework/leveldb</key>
+		<data>
+		xTJlL3KFOGXGiQSttmyezaHwiMk=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -139,15 +559,15 @@
 		</data>
 		<key>Frameworks/nanopb.framework/Info.plist</key>
 		<data>
-		TOkjZio0dbXhsu4VbCvvQ8nT7jg=
+		zY0lqGZCYrVe/3KOiKLrmS48Ktg=
 		</data>
 		<key>Frameworks/nanopb.framework/_CodeSignature/CodeResources</key>
 		<data>
-		ayOH1dH3OGVyK8ZcP1pMZihifRg=
+		y9LrNHaaVbeorsaAenrytOfOGRA=
 		</data>
 		<key>Frameworks/nanopb.framework/nanopb</key>
 		<data>
-		BqTtdMEIC4Tuc04Ja75PIveXQlk=
+		SzvfhPlAVESJ25r/q5JH0emNmQg=
 		</data>
 		<key>GoogleService-Info.plist</key>
 		<data>
@@ -155,7 +575,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jJSd0Nn4owq530tH5afqlrFsn78=
+		Z+AMKGxD3yFyXBgfgm2C/r0K/+w=
+		</data>
+		<key>InfoIcon.png</key>
+		<data>
+		W6HaH3tS6ShBh/PPQ8pTiVh1u84=
+		</data>
+		<key>InfoPage.storyboardc/0eb-AR-CiU-view-dUV-YR-BVD.nib</key>
+		<data>
+		7d+aFamTaLcmROLTK9GU4NDgLSU=
+		</data>
+		<key>InfoPage.storyboardc/Info.plist</key>
+		<data>
+		BZzBu3K7l3NEDPymvxLKOSCApV4=
+		</data>
+		<key>InfoPage.storyboardc/InfoPage.nib</key>
+		<data>
+		cBAlWiicGT6H9TK16CpCx3q6/sM=
+		</data>
+		<key>MainMenuBtn.png</key>
+		<data>
+		ZemPhzZ/k2ODkQuKOnKjogBRzRg=
 		</data>
 		<key>Montserrat-Black.ttf</key>
 		<data>
@@ -232,6 +672,18 @@
 		<key>OFL.txt</key>
 		<data>
 		Bb6I7JLBqO2rihfqGqmI0TFUyZQ=
+		</data>
+		<key>PWReset.storyboardc/Info.plist</key>
+		<data>
+		zd+/37Ery6/MBaLWzeV5pB3NFug=
+		</data>
+		<key>PWReset.storyboardc/PWResetVC.nib</key>
+		<data>
+		/wNPbn97phsNl7GAPg9angDUntg=
+		</data>
+		<key>PWReset.storyboardc/t23-EI-Y0Z-view-lmC-7C-P8y.nib</key>
+		<data>
+		RZWn1Zdt0F8nZLUNAHJelR0S8qA=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -313,29 +765,101 @@
 		<data>
 		s7ona7AnRrumtUKclaVHhamjsDg=
 		</data>
+		<key>PopUpTemplate.storyboardc/C70-Io-EKo-view-HNI-hP-cIM.nib</key>
+		<data>
+		n+KzrlmkaXLX7/0/YcJlVQCU/iQ=
+		</data>
+		<key>PopUpTemplate.storyboardc/ConfirmConsent.nib</key>
+		<data>
+		lnxNK1WSByfFMMmGP7GeN4LkTnM=
+		</data>
+		<key>PopUpTemplate.storyboardc/DMo-hb-x7J-view-tD3-vy-dAL.nib</key>
+		<data>
+		X8FeoCjQtoypd2yBCzruBWrt6IM=
+		</data>
+		<key>PopUpTemplate.storyboardc/Error.nib</key>
+		<data>
+		upZAZKSH9mXtIM02Bn0oHXujgVk=
+		</data>
+		<key>PopUpTemplate.storyboardc/Ian-aF-2HS-view-nI2-0p-CSy.nib</key>
+		<data>
+		ulrdQTvQe36EPIZcArAeI3CvcGw=
+		</data>
+		<key>PopUpTemplate.storyboardc/Info.plist</key>
+		<data>
+		rbK5a++CGcLwkPvc8tkvCb9SWhg=
+		</data>
+		<key>PopUpTemplate.storyboardc/Loading.nib</key>
+		<data>
+		2F8d8ajS/vlQUU5Gi7Aw7qMppec=
+		</data>
+		<key>PopUpTemplate.storyboardc/SecondConfirmConsent.nib</key>
+		<data>
+		4dtzk1LOTKdWGDQQmbKTeON3g0k=
+		</data>
+		<key>PopUpTemplate.storyboardc/Success.nib</key>
+		<data>
+		FO09V5GZeTcyzekIqVZgfMykGsU=
+		</data>
+		<key>PopUpTemplate.storyboardc/XYI-Jl-mvP-view-z24-w3-pBm.nib</key>
+		<data>
+		ETzQDi/VChjyvEJqBSJOPZXJVqM=
+		</data>
+		<key>PopUpTemplate.storyboardc/qEU-SL-0Pd-view-mEt-RT-zaa.nib</key>
+		<data>
+		LoTreFySiqkuBrUeL6j/pNjljFo=
+		</data>
+		<key>ProfileIcon.png</key>
+		<data>
+		O9tsTYzKiPyaIw8w0YrikehkFSs=
+		</data>
+		<key>ProfilePage.storyboardc/Info.plist</key>
+		<data>
+		+sIh4rjUc05hIect3sTcnoad/Nc=
+		</data>
+		<key>ProfilePage.storyboardc/ProfilePage.nib</key>
+		<data>
+		IrkBesq9ihVFDZ2uI/2awCFhUb4=
+		</data>
+		<key>ProfilePage.storyboardc/U48-sf-ldA-view-mw7-9W-87i.nib</key>
+		<data>
+		sqXkbbbNwKI/V3PVIqp/wesSQKI=
+		</data>
+		<key>SearchIcon.png</key>
+		<data>
+		Dl0mAunEBHxYhQT5doRrfVT2HKc=
+		</data>
 		<key>SignUp.storyboardc/7ME-mM-iyp-view-hDx-MK-Q1J.nib</key>
 		<data>
-		ZfSo6O3HU5HQVXgJmsZgbrippfA=
+		EerQCYpYUSajd589tYsmctyBcEc=
 		</data>
 		<key>SignUp.storyboardc/Info.plist</key>
 		<data>
-		rBlRBT5c7jmL0anSSs10EHoTTB8=
+		URL+feP5KQ4Whlo6qj9Tq3wEFh0=
 		</data>
 		<key>SignUp.storyboardc/LoginVC.nib</key>
 		<data>
-		/yN8cAF73qUHGITzVQtjerODPKs=
+		i5LUQPFyTG3KfDYceTnzdB00oT0=
 		</data>
 		<key>SignUp.storyboardc/SignUpVC.nib</key>
 		<data>
-		KGuSwyxtMNB+D3L9ndtD0vHZ6TE=
+		aGUxmRinxs+1knTQTPxwW4sg6zk=
 		</data>
 		<key>SignUp.storyboardc/i79-gJ-zEO-view-hvH-qW-Oml.nib</key>
 		<data>
-		Ame5C+cEKIC/Mv6d+yGcPH5zPGU=
+		uWbt4lS6SZiKnf5/MGljiRJ7NK0=
+		</data>
+		<key>UncheckedBox.png</key>
+		<data>
+		c7O8PO4GDknpVj20sot71FruWAY=
+		</data>
+		<key>VideoIcon.png</key>
+		<data>
+		7+B4eR2fOm49rZcL6025k/F3ZBw=
 		</data>
 		<key>checked.png</key>
 		<data>
-		flWOYnhppg64RDLsicq7M6BgRig=
+		G2tzul/j0cqNgUBzCHXKt1qi5Ls=
 		</data>
 		<key>flag.png</key>
 		<data>
@@ -372,18 +896,46 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AddEntry.storyboardc/AddEntry.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xP9wOtrcqVt2yoRbDfW7am/Qts8VOrcenDkAwZV35iY=
+			</data>
+		</dict>
+		<key>AddEntry.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O2czAIKr7lDtwnHheaj+8Um8Hd/GFYbEVB+gP8xd1Xs=
+			</data>
+		</dict>
+		<key>AddEntry.storyboardc/aEd-S2-FPF-view-sKc-Zg-QFr.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ik3/IRhvxBucCKm5fjIkGfsWWKMN/pHGyJKbGsI/vNc=
+			</data>
+		</dict>
+		<key>AddEntryIcon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eJKx0Xa3ja8sSGRNptb8PUqZhRT/HVKnBi3HfD4K5qg=
+			</data>
+		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			36y7chOyM8XkZtYfgGj1k8yzn5HDrNfvZravChbqDIQ=
+			4cHANGKsvXOjrHMJLH6JFZAiG03xY3d1PMb/z9BS8M8=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y56F5w32N70fRjoMluKwFJWMXUJuzbfTm2gjkuI9j0c=
+			y86YHqFyMY6OefEHj0UAEe2c1TkOIQG8AcQXxqkFDlw=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -397,14 +949,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nw4qGV58Up/kltDdy1Mlr5wA1PyokjDSQwqIMXqUyzw=
+			5nCCX/AZ3MV7LcQuKXGbDYK8chIj9lftWduNxwGAs2A=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y+A/kneIoftDUCEOUu98nzevrvx7TwlrrZV/41jeMxA=
+			07vfSTGluHv03ydirGBMkTS9usjHfXu9elcDxWL4jvk=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -418,93 +970,503 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zvARmTAcgD/DQBIfiKV1lNillyilLkeOoj6hjLUxEtk=
+			c2Ay8dIow1glgRfijcIxOLAqWLGf4I1goPWsWEHDBhw=
+			</data>
+		</dict>
+		<key>CheckedBox.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FPHCgJRIPwvcMGhlSokp1oQZZ+z+EfJ4ZpASzVjo0Vo=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZwDI1irQqUtvG5W7jRFOY1fkTaU+tO3EGA/6ufx542A=
+			XrdzV4ZoLXK6SUyEErarHmobaCtRW+vmp2bgRbhxyxo=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ljCFHZtyZlveojTKOGRrLpkl7hgELtqeK6VHKqY4Dw=
+			e8Yzi7KIRIxC2JuQfigUg1gVW9pZDhLCKImVRcTOYyc=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+rA9UjTAUAHP+DSCov2EU+hq4ONGtEZCFFrF0gBa/Zg=
+			P9p33LW2TXXyM3HngVNxFrEKKZEUM1Pl+yG5qqsTvkE=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleUtilities.framework/GoogleUtilities</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c5UveN6/m3ftw0+SH2yFwzEmv6DD7te9jYGosnHF8I0=
+			h1URgpQNjOxZpj6kgdEFQoCLPVm02OS2VW4sf6bwk7k=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleUtilities.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TY42BejTq6jySP5SaEzSnnTOZj6JGB4+DKQaBEikLMQ=
+			40a5gli2TXqRLbWPK8vJbvvAA0SBIt6unsoOdC5Oo34=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleUtilities.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kiL7COWSIU8xRvq7+Daj2mgaGlacjiMZF3n4nU+Yyto=
+			AxO9kJmLhjZzuHWhx+6pLVeCA1Vo6c11UqMX6mNg1rQ=
 			</data>
 		</dict>
-		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<key>Frameworks/RSKImageCropper.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VfVpYXVjG5OK2j8J39CP2mIMg1P5eFaYkRIJ/Hb2RSQ=
+			mr8Z80p+f3ESG+L+2caI6SjuTliQ4coBnLh5VZa01J8=
 			</data>
 		</dict>
-		<key>Frameworks/XCTest.framework/XCTest</key>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropper</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			olgg9NXiZ2M1ifvjBR8uTJxtXlM5EacLdDrNxfmImoY=
+			7CEOzCmdwGzPcHdCFwX1mE6sx6+6RwFUXFb4ywQs7No=
 			</data>
 		</dict>
-		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ar.lproj/RSKImageCropper.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C7sJpbu4qpi8/rH5JYpdQYncotP69JQ9Fiu8jrHXYvU=
-			</data>
-		</dict>
-		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
+			uoaVpD5PoYQ0Z6+L3uQOpuex+/FqScOiSRo2j2fNsRI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Frameworks/XCTest.framework/version.plist</key>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/bg.lproj/RSKImageCropper.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2BV684CZjHtMZHxSiwC5qc/DGXv9WIOWUc9dEU/Q1pw=
+			DNRIlKK/wr6COGigBe2MMI40id9L8HbEu6R64kDt8wE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/bs.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xlECHjg9plP/zJBDcBrN4IKdKA1LY/341n7lCEsDmiA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ca.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LQUxhXbEFc0TBUqzWxFzg/qYB9MOwiP0zSUb45fbh9k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/cs.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qT4zwWwpxdyyIju7XhPFpdPUp8vJOD0pp+RPqo24V90=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/da.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2P3rUFnADuNKt+663U8EDADwBLkkiim6ZdEoeMxn8JI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/de.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WovYQwD+nYfAbWwRhMvdpy9haZxUsOhLcCkNbgVAI90=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/el.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o+Df+LZ1Pn/I0tPuj9zYWFnNqoxp4MEFgABIargslu0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/en.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			65B9BHzfy237FH4Nw6/Dtd2afnFb7tBCxLYnOA+YKMg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/es.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/jISapBjdkX6FVB9quZmoE3ANjYTRcJOjgpos2JIciY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/et.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			niPFshPJlGysOnMDZJb2gojyDZveg1OUpcVVyKfkW4I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/fi.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			x/aRjP93NsMVgv9vLTizZRWmHFLeyvGYthxsQz/Z4dA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/fil.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zKK71MTYhiXTUKw0qsk9OCh2Zpu9kgJBcjbLu+gHqP0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/fr.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Kw5lVovthikWQdMt7TDYdZEY+cK5jWNMgGEBrLO31bU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/he.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			V2TAjEYgwTJBGd+7bBzpth8yMYg9+j5Mxq4vWOKFsAM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/hi.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			We//WNWH8rDEiM7Jzl6Lpclo9aKlcgunocPtSNgSA5c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/hr.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mYFx0VMGHGGEpXzSTimqtw+aXts0dvkV3MNhayHwA2M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/hu.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KzJcuyzx5/osg2XjKwHVamV9aF3fxfL4X2Unmz6v0/o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/id.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ds1neA5w+9+RhZeheufCQ3DHtz3ImDCSpROEemxp/+o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/it.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YY0UNSqzX700GmVRPXuEiYLBsTCY5XBJ1KmapNMBDaU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ja.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lph6j1nNg1d43MrcW7xQX88kHUz+eNemQtJozZhhUdM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ko.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kAfkc4qs1HNlCfcAIE0FNAMurTtbRuCi1VbbTEAysMc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/lt.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W2yAhhQYdy+AA+OVRmDXmLD8xSsBNcKdOGaVxNRX1SI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/lv.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GUTjXom/oRw8nY7TH/Ku9FxbQi/udrn2yuQX9DNDb7w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/mk.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			y1CSndxYp+FHOKKwPQ3ykp8qHBtLi7KRhvZewLjjS74=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ms.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O1Ar27XtCWPaDOmuHrvnGQ5+b19PSqAD0Mvqtp2OHdE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/nb.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BNsZ/pBd6F9kQMaclJB2huzhN+rW3fLY0lC5rh50dQs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/nl.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cdgO2d3MKXlzOsiK+I6NaJZGYBO4X9vJ7sSdzdLa02U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/pl.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TEK6UwWGiubFr//tqPYJJBcHVOS2wrfZgyOEK+7bACM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/pt.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			47RvxCPna8FieeKha0280ZCB0VSvA1TimFED8etS2Ao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/pt_BR.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1fr5QSxaBQdzA0sZAXFMJ4a8dlJbafnU8E3GIOicLc0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/pt_PT.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			47RvxCPna8FieeKha0280ZCB0VSvA1TimFED8etS2Ao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ro.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gh90oS7e/mXmuAK+9coQixrycveccZqCkCnqXX8pXKQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/ru.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9rTlJbr6933R8t1vo+FVy3cK/6dlI0ryg2G/SlEwzC0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/sk.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fvRIXv9wWWvOFvevfIedkX3iWHO2rMZ3p+hb+NocwsE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/sl.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DYyeo0xdAQt+aMoXPZlAHt+xn3Wp2cBWKuZVDFY0xv0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/sr.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6bwzc9aVYqtQsCyyxA/WzbUTExaNVYPwLpao7tOr3NQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/sv.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			17B4qwjRKQPRmBJpcUUCkKHsXhMULybPbDvt7INgDxs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/th.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p/3EexmZgqdlnV6BMm/r1+OORxlsB33SpRgEWpzMh0I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/tr.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			T/TwIv83S2TVnepcKuwKTxXSKl57m1yKH44UGTzW4EI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/uk.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Q8oYr04gVCKeeJkA+KVLKDcYtGtB973uh+7ZxKFa5Ck=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/vi.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HRQHJNSUejO9Koycdft7nejqb7YxB5iopPOXlDppmgw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/zh-Hans.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7D6IiGqy3RMypHN4uAE1lomX3Gu794O1dJ9vwl/dNLA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/zh-Hant.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ITdxS7b4Qh54MqMeeC9xW8vDzw2ek1EqgSZxkgoIpGc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/RSKImageCropperStrings.bundle/zh.lproj/RSKImageCropper.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wXZnOXT3NIBRo7ehEHW3QAsyGxmDvL2EK+J3fdrOFEc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/RSKImageCropper.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6Z18QA/aTJjLR2DPR1MYUA7nFYC2YDi6NgfKYK9hiwY=
 			</data>
 		</dict>
-		<key>Frameworks/libXCTestBundleInject.dylib</key>
+		<key>Frameworks/leveldb.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jJ/zKe1SwWk9KkZ4MXV01NPW4QiHpU1aZhpfTDknkp0=
+			gvcd0+D36vT2OFBbSQsWbfMBjgc7OJecmjX1gFYzt70=
+			</data>
+		</dict>
+		<key>Frameworks/leveldb.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vRsqe7o/VOuy8KFvl1ywkLZU91UVstRKB0mkcKmQsJI=
+			</data>
+		</dict>
+		<key>Frameworks/leveldb.framework/leveldb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N3ZHS9suoxdPfI4EW3yWyfsilfJ5TihCF8NHsHqZ8JE=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -602,21 +1564,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9WMJRxIbEQNTB7L5Y8TAQU1s9t/O5eSwpbP0fwI++LI=
+			lLTNkp5QS2WofIS84Gy2X8CVGRkFHAizqBvv5Ajqq+w=
 			</data>
 		</dict>
 		<key>Frameworks/nanopb.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7uFKHPeajAzw5S+TynUgfQZYCUon+L6nNbp2I5Hqxso=
+			SWx0iEbHid3xds+OYhDl5q+wQw7IGsney+dnmWRlrZI=
 			</data>
 		</dict>
 		<key>Frameworks/nanopb.framework/nanopb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I/qrm3oPPBhoxf7g6410KAOPKkUDXfBLkiskxiE273c=
+			qeiJNPL3dhEWbD7a6yGFx+TIsf1bIDrfZHv5iy3uvqQ=
 			</data>
 		</dict>
 		<key>GoogleService-Info.plist</key>
@@ -624,6 +1586,41 @@
 			<key>hash2</key>
 			<data>
 			kVdUXuagUKZbN7pGlJFi6cwIW/bS2XQjvw0mYfUYPH0=
+			</data>
+		</dict>
+		<key>InfoIcon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gds4BhHKXU6lwVc9TwMDJ/XaXUFCaEBvLlRZ4l3c9VE=
+			</data>
+		</dict>
+		<key>InfoPage.storyboardc/0eb-AR-CiU-view-dUV-YR-BVD.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DnrGGgKntoUBHdln7I3uKwwjn0arMPJ99W6WWJmKVi0=
+			</data>
+		</dict>
+		<key>InfoPage.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yoQZq2TQfFLa/pdrtiXxMnx22jPR0+QdimQrhpt4EpI=
+			</data>
+		</dict>
+		<key>InfoPage.storyboardc/InfoPage.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hw/lWmxRdsvwMCsy2zF42De44mPQHeXyxgPTyQXvaT8=
+			</data>
+		</dict>
+		<key>MainMenuBtn.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			An6KSxGR5vSWPgbGszvKgDHUvtoQEr1RJE4NKBNUKg8=
 			</data>
 		</dict>
 		<key>Montserrat-Black.ttf</key>
@@ -759,6 +1756,27 @@
 			w3bda0mMaIb+WkPbPEjPg+8FysaEbsQBDlNdSOQ6KbA=
 			</data>
 		</dict>
+		<key>PWReset.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tFg59g8g3RWf1PE8dbi200cBQ7i/OOWjAhtd6FcBHdI=
+			</data>
+		</dict>
+		<key>PWReset.storyboardc/PWResetVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jeSBUtaofXqHyYP8K1wM2iv/Y9fRw4BxX5OC3b5Z1P4=
+			</data>
+		</dict>
+		<key>PWReset.storyboardc/t23-EI-Y0Z-view-lmC-7C-P8y.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z87yme/2bMVHSdmy8d66W6DKjMDWcZ3iqNAJQs6k33Y=
+			</data>
+		</dict>
 		<key>PlugIns/ConsentTests.xctest/ConsentTests</key>
 		<dict>
 			<key>hash2</key>
@@ -892,46 +1910,172 @@
 			4GGtFhjWbkrl7cXmNqDKd0XMq1o5tsG/YtXAPAR8Mrk=
 			</data>
 		</dict>
+		<key>PopUpTemplate.storyboardc/C70-Io-EKo-view-HNI-hP-cIM.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UtaA5AvVZByQJP3End/U0p3cSSEh7RvC21sYtdgUzY4=
+			</data>
+		</dict>
+		<key>PopUpTemplate.storyboardc/ConfirmConsent.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9vHZm7AhqH4PR2e/wjZ00sMsvnIm0rVRhfTP+oeMPO4=
+			</data>
+		</dict>
+		<key>PopUpTemplate.storyboardc/DMo-hb-x7J-view-tD3-vy-dAL.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QyHvZi0zePTIXEKd7Yi7R6syNZq7YC2vO0zzSGgDlrk=
+			</data>
+		</dict>
+		<key>PopUpTemplate.storyboardc/Error.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Mvh74NBm1XzipJVML815MRWdePAB7e2W5JJ+m6ip458=
+			</data>
+		</dict>
+		<key>PopUpTemplate.storyboardc/Ian-aF-2HS-view-nI2-0p-CSy.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9f+nkL0u2TvSJdAOieSIwWOwgvuHxU9o9ZdEgDEBR7A=
+			</data>
+		</dict>
+		<key>PopUpTemplate.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			db3ratFFxBReVNIRdrFIlE8WdkGK4/g6OwrhnW+0L2Q=
+			</data>
+		</dict>
+		<key>PopUpTemplate.storyboardc/Loading.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Yx0PCms5H0xxGETVDEDwL4THE6M1c+SdXH13Xex7mF0=
+			</data>
+		</dict>
+		<key>PopUpTemplate.storyboardc/SecondConfirmConsent.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1CTm1p4I+zmlsxk9frcuSmw3BOBkapOat+etosf2hhU=
+			</data>
+		</dict>
+		<key>PopUpTemplate.storyboardc/Success.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a/hm7BYIc8kF7OzOKt6NUj5V9eclwkx47Z7DhTF3phs=
+			</data>
+		</dict>
+		<key>PopUpTemplate.storyboardc/XYI-Jl-mvP-view-z24-w3-pBm.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BlDbJQ6jg6RDVR/wIX6vY+/hSw6/U6bhvQGKr2gkEms=
+			</data>
+		</dict>
+		<key>PopUpTemplate.storyboardc/qEU-SL-0Pd-view-mEt-RT-zaa.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UGI9MW5eHrWp4w8Pfq6Bo1qGSshVqbGeBapKSs2A4pc=
+			</data>
+		</dict>
+		<key>ProfileIcon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Y2ECuvmeoRt/E7cuK6UsieaD9e82r0KunfgnO/EqzN8=
+			</data>
+		</dict>
+		<key>ProfilePage.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l9TwLhrpyEhNb/eQjR5nHByIvF9cxgXlk6YNFyhUKDw=
+			</data>
+		</dict>
+		<key>ProfilePage.storyboardc/ProfilePage.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3stzAKHy7U12EHYX0ggLC1Vr2aSn+d5yLk0k0S7AKGs=
+			</data>
+		</dict>
+		<key>ProfilePage.storyboardc/U48-sf-ldA-view-mw7-9W-87i.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DlXYN1+zIUH80HfvU0mEj/697CYECqKvYe2atVPxwlI=
+			</data>
+		</dict>
+		<key>SearchIcon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FIku9OaesgMuJdIoGLwIfv3X0GKwXuuSC6VO7WbNs8U=
+			</data>
+		</dict>
 		<key>SignUp.storyboardc/7ME-mM-iyp-view-hDx-MK-Q1J.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w6N6GjI8yzLAm4Ukv0FUxSJHoq55kUqbj+8jbRn0bnQ=
+			Shj+IucRVwdlZGwlHlr5BwNufjMDZ+7LMviHoFfW0Lo=
 			</data>
 		</dict>
 		<key>SignUp.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			65S4BrJ8Bfc+NCuHT3qgp5gg0Fs0kW3klORcKRK5hN8=
+			rafDNM9eBz59vzMZF6fy786NGMxxDn5YLM7JwvIYxmo=
 			</data>
 		</dict>
 		<key>SignUp.storyboardc/LoginVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DEDresUCr02BmyZ/0mqWW5nMlTW78ROx09mavXUWcz8=
+			qMqnwUB03ep3nODqlwG1zN1+w03pin92WqivgR3iVhc=
 			</data>
 		</dict>
 		<key>SignUp.storyboardc/SignUpVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XVWcZ49NWE9c2o58sji6YQGG/t1IUWCgYGzpgD/mVZY=
+			nJqNQBvmVTuwyHgWQyIUrty8WqW5H13v1B3lFIlKAgI=
 			</data>
 		</dict>
 		<key>SignUp.storyboardc/i79-gJ-zEO-view-hvH-qW-Oml.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a9HoJMRl5jN0tSRcGfZ62vUQyKVk9J7+sYx7X++M7u8=
+			+Ks2B5ceb5kqP5NKPmdDOFLOAkDmJetyu0PklbO14c8=
+			</data>
+		</dict>
+		<key>UncheckedBox.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BE7rDMoCroxyqlvl2N33VNKTLqjdjFCw7DjvirwszrE=
+			</data>
+		</dict>
+		<key>VideoIcon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			g/tcxsVIFc7Ciytmdqi/RinSJyC5KLm2yi5REOA1kkI=
 			</data>
 		</dict>
 		<key>checked.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EiVyCWcbNIYgiVCsAF3C+iUqEscOAQ2og8FrgIbup40=
+			83dJK9Nzk/8p7qQdt3D3/hvQbzaFUyXZ6Chb9LWcGEM=
 			</data>
 		</dict>
 		<key>flag.png</key>

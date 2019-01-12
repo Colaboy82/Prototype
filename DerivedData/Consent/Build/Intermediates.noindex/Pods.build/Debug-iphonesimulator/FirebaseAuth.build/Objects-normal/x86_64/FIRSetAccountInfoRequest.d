@@ -10,5 +10,6 @@ dependencies: \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuth.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthErrors.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthAPNSTokenType.h \
+  /Users/derrickmu/Desktop/Consent/Pods/Headers/Public/FirebaseAuthInterop/FIRAuthInterop.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetAccountInfoResponse.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthRPCResponse.h

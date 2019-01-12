@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BA7798C5FAC38A673463EC5B07C152BB"
+               BlueprintIdentifier = "5744801F80980C5C237AABBDE0F8A05F"
                BuildableName = "Pods_Consent.framework"
                BlueprintName = "Pods-Consent"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA7798C5FAC38A673463EC5B07C152BB"
+            BlueprintIdentifier = "5744801F80980C5C237AABBDE0F8A05F"
             BuildableName = "Pods_Consent.framework"
             BlueprintName = "Pods-Consent"
             ReferencedContainer = "container:Pods.xcodeproj">

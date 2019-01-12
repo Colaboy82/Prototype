@@ -23,6 +23,7 @@ dependencies: \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuth_Internal.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuth.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthErrors.h \
+  /Users/derrickmu/Desktop/Consent/Pods/Headers/Public/FirebaseAuthInterop/FIRAuthInterop.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthURLPresenter.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthNotificationManager.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthErrorUtils.h \

@@ -8,6 +8,15 @@ dependencies: \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthAPNSTokenType.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthDataResult.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRUserInfo.h \
+  /Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Public/FirebaseCore.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Public/FIRAnalyticsConfiguration.h \
+  /Users/derrickmu/Desktop/Consent/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAdditionalUserInfo_Internal.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAdditionalUserInfo.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthCredential_Internal.h \
@@ -18,6 +27,7 @@ dependencies: \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthSerialTaskQueue.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthOperationType.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuth_Internal.h \
+  /Users/derrickmu/Desktop/Consent/Pods/Headers/Public/FirebaseAuthInterop/FIRAuthInterop.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthBackend.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthRequestConfiguration.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthRPCRequest.h \
@@ -29,22 +39,16 @@ dependencies: \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthRPCResponse.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIREmailAuthProvider.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProviders/EmailPassword/FIREmailPasswordAuthCredential.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProviders/GameCenter/FIRGameCenterAuthCredential.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetAccountInfoRequest.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetAccountInfoResponse.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetOOBConfirmationCodeRequest.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetOOBConfirmationCodeResponse.h \
-  /Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
-  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h \
-  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h \
-  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Public/FirebaseCore.h \
-  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h \
-  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h \
-  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h \
-  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Public/FIRAnalyticsConfiguration.h \
-  /Users/derrickmu/Desktop/Consent/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRSecureTokenService.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSetAccountInfoRequest.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSetAccountInfoResponse.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSignInWithGameCenterRequest.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSignInWithGameCenterResponse.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRUserInfoImpl.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/FIRUserMetadata_Internal.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRUserMetadata.h \
