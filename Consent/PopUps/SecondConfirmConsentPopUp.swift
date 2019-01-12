@@ -123,39 +123,47 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
             let date = snapshot.childSnapshot(forPath: "RequestDate").value as! String
             
             self.entryRef.child(userRequesting).child(self.userID!).child(date).observe(.value, with: {(snapshot) in
-                let entryArray = [Auth.auth().currentUser!,
-                                  snapshot.childSnapshot(forPath: "Date").value as! String,
-                                  userRequesting,
-                                  snapshot.childSnapshot(forPath: "VidUrl").value as! String,
-                                  snapshot.childSnapshot(forPath: "email").value as! String,
-                                  snapshot.childSnapshot(forPath: "firstName").value as! String,
-                                  snapshot.childSnapshot(forPath: "middleName").value as! String,
-                                  snapshot.childSnapshot(forPath: "lastName").value as! String,
-                                  snapshot.childSnapshot(forPath: "phoneNum").value as! String,
-                                  snapshot.childSnapshot(forPath: "gender").value as! String,
-                                  snapshot.childSnapshot(forPath: "ProfilePic").value as! String,
-                                  snapshot.childSnapshot(forPath: "AgreedActions").value as! String,
-                                  snapshot.childSnapshot(forPath: "FirstSignature").value as! String,
-                                  snapshot.childSnapshot(forPath: "secondSignature").value as! String] as [Any]
+                let savedDate = snapshot.childSnapshot(forPath: "Date").value as! String
+                let vidUrl = snapshot.childSnapshot(forPath: "VidUrl").value as! String
+                let agreedActions = snapshot.childSnapshot(forPath: "AgreedActions").value as! String
+                let firstSign = snapshot.childSnapshot(forPath: "FirstSignature").value as! String
+                let secondSign = snapshot.childSnapshot(forPath: "secondSignature").value as! String
+            
+                self.userRef.child(userRequesting).observe(.value, with: {(snapshot) in
+                    let entryArray = [Auth.auth().currentUser!,
+                                      savedDate,
+                                      userRequesting,
+                                      vidUrl,
+                                      snapshot.childSnapshot(forPath: "email").value as! String,
+                                      snapshot.childSnapshot(forPath: "firstName").value as! String,
+                                      snapshot.childSnapshot(forPath: "middleName").value as! String,
+                                      snapshot.childSnapshot(forPath: "lastName").value as! String,
+                                      snapshot.childSnapshot(forPath: "phoneNum").value as! String,
+                                      snapshot.childSnapshot(forPath: "gender").value as! String,
+                                      snapshot.childSnapshot(forPath: "ProfilePic").value as! String,
+                                      agreedActions,
+                                      firstSign,
+                                      secondSign] as [Any]
                 
-                let e = ConsentEntryModel.init(user: entryArray[0] as! User,
-                                               date: entryArray[1] as! String,
-                                               otherUserID: entryArray[2] as! String,
-                                               vidUrl: entryArray[3] as! String,
-                                               email: entryArray[4] as! String,
-                                               firstName: entryArray[5] as! String,
-                                               midName: entryArray[6] as! String,
-                                               lastName: entryArray[7] as! String,
-                                               phoneNum: entryArray[8] as! String,
-                                               gender: entryArray[9] as! String,
-                                               profilePicUrl: entryArray[10] as! String,
-                                               agreedActions: entryArray[11] as! String,
-                                               firstSignature: entryArray[12] as! String,
-                                               secondSignature: entryArray[13] as! String)
-                e.createEntry()
+                    let e = ConsentEntryModel.init(user: entryArray[0] as! User,
+                                                   date: entryArray[1] as! String,
+                                                   otherUserID: entryArray[2] as! String,
+                                                   vidUrl: entryArray[3] as! String,
+                                                   email: entryArray[4] as! String,
+                                                   firstName: entryArray[5] as! String,
+                                                   midName: entryArray[6] as! String,
+                                                   lastName: entryArray[7] as! String,
+                                                   phoneNum: entryArray[8] as! String,
+                                                   gender: entryArray[9] as! String,
+                                                   profilePicUrl: entryArray[10] as! String,
+                                                   agreedActions: entryArray[11] as! String,
+                                                   firstSignature: entryArray[12] as! String,
+                                                   secondSignature: entryArray[13] as! String)
+                    e.createEntry()
                 
-                let newRef = self.entryRef.child(self.userID!).child(entryArray[2] as! String).child(date)
-                newRef.updateChildValues(["Confirmed": true])
+                    let newRef = self.entryRef.child(self.userID!).child(entryArray[2] as! String).child(date)
+                    newRef.updateChildValues(["Confirmed": true])
+                })
             })
         })
     }

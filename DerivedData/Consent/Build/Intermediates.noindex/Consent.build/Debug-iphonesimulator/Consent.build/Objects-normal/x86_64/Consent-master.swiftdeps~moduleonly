@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "caa47f7137f754b55b04fa5c47996acd"
-build_time: [1547270286, 294577000]
+build_time: [1547334639, 414693000]
 inputs:
   "/Users/derrickmu/Desktop/Consent/Consent/Main/PwReset/PWResetVC.swift": [1547227019, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Constants.swift": [1547227019, 0]
@@ -20,7 +20,7 @@ inputs:
   "/Users/derrickmu/Desktop/Consent/Consent/Helper Functions/AccountValidation.swift": [1547227019, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/DesignableX/UIViewXRadialGradient.swift": [1547227019, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Main/UserLogin/SignInVC.swift": [1547227019, 0]
-  "/Users/derrickmu/Desktop/Consent/Consent/PopUps/SecondConfirmConsentPopUp.swift": [1547270283, 0]
+  "/Users/derrickmu/Desktop/Consent/Consent/PopUps/SecondConfirmConsentPopUp.swift": [1547334630, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/DesignableX/UIViewX.swift": [1547227019, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/DesignableX/UIButtonX.swift": [1547227019, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/PopUps/LoadingPopUp.swift": [1547227019, 0]
