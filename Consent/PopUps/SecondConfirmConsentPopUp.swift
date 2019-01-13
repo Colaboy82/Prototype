@@ -111,7 +111,13 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
             
             if bool == true {
                 self.deleteEntryDueToCancellation()
-                self.dismiss(animated: true, completion: nil)
+                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                
+                let nextVC = sb.instantiateViewController(withIdentifier: "Error")
+                Constants.ErrorType = .SubmitFail
+                self.failPopUpTimer.invalidate()
+                self.timer.invalidate()
+                self.present(nextVC, animated:true, completion:nil)
             }
         })
     }

@@ -65,8 +65,14 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
             guard let bool = snapshot.value as? Bool else { return }
             
             if bool == true {
+                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                
+                let nextVC = sb.instantiateViewController(withIdentifier: "Error")
+                Constants.ErrorType = .SubmitFail
+                self.present(nextVC, animated:true, completion:nil)
+                
                 //self.deleteEntryDueToCancellation()
-                self.dismiss(animated: true, completion: nil)
+                //self.dismiss(animated: true, completion: nil)
             }
         })
     }

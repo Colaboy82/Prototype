@@ -35,6 +35,35 @@
 			<key>uniqueIdentifier</key>
 			<string>0130EB0E-3602-4279-B390-A863C8AE3F12</string>
 		</dict>
+		<key>030207B4-0C65-47FA-8D70-82FD543E4960</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>030207B4-0C65-47FA-8D70-82FD543E4960.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569046124.83563995</real>
+			<key>timeStoppedRecording</key>
+			<real>569046312.93259203</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>030207B4-0C65-47FA-8D70-82FD543E4960</string>
+		</dict>
 		<key>07754D85-5CC5-444E-BEE5-D8BBC1AFCE71</key>
 		<dict>
 			<key>className</key>
@@ -267,6 +296,35 @@
 			<key>uniqueIdentifier</key>
 			<string>15E2865E-E15C-45FC-BAFB-22BB51488386</string>
 		</dict>
+		<key>17D66826-1DCE-4E21-B10C-58F1938BE18E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>17D66826-1DCE-4E21-B10C-58F1938BE18E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569046048.69095194</real>
+			<key>timeStoppedRecording</key>
+			<real>569046098.498487</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>17D66826-1DCE-4E21-B10C-58F1938BE18E</string>
+		</dict>
 		<key>18C4E0F8-FB34-4E11-A986-8DAB2F284E88</key>
 		<dict>
 			<key>className</key>
@@ -354,6 +412,35 @@
 			<key>uniqueIdentifier</key>
 			<string>21E9F7BD-B412-4BF1-95DB-632AF74FC848</string>
 		</dict>
+		<key>21FDB2E0-EBC1-4294-8CA6-05C6F29848AF</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>21FDB2E0-EBC1-4294-8CA6-05C6F29848AF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569046111.37964594</real>
+			<key>timeStoppedRecording</key>
+			<real>569046123.79167497</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>21FDB2E0-EBC1-4294-8CA6-05C6F29848AF</string>
+		</dict>
 		<key>2A12B16C-79D8-49F9-899F-2B72D7DA4052</key>
 		<dict>
 			<key>className</key>
@@ -382,6 +469,35 @@
 			<string>Debug Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>2A12B16C-79D8-49F9-899F-2B72D7DA4052</string>
+		</dict>
+		<key>2ED5052D-0048-4361-B645-27E37F6C0D91</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>2ED5052D-0048-4361-B645-27E37F6C0D91.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569045881.52817595</real>
+			<key>timeStoppedRecording</key>
+			<real>569045939.73060596</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>2ED5052D-0048-4361-B645-27E37F6C0D91</string>
 		</dict>
 		<key>37608076-C5D4-4D90-A3B1-75C24AB2BBAF</key>
 		<dict>
@@ -469,6 +585,35 @@
 			<string>Debug Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>39DFBC5B-EF66-4CCD-A69C-8D4A60077A07</string>
+		</dict>
+		<key>3A9A394D-6B84-4EFD-B01F-BE9B007EA50F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3A9A394D-6B84-4EFD-B01F-BE9B007EA50F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569046370.92669404</real>
+			<key>timeStoppedRecording</key>
+			<real>569046654.13547397</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>3A9A394D-6B84-4EFD-B01F-BE9B007EA50F</string>
 		</dict>
 		<key>425B2DF5-7F10-4BB7-970E-F8632EE99D52</key>
 		<dict>
@@ -673,6 +818,35 @@
 			<key>uniqueIdentifier</key>
 			<string>5357B82F-C5D1-42BC-A4D1-5F8568CAD1AD</string>
 		</dict>
+		<key>55068AE4-0EB7-4D70-BA34-9B33459452CA</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>55068AE4-0EB7-4D70-BA34-9B33459452CA.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569046117.16614497</real>
+			<key>timeStoppedRecording</key>
+			<real>569047075.43471301</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>55068AE4-0EB7-4D70-BA34-9B33459452CA</string>
+		</dict>
 		<key>55AEFA2E-A174-4C5D-B3CC-6589D1FC3B90</key>
 		<dict>
 			<key>className</key>
@@ -701,6 +875,35 @@
 			<string>Debug Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>55AEFA2E-A174-4C5D-B3CC-6589D1FC3B90</string>
+		</dict>
+		<key>55F9D4F4-AE01-4880-B84B-A05B884B6BCC</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>55F9D4F4-AE01-4880-B84B-A05B884B6BCC.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569043348.56991303</real>
+			<key>timeStoppedRecording</key>
+			<real>569045390.24267197</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>55F9D4F4-AE01-4880-B84B-A05B884B6BCC</string>
 		</dict>
 		<key>57CFD279-FCB3-42F8-9059-06BC1232B34B</key>
 		<dict>
@@ -963,6 +1166,35 @@
 			<key>uniqueIdentifier</key>
 			<string>5FA95E23-43D1-46E2-B8D7-4107F3A9A245</string>
 		</dict>
+		<key>607DA8A1-F8FC-46A2-BD5A-531A09AA2C0B</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>607DA8A1-F8FC-46A2-BD5A-531A09AA2C0B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569046316.39074802</real>
+			<key>timeStoppedRecording</key>
+			<real>569046346.59635401</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>607DA8A1-F8FC-46A2-BD5A-531A09AA2C0B</string>
+		</dict>
 		<key>6170BACF-45A0-492E-94AA-5CF985F61E92</key>
 		<dict>
 			<key>className</key>
@@ -1078,6 +1310,35 @@
 			<string>Debug Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>69119FC0-2F5F-46FE-9F42-A974F499BE5B</string>
+		</dict>
+		<key>69E7B7D5-BC18-4E31-8EBD-75BC2CA5E796</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>69E7B7D5-BC18-4E31-8EBD-75BC2CA5E796.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569046349.81784797</real>
+			<key>timeStoppedRecording</key>
+			<real>569046367.76256895</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>69E7B7D5-BC18-4E31-8EBD-75BC2CA5E796</string>
 		</dict>
 		<key>6A225F8B-980D-4F7F-9A28-F88DCF49BAE0</key>
 		<dict>
@@ -1195,6 +1456,35 @@
 			<key>uniqueIdentifier</key>
 			<string>71FE9359-4995-4EF8-BF9A-A5D3A8DDB01C</string>
 		</dict>
+		<key>7471E1F1-0781-40E8-9BB5-A7ED9DB9F74E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7471E1F1-0781-40E8-9BB5-A7ED9DB9F74E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569045500.65660095</real>
+			<key>timeStoppedRecording</key>
+			<real>569045612.02207303</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>7471E1F1-0781-40E8-9BB5-A7ED9DB9F74E</string>
+		</dict>
 		<key>75A13958-E8AB-4168-A5B1-8AD77E4546EF</key>
 		<dict>
 			<key>className</key>
@@ -1253,6 +1543,35 @@
 			<key>uniqueIdentifier</key>
 			<string>774983FF-9E0A-4689-8F2A-DF6BC8B41D52</string>
 		</dict>
+		<key>7AFAB756-9354-40C1-93C7-4007A9730D98</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7AFAB756-9354-40C1-93C7-4007A9730D98.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569047009.975757</real>
+			<key>timeStoppedRecording</key>
+			<real>569047070.88340795</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>7AFAB756-9354-40C1-93C7-4007A9730D98</string>
+		</dict>
 		<key>7BC70FC1-8423-4DB9-91D2-7B29E4C66809</key>
 		<dict>
 			<key>className</key>
@@ -1281,6 +1600,93 @@
 			<string>Debug Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>7BC70FC1-8423-4DB9-91D2-7B29E4C66809</string>
+		</dict>
+		<key>7E221109-7E2B-46F4-B2CA-CBE934A53780</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7E221109-7E2B-46F4-B2CA-CBE934A53780.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569046036.94180703</real>
+			<key>timeStoppedRecording</key>
+			<real>569046106.99916196</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>7E221109-7E2B-46F4-B2CA-CBE934A53780</string>
+		</dict>
+		<key>82174FC7-933D-4F15-825A-3766C575B9C3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>82174FC7-933D-4F15-825A-3766C575B9C3.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569045384.06044698</real>
+			<key>timeStoppedRecording</key>
+			<real>569045639.70872605</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>82174FC7-933D-4F15-825A-3766C575B9C3</string>
+		</dict>
+		<key>85C552F2-C2ED-45F8-B32B-E9EF95862482</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>85C552F2-C2ED-45F8-B32B-E9EF95862482.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569045942.81746101</real>
+			<key>timeStoppedRecording</key>
+			<real>569046033.91265202</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>85C552F2-C2ED-45F8-B32B-E9EF95862482</string>
 		</dict>
 		<key>877865CD-2816-48AE-844B-B5E436162A28</key>
 		<dict>
@@ -1311,6 +1717,35 @@
 			<key>uniqueIdentifier</key>
 			<string>877865CD-2816-48AE-844B-B5E436162A28</string>
 		</dict>
+		<key>88A6E32B-C6FA-4A6F-AC0C-63FA5C65A8AC</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>88A6E32B-C6FA-4A6F-AC0C-63FA5C65A8AC.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569045871.39874196</real>
+			<key>timeStoppedRecording</key>
+			<real>569046044.19935596</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>88A6E32B-C6FA-4A6F-AC0C-63FA5C65A8AC</string>
+		</dict>
 		<key>9195C01B-185F-4181-B04C-5453C955A0B9</key>
 		<dict>
 			<key>className</key>
@@ -1339,6 +1774,35 @@
 			<string>Debug Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>9195C01B-185F-4181-B04C-5453C955A0B9</string>
+		</dict>
+		<key>92350DC3-A716-4E8B-86A3-EE90E3563CCE</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>92350DC3-A716-4E8B-86A3-EE90E3563CCE.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569047074.47807002</real>
+			<key>timeStoppedRecording</key>
+			<real>569047092.87135398</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>92350DC3-A716-4E8B-86A3-EE90E3563CCE</string>
 		</dict>
 		<key>9B9D8C20-0C7E-4B67-A58C-DE63D4C6D45F</key>
 		<dict>
@@ -1456,6 +1920,35 @@
 			<key>uniqueIdentifier</key>
 			<string>A08B7854-D8A4-4EF0-A776-3921BE568416</string>
 		</dict>
+		<key>A1F07DB9-BAC6-46C4-A30A-3A6E7A818A4F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>A1F07DB9-BAC6-46C4-A30A-3A6E7A818A4F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569045644.41044497</real>
+			<key>timeStoppedRecording</key>
+			<real>569045869.42611301</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>A1F07DB9-BAC6-46C4-A30A-3A6E7A818A4F</string>
+		</dict>
 		<key>A49341C5-9E9F-4797-875D-0BDC941D25F1</key>
 		<dict>
 			<key>className</key>
@@ -1484,6 +1977,35 @@
 			<string>Debug Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>A49341C5-9E9F-4797-875D-0BDC941D25F1</string>
+		</dict>
+		<key>A6D4F894-39C1-430D-BC87-7516408F186F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>A6D4F894-39C1-430D-BC87-7516408F186F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569043379.06958604</real>
+			<key>timeStoppedRecording</key>
+			<real>569045381.57344604</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>A6D4F894-39C1-430D-BC87-7516408F186F</string>
 		</dict>
 		<key>A6DF458D-3D2E-411D-A2F7-869E0808FAC0</key>
 		<dict>
@@ -1600,6 +2122,35 @@
 			<string>Debug Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>AE5471A3-B875-4908-94A2-732631F06475</string>
+		</dict>
+		<key>B4100265-3BF0-447F-BEC4-F4224DBCB863</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B4100265-3BF0-447F-BEC4-F4224DBCB863.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569045614.96357703</real>
+			<key>timeStoppedRecording</key>
+			<real>569045875.10984504</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>B4100265-3BF0-447F-BEC4-F4224DBCB863</string>
 		</dict>
 		<key>BABA1BD0-201B-4978-AF6C-9C27F3C9BEEC</key>
 		<dict>
@@ -1745,6 +2296,35 @@
 			<string>Debug Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>C2B90DCD-FA68-4739-BA71-93D4D5FF8583</string>
+		</dict>
+		<key>C40C9D08-DA27-4BEE-BE81-E72CB27B26E2</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C40C9D08-DA27-4BEE-BE81-E72CB27B26E2.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569046657.55557406</real>
+			<key>timeStoppedRecording</key>
+			<real>569046715.72722602</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>C40C9D08-DA27-4BEE-BE81-E72CB27B26E2</string>
 		</dict>
 		<key>C6143D22-C73B-46B6-B739-F34520A5160F</key>
 		<dict>
@@ -1919,6 +2499,35 @@
 			<string>Debug Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>CED342B9-6B38-4C0F-8D2A-ECBA8A152C40</string>
+		</dict>
+		<key>D2E4C1D3-30E1-49CE-969C-2507697E41D5</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D2E4C1D3-30E1-49CE-969C-2507697E41D5.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569045398.06033003</real>
+			<key>timeStoppedRecording</key>
+			<real>569045497.60157204</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>D2E4C1D3-30E1-49CE-969C-2507697E41D5</string>
 		</dict>
 		<key>D504A875-DBE1-4172-96C8-75BB6C194BAB</key>
 		<dict>

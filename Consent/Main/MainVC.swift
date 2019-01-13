@@ -32,7 +32,6 @@ class MainVC: UIViewController, UITextFieldDelegate {
     
     var nameType = true
     
-    
     override func viewDidLoad() {
 
         super.viewDidLoad()
@@ -82,7 +81,25 @@ class MainVC: UIViewController, UITextFieldDelegate {
             })
         }
     }
-    
+    func checkFailPopUp(){
+        let user = Auth.auth().currentUser?.uid.trunc(length: 10)
+        let userRef = Database.database().reference().child("users").child(user!).child("FailPopUp")
+        
+        guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
+        userRef.observeSingleEvent(of: .value, with: {(snapshot) in
+            guard let bool = snapshot.value as? Bool else { return }
+            
+            if bool == true {
+                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                
+                let nextVC = sb.instantiateViewController(withIdentifier: "Error")
+                Constants.ErrorType = .SubmitFail
+                nextVC.modalTransitionStyle = .crossDissolve
+                self.timer.invalidate()
+                self.present(nextVC, animated:true, completion:nil)
+            }
+        })
+    }
     override func viewDidLayoutSubviews() {
         infoBCenter = infoB.center
         profileBCenter = profileB.center
@@ -96,6 +113,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
         DispatchQueue.global(qos: DispatchQoS.background.qosClass).async {
             //print("do some background task")
             self.checkForConfirmPopUp()
+            self.checkFailPopUp()
             DispatchQueue.main.async {
                 //print("update some UI")
             }

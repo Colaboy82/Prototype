@@ -32,6 +32,7 @@ class ErrorPopUp: UIViewController {
     @IBOutlet weak var msgText: UILabelX!
     @IBOutlet weak var popUpView: UIViewX!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -65,7 +66,15 @@ class ErrorPopUp: UIViewController {
         }
     }
     @IBAction func closePopUp(_ sender: Any){
-        dismiss(animated: true, completion: nil)
+        if (Constants.ErrorType == .SubmitFail){//person cancels on them
+            let userRef = Database.database().reference().child("users")
+            let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength)
+            userRef.child(uid!).updateChildValues(["FailPopUp":false])
+            dismiss(animated: true, completion: nil)
+            
+        } else{
+            dismiss(animated: true, completion: nil)
+        }
     }
 
 }
