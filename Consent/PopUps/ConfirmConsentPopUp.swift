@@ -24,6 +24,7 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     
     var timer: Timer!
     var waitForArray: Timer!
+    var failPopUpTimer: Timer!
     var userRef = Database.database().reference()
 
     override func viewDidLoad() {
@@ -32,7 +33,7 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(shouldEnable), userInfo: nil, repeats: true)
         waitForArray = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(wait), userInfo: nil, repeats: false)
-        
+        failPopUpTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(checkFailPopUp), userInfo: nil, repeats: true)
     }
     
     func setUp(){
@@ -57,9 +58,20 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         popUpView.layer.masksToBounds = true
 
     }
+    @objc func checkFailPopUp(){
+        guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
+        userRef.child(uid).child("FailPopUp").observeSingleEvent(of: .value, with: {(snapshot) in
+            guard let bool = snapshot.value as? Bool else { return }
+            
+            if bool == true {
+                //self.deleteEntryDueToCancellation()
+                self.dismiss(animated: true, completion: nil)
+            }
+        })
+    }
+    
     @objc func wait(){
         let entry = AddEntryVC.entryContent!
-        userRef = userRef.child("users").child((Auth.auth().currentUser?.uid)!).child("ProfilePic")
         
         //let name = (entry[5] as! String) + (entry[6] as! String) + (entry[7] as! String)
         nameLbl.text = "Name: \(entry[5] as! String) \(entry[6] as! String) \(entry[7] as! String)"
@@ -107,6 +119,11 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
             }
         }
     }
+    func deleteEntryDueToCancellation(){
+        let entry = AddEntryVC.entryContent!
+        userRef.child(entry[2] as! String).updateChildValues(["ConfirmPopUp": false])
+        
+    }
     @IBAction func confirm(_ sender: UIButtonX){
         timer.invalidate()
         
@@ -144,6 +161,7 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     }
     
     @IBAction func cancel(_ sender: UIButtonX){
+        deleteEntryDueToCancellation()
         dismiss(animated: true, completion: nil)
     }
 }

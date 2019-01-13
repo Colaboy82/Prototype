@@ -32,6 +32,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
     
     var nameType = true
     
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
@@ -39,18 +40,11 @@ class MainVC: UIViewController, UITextFieldDelegate {
         
         DispatchQueue.global(qos: .userInteractive).async {
             //background thread
-
+            
             DispatchQueue.main.async {
                 //UI thread
-
-                self.checkForConfirmPopUp()
                 
-                /*self.testImage.setRounded()
-                self.testImage.borderWidth = 1
-                self.testImage.borderColor = #colorLiteral(red: 0.7607843137, green: 0.7647058824, blue: 0.7725490196, alpha: 1)
-                self.testImage.contentMode = .scaleAspectFill*/
-                
-                SetFuncs.setTextFields(field: self.searchBar, img: #imageLiteral(resourceName: "SearchIcon.png"))
+                SetFuncs.setTextFields(field: self.searchBar, img: #imageLiteral(resourceName: "SearchIcon"))
                 SetFuncs.setButton(btn: self.searchTypeB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
                 
                 self.tableViewU.dataSource = self
@@ -62,6 +56,11 @@ class MainVC: UIViewController, UITextFieldDelegate {
                 self.profileB.alpha = 0
                 self.addEntryB.alpha = 0
                 
+                self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {
+                    timer in
+                    
+                    self.backgroundChecker(timer: timer)
+                }
             }
         }
     }
@@ -77,6 +76,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
                     let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
                     let nextVC = sb.instantiateViewController(withIdentifier: "SecondConfirmConsent")
                     nextVC.modalTransitionStyle = .crossDissolve
+                    self.timer.invalidate()
                     self.present(nextVC, animated:true, completion:nil)
                 }
             })
@@ -91,6 +91,15 @@ class MainVC: UIViewController, UITextFieldDelegate {
         infoB.center = mainMenuB.center
         profileB.center = mainMenuB.center
         addEntryB.center = mainMenuB.center
+    }
+    func backgroundChecker(timer:Timer) {
+        DispatchQueue.global(qos: DispatchQoS.background.qosClass).async {
+            print("do some background task")
+            self.checkForConfirmPopUp()
+            DispatchQueue.main.async {
+                print("update some UI")
+            }
+        }
     }
     @IBAction func mainBClicked(_ sender: UIButtonX){
         //sender.toggleButtonImage(onImage: #imageLiteral(resourceName: "MainMenuB"), offImage: #imageLiteral(resourceName: "MainMenuB"))

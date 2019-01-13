@@ -21,7 +21,6 @@ depends-top-level:
 - "Bool"
 - !private "BooleanLiteralType"
 - !private "FirebaseApp"
-- !private "MainVC"
 - !private "StringLiteralType"
 - "UIApplication"
 - "UIApplicationDelegate"
@@ -33,7 +32,6 @@ depends-member:
 - !private ["7Consent11AppDelegateC", "Auth"]
 - ["7Consent11AppDelegateC", "Bool"]
 - !private ["7Consent11AppDelegateC", "FirebaseApp"]
-- !private ["7Consent11AppDelegateC", "MainVC"]
 - ["7Consent11AppDelegateC", "UIApplication"]
 - !private ["7Consent11AppDelegateC", "UIScreen"]
 - !private ["7Consent11AppDelegateC", "UIStoryboard"]
@@ -64,7 +62,6 @@ depends-member:
 - !private ["s7CVarArgP", "Auth"]
 - !private ["s7CVarArgP", "FirebaseApp"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
-- !private ["s7CVarArgP", "MainVC"]
 - !private ["s7CVarArgP", "UIScreen"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "UIWindow"]
@@ -84,7 +81,6 @@ depends-member:
 - ["s7CVarArgP", "applicationWillTerminate"]
 - !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "bounds"]
-- !private ["s7CVarArgP", "checkForConfirmPopUp"]
 - !private ["s7CVarArgP", "configure"]
 - !private ["s7CVarArgP", "currentUser"]
 - !private ["s7CVarArgP", "init"]
@@ -101,7 +97,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Auth"]
 - !private ["s28CustomDebugStringConvertibleP", "FirebaseApp"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
-- !private ["s28CustomDebugStringConvertibleP", "MainVC"]
 - !private ["s28CustomDebugStringConvertibleP", "UIScreen"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
@@ -120,7 +115,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
-- !private ["s28CustomDebugStringConvertibleP", "checkForConfirmPopUp"]
 - !private ["s28CustomDebugStringConvertibleP", "configure"]
 - !private ["s28CustomDebugStringConvertibleP", "currentUser"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -139,7 +133,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Auth"]
 - !private ["s23CustomStringConvertibleP", "FirebaseApp"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
-- !private ["s23CustomStringConvertibleP", "MainVC"]
 - !private ["s23CustomStringConvertibleP", "UIScreen"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "UIWindow"]
@@ -159,7 +152,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "applicationWillTerminate"]
 - !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "bounds"]
-- !private ["s23CustomStringConvertibleP", "checkForConfirmPopUp"]
 - !private ["s23CustomStringConvertibleP", "configure"]
 - !private ["s23CustomStringConvertibleP", "currentUser"]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -178,7 +170,6 @@ depends-member:
 - !private ["SQ", "Auth"]
 - !private ["SQ", "FirebaseApp"]
 - ["SQ", "LaunchOptionsKey"]
-- !private ["SQ", "MainVC"]
 - !private ["SQ", "UIScreen"]
 - !private ["SQ", "UIStoryboard"]
 - !private ["SQ", "UIWindow"]
@@ -198,7 +189,6 @@ depends-member:
 - ["SQ", "applicationWillTerminate"]
 - !private ["SQ", "auth"]
 - !private ["SQ", "bounds"]
-- !private ["SQ", "checkForConfirmPopUp"]
 - !private ["SQ", "configure"]
 - !private ["SQ", "currentUser"]
 - !private ["SQ", "init"]
@@ -219,7 +209,6 @@ depends-member:
 - !private ["SH", "Auth"]
 - !private ["SH", "FirebaseApp"]
 - ["SH", "LaunchOptionsKey"]
-- !private ["SH", "MainVC"]
 - !private ["SH", "UIScreen"]
 - !private ["SH", "UIStoryboard"]
 - !private ["SH", "UIWindow"]
@@ -239,7 +228,6 @@ depends-member:
 - ["SH", "applicationWillTerminate"]
 - !private ["SH", "auth"]
 - !private ["SH", "bounds"]
-- !private ["SH", "checkForConfirmPopUp"]
 - !private ["SH", "configure"]
 - !private ["SH", "currentUser"]
 - !private ["SH", "init"]
@@ -252,22 +240,15 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["7Consent6MainVCC", "checkForConfirmPopUp"]
-- !private ["7Consent6MainVCC", "deinit"]
-- !private ["7Consent6MainVCC", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["So8NSCodingP", "checkForConfirmPopUp"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "makeKeyAndVisible"]
 - !private ["So8NSCodingP", "rootViewController"]
-- !private ["So26NSExtensionRequestHandlingP", "checkForConfirmPopUp"]
-- !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So8NSObjectC", "Auth"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "FirebaseApp"]
 - ["So8NSObjectC", "LaunchOptionsKey"]
-- !private ["So8NSObjectC", "MainVC"]
 - ["So8NSObjectC", "UIApplication"]
 - !private ["So8NSObjectC", "UIScreen"]
 - !private ["So8NSObjectC", "UIStoryboard"]
@@ -286,7 +267,6 @@ depends-member:
 - ["So8NSObjectC", "applicationWillTerminate"]
 - !private ["So8NSObjectC", "auth"]
 - !private ["So8NSObjectC", "bounds"]
-- !private ["So8NSObjectC", "checkForConfirmPopUp"]
 - !private ["So8NSObjectC", "configure"]
 - !private ["So8NSObjectC", "currentUser"]
 - ["So8NSObjectC", "init"]
@@ -299,7 +279,6 @@ depends-member:
 - !private ["So8NSObjectP", "Auth"]
 - !private ["So8NSObjectP", "FirebaseApp"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
-- !private ["So8NSObjectP", "MainVC"]
 - !private ["So8NSObjectP", "UIScreen"]
 - !private ["So8NSObjectP", "UIStoryboard"]
 - !private ["So8NSObjectP", "UIWindow"]
@@ -318,7 +297,6 @@ depends-member:
 - ["So8NSObjectP", "applicationWillTerminate"]
 - !private ["So8NSObjectP", "auth"]
 - !private ["So8NSObjectP", "bounds"]
-- !private ["So8NSObjectP", "checkForConfirmPopUp"]
 - !private ["So8NSObjectP", "configure"]
 - !private ["So8NSObjectP", "currentUser"]
 - !private ["So8NSObjectP", "init"]
@@ -346,14 +324,12 @@ depends-member:
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "makeKeyAndVisible"]
 - !private ["So12UIAppearanceP", "rootViewController"]
-- !private ["So21UIAppearanceContainerP", "checkForConfirmPopUp"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "makeKeyAndVisible"]
 - !private ["So21UIAppearanceContainerP", "rootViewController"]
 - ["So13UIApplicationC", "LaunchOptionsKey"]
 - !private ["So21UIApplicationDelegateP", "Auth"]
 - !private ["So21UIApplicationDelegateP", "FirebaseApp"]
-- !private ["So21UIApplicationDelegateP", "MainVC"]
 - !private ["So21UIApplicationDelegateP", "UIScreen"]
 - !private ["So21UIApplicationDelegateP", "UIStoryboard"]
 - !private ["So21UIApplicationDelegateP", "UIWindow"]
@@ -371,15 +347,12 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillResignActive"]
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
 - ["So21UIApplicationDelegateP", "window"]
-- !private ["So18UIContentContainerP", "checkForConfirmPopUp"]
-- !private ["So18UIContentContainerP", "init"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "makeKeyAndVisible"]
 - !private ["So17UICoordinateSpaceP", "rootViewController"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "makeKeyAndVisible"]
 - !private ["So13UIDynamicItemP", "rootViewController"]
-- !private ["So18UIFocusEnvironmentP", "checkForConfirmPopUp"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "makeKeyAndVisible"]
 - !private ["So18UIFocusEnvironmentP", "rootViewController"]
@@ -392,7 +365,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Auth"]
 - !private ["So30UIPasteConfigurationSupportingP", "FirebaseApp"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
-- !private ["So30UIPasteConfigurationSupportingP", "MainVC"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIScreen"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
@@ -409,7 +381,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "applicationWillEnterForeground"]
 - ["So30UIPasteConfigurationSupportingP", "applicationWillResignActive"]
 - ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
-- !private ["So30UIPasteConfigurationSupportingP", "checkForConfirmPopUp"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "makeKeyAndVisible"]
@@ -419,7 +390,6 @@ depends-member:
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "FirebaseApp"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
-- !private ["So11UIResponderC", "MainVC"]
 - ["So11UIResponderC", "UIApplication"]
 - !private ["So11UIResponderC", "UIScreen"]
 - !private ["So11UIResponderC", "UIStoryboard"]
@@ -437,7 +407,6 @@ depends-member:
 - ["So11UIResponderC", "applicationWillEnterForeground"]
 - ["So11UIResponderC", "applicationWillResignActive"]
 - ["So11UIResponderC", "applicationWillTerminate"]
-- !private ["So11UIResponderC", "checkForConfirmPopUp"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "makeKeyAndVisible"]
@@ -446,7 +415,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Auth"]
 - !private ["So30UIResponderStandardEditActionsP", "FirebaseApp"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
-- !private ["So30UIResponderStandardEditActionsP", "MainVC"]
 - !private ["So30UIResponderStandardEditActionsP", "UIScreen"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
@@ -463,7 +431,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "applicationWillEnterForeground"]
 - ["So30UIResponderStandardEditActionsP", "applicationWillResignActive"]
 - ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
-- !private ["So30UIResponderStandardEditActionsP", "checkForConfirmPopUp"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "makeKeyAndVisible"]
@@ -471,20 +438,9 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "window"]
 - !private ["So8UIScreenC", "bounds"]
 - !private ["So8UIScreenC", "main"]
-- !private ["So20UIScrollViewDelegateP", "checkForConfirmPopUp"]
-- !private ["So20UIScrollViewDelegateP", "init"]
-- !private ["So16UIStateRestoringP", "checkForConfirmPopUp"]
-- !private ["So16UIStateRestoringP", "init"]
 - !private ["So12UIStoryboardC", "init"]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
-- !private ["So21UITableViewDataSourceP", "checkForConfirmPopUp"]
-- !private ["So21UITableViewDataSourceP", "init"]
-- !private ["So19UITableViewDelegateP", "checkForConfirmPopUp"]
-- !private ["So19UITableViewDelegateP", "init"]
-- !private ["So19UITextFieldDelegateP", "checkForConfirmPopUp"]
-- !private ["So19UITextFieldDelegateP", "init"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
-- !private ["So18UITraitEnvironmentP", "checkForConfirmPopUp"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "main"]
 - !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
@@ -492,7 +448,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "Auth"]
 - !private ["So23UIUserActivityRestoringP", "FirebaseApp"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
-- !private ["So23UIUserActivityRestoringP", "MainVC"]
 - !private ["So23UIUserActivityRestoringP", "UIScreen"]
 - !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
 - !private ["So23UIUserActivityRestoringP", "UIWindow"]
@@ -509,7 +464,6 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "applicationWillEnterForeground"]
 - ["So23UIUserActivityRestoringP", "applicationWillResignActive"]
 - ["So23UIUserActivityRestoringP", "applicationWillTerminate"]
-- !private ["So23UIUserActivityRestoringP", "checkForConfirmPopUp"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "makeKeyAndVisible"]
@@ -518,8 +472,6 @@ depends-member:
 - !private ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "makeKeyAndVisible"]
 - !private ["So6UIViewC", "rootViewController"]
-- !private ["So16UIViewControllerC", "checkForConfirmPopUp"]
-- !private ["So16UIViewControllerC", "init"]
 - !private ["So8UIWindowC", "init"]
 - !private ["So8UIWindowC", "makeKeyAndVisible"]
 - !private ["So8UIWindowC", "rootViewController"]
@@ -540,7 +492,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FirebaseApp"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "MainVC"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIScreen"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
@@ -559,7 +510,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "checkForConfirmPopUp"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configure"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -597,10 +547,8 @@ depends-nominal:
 - !private "So6FIRAppC"
 - "SH"
 - !private "s25LosslessStringConvertibleP"
-- !private "7Consent6MainVCC"
 - !private "s10MirrorPathP"
 - !private "So8NSCodingP"
-- !private "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "Sm"
@@ -614,7 +562,6 @@ depends-nominal:
 - !private "So21UIAppearanceContainerP"
 - "So13UIApplicationC"
 - "So21UIApplicationDelegateP"
-- !private "So18UIContentContainerP"
 - !private "So17UICoordinateSpaceP"
 - !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
@@ -624,16 +571,10 @@ depends-nominal:
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "So8UIScreenC"
-- !private "So20UIScrollViewDelegateP"
-- !private "So16UIStateRestoringP"
 - !private "So12UIStoryboardC"
-- !private "So21UITableViewDataSourceP"
-- !private "So19UITableViewDelegateP"
-- !private "So19UITextFieldDelegateP"
 - !private "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
-- !private "So16UIViewControllerC"
 - !private "So8UIWindowC"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"

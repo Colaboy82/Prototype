@@ -23,6 +23,7 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     @IBOutlet weak var popUpView: UIViewX!
     
     var timer: Timer!
+    var failPopUpTimer: Timer!
     
     var userID = Auth.auth().currentUser?.uid.trunc(length: 10)
     var userRef = Database.database().reference().child("users")
@@ -33,6 +34,12 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         setUp()
         
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(shouldEnable), userInfo: nil, repeats: true)
+        self.failPopUpTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {
+            timer in
+            
+            self.backgroundChecker(timer: timer)
+        }
+        
     }
     
     func setUp(){
@@ -92,6 +99,26 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         } else {
             confirmBtn.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
             confirmBtn.isEnabled = false
+        }
+    }
+    func checkFailPopUp(){
+        guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
+        userRef.child(uid).child("FailPopUp").observeSingleEvent(of: .value, with: {(snapshot) in
+            guard let bool = snapshot.value as? Bool else { return }
+            
+            if bool == true {
+                self.deleteEntryDueToCancellation()
+                self.dismiss(animated: true, completion: nil)
+            }
+        })
+    }
+    func backgroundChecker(timer:Timer) {
+        DispatchQueue.global(qos: DispatchQoS.background.qosClass).async {
+            print("do some background task")
+            self.checkFailPopUp()
+            DispatchQueue.main.async {
+                print("update some UI")
+            }
         }
     }
     func uploadSignature(completion: @escaping (_ url: String?) -> ()){
@@ -167,31 +194,16 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
             })
         })
     }
-    @IBAction func confirm(_ sender: UIButtonX){
-        timer.invalidate()
-        
-        userRef.child(userID!).updateChildValues(["ConfirmPopUp":false])
-
+    func deleteEntryDueToCancellation(){
         userRef.child(userID!).observe(.value, with: { (snapshot) in
             let userRequesting = snapshot.childSnapshot(forPath: "RequestFromID").value as! String
-            let date = snapshot.childSnapshot(forPath: "RequestDate").value as! String
-            
-            self.uploadSignature( completion: { (url) in
-                let newRef = self.entryRef.child(userRequesting).child(self.userID!).child(date)
-                newRef.updateChildValues(["secondSignature": url as Any,
-                                              "Confirmed": true])
-            })
+            self.entryRef.child(userRequesting).removeValue()
         })
-        
-        addEntryToDatabase()
-        
-        let sb = UIStoryboard(name: "Main", bundle:nil)
-        let nextVC = sb.instantiateViewController(withIdentifier: "MainVC")
-        nextVC.modalTransitionStyle = .crossDissolve
-        self.present(nextVC, animated:true, completion:nil)
+        //DELETE STORAGE OF VIDEO AND FIRST SIGNATURE
     }
-    
-    @IBAction func cancel(_ sender: UIButtonX){
+    @IBAction func confirm(_ sender: UIButtonX){
+        timer.invalidate()
+        failPopUpTimer.invalidate()
         
         userRef.child(userID!).updateChildValues(["ConfirmPopUp":false])
         
@@ -206,6 +218,19 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
             })
         })
         
+        addEntryToDatabase()
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func cancel(_ sender: UIButtonX){
+        
+        userRef.child(userID!).observe(.value, with: { (snapshot) in
+            let userRequesting = snapshot.childSnapshot(forPath: "RequestFromID").value as! String
+            self.userRef.child(userRequesting).updateChildValues(["FailPopUp":true])
+        })
+        userRef.child(userID!).updateChildValues(["ConfirmPopUp":false])
+        deleteEntryDueToCancellation()
         
         dismiss(animated: true, completion: nil)
     }

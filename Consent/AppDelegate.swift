@@ -32,9 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = initialSB
         window.makeKeyAndVisible()
         
-        let mainVC = MainVC()
-        mainVC.checkForConfirmPopUp()
-        
         return true
     }
 

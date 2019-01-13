@@ -262,6 +262,7 @@ SWIFT_CLASS("_TtC7Consent19ConfirmConsentPopUp")
 @property (nonatomic, weak) IBOutlet YPDrawSignatureView * _Null_unspecified signatureView;
 @property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified popUpView;
 - (void)viewDidLoad;
+- (void)checkFailPopUp;
 - (void)wait;
 - (void)shouldEnable;
 - (IBAction)confirm:(UIButtonX * _Nonnull)sender;
