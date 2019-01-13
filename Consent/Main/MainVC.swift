@@ -56,7 +56,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
                 self.profileB.alpha = 0
                 self.addEntryB.alpha = 0
                 
-                self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {
+                self.timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) {
                     timer in
                     
                     self.backgroundChecker(timer: timer)
@@ -94,10 +94,10 @@ class MainVC: UIViewController, UITextFieldDelegate {
     }
     func backgroundChecker(timer:Timer) {
         DispatchQueue.global(qos: DispatchQoS.background.qosClass).async {
-            print("do some background task")
+            //print("do some background task")
             self.checkForConfirmPopUp()
             DispatchQueue.main.async {
-                print("update some UI")
+                //print("update some UI")
             }
         }
     }

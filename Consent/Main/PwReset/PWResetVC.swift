@@ -71,7 +71,7 @@ class PWResetVC: UIViewController, UITextFieldDelegate {
         if Auth.auth().currentUser != nil{//         If already logged in
             do{
                 
-                
+            
                 
             }catch let error as NSError {
                 print(error.localizedDescription)

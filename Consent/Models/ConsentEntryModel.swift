@@ -73,6 +73,29 @@ class ConsentEntryModel{
             }
         })
     }
+    func createDuplicateEntry(savedDate: String){
+        let newUserRef = Database.database().reference().child("ConsentEntries").child(user.uid.trunc(length: SetFuncs.uidCharacterLength)).child("\(otherUserID)").child(savedDate)
+        let values = ["email": email,
+                      "firstName": firstName,
+                      "middleName": midName,
+                      "lastName": lastName,
+                      "phoneNum": phoneNum,
+                      "gender": gender,
+                      "ProfilePic": profilePicUrl,
+                      "UserID": otherUserID,
+                      "Date": date,
+                      "VidUrl": vidUrl,
+                      "AgreedActions": agreedActions,
+                      "FirstSignature": firstSignature,
+                      "secondSignature": secondSignature,
+                      "Confirmed": false] as [String : Any]
+        newUserRef.updateChildValues(values, withCompletionBlock: { (error, ref) in
+            if error != nil{
+                print(error!)
+                return
+            }
+        })
+    }
     func getOtherUserInfo(uid: String!) -> [String]{
         var profilePicUrl, otherUserID, email, firstName, midName, lastName, gender, phoneNum: String
         profilePicUrl=""; otherUserID=""; email=""; firstName=""; midName=""; lastName=""; gender=""; phoneNum=""

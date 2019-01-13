@@ -26,6 +26,7 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     var waitForArray: Timer!
     var failPopUpTimer: Timer!
     var userRef = Database.database().reference()
+    var vidRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("consent_vids")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,6 +123,19 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     func deleteEntryDueToCancellation(){
         let entry = AddEntryVC.entryContent!
         userRef.child(entry[2] as! String).updateChildValues(["ConfirmPopUp": false])
+        
+        let v = vidRef.child("user/\(Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength))").child(entry[2] as! String).child(entry[1] as! String)
+
+        v.delete { (error) in
+            if let error = error {
+                // Uh-oh, an error occurred!
+                print(error.localizedDescription)
+                
+            } else {
+                print("success bitch")
+            }
+        }
+
         
     }
     @IBAction func confirm(_ sender: UIButtonX){

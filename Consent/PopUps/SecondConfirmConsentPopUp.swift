@@ -29,6 +29,9 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     var userRef = Database.database().reference().child("users")
     var entryRef = Database.database().reference().child("ConsentEntries")
     
+    var vidRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("consent_vids")
+    var sigRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("consent_signatures")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
@@ -114,20 +117,21 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     }
     func backgroundChecker(timer:Timer) {
         DispatchQueue.global(qos: DispatchQoS.background.qosClass).async {
-            print("do some background task")
+            //print("do some background task")
             self.checkFailPopUp()
             DispatchQueue.main.async {
-                print("update some UI")
+                //print("update some UI")
             }
         }
     }
     func uploadSignature(completion: @escaping (_ url: String?) -> ()){
         guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
         
-        userRef.child(uid).child("RequestFromID").observeSingleEvent(of: .value, with: { (snapshot) in
-            let userRequesting = snapshot.value as! String
+        userRef.child(uid).observe(.value, with: { (snapshot) in
+            let userRequesting = snapshot.childSnapshot(forPath: "RequestFromID").value as! String
+            let date = snapshot.childSnapshot(forPath: "RequestDate").value as! String
             
-            let sigRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("consent_signatures").child("user/\(userRequesting)").child("\(uid)").child(SetFuncs.getFirebaseDate() + "Second")
+            let sigRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("consent_signatures").child("user/\(userRequesting)").child("\(uid)").child(date + "Second")
         
             let metaData = StorageMetadata()
             metaData.contentType = "image/pdf"
@@ -186,8 +190,8 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
                                                    agreedActions: entryArray[11] as! String,
                                                    firstSignature: entryArray[12] as! String,
                                                    secondSignature: entryArray[13] as! String)
-                    e.createEntry()
-                
+                    e.createDuplicateEntry(savedDate: date)
+                    
                     let newRef = self.entryRef.child(self.userID!).child(entryArray[2] as! String).child(date)
                     newRef.updateChildValues(["Confirmed": true])
                 })
@@ -197,8 +201,31 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     func deleteEntryDueToCancellation(){
         userRef.child(userID!).observe(.value, with: { (snapshot) in
             let userRequesting = snapshot.childSnapshot(forPath: "RequestFromID").value as! String
+            let date = snapshot.childSnapshot(forPath: "RequestDate").value as! String
+            
             self.entryRef.child(userRequesting).removeValue()
+            let v = self.vidRef.child("user/\(userRequesting)").child(self.userID!).child(date)
+            let s = self.sigRef.child("user/\(userRequesting)").child(self.userID!).child(date)
+            v.delete { (error) in
+                if let error = error {
+                    // Uh-oh, an error occurred!
+                    print(error.localizedDescription)
+
+                } else {
+                    print("success bitch")
+                }
+            }
+            s.delete { (error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                } else {
+                    print("success bitch again")
+                }
+            }
         })
+        
+        
+
         //DELETE STORAGE OF VIDEO AND FIRST SIGNATURE
     }
     @IBAction func confirm(_ sender: UIButtonX){
