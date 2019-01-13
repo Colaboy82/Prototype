@@ -10,15 +10,14 @@ import Foundation
 import UIKit
 import Firebase
 
-class ConsentSubCell: UITableViewCell{
-
-    @IBOutlet weak var firstNameLbl: UILabelX!
-    @IBOutlet weak var middleNameLbl: UILabelX!
-    @IBOutlet weak var lastNameLbl: UILabelX!
+class ConsentEntryCell: UITableViewCell{
+    
+    @IBOutlet weak var nameLbl: UILabelX!
     
     @IBOutlet weak var dateLbl: UILabelX!
     
     @IBOutlet weak var profilePicImg: UIImageView!
+    @IBOutlet weak var mainView: UIViewX!
     
     var consentEntry: ConsentEntryModel!
     

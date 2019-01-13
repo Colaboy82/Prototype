@@ -33,6 +33,7 @@
 		3DCA03EE21B0885C0063B38E /* phone-call.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03ED21B0885C0063B38E /* phone-call.png */; };
 		3DCA03F021B0886B0063B38E /* id-card.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03EF21B0886B0063B38E /* id-card.png */; };
 		3DCA03F221B08CE70063B38E /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03F121B08CE70063B38E /* flag.png */; };
+		3DEFB27B21EAF9C100493CED /* ConsentEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFB27A21EAF9C100493CED /* ConsentEntryCell.swift */; };
 		3DF7657A216BD76100E78EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF76579216BD76100E78EE0 /* AppDelegate.swift */; };
 		3DF7657C216BD76100E78EE0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7657B216BD76100E78EE0 /* MainVC.swift */; };
 		3DF7657F216BD76100E78EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF7657D216BD76100E78EE0 /* Main.storyboard */; };
@@ -74,7 +75,6 @@
 		EC58511C21DC5FC600D53BF5 /* ProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC58511B21DC5FC600D53BF5 /* ProfilePage.storyboard */; };
 		EC58511E21DC5FFD00D53BF5 /* TableViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58511D21DC5FFD00D53BF5 /* TableViewCode.swift */; };
 		EC58512021DC7AA400D53BF5 /* SearchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EC58511F21DC7AA400D53BF5 /* SearchIcon.png */; };
-		EC58512221DD19D200D53BF5 /* ConsentSubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58512121DD19D200D53BF5 /* ConsentSubCell.swift */; };
 		EC58512521DD1BD600D53BF5 /* ConsentEntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58512421DD1BD600D53BF5 /* ConsentEntryModel.swift */; };
 		EC58512721DE903D00D53BF5 /* VideoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EC58512621DE903D00D53BF5 /* VideoIcon.png */; };
 		EC58512921DFFBFB00D53BF5 /* ConfirmConsentPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58512821DFFBFB00D53BF5 /* ConfirmConsentPopUp.swift */; };
@@ -136,6 +136,7 @@
 		3DCA03ED21B0885C0063B38E /* phone-call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-call.png"; sourceTree = "<group>"; };
 		3DCA03EF21B0886B0063B38E /* id-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "id-card.png"; sourceTree = "<group>"; };
 		3DCA03F121B08CE70063B38E /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		3DEFB27A21EAF9C100493CED /* ConsentEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentEntryCell.swift; sourceTree = "<group>"; };
 		3DF76576216BD76100E78EE0 /* Consent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Consent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF76579216BD76100E78EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DF7657B216BD76100E78EE0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -189,7 +190,6 @@
 		EC58511B21DC5FC600D53BF5 /* ProfilePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilePage.storyboard; sourceTree = "<group>"; };
 		EC58511D21DC5FFD00D53BF5 /* TableViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCode.swift; sourceTree = "<group>"; };
 		EC58511F21DC7AA400D53BF5 /* SearchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SearchIcon.png; sourceTree = "<group>"; };
-		EC58512121DD19D200D53BF5 /* ConsentSubCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSubCell.swift; sourceTree = "<group>"; };
 		EC58512421DD1BD600D53BF5 /* ConsentEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentEntryModel.swift; sourceTree = "<group>"; };
 		EC58512621DE903D00D53BF5 /* VideoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VideoIcon.png; sourceTree = "<group>"; };
 		EC58512821DFFBFB00D53BF5 /* ConfirmConsentPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmConsentPopUp.swift; sourceTree = "<group>"; };
@@ -450,7 +450,7 @@
 		EC58512321DD1B0B00D53BF5 /* CellTypes */ = {
 			isa = PBXGroup;
 			children = (
-				EC58512121DD19D200D53BF5 /* ConsentSubCell.swift */,
+				3DEFB27A21EAF9C100493CED /* ConsentEntryCell.swift */,
 			);
 			path = CellTypes;
 			sourceTree = "<group>";
@@ -770,13 +770,13 @@
 				EC27E47821D725FF005B5A78 /* UIButtonX.swift in Sources */,
 				ECA08CEE21D525D100565DC5 /* LoadingPopUp.swift in Sources */,
 				EC27E47B21D725FF005B5A78 /* UISliderX.swift in Sources */,
-				EC58512221DD19D200D53BF5 /* ConsentSubCell.swift in Sources */,
 				EC27E48121D725FF005B5A78 /* UIImageViewX.swift in Sources */,
 				EC27E47D21D725FF005B5A78 /* UIViewAnchorPoint.swift in Sources */,
 				3DF7657A216BD76100E78EE0 /* AppDelegate.swift in Sources */,
 				EC58511221DC5F7A00D53BF5 /* ProfilePageVC.swift in Sources */,
 				EC27E48321D728E0005B5A78 /* SetFuncs.swift in Sources */,
 				EC27E47A21D725FF005B5A78 /* UILabelX.swift in Sources */,
+				3DEFB27B21EAF9C100493CED /* ConsentEntryCell.swift in Sources */,
 				EC58512921DFFBFB00D53BF5 /* ConfirmConsentPopUp.swift in Sources */,
 				EC58512521DD1BD600D53BF5 /* ConsentEntryModel.swift in Sources */,
 			);
