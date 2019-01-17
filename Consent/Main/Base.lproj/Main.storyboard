@@ -29,39 +29,51 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" name="Background"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="156" id="gc6-n5-LBf" customClass="ConsentEntryCell">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="156"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="135" id="gc6-n5-LBf" customClass="ConsentEntryCell" customModule="Consent">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="135"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gc6-n5-LBf" id="K0T-vG-agT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="155.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Qm-bS-BWw" customClass="UIViewX" customModule="Consent" customModuleProvider="target">
-                                                    <rect key="frame" x="114" y="13" width="254" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Qm-bS-BWw" customClass="UIViewX" customModule="Consent" customModuleProvider="target">
+                                                    <rect key="frame" x="107" y="23" width="262" height="85"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mu, Derrick S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fe0-fI-EjK" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
-                                                            <rect key="frame" x="8" y="13" width="104" height="21"/>
+                                                            <rect key="frame" x="8" y="8" width="135" height="25"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11/30/18 8:09 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOE-dI-HvI" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
-                                                            <rect key="frame" x="8" y="61" width="134" height="21"/>
+                                                            <rect key="frame" x="8" y="48" width="130" height="20"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" name="Secondary Background"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="1Qm-bS-BWw" secondAttribute="height" multiplier="262:85" id="gdi-2f-bVG"/>
+                                                    </constraints>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="AQR-ik-uwj">
-                                                    <rect key="frame" x="4" y="24" width="102" height="107"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="AQR-ik-uwj" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
+                                                    <rect key="frame" x="4" y="21" width="93" height="93"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="AQR-ik-uwj" secondAttribute="height" multiplier="1:1" id="LyL-dA-mm5"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="AQR-ik-uwj" firstAttribute="leading" secondItem="K0T-vG-agT" secondAttribute="leading" constant="4" id="EiZ-Qs-hpb"/>
+                                                <constraint firstAttribute="bottom" secondItem="1Qm-bS-BWw" secondAttribute="bottom" constant="26.5" id="OTK-7C-7Ol"/>
+                                                <constraint firstAttribute="bottom" secondItem="AQR-ik-uwj" secondAttribute="bottom" constant="20.5" id="Ohe-V6-o1g"/>
+                                                <constraint firstAttribute="trailing" secondItem="1Qm-bS-BWw" secondAttribute="trailing" constant="6" id="aHv-Vh-lpF"/>
+                                                <constraint firstItem="1Qm-bS-BWw" firstAttribute="top" secondItem="K0T-vG-agT" secondAttribute="top" constant="23" id="uNJ-hU-Yvr"/>
+                                                <constraint firstItem="AQR-ik-uwj" firstAttribute="top" secondItem="K0T-vG-agT" secondAttribute="top" constant="21" id="uwl-H3-dNJ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="Background"/>
                                         <connections>

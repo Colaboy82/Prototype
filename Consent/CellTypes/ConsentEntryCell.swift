@@ -16,7 +16,7 @@ class ConsentEntryCell: UITableViewCell{
     
     @IBOutlet weak var dateLbl: UILabelX!
     
-    @IBOutlet weak var profilePicImg: UIImageView!
+    @IBOutlet weak var profilePicImg: UIImageViewX!
     @IBOutlet weak var mainView: UIViewX!
     
     var consentEntry: ConsentEntryModel!
@@ -24,6 +24,11 @@ class ConsentEntryCell: UITableViewCell{
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        mainView.layer.cornerRadius = 20
+        mainView.layer.masksToBounds = true
+        
+        profilePicImg.setRounded()
         
     }
     func configCell(consentSubmission: ConsentEntryModel){//= nil means they do not have to have pictures

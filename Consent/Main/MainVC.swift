@@ -47,6 +47,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
                 SetFuncs.setButton(btn: self.searchTypeB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
                 
                 self.tableViewU.dataSource = self
+                self.tableViewU.delegate = self
                 
                 self.mainMenuB.setRounded()
                 self.mainMenuB.isSelected = false

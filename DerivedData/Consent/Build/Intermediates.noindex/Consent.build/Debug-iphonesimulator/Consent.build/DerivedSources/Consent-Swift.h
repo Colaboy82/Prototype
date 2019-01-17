@@ -271,15 +271,13 @@ SWIFT_CLASS("_TtC7Consent19ConfirmConsentPopUp")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
 
-SWIFT_CLASS("_TtC7Consent14ConsentSubCell")
-@interface ConsentSubCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified firstNameLbl;
-@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified middleNameLbl;
-@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified lastNameLbl;
+SWIFT_CLASS("_TtC7Consent16ConsentEntryCell")
+@interface ConsentEntryCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified nameLbl;
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified dateLbl;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profilePicImg;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified profilePicImg;
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified mainView;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -338,9 +336,15 @@ SWIFT_CLASS("_TtC7Consent6MainVC")
 @end
 
 
-@interface MainVC (SWIFT_EXTENSION(Consent)) <UITableViewDataSource, UITableViewDelegate>
+@interface MainVC (SWIFT_EXTENSION(Consent)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface MainVC (SWIFT_EXTENSION(Consent)) <UITableViewDelegate>
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 

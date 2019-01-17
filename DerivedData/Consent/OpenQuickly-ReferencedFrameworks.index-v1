@@ -33,13 +33,13 @@
 	<string>FirebaseMLVisionBarcodeModel</string>
 	<string>FirebaseMLVisionTextModel</string>
 	<string>Foundation</string>
-	<string>Security</string>
-	<string>WatchKit</string>
 	<string>Fabric</string>
 	<string>FirebaseMLModelInterpreter</string>
-	<string>GameKit</string>
 	<string>FirebaseCrash</string>
+	<string>Security</string>
+	<string>WatchKit</string>
 	<string>Consent</string>
+	<string>GameKit</string>
 	<string>FirebaseInvites</string>
 	<string>netinet</string>
 	<string>FirebaseStorage</string>
