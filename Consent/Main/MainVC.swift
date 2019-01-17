@@ -36,6 +36,8 @@ class MainVC: UIViewController, UITextFieldDelegate {
     var entryRef = Database.database().reference().child("ConsentEntries")
     var profilePicRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("profile_images")
     
+    var entriesList = [ConsentEntryModel]()
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
@@ -192,7 +194,49 @@ class MainVC: UIViewController, UITextFieldDelegate {
 extension MainVC {
     
     func loadData(){
-        
+        entryRef.observe(.value, with: { (snapshot) in
+            //if the reference have some values
+            if snapshot.childrenCount > 0 {
+                
+                //clearing the list
+                self.entriesList.removeAll()
+                
+                //iterating through all the values
+                for entries in snapshot.children.allObjects as! [DataSnapshot] {
+                    //getting values
+                    let entries = entries.value as? [String: AnyObject] ?? [String: AnyObject]()
+                    for data in entries {
+                        let entry = data.value as! [String: AnyObject]
+                        
+                        let agreedActions = entry["AgreedActions"] as! String
+                        let confirmed = entry["Confirmed"] as! Bool
+                        let userID = entry["UserID"] as! String
+                        let date = entry["Date"] as! String
+                        let fSign = entry["FirstSignature"] as! String
+                        let sSign = entry["secondSignature"] as! String
+                        let profileUrl = entry["ProfilePic"] as! String
+                        let vidUrl = entry["VidUrl"] as! String
+                        let email = entry["email"] as! String
+                        let firstName = entry["firstName"] as! String
+                        let midName = entry["middleName"] as! String
+                        let lastName = entry["lastName"] as! String
+                        let phoneNum = entry["phoneNum"] as! String
+                        let gender = entry["gender"] as! String
+                        print(firstName)
+
+                        //creating artist object with model and fetched values
+                        let eachEntry = ConsentEntryModel.init(user: Auth.auth().currentUser!, date: date, otherUserID: userID, vidUrl: vidUrl, email: email, firstName: firstName, midName: midName, lastName: lastName, phoneNum: phoneNum, gender: gender, profilePicUrl: profileUrl, agreedActions: agreedActions, firstSignature: fSign, secondSignature: sSign)
+                        
+                        if (confirmed == true){
+                            //adding it to list
+                            self.entriesList.insert(eachEntry, at: 0)
+                        }
+                    }
+                }
+                //reloading the tableview
+                self.tableViewU.reloadData()
+            }
+        })
         
         
     }
