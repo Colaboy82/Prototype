@@ -1,14 +1,14 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "caa47f7137f754b55b04fa5c47996acd"
-build_time: [1547714056, 440670000]
+build_time: [1547714557, 273120000]
 inputs:
   "/Users/derrickmu/Desktop/Consent/Consent/Main/PwReset/PWResetVC.swift": [1547347898, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/ShaharExtensions.swift": [1547007703, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Constants.swift": [1547227019, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/YPDrawSignatureView.swift": [1547227019, 0]
-  "/Users/derrickmu/Desktop/Consent/Consent/Main/MainVC.swift": [1547713020, 0]
+  "/Users/derrickmu/Desktop/Consent/Consent/Main/MainVC.swift": [1547714546, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/DesignableX/UIGradientImage.swift": [1540690468, 0]
-  "/Users/derrickmu/Desktop/Consent/Consent/Main/TableViewCode.swift": [1547714055, 0]
+  "/Users/derrickmu/Desktop/Consent/Consent/Main/TableViewCode.swift": [1547714556, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/PopUps/SuccessPopUp.swift": [1547227019, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Main/AddEntryPage/AddEntryVC.swift": [1547350447, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/DesignableX/UICollectionViewX.swift": [1544847954, 0]

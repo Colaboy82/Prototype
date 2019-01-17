@@ -222,7 +222,7 @@ extension MainVC {
                         let lastName = entry["lastName"] as! String
                         let phoneNum = entry["phoneNum"] as! String
                         let gender = entry["gender"] as! String
-
+                        
                         //creating artist object with model and fetched values
                         let eachEntry = ConsentEntryModel.init(user: Auth.auth().currentUser!, date: date, otherUserID: userID, vidUrl: vidUrl, email: email, firstName: firstName, midName: midName, lastName: lastName, phoneNum: phoneNum, gender: gender, profilePicUrl: profileUrl, agreedActions: agreedActions, firstSignature: fSign, secondSignature: sSign)
                         

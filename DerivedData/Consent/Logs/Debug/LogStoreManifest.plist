@@ -180,6 +180,35 @@
 			<key>uniqueIdentifier</key>
 			<string>39168905-05BD-4FF9-95D1-1557052D8431</string>
 		</dict>
+		<key>3B373A8E-E748-464F-9D7E-3E4EFF22F13E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3B373A8E-E748-464F-9D7E-3E4EFF22F13E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569407359.74951398</real>
+			<key>timeStoppedRecording</key>
+			<real>569407495.18303597</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>3B373A8E-E748-464F-9D7E-3E4EFF22F13E</string>
+		</dict>
 		<key>46A9910A-3042-4517-8E9A-68ED5B2D467C</key>
 		<dict>
 			<key>className</key>
@@ -933,6 +962,35 @@
 			<string>Debug Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>CAF644D1-6AF0-4500-8F31-8F289AFEBB47</string>
+		</dict>
+		<key>D2758C68-405F-44FE-8AF6-668A7ABA4076</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D2758C68-405F-44FE-8AF6-668A7ABA4076.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569406901.24234295</real>
+			<key>timeStoppedRecording</key>
+			<real>569407342.27575099</real>
+			<key>title</key>
+			<string>Debug Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>D2758C68-405F-44FE-8AF6-668A7ABA4076</string>
 		</dict>
 		<key>D521CE48-E4BF-46C3-9B67-E23F46242A85</key>
 		<dict>

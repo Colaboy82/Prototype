@@ -25,6 +25,15 @@ extension MainVC: UITableViewDataSource {
         let name = entry.lastName + ", " + entry.firstName + " " + entry.midName
         cell.nameLbl.text = name
         
+        // Create a storage reference from the URL
+        let storageRef = Storage.storage().reference(forURL: entry.profilePicUrl)
+        // Download the data, assuming a max size of 1MB (you can change this as necessary)
+        storageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) -> Void in
+            // Create a UIImage, add it to the array
+            let pic = UIImage(data: data!)
+            cell.profilePicImg.image = pic
+        }
+        
         return cell
     }
     
