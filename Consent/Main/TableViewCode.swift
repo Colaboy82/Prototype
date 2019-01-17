@@ -15,15 +15,15 @@ extension MainVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableViewU.dequeueReusableCell(withIdentifier: "cell")! //1.
+        let cell = tableViewU.dequeueReusableCell(withIdentifier: "cell")!
         
         //cell = ConsentEntryCell()
         
-        //let text = "test \(indexPath.row)"  //2.
+        //let text = "test \(indexPath.row)"
         
-        //cell.textLabel?.text = text //3.
+        //cell.textLabel?.text = text
         
-        return cell //4.
+        return cell
     }
     
 }

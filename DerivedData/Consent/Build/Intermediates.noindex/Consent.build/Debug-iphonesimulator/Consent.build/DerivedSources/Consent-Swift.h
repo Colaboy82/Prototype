@@ -165,6 +165,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import CoreGraphics;
 @import Foundation;
+@import MediaPlayer;
+@import ObjectiveC;
 @import RSKImageCropper;
 @import UIKit;
 #endif
@@ -313,6 +315,8 @@ SWIFT_CLASS("_TtC7Consent12LoadingPopUp")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+
 @class UITableView;
 
 SWIFT_CLASS("_TtC7Consent6MainVC")
@@ -334,6 +338,8 @@ SWIFT_CLASS("_TtC7Consent6MainVC")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 @interface MainVC (SWIFT_EXTENSION(Consent)) <UITableViewDataSource>
@@ -361,21 +367,28 @@ SWIFT_CLASS("_TtC7Consent9PWResetVC")
 @end
 
 @class UIColor;
+@class UITouch;
+@class UIEvent;
 
 SWIFT_CLASS("_TtC7Consent7UIViewX")
 @interface UIViewX : UIView
-@property (nonatomic, strong) UIColor * _Nonnull firstColor;
-@property (nonatomic, strong) UIColor * _Nonnull secondColor;
-@property (nonatomic) BOOL horizontalGradient;
+@property (nonatomic, strong) UIColor * _Nonnull gradientFirstColor;
+@property (nonatomic, strong) UIColor * _Nonnull gradientSecondColor;
+@property (nonatomic) CGPoint gradientStart;
+@property (nonatomic) CGPoint gradientEnd;
+@property (nonatomic) NSInteger gradientTypeFromInt;
+@property (nonatomic) BOOL ignoresColorScheme;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
 + (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, strong) UIColor * _Nonnull borderColor;
 @property (nonatomic) CGFloat borderWidth;
 @property (nonatomic) CGFloat cornerRadius;
-@property (nonatomic) CGFloat shadowOpacity;
+@property (nonatomic, copy) NSString * _Nonnull cornerRadiusForCorners;
+@property (nonatomic) float shadowOpacity;
 @property (nonatomic, strong) UIColor * _Nonnull shadowColor;
 @property (nonatomic) CGFloat shadowRadius;
-@property (nonatomic) CGFloat shadowOffsetY;
+@property (nonatomic) CGPoint shadowOffset;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -533,29 +546,80 @@ SWIFT_CLASS("_TtC7Consent12SuccessPopUp")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITouch;
-@class UIEvent;
+
+
 
 SWIFT_CLASS("_TtC7Consent9UIButtonX")
 @interface UIButtonX : UIButton
-@property (nonatomic) BOOL animate;
-@property (nonatomic) double animateDelay;
-@property (nonatomic) NSInteger animateFrom;
 @property (nonatomic) BOOL popIn;
 @property (nonatomic) double popInDelay;
-- (void)drawRect:(CGRect)rect;
+- (void)awakeFromNib;
+@property (nonatomic, getter=isSelected) BOOL selected;
+@property (nonatomic) NSInteger animationType;
 - (BOOL)beginTrackingWithTouch:(UITouch * _Nonnull)touch withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 - (void)endTrackingWithTouch:(UITouch * _Nullable)touch withEvent:(UIEvent * _Nullable)event;
+- (void)cancelTrackingWithEvent:(UIEvent * _Nullable)event;
+- (BOOL)continueTrackingWithTouch:(UITouch * _Nonnull)touch withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic) CGFloat cornerRadius;
+@property (nonatomic, copy) NSString * _Nonnull cornerRadiusForCorners;
 @property (nonatomic) CGFloat borderWidth;
 @property (nonatomic, strong) UIColor * _Nonnull borderColor;
-@property (nonatomic) CGFloat shadowOpacity;
+@property (nonatomic) float shadowOpacity;
 @property (nonatomic, strong) UIColor * _Nonnull shadowColor;
 @property (nonatomic) CGFloat shadowRadius;
-@property (nonatomic) CGSize shadowOffset;
-@property (nonatomic, strong) UIColor * _Nonnull firstColor;
-@property (nonatomic, strong) UIColor * _Nonnull secondColor;
-@property (nonatomic) BOOL horizontalGradient;
+@property (nonatomic) CGPoint shadowOffset;
+@property (nonatomic, strong) UIColor * _Nonnull gradientFirstColor;
+@property (nonatomic, strong) UIColor * _Nonnull gradientSecondColor;
+@property (nonatomic) CGPoint gradientStart;
+@property (nonatomic) CGPoint gradientEnd;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
++ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+SWIFT_CLASS("_TtC7Consent15UIGradientImage")
+@interface UIGradientImage : UIView
+- (void)drawRect:(CGRect)rect;
+- (void)layoutSubviews;
+@property (nonatomic, strong) UIImage * _Nullable image;
+@property (nonatomic) float shadowOpacity;
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+@property (nonatomic) CGFloat shadowRadius;
+@property (nonatomic) CGPoint shadowOffset;
+@property (nonatomic, strong) UIColor * _Nonnull gradientFirstColor;
+@property (nonatomic, strong) UIColor * _Nonnull gradientSecondColor;
+@property (nonatomic) CGPoint gradientStart;
+@property (nonatomic) CGPoint gradientEnd;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
++ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent15UIGradientLabel")
+@interface UIGradientLabel : UIView
+- (void)drawRect:(CGRect)rect;
+@property (nonatomic, copy) NSString * _Nonnull labelText;
+@property (nonatomic) CGFloat defaultLabelFontSize;
+@property (nonatomic, copy) NSString * _Nonnull labelFontName;
+@property (nonatomic) NSInteger labelHorizontalAlignmentFromInt;
+@property (nonatomic) NSInteger labelVerticalAlignmentFromInt;
+@property (nonatomic) float shadowOpacity;
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+@property (nonatomic) CGFloat shadowRadius;
+@property (nonatomic) CGPoint shadowOffset;
+@property (nonatomic, strong) UIColor * _Nonnull gradientFirstColor;
+@property (nonatomic, strong) UIColor * _Nonnull gradientSecondColor;
+@property (nonatomic) CGPoint gradientStart;
+@property (nonatomic) CGPoint gradientEnd;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
 + (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -565,20 +629,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 
 
 
+
+
 SWIFT_CLASS("_TtC7Consent12UIImageViewX")
 @interface UIImageViewX : UIImageView
 @property (nonatomic, strong) UIColor * _Nonnull borderColor;
 @property (nonatomic) CGFloat borderWidth;
 @property (nonatomic) CGFloat cornerRadius;
+@property (nonatomic, copy) NSString * _Nonnull cornerRadiusForCorners;
 @property (nonatomic) double pulseDelay;
 @property (nonatomic) BOOL popIn;
 @property (nonatomic) double popInDelay;
-@property (nonatomic) CGFloat shadowOpacity;
+@property (nonatomic) float shadowOpacity;
 @property (nonatomic, strong) UIColor * _Nonnull shadowColor;
 @property (nonatomic) CGFloat shadowRadius;
-@property (nonatomic) CGFloat shadowOffsetY;
-- (void)layoutSubviews;
-- (void)drawRect:(CGRect)rect;
+@property (nonatomic) CGPoint shadowOffset;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -589,16 +654,74 @@ SWIFT_CLASS("_TtC7Consent12UIImageViewX")
 
 
 
+
+
 SWIFT_CLASS("_TtC7Consent8UILabelX")
 @interface UILabelX : UILabel
 @property (nonatomic) CGFloat cornerRadius;
+@property (nonatomic, copy) NSString * _Nonnull cornerRadiusForCorners;
 @property (nonatomic) CGFloat borderWidth;
 @property (nonatomic, strong) UIColor * _Nonnull borderColor;
 @property (nonatomic) CGFloat rotationAngle;
-@property (nonatomic) CGFloat shadowOpacity;
+@property (nonatomic) float shadowOpacity;
 @property (nonatomic, strong) UIColor * _Nonnull shadowColorLayer;
 @property (nonatomic) CGFloat shadowRadius;
-@property (nonatomic) CGSize shadowOffsetLayer;
+@property (nonatomic) CGPoint shadowOffsetLayer;
+@property (nonatomic, strong) UIColor * _Nonnull gradientFirstColor;
+@property (nonatomic, strong) UIColor * _Nonnull gradientSecondColor;
+@property (nonatomic) CGPoint gradientStart;
+@property (nonatomic) CGPoint gradientEnd;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
++ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent6UIMask")
+@interface UIMask : UIViewX
+- (void)awakeFromNib;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent9UIPickerX")
+@interface UIPickerX : UIPickerView
+@property (nonatomic) CGFloat rotationAngle;
+@property (nonatomic) BOOL updateFrame;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent15UIProgressViewX")
+@interface UIProgressViewX : UIProgressView
+@property (nonatomic) CGFloat barHeight;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent13UIScrollViewX")
+@interface UIScrollViewX : UIScrollView
+@property (nonatomic) CGFloat topInset;
+@property (nonatomic) CGFloat bottomInset;
+@property (nonatomic) CGFloat leftInset;
+@property (nonatomic) CGFloat rightInset;
+- (BOOL)touchesShouldCancelInContentView:(UIView * _Nonnull)view SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent12UIShadowView")
+@interface UIShadowView : UIView
+@property (nonatomic) float shadowOpacity;
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+@property (nonatomic) CGFloat shadowRadius;
+@property (nonatomic) CGPoint shadowOffset;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -613,16 +736,85 @@ SWIFT_CLASS("_TtC7Consent9UISliderX")
 @end
 
 
+SWIFT_CLASS("_TtC7Consent12UIStackViewX")
+@interface UIStackViewX : UIStackView
+@property (nonatomic, strong) UIColor * _Nonnull gradientFirstColor;
+@property (nonatomic, strong) UIColor * _Nonnull gradientSecondColor;
+@property (nonatomic) CGPoint gradientStart;
+@property (nonatomic) CGPoint gradientEnd;
+@property (nonatomic) NSInteger gradientTypeFromInt;
+@property (nonatomic) BOOL ignoresColorScheme;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
++ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+@property (nonatomic) CGFloat borderWidth;
+@property (nonatomic) CGFloat cornerRadius;
+@property (nonatomic, copy) NSString * _Nonnull cornerRadiusForCorners;
+@property (nonatomic) float shadowOpacity;
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+@property (nonatomic) CGFloat shadowRadius;
+@property (nonatomic) CGPoint shadowOffset;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+
+
+SWIFT_CLASS("_TtC7Consent12UITableViewX")
+@interface UITableViewX : UITableView
+@property (nonatomic) CGFloat topInset;
+@property (nonatomic) CGFloat bottomInset;
+@property (nonatomic) CGFloat leftInset;
+@property (nonatomic) CGFloat rightInset;
+- (BOOL)touchesShouldCancelInContentView:(UIView * _Nonnull)view SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7Consent12UITextFieldX")
 @interface UITextFieldX : UITextField
+- (void)awakeFromNib;
 @property (nonatomic, strong) UIImage * _Nullable leftImage;
 @property (nonatomic) CGFloat leftPadding;
+@property (nonatomic) CGFloat leftInnerPadding;
 @property (nonatomic, strong) UIImage * _Nullable rightImage;
 @property (nonatomic) CGFloat rightPadding;
+@property (nonatomic) CGFloat rightInnerPadding;
+@property (nonatomic) CGFloat imageWidth;
+@property (nonatomic, strong) UIColor * _Null_unspecified tintColor;
 @property (nonatomic) CGFloat cornerRadius;
+@property (nonatomic) CGFloat borderWidth;
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+@property (nonatomic, copy) NSString * _Nullable placeholder;
+@property (nonatomic, copy) NSString * _Nullable descriptor;
+@property (nonatomic, strong) UIColor * _Nullable descriptorTextColor;
+@property (nonatomic) CGFloat descriptorScale;
+- (void)editingBegan;
+- (void)editingEnded;
+@property (nonatomic) BOOL colored;
+@property (nonatomic) UIKeyboardAppearance keyboardAppearance;
+- (void)trimTrailingSpaces;
+- (void)deleteBackward;
+- (BOOL)canPerformAction:(SEL _Nonnull)action withSender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+SWIFT_PROTOCOL("_TtP7Consent20UITextFieldXDelegate_")
+@protocol UITextFieldXDelegate <UITextFieldDelegate>
+@optional
+- (void)textFieldDidDeleteBackward:(UITextFieldX * _Nonnull)textField;
+- (BOOL)canPerformAction:(UITextFieldX * _Nonnull)textField :(SEL _Nonnull)action withSender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 
 
 SWIFT_CLASS("_TtC7Consent17UIViewAnchorPoint")
@@ -640,10 +832,22 @@ SWIFT_CLASS("_TtC7Consent17UIViewAnchorPoint")
 @end
 
 
+@interface UIViewController (SWIFT_EXTENSION(Consent)) <UIViewControllerTransitioningDelegate>
+- (void)applyColorSchemeWithApplyBG:(BOOL)applyBG;
+- (void)setColors;
+@end
+
+
 SWIFT_CLASS("_TtC7Consent17UIViewControllerX")
 @interface UIViewControllerX : UIViewController
 @property (nonatomic) BOOL lightStatusBar;
 @property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:(BOOL)animated;
+- (void)keyboardWillShowWithFrame:(CGRect)frame;
+- (void)keyboardDidShowWithFrame:(CGRect)frame;
+- (void)keyboardWillHide;
+- (void)keyboardDidHide;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -666,6 +870,13 @@ SWIFT_CLASS("_TtC7Consent19UIVisualEffectViewX")
 @property (nonatomic, strong) UIColor * _Nonnull borderColor;
 @property (nonatomic) CGFloat borderWidth;
 @property (nonatomic) CGFloat cornerRadius;
+@property (nonatomic, copy) NSString * _Nonnull cornerRadiusForCorners;
+@property (nonatomic) float shadowOpacity;
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+@property (nonatomic) CGFloat shadowRadius;
+@property (nonatomic) CGPoint shadowOffset;
+@property (nonatomic) BOOL adaptsToDark;
+- (void)awakeFromNib;
 - (nonnull instancetype)initWithEffect:(UIVisualEffect * _Nullable)effect OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

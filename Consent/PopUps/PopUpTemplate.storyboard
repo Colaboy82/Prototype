@@ -268,6 +268,11 @@
                                         <state key="normal" title="Confirm">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="confirm:" destination="Ian-aF-2HS" eventType="touchUpInside" id="Fel-gP-81u"/>
                                         </connections>
@@ -290,6 +295,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="8b0-Og-vSh" secondAttribute="height" multiplier="1:1" id="shX-7M-GV0"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing I consent to these actions:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V4X-cZ-IUU" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="8" y="454" width="246" height="16"/>
@@ -382,6 +390,11 @@
                                         <state key="normal" title="Confirm">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="confirm:" destination="XYI-Jl-mvP" eventType="touchUpInside" id="Xig-8K-XVt"/>
                                         </connections>
@@ -404,6 +417,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="OSa-wI-v7k" secondAttribute="height" multiplier="1:1" id="45G-bS-Lfi"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing I consent to these actions:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wS8-r0-nT4" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="8" y="454" width="246" height="16"/>

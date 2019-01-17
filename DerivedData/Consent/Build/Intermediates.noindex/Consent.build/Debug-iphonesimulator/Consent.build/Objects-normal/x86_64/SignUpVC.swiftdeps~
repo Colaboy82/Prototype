@@ -87,10 +87,10 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "Constants"
 - "Float"
-- !private "FloatLiteralType"
+- "FloatLiteralType"
 - !private "Int"
 - !private "Int64"
-- !private "IntegerLiteralType"
+- "IntegerLiteralType"
 - !private "NSPredicate"
 - "Pg1View"
 - "Pg2View"
@@ -105,7 +105,7 @@ depends-top-level:
 - !private "Storage"
 - !private "StorageMetadata"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - "Timer"
 - !private "UIApplication"
 - "UIButtonX"
@@ -1980,7 +1980,6 @@ depends-member:
 - ["7Consent7Pg4ViewC", "UIImageViewX"]
 - ["7Consent7Pg4ViewC", "UILabelX"]
 - ["7Consent7Pg4ViewC", "createCameraOverlay"]
-- ["7Consent7Pg4ViewC", "deinit"]
 - ["7Consent7Pg4ViewC", "init"]
 - ["7Consent7Pg4ViewC", "openCamB"]
 - ["7Consent7Pg4ViewC", "openLibB"]
@@ -4030,6 +4029,82 @@ depends-member:
 - !private ["So16UIViewControllerC", "toolbar"]
 - !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "AccountValidation"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "Auth"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "Constants"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "Float"]
+- ["So37UIViewControllerTransitioningDelegateP", "InfoKey"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "Int"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "Int64"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "NSPredicate"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "RSKImageCropMode"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "RSKImageCropViewController"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "SetFuncs"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "SignUpVC"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "Storage"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "StorageMetadata"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "String"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "Timer"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIImagePickerController"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIStoryboard"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UserModel"]
+- ["So37UIViewControllerTransitioningDelegateP", ""]
+- !private ["So37UIViewControllerTransitioningDelegateP", "allowsEditing"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "backB"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "cameraCaptureMode"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "cameraDevice"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "cameraOverlayView"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "checkPW"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "createAccount"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "currentPg"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "delegate"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "dismiss"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "email"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "enableNextBtn"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "hideKeyboardWhenTappedAround"]
+- ["So37UIViewControllerTransitioningDelegateP", "imagePickerController"]
+- ["So37UIViewControllerTransitioningDelegateP", "imagePickerControllerDidCancel"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "init"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "init"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "isSourceTypeAvailable"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "modalTransitionStyle"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "navigationBar"]
+- ["So37UIViewControllerTransitioningDelegateP", "navigationController"]
+- ["So37UIViewControllerTransitioningDelegateP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So37UIViewControllerTransitioningDelegateP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "nextB"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "numOfPgs"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "pg1"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "pg1View"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "pg2"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "pg2View"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "pg3"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "pg3View"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "pg4"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "pg4View"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "pg5"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "pg5View"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "present"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "print"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "progressBar"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "progressBarLbl"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "pw"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "sendEmailVerification"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "setPage"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "setupPgViews"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "shouldEnableNext"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "sourceType"]
+- ["So37UIViewControllerTransitioningDelegateP", "textField"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldDidBeginEditing"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldDidEndEditing"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldShouldBeginEditing"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldShouldClear"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldShouldEndEditing"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldShouldReturn"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "timer"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "toolbar"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "view"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "viewDidLoad"]
 - ["7Consent7UIViewXC", "Bool"]
 - !private ["7Consent7UIViewXC", "CGPoint"]
 - !private ["7Consent7UIViewXC", "CGRect"]
@@ -4555,6 +4630,7 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "So16UIViewControllerC"
+- "So37UIViewControllerTransitioningDelegateP"
 - "7Consent7UIViewXC"
 - !private "10Foundation3URLV"
 - !private "So7FIRUserC"
@@ -4584,13 +4660,18 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MediaPlayer.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
@@ -4676,13 +4757,19 @@ depends-external:
 - "/Users/derrickmu/Desktop/Consent/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaPlayer.framework/Headers/MediaPlayer.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "f51fd900ea1138cce779bc4e74698fed"

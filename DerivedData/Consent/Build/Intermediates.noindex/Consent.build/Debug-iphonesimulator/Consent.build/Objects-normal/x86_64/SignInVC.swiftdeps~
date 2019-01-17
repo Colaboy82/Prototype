@@ -16,9 +16,13 @@ provides-dynamic-lookup:
 - "signUpB"
 - "viewDidLoad"
 depends-top-level:
+- !private "&&"
+- !private "=="
 - "AssignmentPrecedence"
 - !private "Auth"
 - !private "BooleanLiteralType"
+- !private "CastingPrecedence"
+- !private "Constants"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - !private "SetFuncs"
@@ -31,24 +35,37 @@ depends-top-level:
 - "UIViewController"
 - !private "_ColorLiteralType"
 - !private "_ImageLiteralType"
+- !private "print"
 depends-member:
+- !private ["So7FIRAuthC", "auth"]
+- !private ["So7FIRAuthC", "signIn"]
+- !private ["So17FIRAuthDataResultC", "user"]
 - !private ["SK", "init"]
 - !private ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "clipsToBounds"]
+- !private ["So15CALayerDelegateP", "text"]
 - !private ["s7CVarArgP", "Auth"]
+- !private ["s7CVarArgP", "Constants"]
 - !private ["s7CVarArgP", "SetFuncs"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "clipsToBounds"]
 - !private ["s7CVarArgP", "email"]
 - !private ["s7CVarArgP", "hideKeyboardWhenTappedAround"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "isEmailVerified"]
 - !private ["s7CVarArgP", "loginB"]
 - !private ["s7CVarArgP", "password"]
 - !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "signIn"]
 - !private ["s7CVarArgP", "signUpB"]
+- !private ["s7CVarArgP", "text"]
 - ["s7CVarArgP", "textField"]
 - ["s7CVarArgP", "textFieldDidBeginEditing"]
 - ["s7CVarArgP", "textFieldDidEndEditing"]
@@ -56,25 +73,33 @@ depends-member:
 - ["s7CVarArgP", "textFieldShouldClear"]
 - ["s7CVarArgP", "textFieldShouldEndEditing"]
 - ["s7CVarArgP", "textFieldShouldReturn"]
+- !private ["s7CVarArgP", "user"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["Sl", "init"]
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
 - !private ["SL", "init"]
+- !private ["7Consent9ConstantsC", "ErrorType"]
 - !private ["s28CustomDebugStringConvertibleP", "Auth"]
+- !private ["s28CustomDebugStringConvertibleP", "Constants"]
 - !private ["s28CustomDebugStringConvertibleP", "SetFuncs"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "clipsToBounds"]
 - !private ["s28CustomDebugStringConvertibleP", "email"]
 - !private ["s28CustomDebugStringConvertibleP", "hideKeyboardWhenTappedAround"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmailVerified"]
 - !private ["s28CustomDebugStringConvertibleP", "loginB"]
 - !private ["s28CustomDebugStringConvertibleP", "password"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "signIn"]
 - !private ["s28CustomDebugStringConvertibleP", "signUpB"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
 - ["s28CustomDebugStringConvertibleP", "textField"]
 - ["s28CustomDebugStringConvertibleP", "textFieldDidBeginEditing"]
 - ["s28CustomDebugStringConvertibleP", "textFieldDidEndEditing"]
@@ -82,26 +107,37 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "textFieldShouldClear"]
 - ["s28CustomDebugStringConvertibleP", "textFieldShouldEndEditing"]
 - ["s28CustomDebugStringConvertibleP", "textFieldShouldReturn"]
+- !private ["s28CustomDebugStringConvertibleP", "user"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "clipsToBounds"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "text"]
 - !private ["s23CustomStringConvertibleP", "Auth"]
+- !private ["s23CustomStringConvertibleP", "Constants"]
 - !private ["s23CustomStringConvertibleP", "SetFuncs"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "clipsToBounds"]
 - !private ["s23CustomStringConvertibleP", "email"]
 - !private ["s23CustomStringConvertibleP", "hideKeyboardWhenTappedAround"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "isEmailVerified"]
 - !private ["s23CustomStringConvertibleP", "loginB"]
 - !private ["s23CustomStringConvertibleP", "password"]
 - !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "signIn"]
 - !private ["s23CustomStringConvertibleP", "signUpB"]
+- !private ["s23CustomStringConvertibleP", "text"]
 - ["s23CustomStringConvertibleP", "textField"]
 - ["s23CustomStringConvertibleP", "textFieldDidBeginEditing"]
 - ["s23CustomStringConvertibleP", "textFieldDidEndEditing"]
@@ -109,27 +145,40 @@ depends-member:
 - ["s23CustomStringConvertibleP", "textFieldShouldClear"]
 - ["s23CustomStringConvertibleP", "textFieldShouldEndEditing"]
 - ["s23CustomStringConvertibleP", "textFieldShouldReturn"]
+- !private ["s23CustomStringConvertibleP", "user"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "clipsToBounds"]
 - !private ["Se", "init"]
 - !private ["Se", "init"]
+- !private ["Se", "text"]
+- !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "clipsToBounds"]
 - !private ["SE", "init"]
 - !private ["SE", "init"]
+- !private ["SE", "text"]
 - !private ["SQ", "Auth"]
+- !private ["SQ", "Constants"]
+- !private ["SQ", "LoginFail"]
 - !private ["SQ", "SetFuncs"]
 - !private ["SQ", "UIStoryboard"]
 - ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "auth"]
 - !private ["SQ", "clipsToBounds"]
 - !private ["SQ", "email"]
 - !private ["SQ", "hideKeyboardWhenTappedAround"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "instantiateViewController"]
+- !private ["SQ", "isEmailVerified"]
 - !private ["SQ", "loginB"]
 - !private ["SQ", "password"]
 - !private ["SQ", "present"]
+- !private ["SQ", "print"]
+- !private ["SQ", "signIn"]
 - !private ["SQ", "signUpB"]
+- !private ["SQ", "text"]
 - ["SQ", "textField"]
 - ["SQ", "textFieldDidBeginEditing"]
 - ["SQ", "textFieldDidEndEditing"]
@@ -137,28 +186,41 @@ depends-member:
 - ["SQ", "textFieldShouldClear"]
 - ["SQ", "textFieldShouldEndEditing"]
 - ["SQ", "textFieldShouldReturn"]
+- !private ["SQ", "user"]
 - !private ["SQ", "viewDidLoad"]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["7Consent10ErrorPopUpC0B4TypeO", "LoginFail"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "clipsToBounds"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["SH", "Auth"]
+- !private ["SH", "Constants"]
+- !private ["SH", "LoginFail"]
 - !private ["SH", "SetFuncs"]
 - !private ["SH", "UIStoryboard"]
 - ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "auth"]
 - !private ["SH", "clipsToBounds"]
 - !private ["SH", "email"]
 - !private ["SH", "hideKeyboardWhenTappedAround"]
 - !private ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "instantiateViewController"]
+- !private ["SH", "isEmailVerified"]
 - !private ["SH", "loginB"]
 - !private ["SH", "password"]
 - !private ["SH", "present"]
+- !private ["SH", "print"]
+- !private ["SH", "signIn"]
 - !private ["SH", "signUpB"]
+- !private ["SH", "text"]
 - ["SH", "textField"]
 - ["SH", "textFieldDidBeginEditing"]
 - ["SH", "textFieldDidEndEditing"]
@@ -166,12 +228,15 @@ depends-member:
 - ["SH", "textFieldShouldClear"]
 - ["SH", "textFieldShouldEndEditing"]
 - ["SH", "textFieldShouldReturn"]
+- !private ["SH", "user"]
 - !private ["SH", "viewDidLoad"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "Auth"]
+- !private ["So8NSCodingP", "Constants"]
 - !private ["So8NSCodingP", "SetFuncs"]
 - !private ["So8NSCodingP", "UIStoryboard"]
 - ["So8NSCodingP", ""]
@@ -183,7 +248,9 @@ depends-member:
 - !private ["So8NSCodingP", "loginB"]
 - !private ["So8NSCodingP", "password"]
 - !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "signUpB"]
+- !private ["So8NSCodingP", "text"]
 - ["So8NSCodingP", "textField"]
 - ["So8NSCodingP", "textFieldDidBeginEditing"]
 - ["So8NSCodingP", "textFieldDidEndEditing"]
@@ -193,6 +260,7 @@ depends-member:
 - ["So8NSCodingP", "textFieldShouldReturn"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "Auth"]
+- !private ["So26NSExtensionRequestHandlingP", "Constants"]
 - !private ["So26NSExtensionRequestHandlingP", "SetFuncs"]
 - !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
 - ["So26NSExtensionRequestHandlingP", ""]
@@ -203,6 +271,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "loginB"]
 - !private ["So26NSExtensionRequestHandlingP", "password"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "signUpB"]
 - ["So26NSExtensionRequestHandlingP", "textField"]
 - ["So26NSExtensionRequestHandlingP", "textFieldDidBeginEditing"]
@@ -213,10 +282,12 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "textFieldShouldReturn"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So8NSObjectC", "Auth"]
+- !private ["So8NSObjectC", "Constants"]
 - !private ["So8NSObjectC", "SetFuncs"]
 - ["So8NSObjectC", "UIButtonX"]
 - !private ["So8NSObjectC", "UIStoryboard"]
 - ["So8NSObjectC", "UITextFieldX"]
+- !private ["So8NSObjectC", "auth"]
 - !private ["So8NSObjectC", "clipsToBounds"]
 - ["So8NSObjectC", "email"]
 - ["So8NSObjectC", "forgotPW"]
@@ -224,13 +295,17 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "isEmailVerified"]
 - ["So8NSObjectC", "login"]
 - ["So8NSObjectC", "loginB"]
 - ["So8NSObjectC", "password"]
 - !private ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "privacyPolicy"]
+- !private ["So8NSObjectC", "signIn"]
 - ["So8NSObjectC", "signUp"]
 - ["So8NSObjectC", "signUpB"]
+- !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "textField"]
 - ["So8NSObjectC", "textFieldDidBeginEditing"]
 - ["So8NSObjectC", "textFieldDidEndEditing"]
@@ -238,21 +313,28 @@ depends-member:
 - ["So8NSObjectC", "textFieldShouldClear"]
 - ["So8NSObjectC", "textFieldShouldEndEditing"]
 - ["So8NSObjectC", "textFieldShouldReturn"]
+- !private ["So8NSObjectC", "user"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectP", "Auth"]
+- !private ["So8NSObjectP", "Constants"]
 - !private ["So8NSObjectP", "SetFuncs"]
 - !private ["So8NSObjectP", "UIStoryboard"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "auth"]
 - !private ["So8NSObjectP", "clipsToBounds"]
 - !private ["So8NSObjectP", "email"]
 - !private ["So8NSObjectP", "hideKeyboardWhenTappedAround"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "instantiateViewController"]
+- !private ["So8NSObjectP", "isEmailVerified"]
 - !private ["So8NSObjectP", "loginB"]
 - !private ["So8NSObjectP", "password"]
 - !private ["So8NSObjectP", "present"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "signIn"]
 - !private ["So8NSObjectP", "signUpB"]
+- !private ["So8NSObjectP", "text"]
 - ["So8NSObjectP", "textField"]
 - ["So8NSObjectP", "textFieldDidBeginEditing"]
 - ["So8NSObjectP", "textFieldDidEndEditing"]
@@ -260,8 +342,10 @@ depends-member:
 - ["So8NSObjectP", "textFieldShouldClear"]
 - ["So8NSObjectP", "textFieldShouldEndEditing"]
 - ["So8NSObjectP", "textFieldShouldReturn"]
+- !private ["So8NSObjectP", "user"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - !private ["Sq", "clipsToBounds"]
+- !private ["Sq", "text"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
 - !private ["ST", "init"]
@@ -269,6 +353,7 @@ depends-member:
 - !private ["7Consent8SetFuncsC", "setButton"]
 - !private ["7Consent8SetFuncsC", "setTextFields"]
 - !private ["7Consent8SignInVCC", "Auth"]
+- !private ["7Consent8SignInVCC", "Constants"]
 - !private ["7Consent8SignInVCC", "SetFuncs"]
 - ["7Consent8SignInVCC", "UIButtonX"]
 - !private ["7Consent8SignInVCC", "UIStoryboard"]
@@ -282,6 +367,7 @@ depends-member:
 - ["7Consent8SignInVCC", "loginB"]
 - ["7Consent8SignInVCC", "password"]
 - !private ["7Consent8SignInVCC", "present"]
+- !private ["7Consent8SignInVCC", "print"]
 - ["7Consent8SignInVCC", "privacyPolicy"]
 - ["7Consent8SignInVCC", "signUp"]
 - ["7Consent8SignInVCC", "signUpB"]
@@ -303,8 +389,11 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "clipsToBounds"]
 - !private ["So29UIAccessibilityIdentificationP", "clipsToBounds"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So12UIAppearanceP", "clipsToBounds"]
+- !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "Auth"]
+- !private ["So21UIAppearanceContainerP", "Constants"]
 - !private ["So21UIAppearanceContainerP", "SetFuncs"]
 - !private ["So21UIAppearanceContainerP", "UIStoryboard"]
 - ["So21UIAppearanceContainerP", ""]
@@ -316,7 +405,9 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "loginB"]
 - !private ["So21UIAppearanceContainerP", "password"]
 - !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "signUpB"]
+- !private ["So21UIAppearanceContainerP", "text"]
 - ["So21UIAppearanceContainerP", "textField"]
 - ["So21UIAppearanceContainerP", "textFieldDidBeginEditing"]
 - ["So21UIAppearanceContainerP", "textFieldDidEndEditing"]
@@ -328,6 +419,7 @@ depends-member:
 - !private ["So8UIButtonC", "clipsToBounds"]
 - !private ["7Consent9UIButtonXC", "clipsToBounds"]
 - !private ["So18UIContentContainerP", "Auth"]
+- !private ["So18UIContentContainerP", "Constants"]
 - !private ["So18UIContentContainerP", "SetFuncs"]
 - !private ["So18UIContentContainerP", "UIStoryboard"]
 - ["So18UIContentContainerP", ""]
@@ -338,6 +430,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "loginB"]
 - !private ["So18UIContentContainerP", "password"]
 - !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "signUpB"]
 - ["So18UIContentContainerP", "textField"]
 - ["So18UIContentContainerP", "textFieldDidBeginEditing"]
@@ -347,10 +440,15 @@ depends-member:
 - ["So18UIContentContainerP", "textFieldShouldEndEditing"]
 - ["So18UIContentContainerP", "textFieldShouldReturn"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "clipsToBounds"]
+- !private ["So9UIControlC", "text"]
 - !private ["So17UICoordinateSpaceP", "clipsToBounds"]
+- !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So13UIDynamicItemP", "clipsToBounds"]
+- !private ["So13UIDynamicItemP", "text"]
 - !private ["So18UIFocusEnvironmentP", "Auth"]
+- !private ["So18UIFocusEnvironmentP", "Constants"]
 - !private ["So18UIFocusEnvironmentP", "SetFuncs"]
 - !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
 - ["So18UIFocusEnvironmentP", ""]
@@ -362,7 +460,9 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "loginB"]
 - !private ["So18UIFocusEnvironmentP", "password"]
 - !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "signUpB"]
+- !private ["So18UIFocusEnvironmentP", "text"]
 - ["So18UIFocusEnvironmentP", "textField"]
 - ["So18UIFocusEnvironmentP", "textFieldDidBeginEditing"]
 - ["So18UIFocusEnvironmentP", "textFieldDidEndEditing"]
@@ -372,8 +472,12 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "textFieldShouldReturn"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So11UIFocusItemP", "clipsToBounds"]
+- !private ["So11UIFocusItemP", "text"]
 - !private ["So20UIFocusItemContainerP", "clipsToBounds"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So10UIKeyInputP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "Auth"]
+- !private ["So30UIPasteConfigurationSupportingP", "Constants"]
 - !private ["So30UIPasteConfigurationSupportingP", "SetFuncs"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -385,7 +489,9 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "loginB"]
 - !private ["So30UIPasteConfigurationSupportingP", "password"]
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "signUpB"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
 - ["So30UIPasteConfigurationSupportingP", "textField"]
 - ["So30UIPasteConfigurationSupportingP", "textFieldDidBeginEditing"]
 - ["So30UIPasteConfigurationSupportingP", "textFieldDidEndEditing"]
@@ -395,6 +501,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "textFieldShouldReturn"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - !private ["So11UIResponderC", "Auth"]
+- !private ["So11UIResponderC", "Constants"]
 - !private ["So11UIResponderC", "SetFuncs"]
 - ["So11UIResponderC", "UIButtonX"]
 - !private ["So11UIResponderC", "UIStoryboard"]
@@ -409,9 +516,11 @@ depends-member:
 - ["So11UIResponderC", "loginB"]
 - ["So11UIResponderC", "password"]
 - !private ["So11UIResponderC", "present"]
+- !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "privacyPolicy"]
 - ["So11UIResponderC", "signUp"]
 - ["So11UIResponderC", "signUpB"]
+- !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "textField"]
 - ["So11UIResponderC", "textFieldDidBeginEditing"]
 - ["So11UIResponderC", "textFieldDidEndEditing"]
@@ -421,6 +530,7 @@ depends-member:
 - ["So11UIResponderC", "textFieldShouldReturn"]
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "Auth"]
+- !private ["So30UIResponderStandardEditActionsP", "Constants"]
 - !private ["So30UIResponderStandardEditActionsP", "SetFuncs"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -432,7 +542,9 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "loginB"]
 - !private ["So30UIResponderStandardEditActionsP", "password"]
 - !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "signUpB"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
 - ["So30UIResponderStandardEditActionsP", "textField"]
 - ["So30UIResponderStandardEditActionsP", "textFieldDidBeginEditing"]
 - ["So30UIResponderStandardEditActionsP", "textFieldDidEndEditing"]
@@ -443,6 +555,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "clipsToBounds"]
 - !private ["So16UIStateRestoringP", "Auth"]
+- !private ["So16UIStateRestoringP", "Constants"]
 - !private ["So16UIStateRestoringP", "SetFuncs"]
 - !private ["So16UIStateRestoringP", "UIStoryboard"]
 - ["So16UIStateRestoringP", ""]
@@ -453,6 +566,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "loginB"]
 - !private ["So16UIStateRestoringP", "password"]
 - !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "signUpB"]
 - ["So16UIStateRestoringP", "textField"]
 - ["So16UIStateRestoringP", "textFieldDidBeginEditing"]
@@ -464,7 +578,11 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So12UIStoryboardC", "init"]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So11UITextFieldC", "text"]
 - !private ["So19UITextFieldDelegateP", "Auth"]
+- !private ["So19UITextFieldDelegateP", "Constants"]
 - !private ["So19UITextFieldDelegateP", "SetFuncs"]
 - !private ["So19UITextFieldDelegateP", "UIStoryboard"]
 - ["So19UITextFieldDelegateP", ""]
@@ -473,6 +591,7 @@ depends-member:
 - !private ["So19UITextFieldDelegateP", "loginB"]
 - !private ["So19UITextFieldDelegateP", "password"]
 - !private ["So19UITextFieldDelegateP", "present"]
+- !private ["So19UITextFieldDelegateP", "print"]
 - !private ["So19UITextFieldDelegateP", "signUpB"]
 - ["So19UITextFieldDelegateP", "textField"]
 - ["So19UITextFieldDelegateP", "textFieldDidBeginEditing"]
@@ -481,7 +600,13 @@ depends-member:
 - ["So19UITextFieldDelegateP", "textFieldShouldClear"]
 - ["So19UITextFieldDelegateP", "textFieldShouldEndEditing"]
 - ["So19UITextFieldDelegateP", "textFieldShouldReturn"]
+- !private ["7Consent12UITextFieldXC", "deinit"]
+- !private ["7Consent12UITextFieldXC", "text"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
 - !private ["So18UITraitEnvironmentP", "Auth"]
+- !private ["So18UITraitEnvironmentP", "Constants"]
 - !private ["So18UITraitEnvironmentP", "SetFuncs"]
 - !private ["So18UITraitEnvironmentP", "UIStoryboard"]
 - ["So18UITraitEnvironmentP", ""]
@@ -493,7 +618,9 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "loginB"]
 - !private ["So18UITraitEnvironmentP", "password"]
 - !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "signUpB"]
+- !private ["So18UITraitEnvironmentP", "text"]
 - ["So18UITraitEnvironmentP", "textField"]
 - ["So18UITraitEnvironmentP", "textFieldDidBeginEditing"]
 - ["So18UITraitEnvironmentP", "textFieldDidEndEditing"]
@@ -503,6 +630,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "textFieldShouldReturn"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So23UIUserActivityRestoringP", "Auth"]
+- !private ["So23UIUserActivityRestoringP", "Constants"]
 - !private ["So23UIUserActivityRestoringP", "SetFuncs"]
 - !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
 - ["So23UIUserActivityRestoringP", ""]
@@ -514,7 +642,9 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "loginB"]
 - !private ["So23UIUserActivityRestoringP", "password"]
 - !private ["So23UIUserActivityRestoringP", "present"]
+- !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "signUpB"]
+- !private ["So23UIUserActivityRestoringP", "text"]
 - ["So23UIUserActivityRestoringP", "textField"]
 - ["So23UIUserActivityRestoringP", "textFieldDidBeginEditing"]
 - ["So23UIUserActivityRestoringP", "textFieldDidEndEditing"]
@@ -524,7 +654,9 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "textFieldShouldReturn"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - !private ["So6UIViewC", "clipsToBounds"]
+- !private ["So6UIViewC", "text"]
 - !private ["So16UIViewControllerC", "Auth"]
+- !private ["So16UIViewControllerC", "Constants"]
 - !private ["So16UIViewControllerC", "SetFuncs"]
 - ["So16UIViewControllerC", "UIButtonX"]
 - !private ["So16UIViewControllerC", "UIStoryboard"]
@@ -539,6 +671,7 @@ depends-member:
 - ["So16UIViewControllerC", "loginB"]
 - ["So16UIViewControllerC", "password"]
 - !private ["So16UIViewControllerC", "present"]
+- !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "privacyPolicy"]
 - ["So16UIViewControllerC", "signUp"]
 - ["So16UIViewControllerC", "signUpB"]
@@ -550,7 +683,33 @@ depends-member:
 - ["So16UIViewControllerC", "textFieldShouldEndEditing"]
 - ["So16UIViewControllerC", "textFieldShouldReturn"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "Auth"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "Constants"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "SetFuncs"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIStoryboard"]
+- ["So37UIViewControllerTransitioningDelegateP", ""]
+- !private ["So37UIViewControllerTransitioningDelegateP", "email"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "hideKeyboardWhenTappedAround"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "init"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "init"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "loginB"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "password"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "present"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "print"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "signUpB"]
+- ["So37UIViewControllerTransitioningDelegateP", "textField"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldDidBeginEditing"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldDidEndEditing"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldShouldBeginEditing"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldShouldClear"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldShouldEndEditing"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldShouldReturn"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "viewDidLoad"]
+- !private ["So7FIRUserC", "isEmailVerified"]
+- !private ["So11FIRUserInfoP", "isEmailVerified"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "clipsToBounds"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -562,19 +721,25 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Constants"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SetFuncs"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "clipsToBounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "email"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hideKeyboardWhenTappedAround"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmailVerified"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "loginB"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "password"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "signIn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "signUpB"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textField"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldDidBeginEditing"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldDidEndEditing"]
@@ -582,18 +747,25 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldClear"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldEndEditing"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldReturn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "user"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "clipsToBounds"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- !private "So7FIRAuthC"
+- !private "So17FIRAuthDataResultC"
 - !private "SK"
+- !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - !private "Sl"
 - !private "SL"
+- !private "7Consent9ConstantsC"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
@@ -601,6 +773,9 @@ depends-nominal:
 - !private "Se"
 - !private "SE"
 - "SQ"
+- !private "s5ErrorP"
+- !private "7Consent10ErrorPopUpC0B4TypeO"
+- !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
@@ -628,24 +803,37 @@ depends-nominal:
 - !private "So8UIButtonC"
 - !private "7Consent9UIButtonXC"
 - "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
 - !private "So9UIControlC"
 - !private "So17UICoordinateSpaceP"
 - !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
+- !private "So10UIKeyInputP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - !private "So12UIStoryboardC"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextFieldC"
 - "So19UITextFieldDelegateP"
+- !private "7Consent12UITextFieldXC"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
+- "So37UIViewControllerTransitioningDelegateP"
+- !private "So7FIRUserC"
+- !private "So11FIRUserInfoP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
@@ -658,53 +846,116 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MediaPlayer.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/derrickmu/Desktop/Consent/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/derrickmu/Desktop/Consent/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Headers/RSKImageCropViewController+Protected.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/derrickmu/Desktop/Consent/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Users/derrickmu/Desktop/Consent/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Headers/RSKImageCropViewController.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Headers/UIImage+RSKImageCropper.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Headers/UIApplication+RSKImageCropper.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Headers/CGGeometry+RSKImageCropper.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Headers/RSKImageCropper.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Users/derrickmu/Desktop/Consent/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/derrickmu/Desktop/Consent/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Users/derrickmu/Desktop/Consent/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
 - "/Users/derrickmu/Desktop/Consent/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/derrickmu/Desktop/Consent/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Headers/RSKTouchView.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Headers/RSKImageScrollView.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Headers/RSKInternalUtility.h"
 - "/Users/derrickmu/Desktop/Consent/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/derrickmu/Desktop/Consent/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/Consent/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaPlayer.framework/Headers/MediaPlayer.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "ec6f1da42d74d6edbffc6029104163bf"

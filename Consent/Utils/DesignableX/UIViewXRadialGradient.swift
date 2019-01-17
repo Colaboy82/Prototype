@@ -10,7 +10,6 @@ import UIKit
 
 @IBDesignable
 class UIViewXRadialGradient: UIView {
-    
     @IBInspectable var InsideColor: UIColor = UIColor.clear
     @IBInspectable var OutsideColor: UIColor = UIColor.clear
     

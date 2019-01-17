@@ -20,8 +20,6 @@ class MainVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var searchBar: UITextFieldX!
     @IBOutlet weak var searchTypeB: UIButtonX!
     @IBOutlet weak var tableViewU: UITableView!
-
-    var profilePicRef = Storage.storage().reference()
     
     var infoBCenter: CGPoint!
     var profileBCenter: CGPoint!
@@ -31,6 +29,12 @@ class MainVC: UIViewController, UITextFieldDelegate {
     var counter = 0
     
     var nameType = true
+    
+    //Firebase properties
+    let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength)
+    var userRef = Database.database().reference().child("users")
+    var entryRef = Database.database().reference().child("ConsentEntries")
+    var profilePicRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("profile_images")
     
     override func viewDidLoad() {
 
@@ -42,6 +46,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
             
             DispatchQueue.main.async {
                 //UI thread
+                self.firebasePropertiesIntializer()
                 
                 SetFuncs.setTextFields(field: self.searchBar, img: #imageLiteral(resourceName: "SearchIcon"))
                 SetFuncs.setButton(btn: self.searchTypeB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
@@ -56,6 +61,8 @@ class MainVC: UIViewController, UITextFieldDelegate {
                 self.profileB.alpha = 0
                 self.addEntryB.alpha = 0
                 
+                self.loadData()
+                
                 self.timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) {
                     timer in
                     
@@ -64,6 +71,12 @@ class MainVC: UIViewController, UITextFieldDelegate {
             }
         }
     }
+    func firebasePropertiesIntializer(){
+        userRef = userRef.child(uid!)
+        entryRef = entryRef.child(uid!)
+        profilePicRef = profilePicRef.child("user/\(uid!)")
+    }
+    
     func checkForConfirmPopUp(){
         if Auth.auth().currentUser != nil {
         
@@ -83,11 +96,10 @@ class MainVC: UIViewController, UITextFieldDelegate {
         }
     }
     func checkFailPopUp(){
-        let user = Auth.auth().currentUser?.uid.trunc(length: 10)
-        let userRef = Database.database().reference().child("users").child(user!).child("FailPopUp")
+        let userRefFail = Database.database().reference().child("users").child(uid!).child("FailPopUp")
         
-        guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
-        userRef.observeSingleEvent(of: .value, with: {(snapshot) in
+        //guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
+        userRefFail.observeSingleEvent(of: .value, with: {(snapshot) in
             guard let bool = snapshot.value as? Bool else { return }
             
             if bool == true {
@@ -115,6 +127,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
             //print("do some background task")
             self.checkForConfirmPopUp()
             self.checkFailPopUp()
+            self.updateData()
             DispatchQueue.main.async {
                 //print("update some UI")
             }
@@ -175,3 +188,20 @@ class MainVC: UIViewController, UITextFieldDelegate {
 
 }
 
+//parsing and getting Firebase Data
+extension MainVC {
+    
+    func loadData(){
+        
+        
+        
+    }
+    
+    
+    func updateData(){
+        entryRef.observe(.childAdded, with: { (snapshot) in
+            
+        })
+    }
+    
+}

@@ -27,6 +27,8 @@
 	<string>CoreServices</string>
 	<string>unicode</string>
 	<string>FirebaseRemoteConfig</string>
+	<string>WebKit</string>
+	<string>MediaPlayer</string>
 	<string>Crashlytics</string>
 	<string>FirebaseMLVision</string>
 	<string>XCTest</string>

@@ -58,12 +58,26 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="1Qm-bS-BWw" secondAttribute="height" multiplier="262:85" id="gdi-2f-bVG"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="AQR-ik-uwj" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
                                                     <rect key="frame" x="4" y="21" width="93" height="93"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="AQR-ik-uwj" secondAttribute="height" multiplier="1:1" id="LyL-dA-mm5"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="imageTintLookFromInt">
+                                                            <integer key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="imageLookFromInt">
+                                                            <integer key="value" value="0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -85,7 +99,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCh-bs-u25" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCh-bs-u25" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="200" y="603" width="54" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="54" id="YtT-gV-hn8"/>
@@ -96,7 +110,7 @@
                                     <action selector="profileBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Btq-QC-0Md"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAd-Wm-Bdd" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAd-Wm-Bdd" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="212" y="527" width="54" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="54" id="EG5-l5-Biq"/>
@@ -107,7 +121,7 @@
                                     <action selector="infoBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zme-0A-fJp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efv-fC-qPg" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efv-fC-qPg" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="297" y="487" width="54" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Efv-fC-qPg" secondAttribute="height" multiplier="1:1" id="AiR-FE-Pia"/>
@@ -118,18 +132,23 @@
                                     <action selector="addEntryBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZP-m8-xNG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3p5-Q1-fcz" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3p5-Q1-fcz" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="278" y="570" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="3p5-Q1-fcz" secondAttribute="height" multiplier="1:1" id="YIJ-Kj-mAM"/>
                                     <constraint firstAttribute="width" constant="90" id="dlJ-uV-kbR"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="MainMenuB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="mainBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m2V-sG-hJE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IL-yn-SeG" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IL-yn-SeG" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="129" y="89" width="116" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="Button"/>
@@ -137,16 +156,33 @@
                                 <state key="normal" title="Name">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="switchSearchType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HEi-JA-MYr"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEl-Ma-bUR" customClass="UITextFieldX" customModule="Consent" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEl-Ma-bUR" customClass="UITextFieldX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="43" y="51" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fieldLookFromInt">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="descriptorTextColor">
+                                        <color key="value" name="Secondary Background"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
