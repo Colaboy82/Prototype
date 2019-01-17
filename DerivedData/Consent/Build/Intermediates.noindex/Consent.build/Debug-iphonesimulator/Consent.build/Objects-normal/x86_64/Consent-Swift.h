@@ -236,6 +236,20 @@ SWIFT_CLASS("_TtC7Consent11AppDelegate")
 @end
 
 
+SWIFT_CLASS("_TtC7Consent14ClickedEntryVC")
+@interface ClickedEntryVC : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified profilePic;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified nameLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified dateLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified emailLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified genderLbl;
+- (void)viewDidLoad;
+- (IBAction)openContract:(UIButtonX * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 /// <h2>YPDrawSignatureViewDelegate Protocol</h2>
 /// YPDrawSignatureViewDelegate:
 /// <ul>

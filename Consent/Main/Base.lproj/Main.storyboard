@@ -217,6 +217,119 @@
             </objects>
             <point key="canvasLocation" x="140" y="132.68365817091455"/>
         </scene>
+        <!--ClickedEntry-->
+        <scene sceneID="pSE-Ie-l4q">
+            <objects>
+                <viewController restorationIdentifier="ClickedEntry" storyboardIdentifier="ClickedEntry" title="ClickedEntry" id="s8A-ef-nxe" customClass="ClickedEntryVC" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lum-WL-cpP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="auW-LI-5xb" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="83" y="70" width="209" height="209"/>
+                                <color key="tintColor" name="DisabledBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="auW-LI-5xb" secondAttribute="height" multiplier="1:1" id="FDU-ZR-BEp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqZ-sj-GaU" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="135" y="299" width="104" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIk-0m-W87" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="158" y="340" width="58" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender Identity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmp-SB-FFt" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="119" y="381" width="136" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsW-l1-fHC" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="162" y="422" width="50" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygh-MZ-lzv" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="104" y="569" width="167" height="34"/>
+                                <color key="backgroundColor" name="Button"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="See Contract">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="switchSearchType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOw-W8-nbh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="BqZ-sj-GaU" firstAttribute="top" secondItem="auW-LI-5xb" secondAttribute="bottom" constant="20" id="28x-D4-qIV"/>
+                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="rsW-l1-fHC" secondAttribute="trailing" constant="163" id="2EQ-LH-B3w"/>
+                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="BqZ-sj-GaU" secondAttribute="trailing" constant="136" id="39e-IT-j1Y"/>
+                            <constraint firstItem="auW-LI-5xb" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="83" id="Esv-wh-HcX"/>
+                            <constraint firstItem="nIk-0m-W87" firstAttribute="top" secondItem="BqZ-sj-GaU" secondAttribute="bottom" constant="20" id="G9E-Hx-3mP"/>
+                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="cmp-SB-FFt" secondAttribute="trailing" constant="120" id="Kwg-G2-OQK"/>
+                            <constraint firstItem="cmp-SB-FFt" firstAttribute="top" secondItem="nIk-0m-W87" secondAttribute="bottom" constant="20" id="Lgs-NV-B31"/>
+                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="auW-LI-5xb" secondAttribute="trailing" constant="83" id="POo-8j-7NV"/>
+                            <constraint firstItem="B1I-p6-exp" firstAttribute="bottom" secondItem="ygh-MZ-lzv" secondAttribute="bottom" constant="64" id="SXR-7a-b7o"/>
+                            <constraint firstItem="nIk-0m-W87" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="158" id="Snz-hV-nqE"/>
+                            <constraint firstItem="rsW-l1-fHC" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="162" id="XVk-CG-yEm"/>
+                            <constraint firstItem="rsW-l1-fHC" firstAttribute="top" secondItem="cmp-SB-FFt" secondAttribute="bottom" constant="20" id="aOV-5p-jiJ"/>
+                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="ygh-MZ-lzv" secondAttribute="trailing" constant="104" id="g7L-iJ-vMK"/>
+                            <constraint firstItem="cmp-SB-FFt" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="119" id="suN-Qa-qxP"/>
+                            <constraint firstItem="BqZ-sj-GaU" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="135" id="tGX-Gx-YqE"/>
+                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="nIk-0m-W87" secondAttribute="trailing" constant="159" id="vzu-iO-OcN"/>
+                            <constraint firstItem="auW-LI-5xb" firstAttribute="top" secondItem="B1I-p6-exp" secondAttribute="top" constant="50" id="w3x-jD-sns"/>
+                            <constraint firstItem="ygh-MZ-lzv" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="104" id="x8U-BF-H98"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B1I-p6-exp"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateLbl" destination="rsW-l1-fHC" id="HaF-Nv-8Rx"/>
+                        <outlet property="emailLbl" destination="nIk-0m-W87" id="7j3-Do-aPV"/>
+                        <outlet property="genderLbl" destination="cmp-SB-FFt" id="KSb-hw-bUd"/>
+                        <outlet property="nameLbl" destination="BqZ-sj-GaU" id="P5u-C7-hIS"/>
+                        <outlet property="profilePic" destination="auW-LI-5xb" id="XX6-K0-epU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KaO-8e-wiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880.79999999999995" y="132.68365817091455"/>
+        </scene>
+        <!--ContractScreen-->
+        <scene sceneID="K2s-hH-2XF">
+            <objects>
+                <viewController restorationIdentifier="ContractScreen" storyboardIdentifier="ContractScreen" title="ContractScreen" id="mgJ-RZ-KSV" customClass="ClickedEntryVC" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CAd-Go-KBh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <viewLayoutGuide key="safeArea" id="mpI-1o-hSh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JvR-Uj-ZQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1577" y="133"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AddEntryIcon" width="41" height="41"/>
@@ -228,6 +341,9 @@
         </namedColor>
         <namedColor name="Button">
             <color red="0.20784313725490197" green="0.36470588235294116" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DisabledBtn">
+            <color red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Secondary Background">
             <color red="0.42352941176470588" green="0.35686274509803922" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

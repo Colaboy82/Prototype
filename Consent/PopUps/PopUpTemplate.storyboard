@@ -261,7 +261,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jpr-da-BTQ" customClass="UIViewX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="28" y="61" width="319" height="565"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTU-gs-1rE" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTU-gs-1rE" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="35" y="341" width="249" height="38"/>
                                         <color key="backgroundColor" name="Button"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="21"/>
@@ -272,6 +272,7 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="16"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="confirm:" destination="Ian-aF-2HS" eventType="touchUpInside" id="Fel-gP-81u"/>
@@ -383,7 +384,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRQ-ac-Owb" customClass="UIViewX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="28" y="61" width="319" height="565"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzU-1F-pwB" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzU-1F-pwB" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="35" y="341" width="249" height="38"/>
                                         <color key="backgroundColor" name="Button"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="21"/>
@@ -394,6 +395,7 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="16"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="confirm:" destination="XYI-Jl-mvP" eventType="touchUpInside" id="Xig-8K-XVt"/>

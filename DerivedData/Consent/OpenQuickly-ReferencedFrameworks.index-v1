@@ -6,8 +6,8 @@
 	<string>RSKImageCropper</string>
 	<string>FirebasePerformance</string>
 	<string>CommonCrypto</string>
-	<string>FirebaseDynamicLinks</string>
 	<string>SafariServices</string>
+	<string>FirebaseDynamicLinks</string>
 	<string>objc</string>
 	<string>FirebaseAuth</string>
 	<string>GoogleUtilities</string>
@@ -23,8 +23,8 @@
 	<string>FirebaseMLVisionLabelModel</string>
 	<string>FirebaseFirestore</string>
 	<string>FirebaseMLVisionFaceModel</string>
-	<string>FirebaseDatabase</string>
 	<string>CoreServices</string>
+	<string>FirebaseDatabase</string>
 	<string>unicode</string>
 	<string>FirebaseRemoteConfig</string>
 	<string>WebKit</string>
@@ -35,13 +35,13 @@
 	<string>FirebaseMLVisionBarcodeModel</string>
 	<string>FirebaseMLVisionTextModel</string>
 	<string>Foundation</string>
+	<string>Security</string>
 	<string>Fabric</string>
 	<string>FirebaseMLModelInterpreter</string>
 	<string>FirebaseCrash</string>
-	<string>Security</string>
+	<string>GameKit</string>
 	<string>WatchKit</string>
 	<string>Consent</string>
-	<string>GameKit</string>
 	<string>FirebaseInvites</string>
 	<string>netinet</string>
 	<string>FirebaseStorage</string>
