@@ -11,17 +11,19 @@ import Firebase
 
 extension MainVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return entriesList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableViewU.dequeueReusableCell(withIdentifier: "cell")!
+        let cell = tableViewU.dequeueReusableCell(withIdentifier: "cell") as! ConsentEntryCell
         
-        //cell = ConsentEntryCell()
+        let entry: ConsentEntryModel
         
-        //let text = "test \(indexPath.row)"
+        entry = entriesList[indexPath.row]
         
-        //cell.textLabel?.text = text
+        cell.dateLbl.text = entry.date
+        let name = entry.lastName + ", " + entry.firstName + " " + entry.midName
+        cell.nameLbl.text = name
         
         return cell
     }

@@ -35,6 +35,35 @@
 			<key>uniqueIdentifier</key>
 			<string>00674C76-771A-4260-AD52-16C4C5586279</string>
 		</dict>
+		<key>02846ACE-53F4-43E2-AC81-A5B6458CB578</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>02846ACE-53F4-43E2-AC81-A5B6458CB578.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569406856.36080003</real>
+			<key>timeStoppedRecording</key>
+			<real>569406858.72551501</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>02846ACE-53F4-43E2-AC81-A5B6458CB578</string>
+		</dict>
 		<key>0FBB8B0B-5DEE-40A7-8018-5EDCD8AAC94B</key>
 		<dict>
 			<key>className</key>
@@ -295,6 +324,35 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>3409DC6F-4104-4CEA-8C6F-D97BD9F7F42D</string>
+		</dict>
+		<key>38A7604E-8DC4-45CD-B0A6-039F22623CAC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>38A7604E-8DC4-45CD-B0A6-039F22623CAC.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569405821.94739604</real>
+			<key>timeStoppedRecording</key>
+			<real>569405824.67067802</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>38A7604E-8DC4-45CD-B0A6-039F22623CAC</string>
 		</dict>
 		<key>3C1CAF5E-C51B-4A10-B63F-8468C5D8822C</key>
 		<dict>
@@ -557,6 +615,35 @@
 			<key>uniqueIdentifier</key>
 			<string>553D0684-A96C-47B0-8336-CA6D39EDBA37</string>
 		</dict>
+		<key>58EEE2C2-F65B-4EE3-AC55-68715E6C69DB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>58EEE2C2-F65B-4EE3-AC55-68715E6C69DB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569405905.74621904</real>
+			<key>timeStoppedRecording</key>
+			<real>569405908.30481505</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>58EEE2C2-F65B-4EE3-AC55-68715E6C69DB</string>
+		</dict>
 		<key>6046DB35-2F09-4407-80BD-539BCB72EEF3</key>
 		<dict>
 			<key>className</key>
@@ -615,6 +702,35 @@
 			<key>uniqueIdentifier</key>
 			<string>61564406-9C86-4FCF-88F8-D2727D8EF2E1</string>
 		</dict>
+		<key>64208D13-DCC8-4B61-80AE-914B0BD40CFE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>64208D13-DCC8-4B61-80AE-914B0BD40CFE.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569406836.58069801</real>
+			<key>timeStoppedRecording</key>
+			<real>569406837.11607897</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>64208D13-DCC8-4B61-80AE-914B0BD40CFE</string>
+		</dict>
 		<key>6429989A-891B-4629-A120-DD4AB6EB9ACA</key>
 		<dict>
 			<key>className</key>
@@ -643,6 +759,35 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>6429989A-891B-4629-A120-DD4AB6EB9ACA</string>
+		</dict>
+		<key>658AD8EF-337A-46A3-B9FB-FEDCA5A2D190</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>658AD8EF-337A-46A3-B9FB-FEDCA5A2D190.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>569406898.76656604</real>
+			<key>timeStoppedRecording</key>
+			<real>569406901.32274401</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>658AD8EF-337A-46A3-B9FB-FEDCA5A2D190</string>
 		</dict>
 		<key>697551F9-E080-4954-AED0-517EF269DDD5</key>
 		<dict>
