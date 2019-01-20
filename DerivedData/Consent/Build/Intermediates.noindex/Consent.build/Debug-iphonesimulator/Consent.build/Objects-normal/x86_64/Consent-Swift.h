@@ -331,7 +331,7 @@ SWIFT_CLASS("_TtC7Consent12LoadingPopUp")
 
 
 
-@class UITableView;
+@class UITableViewX;
 
 SWIFT_CLASS("_TtC7Consent6MainVC")
 @interface MainVC : UIViewController <UITextFieldDelegate>
@@ -341,7 +341,8 @@ SWIFT_CLASS("_TtC7Consent6MainVC")
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified addEntryB;
 @property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified searchBar;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified searchTypeB;
-@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableViewU;
+@property (nonatomic, weak) IBOutlet UITableViewX * _Null_unspecified tableViewU;
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified searchView;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
 - (IBAction)mainBClicked:(UIButtonX * _Nonnull)sender;
@@ -355,6 +356,13 @@ SWIFT_CLASS("_TtC7Consent6MainVC")
 
 
 
+@class UITextField;
+
+@interface MainVC (SWIFT_EXTENSION(Consent))
+- (void)textFieldDidChange:(UITextField * _Nonnull)textfield;
+@end
+
+@class UITableView;
 
 @interface MainVC (SWIFT_EXTENSION(Consent)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;

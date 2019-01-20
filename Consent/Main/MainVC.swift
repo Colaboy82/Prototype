@@ -19,7 +19,9 @@ class MainVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var searchBar: UITextFieldX!
     @IBOutlet weak var searchTypeB: UIButtonX!
-    @IBOutlet weak var tableViewU: UITableView!
+    @IBOutlet weak var tableViewU: UITableViewX!
+    
+    @IBOutlet weak var searchView: UIViewX!
     
     var infoBCenter: CGPoint!
     var profileBCenter: CGPoint!
@@ -28,7 +30,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
     var timer: Timer!
     var counter = 0
     
-    var nameType = true
+    var nameType = false
     
     //Firebase properties
     let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength)
@@ -37,6 +39,13 @@ class MainVC: UIViewController, UITextFieldDelegate {
     var profilePicRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("profile_images")
     
     var entriesList = [ConsentEntryModel]()
+    var filteredEntriesList = [ConsentEntryModel]()
+    var dateList = [String]()
+    var nameList = [String]()
+    var filteredList = [String]()
+    var filtered = false
+    
+    var searchedArray:[String] = Array()
     
     override func viewDidLoad() {
 
@@ -64,6 +73,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
                 self.addEntryB.alpha = 0
                 
                 self.loadData()
+                self.searchBar.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
                 
                 self.timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) {
                     timer in
@@ -129,7 +139,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
             //print("do some background task")
             self.checkForConfirmPopUp()
             self.checkFailPopUp()
-            self.updateData()
+            //self.updateData()
             DispatchQueue.main.async {
                 //print("update some UI")
             }
@@ -180,9 +190,9 @@ class MainVC: UIViewController, UITextFieldDelegate {
         self.present(nextVC, animated:true, completion:nil)
     }
     @IBAction func switchSearchType(_ sender: UIButtonX){
-        if(!nameType){
+        if(nameType){
             sender.setTitle("Date", for: .normal)
-        }else if nameType{
+        }else if !nameType{
             sender.setTitle("Name", for: .normal)
         }
         nameType = !nameType
@@ -195,6 +205,56 @@ extension MainVC {
     
     func loadData(){
         entryRef.observe(.value, with: { (snapshot) in
+            //if the reference have some values
+            if snapshot.childrenCount > 0 {
+                
+                //clearing the list
+                self.entriesList.removeAll()
+                
+                //iterating through all the values
+                for entries in snapshot.children.allObjects as! [DataSnapshot] {
+                    //getting values
+                    let entries = entries.value as? [String: AnyObject] ?? [String: AnyObject]()
+                    for data in entries {
+                        let entry = data.value as! [String: AnyObject]
+                        
+                        let agreedActions = entry["AgreedActions"] as! String
+                        let confirmed = entry["Confirmed"] as! Bool
+                        let userID = entry["UserID"] as! String
+                        let date = entry["Date"] as! String
+                        let fSign = entry["FirstSignature"] as! String
+                        let sSign = entry["secondSignature"] as! String
+                        let profileUrl = entry["ProfilePic"] as! String
+                        let vidUrl = entry["VidUrl"] as! String
+                        let email = entry["email"] as! String
+                        let firstName = entry["firstName"] as! String
+                        let midName = entry["middleName"] as! String
+                        let lastName = entry["lastName"] as! String
+                        let phoneNum = entry["phoneNum"] as! String
+                        let gender = entry["gender"] as! String
+                        
+                        //populate search arrrays
+                        let name = firstName + " " + midName + " " + lastName
+                        self.nameList.append(name)
+                        self.dateList.append(date)
+                        
+                        //creating artist object with model and fetched values
+                        let eachEntry = ConsentEntryModel.init(user: Auth.auth().currentUser!, date: date, otherUserID: userID, vidUrl: vidUrl, email: email, firstName: firstName, midName: midName, lastName: lastName, phoneNum: phoneNum, gender: gender, profilePicUrl: profileUrl, agreedActions: agreedActions, firstSignature: fSign, secondSignature: sSign)
+                        
+                        if (confirmed == true){
+                            //adding it to list
+                            self.entriesList.insert(eachEntry, at: 0)
+                        }
+                    }
+                }
+                self.filteredEntriesList = self.entriesList
+                //reloading the tableview
+                self.tableViewU.reloadData()
+            }
+        })
+    }
+    func updateData(){
+        entryRef.observe(.childChanged, with: { (snapshot) in
             //if the reference have some values
             if snapshot.childrenCount > 0 {
                 
@@ -236,15 +296,5 @@ extension MainVC {
                 self.tableViewU.reloadData()
             }
         })
-        
-        
     }
-    
-    
-    func updateData(){
-        entryRef.observe(.childAdded, with: { (snapshot) in
-            
-        })
-    }
-    
 }

@@ -11,7 +11,7 @@ import Firebase
 
 extension MainVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return entriesList.count
+        return filteredEntriesList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -19,10 +19,10 @@ extension MainVC: UITableViewDataSource {
         
         let entry: ConsentEntryModel
         
-        entry = entriesList[indexPath.row]
+        entry = filteredEntriesList[indexPath.row]
         
         cell.dateLbl.text = entry.date
-        let name = entry.lastName + ", " + entry.firstName + " " + entry.midName
+        let name = entry.firstName + " " + entry.midName + " " + entry.lastName
         cell.nameLbl.text = name
         
         // Create a storage reference from the URL

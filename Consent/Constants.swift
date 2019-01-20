@@ -17,4 +17,5 @@ class Constants {
     
     static var confirmConsent = false //call firebase value to see whether a confirm pop up should come or not
     
+    static var dateUsed = ""
 }

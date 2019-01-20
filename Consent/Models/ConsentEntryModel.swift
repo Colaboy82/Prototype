@@ -51,7 +51,7 @@ class ConsentEntryModel{
         self.secondSignature = secondSignature
     }
     func createEntry(){
-        let newUserRef = Database.database().reference().child("ConsentEntries").child(user.uid.trunc(length: SetFuncs.uidCharacterLength)).child("\(otherUserID)").child(SetFuncs.getFirebaseDate())
+        let newUserRef = Database.database().reference().child("ConsentEntries").child(user.uid.trunc(length: SetFuncs.uidCharacterLength)).child("\(otherUserID)").child(Constants.dateUsed)
         let values = ["email": email,
                       "firstName": firstName,
                       "middleName": midName,

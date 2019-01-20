@@ -105,8 +105,6 @@ class AddEntryVC: UIViewController {
         btnTimer.invalidate()
         vidTimer.invalidate()
         
-        //uploadVid(vidURL: savedVid)
-        
         let userRef = Database.database().reference().child("users").child(uidTextBox.text!)
         userRef.observeSingleEvent(of: .value, with: {(snapshot) in
             AddEntryVC.entryContent = [Auth.auth().currentUser!,
@@ -123,9 +121,10 @@ class AddEntryVC: UIViewController {
                                        self.agreedActionTextBox.text!,
                                        self.savedVid]
         })
-        
+        let d = SetFuncs.getFirebaseDate()
         userRef.updateChildValues(["RequestFromID":Auth.auth().currentUser?.uid.trunc(length: 10) as Any,
-                                   "RequestDate": SetFuncs.getFirebaseDate()])
+                                   "RequestDate": d])
+        Constants.dateUsed = d
         
         let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
         let nextVC = sb.instantiateViewController(withIdentifier: "ConfirmConsent")
@@ -157,7 +156,7 @@ extension AddEntryVC: UIImagePickerControllerDelegate, UINavigationControllerDel
     }
     func uploadVid(vidURL: URL, otherUID: String){
         guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
-        let vidRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("consent_vids").child("user/\(uid)").child("\(otherUID)").child(SetFuncs.getFirebaseDate())
+        let vidRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("consent_vids").child("user/\(uid)").child("\(otherUID)").child(Constants.dateUsed)
         
         vidRef.putFile(from: vidURL, metadata: nil, completion: {(metadata, error) in
             if error == nil {

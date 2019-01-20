@@ -33,7 +33,7 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         setUp()
         
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(shouldEnable), userInfo: nil, repeats: true)
-        waitForArray = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(wait), userInfo: nil, repeats: false)
+        waitForArray = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(wait), userInfo: nil, repeats: false)
         failPopUpTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(checkFailPopUp), userInfo: nil, repeats: true)
     }
     
