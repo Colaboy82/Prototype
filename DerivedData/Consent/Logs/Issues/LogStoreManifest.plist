@@ -29,29 +29,6 @@
 			<key>uniqueIdentifier</key>
 			<string>039D36A4-A4BB-47AA-B3CC-C9E1C8F02A2F</string>
 		</dict>
-		<key>27F1AE7A-2CB5-4A0B-9141-D4A9B7D3BBDB</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>27F1AE7A-2CB5-4A0B-9141-D4A9B7D3BBDB.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>signature</key>
-			<string>Consent-bdxfmfwweqneyyctxhssvxuocxyy</string>
-			<key>timeStartedRecording</key>
-			<real>569639392.34078503</real>
-			<key>timeStoppedRecording</key>
-			<real>569639394.54098904</real>
-			<key>title</key>
-			<string>Build target Consent</string>
-			<key>uniqueIdentifier</key>
-			<string>27F1AE7A-2CB5-4A0B-9141-D4A9B7D3BBDB</string>
-		</dict>
 		<key>4E91EFB4-6ED9-429E-9E8C-5AE36DA88547</key>
 		<dict>
 			<key>className</key>
@@ -235,6 +212,29 @@
 			<string>Build target FirebaseStorage</string>
 			<key>uniqueIdentifier</key>
 			<string>F0AD43DB-FFB4-4DB5-8B34-FFDAE975B0C1</string>
+		</dict>
+		<key>FC63AB5D-C077-40FB-AAFB-A6D2C3BC26BF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>FC63AB5D-C077-40FB-AAFB-A6D2C3BC26BF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>signature</key>
+			<string>Consent-bdxfmfwweqneyyctxhssvxuocxyy</string>
+			<key>timeStartedRecording</key>
+			<real>569643118.96086001</real>
+			<key>timeStoppedRecording</key>
+			<real>569643121.91343403</real>
+			<key>title</key>
+			<string>Build target Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>FC63AB5D-C077-40FB-AAFB-A6D2C3BC26BF</string>
 		</dict>
 		<key>FF71B455-036F-4DA4-BE66-60C4BE7A0C67</key>
 		<dict>

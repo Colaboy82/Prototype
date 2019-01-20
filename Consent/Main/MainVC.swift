@@ -191,11 +191,12 @@ class MainVC: UIViewController, UITextFieldDelegate {
     }
     @IBAction func switchSearchType(_ sender: UIButtonX){
         if(nameType){
-            sender.setTitle("Date", for: .normal)
-        }else if !nameType{
             sender.setTitle("Name", for: .normal)
+        }else if !nameType{
+            sender.setTitle("Date", for: .normal)
         }
         nameType = !nameType
+        searchBar.text = ""
     }
 
 }

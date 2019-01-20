@@ -20,29 +20,56 @@ extension MainVC {
 
     @objc func textFieldDidChange(_ textfield: UITextField) {
         filteredList.removeAll()
-        if textfield.text?.count != 0 {
-            for strName in nameList {
-                let range = strName.range(of: textfield.text!, options: .caseInsensitive, range: nil,   locale: nil)
-                if range != nil {
-                    filteredList.insert(strName, at: 0)
+
+        if(!nameType){
+            if textfield.text?.count != 0 {
+                for strName in nameList {
+                    let range = strName.range(of: textfield.text!, options: .caseInsensitive, range: nil,   locale: nil)
+                    if range != nil {
+                        filteredList.insert(strName, at: 0)
+                    }
                 }
+            } else {
+                filteredList = nameList
             }
+            updateFilteredEntries(nameB: true)
         } else {
-            filteredList = nameList
+            if textfield.text?.count != 0 {
+                for strName in dateList {
+                    let range = strName.range(of: textfield.text!, options: .caseInsensitive, range: nil,   locale: nil)
+                    if range != nil {
+                        filteredList.insert(strName, at: 0)
+                    }
+                }
+            } else {
+                filteredList = nameList
+            }
+            updateFilteredEntries(nameB: false)
         }
-        updateFilteredEntries(nameB: true)
         self.tableViewU.reloadData()
     }
     
     func updateFilteredEntries(nameB: Bool){
         filteredEntriesList.removeAll()
         var hold = ""
-        for n in self.entriesList{
-            let name = n.firstName + " " + n.midName + " " + n.lastName
-            for nameSearched in filteredList{
-                if (nameSearched == name && !n.date.elementsEqual(hold)){
-                    self.filteredEntriesList.append(n)
-                    hold = n.date
+        if (nameB) {
+            for n in self.entriesList{
+                let name = n.firstName + " " + n.midName + " " + n.lastName
+                for nameSearched in filteredList{
+                    if (nameSearched == name && !n.date.elementsEqual(hold)){
+                        self.filteredEntriesList.append(n)
+                        hold = n.date
+                    }
+                }
+            }
+        } else {
+            for n in self.entriesList{
+                let date = n.date
+                for dateSearched in filteredList{
+                    if (dateSearched == date && !n.date.elementsEqual(hold)){
+                        self.filteredEntriesList.append(n)
+                        hold = n.date
+                    }
                 }
             }
         }
