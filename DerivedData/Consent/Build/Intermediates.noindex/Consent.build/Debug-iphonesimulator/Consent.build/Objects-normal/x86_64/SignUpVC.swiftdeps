@@ -397,6 +397,7 @@ depends-member:
 - !private ["SL", "trunc"]
 - !private ["7Consent9ConstantsC", "ErrorType"]
 - !private ["7Consent9ConstantsC", "SuccessType"]
+- !private ["12SkeletonView21ContainsMultilineTextP", "text"]
 - !private ["So17UIViewContentModeV", "scaleAspectFill"]
 - !private ["s28CustomDebugStringConvertibleP", "AccountValidation"]
 - !private ["s28CustomDebugStringConvertibleP", "Auth"]
@@ -1305,6 +1306,60 @@ depends-member:
 - !private ["So30UIImagePickerControllerInfoKeya", "originalImage"]
 - !private ["Si", "init"]
 - !private ["s5Int64V", "init"]
+- !private ["12SkeletonView15IterableElementP", "CGPoint"]
+- !private ["12SkeletonView15IterableElementP", "CGRect"]
+- !private ["12SkeletonView15IterableElementP", "SetFuncs"]
+- !private ["12SkeletonView15IterableElementP", "UIApplication"]
+- !private ["12SkeletonView15IterableElementP", "UIGraphicsBeginImageContext"]
+- !private ["12SkeletonView15IterableElementP", "UIGraphicsEndImageContext"]
+- !private ["12SkeletonView15IterableElementP", "UIGraphicsGetCurrentContext"]
+- !private ["12SkeletonView15IterableElementP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["12SkeletonView15IterableElementP", "UIImageView"]
+- ["12SkeletonView15IterableElementP", ""]
+- !private ["12SkeletonView15IterableElementP", "backgroundColor"]
+- !private ["12SkeletonView15IterableElementP", "borderColor"]
+- !private ["12SkeletonView15IterableElementP", "borderWidth"]
+- !private ["12SkeletonView15IterableElementP", "bounds"]
+- !private ["12SkeletonView15IterableElementP", "checkL"]
+- !private ["12SkeletonView15IterableElementP", "checkM"]
+- !private ["12SkeletonView15IterableElementP", "checkU"]
+- !private ["12SkeletonView15IterableElementP", "chosenGender"]
+- !private ["12SkeletonView15IterableElementP", "contentMode"]
+- !private ["12SkeletonView15IterableElementP", "cornerRadius"]
+- !private ["12SkeletonView15IterableElementP", "email"]
+- !private ["12SkeletonView15IterableElementP", "femaleB"]
+- !private ["12SkeletonView15IterableElementP", "firstName"]
+- !private ["12SkeletonView15IterableElementP", "frame"]
+- !private ["12SkeletonView15IterableElementP", "image"]
+- !private ["12SkeletonView15IterableElementP", "init"]
+- !private ["12SkeletonView15IterableElementP", "init"]
+- !private ["12SkeletonView15IterableElementP", "isEnabled"]
+- !private ["12SkeletonView15IterableElementP", "isEqual"]
+- !private ["12SkeletonView15IterableElementP", "isGenderSelected"]
+- !private ["12SkeletonView15IterableElementP", "isHidden"]
+- !private ["12SkeletonView15IterableElementP", "isSelected"]
+- !private ["12SkeletonView15IterableElementP", "lastName"]
+- !private ["12SkeletonView15IterableElementP", "layer"]
+- !private ["12SkeletonView15IterableElementP", "maleB"]
+- !private ["12SkeletonView15IterableElementP", "middleName"]
+- !private ["12SkeletonView15IterableElementP", "openCamB"]
+- !private ["12SkeletonView15IterableElementP", "openLibB"]
+- !private ["12SkeletonView15IterableElementP", "otherB"]
+- !private ["12SkeletonView15IterableElementP", "otherText"]
+- !private ["12SkeletonView15IterableElementP", "phoneNum"]
+- !private ["12SkeletonView15IterableElementP", "profilePicPreview"]
+- !private ["12SkeletonView15IterableElementP", "profilePicUrl"]
+- !private ["12SkeletonView15IterableElementP", "progress"]
+- !private ["12SkeletonView15IterableElementP", "pw"]
+- !private ["12SkeletonView15IterableElementP", "pwConfirm"]
+- !private ["12SkeletonView15IterableElementP", "resendB"]
+- !private ["12SkeletonView15IterableElementP", "savedProfilePic"]
+- !private ["12SkeletonView15IterableElementP", "setGenderBtnPic"]
+- !private ["12SkeletonView15IterableElementP", "setPicImageView"]
+- !private ["12SkeletonView15IterableElementP", "setProgress"]
+- !private ["12SkeletonView15IterableElementP", "setRounded"]
+- !private ["12SkeletonView15IterableElementP", "text"]
+- !private ["12SkeletonView15IterableElementP", "updateSelects"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "count"]
 - !private ["s25LosslessStringConvertibleP", "elementsEqual"]
@@ -1992,6 +2047,14 @@ depends-member:
 - ["7Consent7Pg5ViewC", "UIButtonX"]
 - ["7Consent7Pg5ViewC", "init"]
 - ["7Consent7Pg5ViewC", "resendB"]
+- !private ["12SkeletonView010PrepareForA0P", "borderColor"]
+- !private ["12SkeletonView010PrepareForA0P", "borderWidth"]
+- !private ["12SkeletonView010PrepareForA0P", "contentMode"]
+- !private ["12SkeletonView010PrepareForA0P", "frame"]
+- !private ["12SkeletonView010PrepareForA0P", "image"]
+- !private ["12SkeletonView010PrepareForA0P", "init"]
+- !private ["12SkeletonView010PrepareForA0P", "setRounded"]
+- !private ["12SkeletonView010PrepareForA0P", "text"]
 - !private ["So16RSKImageCropModeV", "circle"]
 - !private ["So26RSKImageCropViewControllerC", "delegate"]
 - !private ["So26RSKImageCropViewControllerC", "init"]
@@ -2078,6 +2141,58 @@ depends-member:
 - !private ["SY", "photo"]
 - !private ["SY", "photoLibrary"]
 - !private ["SY", "scaleAspectFill"]
+- !private ["12SkeletonView11RecoverableP", "CGPoint"]
+- !private ["12SkeletonView11RecoverableP", "CGRect"]
+- !private ["12SkeletonView11RecoverableP", "SetFuncs"]
+- !private ["12SkeletonView11RecoverableP", "UIApplication"]
+- !private ["12SkeletonView11RecoverableP", "UIGraphicsBeginImageContext"]
+- !private ["12SkeletonView11RecoverableP", "UIGraphicsEndImageContext"]
+- !private ["12SkeletonView11RecoverableP", "UIGraphicsGetCurrentContext"]
+- !private ["12SkeletonView11RecoverableP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["12SkeletonView11RecoverableP", "UIImageView"]
+- ["12SkeletonView11RecoverableP", ""]
+- !private ["12SkeletonView11RecoverableP", "borderColor"]
+- !private ["12SkeletonView11RecoverableP", "borderWidth"]
+- !private ["12SkeletonView11RecoverableP", "bounds"]
+- !private ["12SkeletonView11RecoverableP", "checkL"]
+- !private ["12SkeletonView11RecoverableP", "checkM"]
+- !private ["12SkeletonView11RecoverableP", "checkU"]
+- !private ["12SkeletonView11RecoverableP", "chosenGender"]
+- !private ["12SkeletonView11RecoverableP", "contentMode"]
+- !private ["12SkeletonView11RecoverableP", "email"]
+- !private ["12SkeletonView11RecoverableP", "femaleB"]
+- !private ["12SkeletonView11RecoverableP", "firstName"]
+- !private ["12SkeletonView11RecoverableP", "frame"]
+- !private ["12SkeletonView11RecoverableP", "image"]
+- !private ["12SkeletonView11RecoverableP", "init"]
+- !private ["12SkeletonView11RecoverableP", "init"]
+- !private ["12SkeletonView11RecoverableP", "isEnabled"]
+- !private ["12SkeletonView11RecoverableP", "isEqual"]
+- !private ["12SkeletonView11RecoverableP", "isGenderSelected"]
+- !private ["12SkeletonView11RecoverableP", "isHidden"]
+- !private ["12SkeletonView11RecoverableP", "isSelected"]
+- !private ["12SkeletonView11RecoverableP", "lastName"]
+- !private ["12SkeletonView11RecoverableP", "layer"]
+- !private ["12SkeletonView11RecoverableP", "maleB"]
+- !private ["12SkeletonView11RecoverableP", "middleName"]
+- !private ["12SkeletonView11RecoverableP", "openCamB"]
+- !private ["12SkeletonView11RecoverableP", "openLibB"]
+- !private ["12SkeletonView11RecoverableP", "otherB"]
+- !private ["12SkeletonView11RecoverableP", "otherText"]
+- !private ["12SkeletonView11RecoverableP", "phoneNum"]
+- !private ["12SkeletonView11RecoverableP", "profilePicPreview"]
+- !private ["12SkeletonView11RecoverableP", "profilePicUrl"]
+- !private ["12SkeletonView11RecoverableP", "progress"]
+- !private ["12SkeletonView11RecoverableP", "pw"]
+- !private ["12SkeletonView11RecoverableP", "pwConfirm"]
+- !private ["12SkeletonView11RecoverableP", "resendB"]
+- !private ["12SkeletonView11RecoverableP", "savedProfilePic"]
+- !private ["12SkeletonView11RecoverableP", "setGenderBtnPic"]
+- !private ["12SkeletonView11RecoverableP", "setPicImageView"]
+- !private ["12SkeletonView11RecoverableP", "setProgress"]
+- !private ["12SkeletonView11RecoverableP", "setRounded"]
+- !private ["12SkeletonView11RecoverableP", "text"]
+- !private ["12SkeletonView11RecoverableP", "updateSelects"]
 - !private ["10Foundation20ReferenceConvertibleP", "absoluteString"]
 - !private ["ST", "count"]
 - !private ["ST", "editedImage"]
@@ -4509,6 +4624,7 @@ depends-nominal:
 - "Sl"
 - "SL"
 - !private "7Consent9ConstantsC"
+- !private "12SkeletonView21ContainsMultilineTextP"
 - !private "So17UIViewContentModeV"
 - "s28CustomDebugStringConvertibleP"
 - "s29CustomPlaygroundQuickLookableP"
@@ -4536,6 +4652,7 @@ depends-nominal:
 - !private "So30UIImagePickerControllerInfoKeya"
 - !private "Si"
 - !private "s5Int64V"
+- "12SkeletonView15IterableElementP"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
 - "So8NSCodingP"
@@ -4556,6 +4673,7 @@ depends-nominal:
 - "7Consent7Pg3ViewC"
 - "7Consent7Pg4ViewC"
 - "7Consent7Pg5ViewC"
+- !private "12SkeletonView010PrepareForA0P"
 - !private "So16RSKImageCropModeV"
 - !private "So26RSKImageCropViewControllerC"
 - "So34RSKImageCropViewControllerDelegateP"
@@ -4564,6 +4682,7 @@ depends-nominal:
 - !private "SX"
 - "Sm"
 - !private "SY"
+- "12SkeletonView11RecoverableP"
 - !private "10Foundation20ReferenceConvertibleP"
 - "ST"
 - !private "7Consent8SetFuncsC"
@@ -4659,6 +4778,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/SkeletonView/SkeletonView.framework/Modules/SkeletonView.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
@@ -4682,6 +4802,7 @@ depends-external:
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/SkeletonView/SkeletonView.framework/Headers/SkeletonView-umbrella.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
@@ -4738,6 +4859,7 @@ depends-external:
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/SkeletonView/SkeletonView.framework/Headers/SkeletonView-Swift.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
@@ -4755,6 +4877,7 @@ depends-external:
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/RSKImageCropper/RSKImageCropper.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/Consent/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/SkeletonView/SkeletonView.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SkeletonView
 
 class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
 
@@ -45,6 +46,10 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         profilePic.borderWidth = 1
         profilePic.borderColor = #colorLiteral(red: 0.7607843137, green: 0.7647058824, blue: 0.7725490196, alpha: 1)
         profilePic.contentMode = .scaleAspectFill
+        
+        profilePic.showAnimatedGradientSkeleton()
+        nameLbl.showAnimatedGradientSkeleton()
+        genderLbl.showAnimatedGradientSkeleton()
         
         signatureView.delegate = self
         signatureView.clear()
@@ -84,13 +89,17 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         nameLbl.text = "Name: \(entry[5] as! String) \(entry[6] as! String) \(entry[7] as! String)"
         let gender = entry[9] as! String
         genderLbl.text = "Gender: \(gender)"
+        var pic: UIImage!
         
         // Create a storage reference from the URL
         let storageRef = Storage.storage().reference(forURL: entry[10] as! String)
         // Download the data, assuming a max size of 1MB (you can change this as necessary)
         storageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) -> Void in
             // Create a UIImage, add it to the array
-            let pic = UIImage(data: data!)
+            pic = UIImage(data: data!)
+            self.profilePic.hideSkeleton()
+            self.nameLbl.hideSkeleton()
+            self.genderLbl.hideSkeleton()
             self.profilePic.image = pic
         }
         

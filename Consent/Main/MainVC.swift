@@ -47,10 +47,19 @@ class MainVC: UIViewController, UITextFieldDelegate {
     
     var searchedArray:[String] = Array()
     
+    @IBOutlet weak var topSearchBarConstraint: NSLayoutConstraint!
+    var initialTopBarConstraint: CGFloat!
+    
+    @IBOutlet weak var topTableViewConstraint: NSLayoutConstraint!
+    var initalTopTableViewConstraint: CGFloat!
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        
+        self.initialTopBarConstraint = self.topSearchBarConstraint.constant
+        self.initalTopTableViewConstraint = self.topTableViewConstraint.constant
         
         DispatchQueue.global(qos: .userInteractive).async {
             //background thread
@@ -88,7 +97,6 @@ class MainVC: UIViewController, UITextFieldDelegate {
         entryRef = entryRef.child(uid!)
         profilePicRef = profilePicRef.child("user/\(uid!)")
     }
-    
     func checkForConfirmPopUp(){
         if Auth.auth().currentUser != nil {
         

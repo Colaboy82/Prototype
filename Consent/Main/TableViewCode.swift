@@ -8,18 +8,27 @@
 
 import UIKit
 import Firebase
+import SkeletonView
 
 extension MainVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    //func collectionSkeletonView(_ skeletonView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredEntriesList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    //func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
         let cell = tableViewU.dequeueReusableCell(withIdentifier: "cell") as! ConsentEntryCell
         
         let entry: ConsentEntryModel
         
         entry = filteredEntriesList[indexPath.row]
+        var pic: UIImage!
+        
+        if (pic == nil){
+            cell.profilePicImg.showAnimatedGradientSkeleton()
+            cell.mainView.showAnimatedGradientSkeleton()
+        }
         
         cell.dateLbl.text = entry.date
         let name = entry.firstName + " " + entry.midName + " " + entry.lastName
@@ -30,7 +39,9 @@ extension MainVC: UITableViewDataSource {
         // Download the data, assuming a max size of 1MB (you can change this as necessary)
         storageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) -> Void in
             // Create a UIImage, add it to the array
-            let pic = UIImage(data: data!)
+            cell.profilePicImg.hideSkeleton()
+            cell.mainView.hideSkeleton()
+            pic = UIImage(data: data!)
             cell.profilePicImg.image = pic
         }
         
@@ -50,4 +61,10 @@ extension MainVC: UITableViewDelegate {
         
     }
     
+}
+
+public protocol SkeletonTableViewDataSource: UITableViewDataSource {
+    func numSections(in collectionSkeletonView: UITableView) -> Int
+    func collectionSkeletonView(_ skeletonView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier
 }

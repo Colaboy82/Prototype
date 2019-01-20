@@ -332,6 +332,7 @@ SWIFT_CLASS("_TtC7Consent12LoadingPopUp")
 
 
 @class UITableViewX;
+@class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC7Consent6MainVC")
 @interface MainVC : UIViewController <UITextFieldDelegate>
@@ -343,6 +344,8 @@ SWIFT_CLASS("_TtC7Consent6MainVC")
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified searchTypeB;
 @property (nonatomic, weak) IBOutlet UITableViewX * _Null_unspecified tableViewU;
 @property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified searchView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified topSearchBarConstraint;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified topTableViewConstraint;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
 - (IBAction)mainBClicked:(UIButtonX * _Nonnull)sender;
@@ -356,12 +359,6 @@ SWIFT_CLASS("_TtC7Consent6MainVC")
 
 
 
-@class UITextField;
-
-@interface MainVC (SWIFT_EXTENSION(Consent))
-- (void)textFieldDidChange:(UITextField * _Nonnull)textfield;
-@end
-
 @class UITableView;
 
 @interface MainVC (SWIFT_EXTENSION(Consent)) <UITableViewDataSource>
@@ -373,6 +370,14 @@ SWIFT_CLASS("_TtC7Consent6MainVC")
 @interface MainVC (SWIFT_EXTENSION(Consent)) <UITableViewDelegate>
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
+@class UITextField;
+@class UIScrollView;
+
+@interface MainVC (SWIFT_EXTENSION(Consent))
+- (void)textFieldDidChange:(UITextField * _Nonnull)textfield;
+- (void)scrollViewWillBeginDecelerating:(UIScrollView * _Nonnull)scrollView;
 @end
 
 

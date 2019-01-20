@@ -27,6 +27,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Ac-2z-Nwl" customClass="UITableViewX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="134" width="375" height="533"/>
                                 <color key="backgroundColor" name="Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="533" id="Jgi-c4-Wgw"/>
+                                </constraints>
                                 <color key="sectionIndexBackgroundColor" name="Background"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="135" id="gc6-n5-LBf" customClass="ConsentEntryCell" customModule="Consent">
@@ -62,6 +65,7 @@
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                             <real key="value" value="16"/>
                                                         </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="AQR-ik-uwj" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
@@ -77,6 +81,7 @@
                                                         <userDefinedRuntimeAttribute type="number" keyPath="imageLookFromInt">
                                                             <integer key="value" value="0"/>
                                                         </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                             </subviews>
@@ -90,6 +95,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="Background"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="dateLbl" destination="BOE-dI-HvI" id="KH8-Zj-bev"/>
                                             <outlet property="mainView" destination="1Qm-bS-BWw" id="GXw-fZ-Gcq"/>
@@ -99,6 +107,58 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKm-Gw-HPN" customClass="UIViewX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEl-Ma-bUR" customClass="UITextFieldX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="29" y="45" width="316" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="kXA-zp-ttq"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fieldLookFromInt">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="descriptorTextColor">
+                                                <color key="value" name="Secondary Background"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IL-yn-SeG" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="129" y="85" width="116" height="34"/>
+                                        <color key="backgroundColor" name="Button"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                        <state key="normal" title="Name">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="switchSearchType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HEi-JA-MYr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eEl-Ma-bUR" secondAttribute="trailing" constant="30" id="3QD-9E-s03"/>
+                                    <constraint firstItem="8IL-yn-SeG" firstAttribute="top" secondItem="eEl-Ma-bUR" secondAttribute="bottom" constant="10" id="7nY-T7-AbU"/>
+                                    <constraint firstItem="eEl-Ma-bUR" firstAttribute="leading" secondItem="FKm-Gw-HPN" secondAttribute="leading" constant="29" id="BRV-Vf-Vjl"/>
+                                    <constraint firstItem="eEl-Ma-bUR" firstAttribute="top" secondItem="FKm-Gw-HPN" secondAttribute="top" constant="45" id="lYO-K0-HDs"/>
+                                    <constraint firstAttribute="width" secondItem="FKm-Gw-HPN" secondAttribute="height" multiplier="125:42" id="med-4I-kBE"/>
+                                    <constraint firstItem="8IL-yn-SeG" firstAttribute="leading" secondItem="FKm-Gw-HPN" secondAttribute="leading" constant="129" id="xbw-fP-jm3"/>
+                                    <constraint firstAttribute="trailing" secondItem="8IL-yn-SeG" secondAttribute="trailing" constant="130" id="zQS-Cd-wt1"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCh-bs-u25" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="200" y="603" width="54" height="54"/>
                                 <constraints>
@@ -148,48 +208,6 @@
                                     <action selector="mainBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m2V-sG-hJE"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKm-Gw-HPN" customClass="UIViewX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEl-Ma-bUR" customClass="UITextFieldX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="29" y="45" width="316" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="search"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="fieldLookFromInt">
-                                                <integer key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="descriptorTextColor">
-                                                <color key="value" name="Secondary Background"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IL-yn-SeG" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="129" y="83" width="116" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" name="Button"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
-                                        <state key="normal" title="Name">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="animationType">
-                                                <integer key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="16"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="switchSearchType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HEi-JA-MYr"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="Background"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
                         <color key="tintColor" name="Tint"/>
@@ -200,12 +218,11 @@
                             <constraint firstItem="FKm-Gw-HPN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KW5-Ia-XZJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BCh-bs-u25" secondAttribute="bottom" constant="10" id="V4h-49-7j4"/>
                             <constraint firstAttribute="bottom" secondItem="8Ac-2z-Nwl" secondAttribute="bottom" id="VN8-S8-Gi7"/>
+                            <constraint firstItem="FKm-Gw-HPN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Wdk-bS-lMN"/>
                             <constraint firstItem="3p5-Q1-fcz" firstAttribute="leading" secondItem="BCh-bs-u25" secondAttribute="trailing" constant="24" id="Y5v-OU-256"/>
                             <constraint firstItem="BCh-bs-u25" firstAttribute="top" secondItem="TAd-Wm-Bdd" secondAttribute="bottom" constant="22" id="ZZZ-ly-Wpy"/>
                             <constraint firstItem="FKm-Gw-HPN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aim-M9-59B"/>
                             <constraint firstItem="8Ac-2z-Nwl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bKm-xo-tCq"/>
-                            <constraint firstItem="FKm-Gw-HPN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cE9-QY-Bme"/>
-                            <constraint firstItem="8Ac-2z-Nwl" firstAttribute="top" secondItem="FKm-Gw-HPN" secondAttribute="bottom" id="gTj-Xq-blS"/>
                             <constraint firstItem="8Ac-2z-Nwl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ksS-jC-OGM"/>
                             <constraint firstItem="8Ac-2z-Nwl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="114" id="oVm-PR-nwX"/>
                             <constraint firstItem="3p5-Q1-fcz" firstAttribute="top" secondItem="Efv-fC-qPg" secondAttribute="bottom" constant="29" id="q0W-b2-jFk"/>
@@ -222,6 +239,8 @@
                         <outlet property="searchTypeB" destination="8IL-yn-SeG" id="mDA-JR-PJx"/>
                         <outlet property="searchView" destination="FKm-Gw-HPN" id="zO5-9c-u7m"/>
                         <outlet property="tableViewU" destination="8Ac-2z-Nwl" id="51Y-90-dc8"/>
+                        <outlet property="topSearchBarConstraint" destination="Wdk-bS-lMN" id="bni-1H-abV"/>
+                        <outlet property="topTableViewConstraint" destination="oVm-PR-nwX" id="dlg-kJ-ghq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -286,9 +305,6 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="switchSearchType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOw-W8-nbh"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ok-Pc-g7T">
                                 <rect key="frame" x="8" y="622" width="35" height="37"/>

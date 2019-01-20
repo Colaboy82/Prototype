@@ -81,4 +81,22 @@ extension MainVC {
         }
         return updatedDate
     }
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+        
+        let actualPosition = scrollView.panGestureRecognizer.translation(in: scrollView.superview)
+        if (actualPosition.y > 0){
+            self.topSearchBarConstraint.constant = self.initialTopBarConstraint
+            self.topTableViewConstraint.constant = self.initalTopTableViewConstraint
+            UIView.animate(withDuration: 0.5, animations: {//scrolling down
+                self.view.layoutIfNeeded()
+            })
+        }else{
+            // Dragging up
+            self.topSearchBarConstraint.constant = self.initialTopBarConstraint - self.searchView.frame.height
+            self.topTableViewConstraint.constant = self.initalTopTableViewConstraint - self.searchView.frame.height
+            UIView.animate(withDuration: 0.5, animations: {// scrolling up
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
 }

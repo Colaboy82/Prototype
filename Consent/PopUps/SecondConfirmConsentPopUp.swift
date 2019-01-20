@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SkeletonView
 
 class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     
@@ -46,12 +47,17 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     }
     
     func setUp(){
+        
         SetFuncs.setButton(btn: confirmBtn, color:#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
         confirmBtn.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
         profilePic.setRounded()
         profilePic.borderWidth = 1
         profilePic.borderColor = #colorLiteral(red: 0.7607843137, green: 0.7647058824, blue: 0.7725490196, alpha: 1)
         profilePic.contentMode = .scaleAspectFill
+        
+        profilePic.showAnimatedGradientSkeleton()
+        nameLbl.showAnimatedGradientSkeleton()
+        genderLbl.showAnimatedGradientSkeleton()
         
         signatureView.delegate = self
         signatureView.clear()
@@ -79,6 +85,11 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
                 // Download the data, assuming a max size of 1MB (you can change this as necessary)
                 storageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) -> Void in
                     // Create a UIImage, add it to the array
+                    
+                    self.profilePic.hideSkeleton()
+                    self.nameLbl.hideSkeleton()
+                    self.genderLbl.hideSkeleton()
+                    
                     let pic = UIImage(data: data!)
                     self.profilePic.image = pic
                 }
