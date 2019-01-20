@@ -42,7 +42,7 @@ extension MainVC {
                     }
                 }
             } else {
-                filteredList = nameList
+                filteredList = dateList
             }
             updateFilteredEntries(nameB: false)
         }
@@ -54,7 +54,7 @@ extension MainVC {
         var hold = ""
         if (nameB) {
             for n in self.entriesList{
-                let name = n.firstName + " " + n.midName + " " + n.lastName
+                let name = n.firstName + " " + n.lastName
                 for nameSearched in filteredList{
                     if (nameSearched == name && !n.date.elementsEqual(hold)){
                         self.filteredEntriesList.append(n)
@@ -66,12 +66,19 @@ extension MainVC {
             for n in self.entriesList{
                 let date = n.date
                 for dateSearched in filteredList{
-                    if (dateSearched == date && !n.date.elementsEqual(hold)){
+                    if (dateSearched == updateDate(date: date) && !n.date.elementsEqual(hold)){
                         self.filteredEntriesList.append(n)
                         hold = n.date
                     }
                 }
             }
         }
+    }
+    func updateDate(date: String) -> String {
+        var updatedDate = date
+        if let comma = updatedDate.firstIndex(of: ",") {
+            updatedDate = updatedDate.substring(to: comma)
+        }
+        return updatedDate
     }
 }

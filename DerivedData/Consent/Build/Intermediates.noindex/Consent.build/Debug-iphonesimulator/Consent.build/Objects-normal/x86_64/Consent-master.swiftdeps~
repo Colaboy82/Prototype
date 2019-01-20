@@ -1,12 +1,12 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "caa47f7137f754b55b04fa5c47996acd"
-build_time: [1547950269, 420183000]
+build_time: [1547950318, 897815000]
 inputs:
   "/Users/derrickmu/Desktop/Consent/Consent/Main/PwReset/PWResetVC.swift": [1547347898, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/ShaharExtensions.swift": [1547007703, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Constants.swift": [1547926292, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/YPDrawSignatureView.swift": [1547227019, 0]
-  "/Users/derrickmu/Desktop/Consent/Consent/Main/MainVC.swift": [1547950268, 0]
+  "/Users/derrickmu/Desktop/Consent/Consent/Main/MainVC.swift": [1547950317, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/DesignableX/UIGradientImage.swift": [1540690468, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Main/TableViewCode.swift": [1547945449, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Main/SearchBar.swift": [1547950246, 0]
