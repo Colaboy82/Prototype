@@ -213,6 +213,29 @@
 			<key>uniqueIdentifier</key>
 			<string>9A55F973-2332-4DD8-B31D-F75353909E7B</string>
 		</dict>
+		<key>BAE756C1-F3E6-4D8E-A082-9EC7C76CF3C6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>BAE756C1-F3E6-4D8E-A082-9EC7C76CF3C6.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>signature</key>
+			<string>Consent-bdxfmfwweqneyyctxhssvxuocxyy</string>
+			<key>timeStartedRecording</key>
+			<real>569702231.34002101</real>
+			<key>timeStoppedRecording</key>
+			<real>569702368.44125497</real>
+			<key>title</key>
+			<string>Build target Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>BAE756C1-F3E6-4D8E-A082-9EC7C76CF3C6</string>
+		</dict>
 		<key>E9FAABAD-23E6-4CD6-9949-453C9AA5A309</key>
 		<dict>
 			<key>className</key>
