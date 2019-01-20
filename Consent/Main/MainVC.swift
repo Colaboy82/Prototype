@@ -222,7 +222,7 @@ extension MainVC {
                         let agreedActions = entry["AgreedActions"] as! String
                         let confirmed = entry["Confirmed"] as! Bool
                         let userID = entry["UserID"] as! String
-                        let date = entry["Date"] as! String
+                        var date = entry["Date"] as! String
                         let fSign = entry["FirstSignature"] as! String
                         let sSign = entry["secondSignature"] as! String
                         let profileUrl = entry["ProfilePic"] as! String
@@ -234,13 +234,17 @@ extension MainVC {
                         let phoneNum = entry["phoneNum"] as! String
                         let gender = entry["gender"] as! String
                         
-                        //populate search arrrays
-                        let name = firstName + " " + midName + " " + lastName
-                        self.nameList.append(name)
-                        self.dateList.append(date)
-                        
                         //creating artist object with model and fetched values
                         let eachEntry = ConsentEntryModel.init(user: Auth.auth().currentUser!, date: date, otherUserID: userID, vidUrl: vidUrl, email: email, firstName: firstName, midName: midName, lastName: lastName, phoneNum: phoneNum, gender: gender, profilePicUrl: profileUrl, agreedActions: agreedActions, firstSignature: fSign, secondSignature: sSign)
+                        
+                        //populate search arrrays
+                        let name = firstName + " " + lastName
+                        self.nameList.append(name)
+                        
+                        if let commaRange = date.range(of: ",") {
+                            date.removeSubrange(commaRange.lowerBound..<date.endIndex)
+                        }
+                        self.dateList.append(date)
                         
                         if (confirmed == true){
                             //adding it to list
@@ -254,6 +258,7 @@ extension MainVC {
             }
         })
     }
+    
     func updateData(){
         entryRef.observe(.childChanged, with: { (snapshot) in
             //if the reference have some values
