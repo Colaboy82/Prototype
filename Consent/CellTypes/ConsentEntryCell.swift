@@ -30,7 +30,7 @@ class ConsentEntryCell: UITableViewCell{
         //nameLbl.showAnimatedGradientSkeleton()
         //dateLbl.showAnimatedGradientSkeleton()
         mainView.showAnimatedGradientSkeleton()
-
+        
         mainView.layer.cornerRadius = 20
         mainView.layer.masksToBounds = true
         

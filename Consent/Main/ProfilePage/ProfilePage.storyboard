@@ -188,6 +188,113 @@
             </objects>
             <point key="canvasLocation" x="161" y="140"/>
         </scene>
+        <!--EditPage-->
+        <scene sceneID="78n-tu-bZQ">
+            <objects>
+                <viewController storyboardIdentifier="EditPage" title="EditPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ms0-fl-dsZ" customClass="EditVC" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qm5-aC-4Uu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b95-lj-y01">
+                                <rect key="frame" x="0.0" y="556" width="126" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="return.png"/>
+                                <connections>
+                                    <action selector="back:" destination="U48-sf-ldA" eventType="touchUpInside" id="XIQ-jN-H5z"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4kI-To-FQS" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="83" y="70" width="209" height="209"/>
+                                <color key="tintColor" name="DisabledBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4kI-To-FQS" secondAttribute="height" multiplier="1:1" id="FeQ-we-4eJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current User Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-AC-SVR" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="46" y="299" width="283" height="37"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlw-fS-53W" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="46" y="356" width="283" height="37"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pW-fS-x1Q" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="46" y="470" width="283" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4pW-fS-x1Q" secondAttribute="height" multiplier="283:37" id="OHS-3H-fWb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDl-ct-eiq" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="276" y="243" width="38" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" name="Button"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jUl-Cx-dtr" customClass="UITextFieldX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="46" y="413" width="283" height="37"/>
+                                <color key="tintColor" name="Tint"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jUl-Cx-dtr" secondAttribute="height" multiplier="283:37" id="tVl-6W-ffj"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="5xa-AC-SVR" firstAttribute="leading" secondItem="wug-kj-IGm" secondAttribute="leading" constant="46" id="0aG-se-Esn"/>
+                            <constraint firstItem="wug-kj-IGm" firstAttribute="trailing" secondItem="nlw-fS-53W" secondAttribute="trailing" constant="46" id="48d-kc-85m"/>
+                            <constraint firstItem="4pW-fS-x1Q" firstAttribute="leading" secondItem="wug-kj-IGm" secondAttribute="leading" constant="46" id="6DO-IH-Szu"/>
+                            <constraint firstItem="wug-kj-IGm" firstAttribute="trailing" secondItem="jUl-Cx-dtr" secondAttribute="trailing" constant="46" id="EeY-OL-BK7"/>
+                            <constraint firstItem="wug-kj-IGm" firstAttribute="trailing" secondItem="4pW-fS-x1Q" secondAttribute="trailing" constant="46" id="GYW-vt-ARy"/>
+                            <constraint firstItem="wug-kj-IGm" firstAttribute="trailing" secondItem="4kI-To-FQS" secondAttribute="trailing" constant="83" id="GkN-bv-qua"/>
+                            <constraint firstItem="wug-kj-IGm" firstAttribute="trailing" secondItem="5xa-AC-SVR" secondAttribute="trailing" constant="46" id="Nft-sk-7yy"/>
+                            <constraint firstItem="4pW-fS-x1Q" firstAttribute="top" secondItem="jUl-Cx-dtr" secondAttribute="bottom" constant="20" id="RoW-oQ-hae"/>
+                            <constraint firstItem="nlw-fS-53W" firstAttribute="leading" secondItem="wug-kj-IGm" secondAttribute="leading" constant="46" id="URW-YF-K5Y"/>
+                            <constraint firstItem="5xa-AC-SVR" firstAttribute="top" secondItem="4kI-To-FQS" secondAttribute="bottom" constant="20" id="f1C-nW-N0B"/>
+                            <constraint firstItem="4kI-To-FQS" firstAttribute="top" secondItem="wug-kj-IGm" secondAttribute="top" constant="50" id="g6c-BR-XWW"/>
+                            <constraint firstItem="4kI-To-FQS" firstAttribute="leading" secondItem="wug-kj-IGm" secondAttribute="leading" constant="83" id="g8e-yJ-c78"/>
+                            <constraint firstItem="jUl-Cx-dtr" firstAttribute="top" secondItem="nlw-fS-53W" secondAttribute="bottom" constant="20" id="ilO-xW-xTs"/>
+                            <constraint firstItem="jUl-Cx-dtr" firstAttribute="leading" secondItem="wug-kj-IGm" secondAttribute="leading" constant="46" id="l8s-Cb-Z2E"/>
+                            <constraint firstItem="nlw-fS-53W" firstAttribute="top" secondItem="5xa-AC-SVR" secondAttribute="bottom" constant="20" id="vz2-ls-rN4"/>
+                            <constraint firstItem="5xa-AC-SVR" firstAttribute="width" secondItem="5xa-AC-SVR" secondAttribute="height" multiplier="283:37" id="wgQ-QF-HhX"/>
+                            <constraint firstItem="nlw-fS-53W" firstAttribute="width" secondItem="nlw-fS-53W" secondAttribute="height" multiplier="283:37" id="y87-nU-b4Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wug-kj-IGm"/>
+                    </view>
+                    <connections>
+                        <outlet property="editPicB" destination="fDl-ct-eiq" id="rr6-1M-mPI"/>
+                        <outlet property="emailLbl" destination="nlw-fS-53W" id="7mZ-Ny-MCx"/>
+                        <outlet property="genderEdit" destination="jUl-Cx-dtr" id="1Yr-xf-HSQ"/>
+                        <outlet property="nameLbl" destination="5xa-AC-SVR" id="ILF-li-NV3"/>
+                        <outlet property="profilePic" destination="4kI-To-FQS" id="lEh-be-RH9"/>
+                        <outlet property="uidLbl" destination="4pW-fS-x1Q" id="gh3-pG-cDC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="esf-v5-K5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.60000000000002" y="139.880059970015"/>
+        </scene>
     </scenes>
     <resources>
         <image name="InfoIcon" width="39" height="39"/>
@@ -198,8 +305,14 @@
         <namedColor name="Background">
             <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Button">
+            <color red="0.20784313725490197" green="0.36470588235294116" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="DisabledBtn">
             <color red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Tint">
+            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

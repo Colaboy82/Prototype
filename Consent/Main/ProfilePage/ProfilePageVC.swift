@@ -26,11 +26,13 @@ class ProfilePageVC: UIViewController {
     var editBCenter: CGPoint!
     var signOutBCenter: CGPoint!
     
-    var profilePicUrl: String!
-    var name: String!
-    var email: String!
-    var gender: String!
-    var currUid: String!
+    public static var profilePicUrl: String!
+    public static var name: String!
+    public static var email: String!
+    public static var gender: String!
+    public static var currUid: String!
+    
+    public static var profilePicImg: UIImage!
     
     let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength)
     let userRef = Database.database().reference().child("users")
@@ -53,15 +55,15 @@ class ProfilePageVC: UIViewController {
         self.signOutB.alpha = 0
         
         userRef.child(uid!).observeSingleEvent(of: .value, with: {(snapshot) in
-            self.email = Auth.auth().currentUser?.email
-            self.gender = snapshot.childSnapshot(forPath:"gender").value as? String
+            ProfilePageVC.email = Auth.auth().currentUser?.email
+            ProfilePageVC.gender = snapshot.childSnapshot(forPath:"gender").value as? String
             let first = snapshot.childSnapshot(forPath:"firstName").value as? String
             let mid = snapshot.childSnapshot(forPath:"middleName").value as? String
             let last = snapshot.childSnapshot(forPath:"lastName").value as? String
-            self.name = first! + " " + mid! + " " + last!
-            self.profilePicUrl = snapshot.childSnapshot(forPath:"ProfilePic").value as? String
-            self.currUid = self.uid
-            if(self.profilePicUrl != nil){
+            ProfilePageVC.name = first! + " " + mid! + " " + last!
+            ProfilePageVC.profilePicUrl = snapshot.childSnapshot(forPath:"ProfilePic").value as? String
+            ProfilePageVC.currUid = self.uid
+            if(ProfilePageVC.profilePicUrl != nil){
                self.setValues()
             }
         })
@@ -83,18 +85,19 @@ class ProfilePageVC: UIViewController {
             profilePic.showAnimatedGradientSkeleton()
         }
         
-        nameLbl.text = name
-        emailLbl.text = email
-        genderLbl.text = gender
-        uidLbl.text = currUid
+        nameLbl.text = ProfilePageVC.name
+        emailLbl.text = ProfilePageVC.email
+        genderLbl.text = ProfilePageVC.gender
+        uidLbl.text = ProfilePageVC.currUid
         
-        let storageRef = Storage.storage().reference(forURL: profilePicUrl)
+        let storageRef = Storage.storage().reference(forURL: ProfilePageVC.profilePicUrl)
         // Download the data, assuming a max size of 1MB (you can change this as necessary)
         storageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) -> Void in
             // Create a UIImage, add it to the array
             self.profilePic.hideSkeleton()
             pic = UIImage(data: data!)
             self.profilePic.image = pic
+            ProfilePageVC.profilePicImg = pic
         }
     }
     @IBAction func mainBClicked(_ sender: UIButtonX){
@@ -131,7 +134,7 @@ class ProfilePageVC: UIViewController {
     }
     @IBAction func editBClicked(_ sender: UIButtonX){
         let sb = UIStoryboard(name: "ProfilePage", bundle:nil)
-        let nextVC = sb.instantiateViewController(withIdentifier: "ProfilePage")
+        let nextVC = sb.instantiateViewController(withIdentifier: "EditPage")
         nextVC.modalTransitionStyle = .crossDissolve
         self.present(nextVC, animated:true, completion:nil)
     }

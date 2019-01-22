@@ -186,6 +186,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
         self.present(nextVC, animated:true, completion:nil)
     }
     @IBAction func profileBClicked(_ sender: UIButtonX){
+        
         let sb = UIStoryboard(name: "ProfilePage", bundle:nil)
         let nextVC = sb.instantiateViewController(withIdentifier: "ProfilePage")
         nextVC.modalTransitionStyle = .crossDissolve

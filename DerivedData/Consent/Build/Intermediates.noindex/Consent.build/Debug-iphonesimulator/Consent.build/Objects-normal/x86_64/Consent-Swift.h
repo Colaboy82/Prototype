@@ -313,6 +313,28 @@ SWIFT_CLASS("_TtC7Consent10ContractVC")
 @end
 
 
+SWIFT_PROTOCOL("_TtP7Consent20UITextFieldXDelegate_")
+@protocol UITextFieldXDelegate <UITextFieldDelegate>
+@optional
+- (void)textFieldDidDeleteBackward:(UITextFieldX * _Nonnull)textField;
+- (BOOL)canPerformAction:(UITextFieldX * _Nonnull)textField :(SEL _Nonnull)action withSender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent6EditVC")
+@interface EditVC : UIViewController <UITextFieldXDelegate>
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified nameLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified emailLbl;
+@property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified genderEdit;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified uidLbl;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified profilePic;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified editPicB;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7Consent10ErrorPopUp")
 @interface ErrorPopUp : UIViewController
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified dismissPopUpB;
@@ -859,13 +881,6 @@ SWIFT_CLASS("_TtC7Consent12UITextFieldX")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_PROTOCOL("_TtP7Consent20UITextFieldXDelegate_")
-@protocol UITextFieldXDelegate <UITextFieldDelegate>
-@optional
-- (void)textFieldDidDeleteBackward:(UITextFieldX * _Nonnull)textField;
-- (BOOL)canPerformAction:(UITextFieldX * _Nonnull)textField :(SEL _Nonnull)action withSender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 
