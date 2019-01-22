@@ -21,7 +21,6 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
     @IBOutlet weak var editPicB: UIButtonX!
     @IBOutlet weak var saveB: UIButtonX!
     
-    
     var imagePicker: UIImagePickerController!
     var originalImg: UIImage!
     var savedImg: UIImage!
@@ -30,33 +29,32 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        
-        SetFuncs.setLblSettings(lbl: emailLbl)
-        SetFuncs.setTextFields(field: genderEdit, img: nil)
-        SetFuncs.setLblSettings(lbl: uidLbl)
-        SetFuncs.setLblSettings(lbl: nameLbl)
-        profilePic.setRounded()
-        
-        nameLbl.text = ProfilePageVC.name
-        emailLbl.text = ProfilePageVC.email
-        genderEdit.placeholder = ProfilePageVC.gender
-        uidLbl.text = ProfilePageVC.currUid
-        
-        profilePic.image = ProfilePageVC.profilePicImg
-        originalImg = ProfilePageVC.profilePicImg
-        
+        if (self.restorationIdentifier == "EditPage"){
+            SetFuncs.setLblSettings(lbl: emailLbl)
+            SetFuncs.setTextFields(field: genderEdit, img: nil)
+            SetFuncs.setLblSettings(lbl: uidLbl)
+            SetFuncs.setLblSettings(lbl: nameLbl)
+            profilePic.setRounded()
+            
+            nameLbl.text = ProfilePageVC.name
+            emailLbl.text = ProfilePageVC.email
+            genderEdit.placeholder = ProfilePageVC.gender
+            uidLbl.text = ProfilePageVC.currUid
+            
+            profilePic.image = ProfilePageVC.profilePicImg
+            originalImg = ProfilePageVC.profilePicImg
+        }else{
+            //SetFuncs.setButton(btn: <#T##UIButtonX#>, color: <#T##CGColor!#>)
+        }
     }
     
     @IBAction func saveEdits(_ sender: UIButtonX){
-        if (genderEdit.text != nil){
+        if (!(genderEdit.text?.isEmpty)! && genderEdit.text != " " && genderEdit.text != ProfilePageVC.gender){
             userRef.updateChildValues(["gender": genderEdit.text!])
         }
         if (savedImg != originalImg) {
             uploadProfilePic(img: savedImg)
         }
-        
-    }
-    @IBAction func editPic(_ sender: UIButtonX){
         
     }
     func uploadProfilePic(img: UIImage){
@@ -70,6 +68,7 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
         profilePicRef.putData(imageData, metadata: metaData) { (metaData, error) in
             if error == nil, metaData != nil{
                 profilePicRef.downloadURL(completion: { (url, error) in
+                    self.userRef.updateChildValues(["ProfilePic": url?.absoluteString])
                 })
             }else{
                 print(error?.localizedDescription as Any)
@@ -79,9 +78,16 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
     func savePhoto(img: UIImage!){
         savedImg = img
     }
-    @IBAction func back(_ sender: UIButtonX){
+    @IBAction func editPic(_ sender: UIButtonX){
         
     }
+    @IBAction func back(_ sender: UIButtonX){
+        let sb = UIStoryboard(name: "ProfilePage", bundle:nil)
+        let nextVC = sb.instantiateViewController(withIdentifier: "ProfilePage")
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated: true, completion: nil)
+    }
+    
     @IBAction func openCam(_ sender: UIButtonX) {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let imagePicker = UIImagePickerController()

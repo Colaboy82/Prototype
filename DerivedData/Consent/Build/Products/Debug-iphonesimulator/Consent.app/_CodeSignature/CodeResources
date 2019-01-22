@@ -743,23 +743,23 @@
 		</data>
 		<key>PopUpTemplate.storyboardc/C70-Io-EKo-view-HNI-hP-cIM.nib</key>
 		<data>
-		seg+V+FGsSRfVqpDiouvnPxQDc0=
+		vB4+dJvRz5OhD0blql5PyGKLPFQ=
 		</data>
 		<key>PopUpTemplate.storyboardc/ConfirmConsent.nib</key>
 		<data>
-		QlFW588hnQ4h/XcZpuOqrtriulQ=
+		Tlnwbbe514BJbSktNHQYTh686HA=
 		</data>
 		<key>PopUpTemplate.storyboardc/DMo-hb-x7J-view-tD3-vy-dAL.nib</key>
 		<data>
-		T/8BBONRUynOK4mWBPAzRGeghXo=
+		oQF2aRZX2BbfqJuSvdhf1tYFXMg=
 		</data>
 		<key>PopUpTemplate.storyboardc/Error.nib</key>
 		<data>
-		wyPHatEXOe2+gBtZKLdbcrkIpGc=
+		Fzu8wD10KPQOdBV6EXe71VkTiGw=
 		</data>
 		<key>PopUpTemplate.storyboardc/Ian-aF-2HS-view-nI2-0p-CSy.nib</key>
 		<data>
-		PWmn6yCGMMnqz+C7XgcQ0V0l9Mo=
+		x5xasnDg4d6kdTMmjXNcf+qBIFA=
 		</data>
 		<key>PopUpTemplate.storyboardc/Info.plist</key>
 		<data>
@@ -767,47 +767,55 @@
 		</data>
 		<key>PopUpTemplate.storyboardc/Loading.nib</key>
 		<data>
-		HttC+uySfjzxrj390HKRMBKIXcM=
+		ez3ALzKoeSDtnWNs4FikA/+FPjI=
 		</data>
 		<key>PopUpTemplate.storyboardc/SecondConfirmConsent.nib</key>
 		<data>
-		Mm1qnn0J8skLKkeY/3mTwwaDQZU=
+		uRv8IQzjak/nZuLK1wj/TxT4roI=
 		</data>
 		<key>PopUpTemplate.storyboardc/Success.nib</key>
 		<data>
-		lXLQiw3hkYh6M6F9FrIIWcUikl4=
+		Tl5xfBLilHLDdqdRjYj3sRPFflY=
 		</data>
 		<key>PopUpTemplate.storyboardc/XYI-Jl-mvP-view-z24-w3-pBm.nib</key>
 		<data>
-		YAWbYjHP5Z/hslqXIBK0okoK1W8=
+		M/mqrefePsstOj86QJAiElSja8c=
 		</data>
 		<key>PopUpTemplate.storyboardc/qEU-SL-0Pd-view-mEt-RT-zaa.nib</key>
 		<data>
-		FUOXlp/GdGyeK8CY1+t140zLTUQ=
+		6JOVAvNym2v1DVa4KuGCTeuEKbU=
 		</data>
 		<key>ProfileIcon.png</key>
 		<data>
 		O9tsTYzKiPyaIw8w0YrikehkFSs=
 		</data>
+		<key>ProfilePage.storyboardc/ChangePfP.nib</key>
+		<data>
+		uX6pfZ3wTI6YbbR7DU1SjpoaKAU=
+		</data>
 		<key>ProfilePage.storyboardc/EditPage.nib</key>
 		<data>
-		Jh+uWCjyIv5bZT9AoT/LqyNIROk=
+		oQ5eYbORP4M/YjuVPat4ts7X0Gw=
 		</data>
 		<key>ProfilePage.storyboardc/Info.plist</key>
 		<data>
-		En29T76xDNoi91EiUa24LigX2E4=
+		KIKPxoQJqJ/FP7YgVkTMzN6xSBY=
 		</data>
 		<key>ProfilePage.storyboardc/Ms0-fl-dsZ-view-qm5-aC-4Uu.nib</key>
 		<data>
-		qgJADlfvKsxdss5ssHwAlzDUgPI=
+		Judml6QNoTqnl7BbzAMHFNqSJHc=
 		</data>
 		<key>ProfilePage.storyboardc/ProfilePage.nib</key>
 		<data>
-		mvsEUA2i3/jQ6785nU0K4k76s8w=
+		SSF4NCTh9Sxad561SqzHMB/Z6hk=
 		</data>
 		<key>ProfilePage.storyboardc/U48-sf-ldA-view-mw7-9W-87i.nib</key>
 		<data>
-		tIOdhBjMCp1WVqkPTKZH1uwNU0E=
+		kdF8//VJXmVZS5h0GuB/YC0nQbU=
+		</data>
+		<key>ProfilePage.storyboardc/Yvb-80-u2x-view-xTu-H4-nVy.nib</key>
+		<data>
+		gOPXCZ389tEfejVQjCJuarPrNxs=
 		</data>
 		<key>SearchIcon.png</key>
 		<data>
@@ -1860,35 +1868,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i7MQpLRu+2aSEZhLKupJ35X6ujovF+Dc2vY8GKb3QgI=
+			nVkNnmmG3DQ/dAKNmqvKgGgTtwj3HwWIUBTOfZB9DYE=
 			</data>
 		</dict>
 		<key>PopUpTemplate.storyboardc/ConfirmConsent.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2ArACI5uSfN6IcnUjDPz2WAMgTegopVQHMHCptMf+CU=
+			ji4nSfLvqOIdMjTBEISSBdXrUM9QQMd3PhygCR8eLG4=
 			</data>
 		</dict>
 		<key>PopUpTemplate.storyboardc/DMo-hb-x7J-view-tD3-vy-dAL.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JRPNbxDZpqhuV/wHoHJYDkkQN8iCQruG5u+oPRQ6YqA=
+			yxFC/Hy8DkVxxdUqnkeBBoXFFwjeSj87QJCr+kl3zU0=
 			</data>
 		</dict>
 		<key>PopUpTemplate.storyboardc/Error.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x1gbPedQn2AGO8zdNXIhP7U6fFrUD5YvECgapc39XH8=
+			ktShRsUlEjcdh+vXPB4X3++n2/1YxPGlXNuH1XcbW2Y=
 			</data>
 		</dict>
 		<key>PopUpTemplate.storyboardc/Ian-aF-2HS-view-nI2-0p-CSy.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBz1PX5Mb8mSloYF2C7uy46+H9XTzsx1BtnCpIefK04=
+			yK/BtEvx61ecsLFpqB3gysP6Hqdr1nkwoPhwMkc/O/Y=
 			</data>
 		</dict>
 		<key>PopUpTemplate.storyboardc/Info.plist</key>
@@ -1902,35 +1910,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gIWSKhuiSyyVhSqxWMzNqXbNQY/nunficfmKisxQacs=
+			NRRhh5GclwsqLhMv2VwXyd6OztS55/bS1IuFSmarDpY=
 			</data>
 		</dict>
 		<key>PopUpTemplate.storyboardc/SecondConfirmConsent.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DtH+UaX70/tDzoS3vZHTMnC6GuwQqrG+QDTMTHznITs=
+			XGEgcuavd4/DLsyYm96dlW/hc6S24yvuMbYkkP9iK+g=
 			</data>
 		</dict>
 		<key>PopUpTemplate.storyboardc/Success.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bh0ewhCtE+TMfY+5FtXA7cz28yHYcVhryDagLvmb4vg=
+			o9HzlFT4monZwYCdydsGF/As4hqdMz3JqPXzCH9Nl+4=
 			</data>
 		</dict>
 		<key>PopUpTemplate.storyboardc/XYI-Jl-mvP-view-z24-w3-pBm.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T6ps9NqVUrkFitofje85ZT8EM8IBZyUNznx41Ym5t+U=
+			25Mi1cPjxa8/OEWEJyhqikEj1+qTCRChxlZQiN1UoZo=
 			</data>
 		</dict>
 		<key>PopUpTemplate.storyboardc/qEU-SL-0Pd-view-mEt-RT-zaa.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RQ0w8Fm7UBCT1esBCpXmvfw/w8cU7iRplylKJHxepBg=
+			ed8F/jwgAMpfpVMavuAgQJ7uuiUsEjLQ7fA75yTYM2o=
 			</data>
 		</dict>
 		<key>ProfileIcon.png</key>
@@ -1940,39 +1948,53 @@
 			Y2ECuvmeoRt/E7cuK6UsieaD9e82r0KunfgnO/EqzN8=
 			</data>
 		</dict>
+		<key>ProfilePage.storyboardc/ChangePfP.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			q58Hw1RP2uf1ssyzUMegRODtN2gPBPZsMTohtQ7uib0=
+			</data>
+		</dict>
 		<key>ProfilePage.storyboardc/EditPage.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Doz/i3sG+UttfebFzHyh22I0KCFNFUDi/LRZ0A/bDwg=
+			V+QYBXso4MCfaAuwFC3lFH8eqsKqTwI5P72euF0RfeE=
 			</data>
 		</dict>
 		<key>ProfilePage.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XWSE74A2ohesdJd76Lt4iHakLNVBq3dOJe3I8saEXO4=
+			swHify0UcmdO76phTkGU+FzB/lQDarhCcm+74D7O24Q=
 			</data>
 		</dict>
 		<key>ProfilePage.storyboardc/Ms0-fl-dsZ-view-qm5-aC-4Uu.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D8VAVtvf0AsNnbUMdxdecUXq/+FpWzX0I6vmAvGOOAw=
+			j89FFQ+3wxi2F0EanR1i7DJ6lF/JS+ENkRfe97lQUX0=
 			</data>
 		</dict>
 		<key>ProfilePage.storyboardc/ProfilePage.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BB6GG/lVjD9vo7t6Yo0qh9y1DXRURQrJgIILzBm7UQk=
+			IS0aDFgYDfKE2NV+n/xAgVypeK4pbFRDg95Eq/X9g4I=
 			</data>
 		</dict>
 		<key>ProfilePage.storyboardc/U48-sf-ldA-view-mw7-9W-87i.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2C6piqLfyP4A+OkFwV7jwiVi6JFp/sL5FWmwUbcz6nk=
+			fA+/xBCZyjFff0TkEGAnjsPHKODUy3rKT3PwgwcxuDQ=
+			</data>
+		</dict>
+		<key>ProfilePage.storyboardc/Yvb-80-u2x-view-xTu-H4-nVy.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			f3Afyp1x9JZlx2k0GtsiIAyCobdFXFCd0wwCcz5JAdM=
 			</data>
 		</dict>
 		<key>SearchIcon.png</key>
