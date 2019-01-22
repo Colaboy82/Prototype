@@ -70,8 +70,10 @@ class PWResetVC: UIViewController, UITextFieldDelegate {
         timer.invalidate()
         if Auth.auth().currentUser != nil{//         If already logged in
             do{
-                
-            
+                let sb = UIStoryboard(name: "ProfilePage", bundle:nil)
+                let nextVC = sb.instantiateViewController(withIdentifier: "ProfilePage")
+                nextVC.modalTransitionStyle = .crossDissolve
+                self.present(nextVC, animated:true, completion:nil)
                 
             }catch let error as NSError {
                 print(error.localizedDescription)

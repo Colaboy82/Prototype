@@ -245,6 +245,7 @@ SWIFT_CLASS("_TtC7Consent14ClickedEntryVC")
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified genderLbl;
 - (void)viewDidLoad;
 - (IBAction)openContract:(UIButtonX * _Nonnull)sender;
+- (IBAction)back:(UIButtonX * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -296,6 +297,18 @@ SWIFT_CLASS("_TtC7Consent16ConsentEntryCell")
 @property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified mainView;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Consent10ContractVC")
+@interface ContractVC : UIViewController
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified agreedActionsLbl;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified sig1Pic;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified sig2Pic;
+- (void)viewDidLoad;
+- (IBAction)back:(UIButtonX * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -485,9 +498,22 @@ SWIFT_CLASS("_TtC7Consent7Pg5View")
 
 SWIFT_CLASS("_TtC7Consent13ProfilePageVC")
 @interface ProfilePageVC : UIViewController
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified mainMenuB;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified resetB;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified editB;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified signOutB;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified nameLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified emailLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified genderLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified uidLbl;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified profilePic;
 - (void)viewDidLoad;
-- (IBAction)back:(UIButtonX * _Nonnull)sender;
+- (void)viewDidLayoutSubviews;
+- (IBAction)mainBClicked:(UIButtonX * _Nonnull)sender;
+- (IBAction)resetBClicked:(UIButtonX * _Nonnull)sender;
+- (IBAction)editBClicked:(UIButtonX * _Nonnull)sender;
 - (IBAction)signOut;
+- (IBAction)back:(UIButtonX * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

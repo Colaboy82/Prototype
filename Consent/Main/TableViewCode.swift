@@ -47,7 +47,6 @@ extension MainVC: UITableViewDataSource {
         
         return cell
     }
-    
 }
 
 extension MainVC: UITableViewDelegate {
@@ -57,8 +56,27 @@ extension MainVC: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+        let selectedCell = tableView.cellForRow(at: indexPath) as! ConsentEntryCell
+        let entry: ConsentEntryModel
+        //getting the thought of selected position
+        entry = entriesList[(indexPath.row)]
         
+        //main Page
+        ClickedEntryVC.profilePicUrl = entry.profilePicUrl
+        ClickedEntryVC.date = entry.date
+        ClickedEntryVC.name = entry.firstName + " " + entry.midName + " " + entry.lastName
+        ClickedEntryVC.gender = entry.gender
+        ClickedEntryVC.email = entry.email
+        
+        //Contract
+        ContractVC.sig1Url = entry.firstSignature
+        ContractVC.sig2Url = entry.secondSignature
+        ContractVC.agreedActions = entry.agreedActions
+        
+        let sb = UIStoryboard(name: "Main", bundle:nil)
+        let nextVC = sb.instantiateViewController(withIdentifier: "ClickedEntry")
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated:true, completion:nil)
     }
     
 }

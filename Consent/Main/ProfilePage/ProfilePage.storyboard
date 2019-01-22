@@ -10,6 +10,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--ProfilePage-->
         <scene sceneID="wLP-HE-MWW">
@@ -19,17 +24,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBn-11-dMA" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="64" y="327" width="76" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Button"/>
-                                <state key="normal" title="Sign Out">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="signOut" destination="U48-sf-ldA" eventType="touchUpInside" id="2Us-tn-OrQ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGK-YF-KvN">
                                 <rect key="frame" x="0.0" y="556" width="126" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -38,10 +32,157 @@
                                     <action selector="back:" destination="U48-sf-ldA" eventType="touchUpInside" id="UYQ-yV-0P7"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="AKD-xi-BUm" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="83" y="70" width="209" height="209"/>
+                                <color key="tintColor" name="DisabledBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AKD-xi-BUm" secondAttribute="height" multiplier="1:1" id="EtF-mT-GPN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current User Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEC-MX-d3W" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="46" y="299" width="283" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KEC-MX-d3W" secondAttribute="height" multiplier="283:37" id="hpD-WL-Jmx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPV-fB-hPM" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="46" y="356" width="283" height="37"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender (Edit)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHz-N1-7Y2" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="46" y="413" width="283" height="37"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaI-rW-jcc" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="46" y="470" width="283" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HaI-rW-jcc" secondAttribute="height" multiplier="283:37" id="1JH-1N-MZL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duc-qr-H5N" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="200" y="603" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="4B9-wl-I2o"/>
+                                </constraints>
+                                <state key="normal" title="Edit" backgroundImage="ProfileIcon"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="editBClicked:" destination="U48-sf-ldA" eventType="touchUpInside" id="8QJ-xg-WC5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU9-dQ-CUQ" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="212" y="527" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="3ZR-IU-EkU"/>
+                                </constraints>
+                                <state key="normal" title="Reset" backgroundImage="InfoIcon"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resetBClicked:" destination="U48-sf-ldA" eventType="touchUpInside" id="bn4-Ap-iFe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9H8-9f-9tT" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="297" y="487" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="zVr-ef-pes"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="SignOutPic"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signOut" destination="U48-sf-ldA" eventType="touchUpInside" id="Xq4-Jb-ubh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbW-eL-dYi" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="278" y="570" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="F4D-gU-ImL"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="MainMenuB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="popInDelay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="mainBClicked:" destination="U48-sf-ldA" eventType="touchUpInside" id="3HD-Gu-Sc9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="nHz-N1-7Y2" firstAttribute="width" secondItem="nHz-N1-7Y2" secondAttribute="height" multiplier="283:37" id="12E-pv-A6y"/>
+                            <constraint firstItem="U9c-UO-7wB" firstAttribute="trailing" secondItem="HaI-rW-jcc" secondAttribute="trailing" constant="46" id="2Em-EL-bzA"/>
+                            <constraint firstItem="KEC-MX-d3W" firstAttribute="top" secondItem="AKD-xi-BUm" secondAttribute="bottom" constant="20" id="5Xr-PV-Cg1"/>
+                            <constraint firstItem="JbW-eL-dYi" firstAttribute="leading" secondItem="duc-qr-H5N" secondAttribute="trailing" constant="24" id="8l4-vm-79H"/>
+                            <constraint firstItem="VPV-fB-hPM" firstAttribute="top" secondItem="KEC-MX-d3W" secondAttribute="bottom" constant="20" id="9U5-Uh-xIZ"/>
+                            <constraint firstItem="HaI-rW-jcc" firstAttribute="top" secondItem="nHz-N1-7Y2" secondAttribute="bottom" constant="20" id="Att-0W-icH"/>
+                            <constraint firstItem="9H8-9f-9tT" firstAttribute="width" secondItem="9H8-9f-9tT" secondAttribute="height" multiplier="1:1" id="HDX-vO-AK1"/>
+                            <constraint firstItem="VPV-fB-hPM" firstAttribute="width" secondItem="VPV-fB-hPM" secondAttribute="height" multiplier="283:37" id="JH0-ZQ-Nxd"/>
+                            <constraint firstItem="U9c-UO-7wB" firstAttribute="trailing" secondItem="KEC-MX-d3W" secondAttribute="trailing" constant="46" id="Jrk-bp-MQs"/>
+                            <constraint firstItem="HaI-rW-jcc" firstAttribute="leading" secondItem="U9c-UO-7wB" secondAttribute="leading" constant="46" id="Nvg-9F-nKV"/>
+                            <constraint firstItem="JbW-eL-dYi" firstAttribute="width" secondItem="JbW-eL-dYi" secondAttribute="height" multiplier="1:1" id="Q6c-Tt-fY3"/>
+                            <constraint firstItem="VPV-fB-hPM" firstAttribute="leading" secondItem="U9c-UO-7wB" secondAttribute="leading" constant="46" id="RNG-hr-kV1"/>
+                            <constraint firstItem="duc-qr-H5N" firstAttribute="top" secondItem="RU9-dQ-CUQ" secondAttribute="bottom" constant="22" id="Rm7-RJ-fA4"/>
+                            <constraint firstItem="AKD-xi-BUm" firstAttribute="leading" secondItem="U9c-UO-7wB" secondAttribute="leading" constant="83" id="T4t-Fa-eFW"/>
+                            <constraint firstItem="U9c-UO-7wB" firstAttribute="trailing" secondItem="AKD-xi-BUm" secondAttribute="trailing" constant="83" id="TQy-EN-esM"/>
+                            <constraint firstItem="AKD-xi-BUm" firstAttribute="top" secondItem="U9c-UO-7wB" secondAttribute="top" constant="50" id="V9q-ra-JAe"/>
+                            <constraint firstItem="RU9-dQ-CUQ" firstAttribute="width" secondItem="RU9-dQ-CUQ" secondAttribute="height" multiplier="1:1" id="W3G-IL-eBb"/>
+                            <constraint firstItem="KEC-MX-d3W" firstAttribute="leading" secondItem="U9c-UO-7wB" secondAttribute="leading" constant="46" id="bfn-f9-cJR"/>
+                            <constraint firstItem="U9c-UO-7wB" firstAttribute="trailing" secondItem="VPV-fB-hPM" secondAttribute="trailing" constant="46" id="dwM-hX-bYI"/>
+                            <constraint firstItem="9H8-9f-9tT" firstAttribute="leading" secondItem="RU9-dQ-CUQ" secondAttribute="trailing" constant="31" id="gyY-oX-z1G"/>
+                            <constraint firstItem="JbW-eL-dYi" firstAttribute="top" secondItem="9H8-9f-9tT" secondAttribute="bottom" constant="29" id="h4Q-Nt-Ad8"/>
+                            <constraint firstItem="U9c-UO-7wB" firstAttribute="bottom" secondItem="JbW-eL-dYi" secondAttribute="bottom" constant="7" id="iTt-31-McK"/>
+                            <constraint firstItem="U9c-UO-7wB" firstAttribute="bottom" secondItem="duc-qr-H5N" secondAttribute="bottom" constant="10" id="jTl-bS-skM"/>
+                            <constraint firstItem="U9c-UO-7wB" firstAttribute="trailing" secondItem="JbW-eL-dYi" secondAttribute="trailing" constant="7" id="oal-JP-A1G"/>
+                            <constraint firstItem="nHz-N1-7Y2" firstAttribute="top" secondItem="VPV-fB-hPM" secondAttribute="bottom" constant="20" id="rBH-7f-9bf"/>
+                            <constraint firstItem="duc-qr-H5N" firstAttribute="width" secondItem="duc-qr-H5N" secondAttribute="height" multiplier="1:1" id="u0k-iW-4vW"/>
+                            <constraint firstItem="U9c-UO-7wB" firstAttribute="trailing" secondItem="nHz-N1-7Y2" secondAttribute="trailing" constant="46" id="u3l-jM-0MK"/>
+                            <constraint firstItem="JbW-eL-dYi" firstAttribute="leading" secondItem="RU9-dQ-CUQ" secondAttribute="trailing" constant="12" id="uml-QJ-Q9E"/>
+                            <constraint firstItem="nHz-N1-7Y2" firstAttribute="leading" secondItem="U9c-UO-7wB" secondAttribute="leading" constant="46" id="w48-3a-RAe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="U9c-UO-7wB"/>
                     </view>
+                    <connections>
+                        <outlet property="editB" destination="duc-qr-H5N" id="UUn-Nd-C9f"/>
+                        <outlet property="emailLbl" destination="VPV-fB-hPM" id="tAd-WK-ZJJ"/>
+                        <outlet property="genderLbl" destination="nHz-N1-7Y2" id="Ehp-lA-x7V"/>
+                        <outlet property="mainMenuB" destination="JbW-eL-dYi" id="9ge-Ly-v60"/>
+                        <outlet property="nameLbl" destination="KEC-MX-d3W" id="tWW-oM-wTh"/>
+                        <outlet property="profilePic" destination="AKD-xi-BUm" id="bxi-2x-HNu"/>
+                        <outlet property="resetB" destination="RU9-dQ-CUQ" id="cEO-ZD-9WF"/>
+                        <outlet property="signOutB" destination="9H8-9f-9tT" id="0kt-uO-U2k"/>
+                        <outlet property="uidLbl" destination="HaI-rW-jcc" id="ETe-U7-wgf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1UO-Av-lfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,12 +190,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="InfoIcon" width="39" height="39"/>
+        <image name="MainMenuB" width="68" height="66"/>
+        <image name="ProfileIcon" width="41" height="41"/>
+        <image name="SignOutPic" width="32" height="32"/>
         <image name="return.png" width="512" height="512"/>
         <namedColor name="Background">
             <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Button">
-            <color red="0.20784313725490197" green="0.36470588235294116" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="DisabledBtn">
+            <color red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

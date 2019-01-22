@@ -166,6 +166,11 @@
                                     <constraint firstAttribute="width" secondItem="BCh-bs-u25" secondAttribute="height" multiplier="1:1" id="j1j-qr-iZP"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="ProfileIcon"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="profileBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Btq-QC-0Md"/>
                                 </connections>
@@ -177,6 +182,11 @@
                                     <constraint firstAttribute="width" secondItem="TAd-Wm-Bdd" secondAttribute="height" multiplier="1:1" id="VGo-2x-BFa"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="InfoIcon"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="infoBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zme-0A-fJp"/>
                                 </connections>
@@ -188,6 +198,11 @@
                                     <constraint firstAttribute="width" constant="54" id="CLh-xb-T7Y"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="AddEntryIcon"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="addEntryBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZP-m8-xNG"/>
                                 </connections>
@@ -203,6 +218,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="animationType">
                                         <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="mainBClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m2V-sG-hJE"/>
@@ -265,26 +281,11 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqZ-sj-GaU" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="135" y="299" width="104" height="21"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIk-0m-W87" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="158" y="340" width="58" height="21"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender Identity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmp-SB-FFt" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="119" y="381" width="136" height="21"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsW-l1-fHC" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="162" y="422" width="50" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqZ-sj-GaU" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="46" y="299" width="283" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BqZ-sj-GaU" secondAttribute="height" multiplier="283:37" id="IU1-Wr-KPu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -305,40 +306,69 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="openContract:" destination="s8A-ef-nxe" eventType="touchUpInside" id="FE6-b0-FeW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ok-Pc-g7T">
                                 <rect key="frame" x="8" y="622" width="35" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back" image="return.png"/>
+                                <connections>
+                                    <action selector="back:" destination="s8A-ef-nxe" eventType="touchUpInside" id="znm-J2-Dtb"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbn-kM-49v" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="46" y="413" width="283" height="37"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7k-La-A7L" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="46" y="470" width="283" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M7k-La-A7L" secondAttribute="height" multiplier="283:37" id="Nte-Ba-SAG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDo-FY-jJo" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="46" y="356" width="283" height="37"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
-                            <constraint firstItem="BqZ-sj-GaU" firstAttribute="top" secondItem="auW-LI-5xb" secondAttribute="bottom" constant="20" id="28x-D4-qIV"/>
-                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="rsW-l1-fHC" secondAttribute="trailing" constant="163" id="2EQ-LH-B3w"/>
-                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="BqZ-sj-GaU" secondAttribute="trailing" constant="136" id="39e-IT-j1Y"/>
+                            <constraint firstItem="SDo-FY-jJo" firstAttribute="top" secondItem="BqZ-sj-GaU" secondAttribute="bottom" constant="20" id="3TA-Wl-62c"/>
+                            <constraint firstItem="M7k-La-A7L" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="46" id="BPe-g8-e5W"/>
                             <constraint firstItem="auW-LI-5xb" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="83" id="Esv-wh-HcX"/>
-                            <constraint firstItem="nIk-0m-W87" firstAttribute="top" secondItem="BqZ-sj-GaU" secondAttribute="bottom" constant="20" id="G9E-Hx-3mP"/>
-                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="cmp-SB-FFt" secondAttribute="trailing" constant="120" id="Kwg-G2-OQK"/>
-                            <constraint firstItem="cmp-SB-FFt" firstAttribute="top" secondItem="nIk-0m-W87" secondAttribute="bottom" constant="20" id="Lgs-NV-B31"/>
+                            <constraint firstItem="Hbn-kM-49v" firstAttribute="width" secondItem="Hbn-kM-49v" secondAttribute="height" multiplier="283:37" id="LQj-6u-0cQ"/>
+                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="SDo-FY-jJo" secondAttribute="trailing" constant="46" id="LjE-cb-ecV"/>
                             <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="auW-LI-5xb" secondAttribute="trailing" constant="83" id="POo-8j-7NV"/>
                             <constraint firstItem="B1I-p6-exp" firstAttribute="bottom" secondItem="ygh-MZ-lzv" secondAttribute="bottom" constant="64" id="SXR-7a-b7o"/>
-                            <constraint firstItem="nIk-0m-W87" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="158" id="Snz-hV-nqE"/>
-                            <constraint firstItem="rsW-l1-fHC" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="162" id="XVk-CG-yEm"/>
-                            <constraint firstItem="rsW-l1-fHC" firstAttribute="top" secondItem="cmp-SB-FFt" secondAttribute="bottom" constant="20" id="aOV-5p-jiJ"/>
+                            <constraint firstItem="BqZ-sj-GaU" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="46" id="SdI-vz-bmh"/>
+                            <constraint firstItem="SDo-FY-jJo" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="46" id="VoG-im-bCQ"/>
+                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="Hbn-kM-49v" secondAttribute="trailing" constant="46" id="bJU-ip-8jZ"/>
+                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="BqZ-sj-GaU" secondAttribute="trailing" constant="46" id="dZX-Br-wOk"/>
+                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="M7k-La-A7L" secondAttribute="trailing" constant="46" id="dxP-0d-jdP"/>
+                            <constraint firstItem="M7k-La-A7L" firstAttribute="top" secondItem="Hbn-kM-49v" secondAttribute="bottom" constant="20" id="eS2-Hh-8Vv"/>
+                            <constraint firstItem="BqZ-sj-GaU" firstAttribute="top" secondItem="auW-LI-5xb" secondAttribute="bottom" constant="20" id="frs-ft-Zyx"/>
                             <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="ygh-MZ-lzv" secondAttribute="trailing" constant="104" id="g7L-iJ-vMK"/>
-                            <constraint firstItem="cmp-SB-FFt" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="119" id="suN-Qa-qxP"/>
-                            <constraint firstItem="BqZ-sj-GaU" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="135" id="tGX-Gx-YqE"/>
-                            <constraint firstItem="B1I-p6-exp" firstAttribute="trailing" secondItem="nIk-0m-W87" secondAttribute="trailing" constant="159" id="vzu-iO-OcN"/>
+                            <constraint firstItem="Hbn-kM-49v" firstAttribute="top" secondItem="SDo-FY-jJo" secondAttribute="bottom" constant="20" id="m9m-LJ-f17"/>
+                            <constraint firstItem="SDo-FY-jJo" firstAttribute="width" secondItem="SDo-FY-jJo" secondAttribute="height" multiplier="283:37" id="oa7-5K-Aqk"/>
+                            <constraint firstItem="Hbn-kM-49v" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="46" id="tyV-96-zgD"/>
                             <constraint firstItem="auW-LI-5xb" firstAttribute="top" secondItem="B1I-p6-exp" secondAttribute="top" constant="50" id="w3x-jD-sns"/>
                             <constraint firstItem="ygh-MZ-lzv" firstAttribute="leading" secondItem="B1I-p6-exp" secondAttribute="leading" constant="104" id="x8U-BF-H98"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B1I-p6-exp"/>
                     </view>
                     <connections>
-                        <outlet property="dateLbl" destination="rsW-l1-fHC" id="HaF-Nv-8Rx"/>
-                        <outlet property="emailLbl" destination="nIk-0m-W87" id="7j3-Do-aPV"/>
-                        <outlet property="genderLbl" destination="cmp-SB-FFt" id="KSb-hw-bUd"/>
+                        <outlet property="dateLbl" destination="M7k-La-A7L" id="BY8-Qv-e3J"/>
+                        <outlet property="emailLbl" destination="SDo-FY-jJo" id="lug-SQ-tLg"/>
+                        <outlet property="genderLbl" destination="Hbn-kM-49v" id="zub-Gq-Et2"/>
                         <outlet property="nameLbl" destination="BqZ-sj-GaU" id="P5u-C7-hIS"/>
                         <outlet property="profilePic" destination="auW-LI-5xb" id="XX6-K0-epU"/>
                     </connections>
@@ -350,10 +380,20 @@
         <!--ContractScreen-->
         <scene sceneID="K2s-hH-2XF">
             <objects>
-                <viewController restorationIdentifier="ContractScreen" storyboardIdentifier="ContractScreen" title="ContractScreen" id="mgJ-RZ-KSV" customClass="ClickedEntryVC" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ContractScreen" storyboardIdentifier="ContractScreen" title="ContractScreen" id="mgJ-RZ-KSV" customClass="ContractVC" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CAd-Go-KBh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5P-WS-whO">
+                                <rect key="frame" x="8" y="618" width="35" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back" image="return.png"/>
+                                <connections>
+                                    <action selector="back:" destination="mgJ-RZ-KSV" eventType="touchUpInside" id="uhm-mf-AVA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" name="Background"/>
                         <viewLayoutGuide key="safeArea" id="mpI-1o-hSh"/>
                     </view>

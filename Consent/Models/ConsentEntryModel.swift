@@ -13,12 +13,12 @@ import FirebaseAuth
 class ConsentEntryModel{
     let email: String
     
-    let firstName: String
-    let midName: String
-    let lastName: String
+    var firstName: String
+    var midName: String
+    var lastName: String
     let phoneNum: String
     
-    let gender: String
+    var gender: String
     
     let profilePicUrl: String
     let date: String

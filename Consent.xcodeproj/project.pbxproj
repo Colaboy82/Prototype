@@ -61,6 +61,8 @@
 		3DCA03EE21B0885C0063B38E /* phone-call.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03ED21B0885C0063B38E /* phone-call.png */; };
 		3DCA03F021B0886B0063B38E /* id-card.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03EF21B0886B0063B38E /* id-card.png */; };
 		3DCA03F221B08CE70063B38E /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03F121B08CE70063B38E /* flag.png */; };
+		3DE215AD21F5450D00C6CBE2 /* ContractVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE215AC21F5450D00C6CBE2 /* ContractVC.swift */; };
+		3DE215AF21F6C5B400C6CBE2 /* SignOutPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE215AE21F6C5B400C6CBE2 /* SignOutPic.png */; };
 		3DEFB27B21EAF9C100493CED /* ConsentEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFB27A21EAF9C100493CED /* ConsentEntryCell.swift */; };
 		3DF7657A216BD76100E78EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF76579216BD76100E78EE0 /* AppDelegate.swift */; };
 		3DF7657C216BD76100E78EE0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7657B216BD76100E78EE0 /* MainVC.swift */; };
@@ -182,6 +184,8 @@
 		3DCA03ED21B0885C0063B38E /* phone-call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-call.png"; sourceTree = "<group>"; };
 		3DCA03EF21B0886B0063B38E /* id-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "id-card.png"; sourceTree = "<group>"; };
 		3DCA03F121B08CE70063B38E /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		3DE215AC21F5450D00C6CBE2 /* ContractVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractVC.swift; sourceTree = "<group>"; };
+		3DE215AE21F6C5B400C6CBE2 /* SignOutPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignOutPic.png; sourceTree = "<group>"; };
 		3DEFB27A21EAF9C100493CED /* ConsentEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentEntryCell.swift; sourceTree = "<group>"; };
 		3DF76576216BD76100E78EE0 /* Consent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Consent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF76579216BD76100E78EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -356,6 +360,7 @@
 				3DCA03E521B088350063B38E /* reload.png */,
 				3DCA03E721B0883C0063B38E /* return.png */,
 				3DCA03E921B0884E0063B38E /* key.png */,
+				3DE215AE21F6C5B400C6CBE2 /* SignOutPic.png */,
 			);
 			path = Icons;
 			sourceTree = "<group>";
@@ -440,6 +445,7 @@
 				3D7C1E4621F3B42E000C53B8 /* SearchBar.swift */,
 				EC58511D21DC5FFD00D53BF5 /* TableViewCode.swift */,
 				3D7C1E4421F0F26F000C53B8 /* ClickedEntryVC.swift */,
+				3DE215AC21F5450D00C6CBE2 /* ContractVC.swift */,
 				3DF7657D216BD76100E78EE0 /* Main.storyboard */,
 				EC58511021DC5E8E00D53BF5 /* AddEntryPage */,
 				EC58510F21DC5E7F00D53BF5 /* InfoPage */,
@@ -667,6 +673,7 @@
 				EC27E46221D53000005B5A78 /* CheckedBox.png in Resources */,
 				3DAF745421C1CA1E00235E9C /* Montserrat-Medium.ttf in Resources */,
 				3DAF745621C1CA1E00235E9C /* Montserrat-Light.ttf in Resources */,
+				3DE215AF21F6C5B400C6CBE2 /* SignOutPic.png in Resources */,
 				3DF76584216BD76200E78EE0 /* LaunchScreen.storyboard in Resources */,
 				3DAF745D21C1CA1E00235E9C /* Montserrat-SemiBold.ttf in Resources */,
 				3DF76581216BD76200E78EE0 /* Assets.xcassets in Resources */,
@@ -861,6 +868,7 @@
 				3D7C1E2C21F058A3000C53B8 /* UITableViewX.swift in Sources */,
 				3D7C1E3021F058A3000C53B8 /* UIProgressViewX.swift in Sources */,
 				EC58512521DD1BD600D53BF5 /* ConsentEntryModel.swift in Sources */,
+				3DE215AD21F5450D00C6CBE2 /* ContractVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

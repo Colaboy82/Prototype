@@ -213,6 +213,8 @@ class MainVC: UIViewController, UITextFieldDelegate {
 extension MainVC {
     
     func loadData(){
+        var userID = ""
+            
         entryRef.observe(.value, with: { (snapshot) in
             //if the reference have some values
             if snapshot.childrenCount > 0 {
@@ -229,21 +231,26 @@ extension MainVC {
                         
                         let agreedActions = entry["AgreedActions"] as! String
                         let confirmed = entry["Confirmed"] as! Bool
-                        let userID = entry["UserID"] as! String
+                        userID = entry["UserID"] as! String
                         var date = entry["Date"] as! String
                         let fSign = entry["FirstSignature"] as! String
                         let sSign = entry["secondSignature"] as! String
                         let profileUrl = entry["ProfilePic"] as! String
                         let vidUrl = entry["VidUrl"] as! String
                         let email = entry["email"] as! String
+                        let phoneNum = entry["phoneNum"] as! String
                         let firstName = entry["firstName"] as! String
                         let midName = entry["middleName"] as! String
                         let lastName = entry["lastName"] as! String
-                        let phoneNum = entry["phoneNum"] as! String
                         let gender = entry["gender"] as! String
-                        
+    
                         //creating artist object with model and fetched values
                         let eachEntry = ConsentEntryModel.init(user: Auth.auth().currentUser!, date: date, otherUserID: userID, vidUrl: vidUrl, email: email, firstName: firstName, midName: midName, lastName: lastName, phoneNum: phoneNum, gender: gender, profilePicUrl: profileUrl, agreedActions: agreedActions, firstSignature: fSign, secondSignature: sSign)
+                        
+                        if (confirmed == true){
+                            //adding it to list
+                            self.entriesList.insert(eachEntry, at: 0)
+                        }
                         
                         //populate search arrrays
                         let name = firstName + " " + lastName
@@ -253,13 +260,25 @@ extension MainVC {
                             date.removeSubrange(commaRange.lowerBound..<date.endIndex)
                         }
                         self.dateList.append(date)
-                        
-                        if (confirmed == true){
-                            //adding it to list
-                            self.entriesList.insert(eachEntry, at: 0)
-                        }
                     }
                 }
+                
+                let accRef = Database.database().reference().child("users").child(userID)
+                accRef.observe(.value, with: { (snapshot) in
+                    for n in self.entriesList{
+                        n.firstName = snapshot.childSnapshot(forPath: "firstName").value as! String
+                        n.midName = snapshot.childSnapshot(forPath: "middleName").value as! String
+                        n.lastName = snapshot.childSnapshot(forPath: "lastName").value as! String
+                        n.gender = snapshot.childSnapshot(forPath: "gender").value as! String
+                    }
+                    for f in self.filteredEntriesList{
+                        f.firstName = snapshot.childSnapshot(forPath: "firstName").value as! String
+                        f.midName = snapshot.childSnapshot(forPath: "middleName").value as! String
+                        f.lastName = snapshot.childSnapshot(forPath: "lastName").value as! String
+                        f.gender = snapshot.childSnapshot(forPath: "gender").value as! String
+                    }
+                    self.tableViewU.reloadData()
+                })
                 self.filteredEntriesList = self.entriesList
                 //reloading the tableview
                 self.tableViewU.reloadData()
