@@ -191,7 +191,7 @@
         <!--EditPage-->
         <scene sceneID="78n-tu-bZQ">
             <objects>
-                <viewController storyboardIdentifier="EditPage" title="EditPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ms0-fl-dsZ" customClass="EditVC" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditPage" title="EditPage" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ms0-fl-dsZ" customClass="EditVC" customModule="Consent" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qm5-aC-4Uu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,6 +201,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="return.png"/>
                                 <connections>
+                                    <action selector="back:" destination="Ms0-fl-dsZ" eventType="touchUpInside" id="4RH-y2-8VL"/>
                                     <action selector="back:" destination="U48-sf-ldA" eventType="touchUpInside" id="XIQ-jN-H5z"/>
                                 </connections>
                             </button>
@@ -243,6 +244,9 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" name="Button"/>
                                 </state>
+                                <connections>
+                                    <action selector="editPic:" destination="Ms0-fl-dsZ" eventType="touchUpInside" id="P65-QC-9ff"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jUl-Cx-dtr" customClass="UITextFieldX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="46" y="413" width="283" height="37"/>
@@ -259,6 +263,44 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpZ-V8-7C6" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="228" y="528" width="135" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Open Camera"/>
+                                <connections>
+                                    <action selector="openCam:" destination="Ms0-fl-dsZ" eventType="touchUpInside" id="YO0-Xl-lzR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5g-ci-4fo" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="224" y="606" width="135" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Import Picture"/>
+                                <connections>
+                                    <action selector="openLib:" destination="Ms0-fl-dsZ" eventType="touchUpInside" id="nOt-mn-xO0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWI-2t-Bje" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="165" y="543" width="45" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save" backgroundImage="MainMenuB">
+                                    <color key="titleColor" red="0.29892912510000003" green="0.1712822467" blue="0.44325056670000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="popInDelay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="mainBClicked:" destination="U48-sf-ldA" eventType="touchUpInside" id="Wdi-dj-eLN"/>
+                                    <action selector="saveEdits:" destination="Ms0-fl-dsZ" eventType="touchUpInside" id="UYE-uP-XW1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
@@ -288,6 +330,7 @@
                         <outlet property="genderEdit" destination="jUl-Cx-dtr" id="1Yr-xf-HSQ"/>
                         <outlet property="nameLbl" destination="5xa-AC-SVR" id="ILF-li-NV3"/>
                         <outlet property="profilePic" destination="4kI-To-FQS" id="lEh-be-RH9"/>
+                        <outlet property="saveB" destination="pWI-2t-Bje" id="bLI-eb-6QB"/>
                         <outlet property="uidLbl" destination="4pW-fS-x1Q" id="gh3-pG-cDC"/>
                     </connections>
                 </viewController>

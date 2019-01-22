@@ -322,16 +322,31 @@ SWIFT_PROTOCOL("_TtP7Consent20UITextFieldXDelegate_")
 
 
 SWIFT_CLASS("_TtC7Consent6EditVC")
-@interface EditVC : UIViewController <UITextFieldXDelegate>
+@interface EditVC : UIViewController <UITextFieldXDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified nameLbl;
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified emailLbl;
 @property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified genderEdit;
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified uidLbl;
 @property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified profilePic;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified editPicB;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified saveB;
 - (void)viewDidLoad;
+- (IBAction)saveEdits:(UIButtonX * _Nonnull)sender;
+- (IBAction)editPic:(UIButtonX * _Nonnull)sender;
+- (IBAction)back:(UIButtonX * _Nonnull)sender;
+- (IBAction)openCam:(UIButtonX * _Nonnull)sender;
+- (IBAction)openLib:(UIButtonX * _Nonnull)sender;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class RSKImageCropViewController;
+@class UIImage;
+
+@interface EditVC (SWIFT_EXTENSION(Consent)) <RSKImageCropViewControllerDelegate>
+- (void)imageCropViewController:(RSKImageCropViewController * _Nonnull)controller didCropImage:(UIImage * _Nonnull)croppedImage usingCropRect:(CGRect)cropRect rotationAngle:(CGFloat)rotationAngle;
+- (void)imageCropViewControllerDidCancelCrop:(RSKImageCropViewController * _Nonnull)controller;
 @end
 
 
@@ -600,8 +615,6 @@ SWIFT_CLASS("_TtC7Consent8SignUpVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class RSKImageCropViewController;
-@class UIImage;
 
 @interface SignUpVC (SWIFT_EXTENSION(Consent)) <RSKImageCropViewControllerDelegate>
 - (void)imageCropViewController:(RSKImageCropViewController * _Nonnull)controller didCropImage:(UIImage * _Nonnull)croppedImage usingCropRect:(CGRect)cropRect rotationAngle:(CGFloat)rotationAngle;
