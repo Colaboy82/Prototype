@@ -44,15 +44,26 @@ extension SignUpVC: RSKImageCropViewControllerDelegate {
         self.dismiss(animated: true, completion: nil)
     }
 }
-extension EditVC: RSKImageCropViewControllerDelegate {
+extension CamPFPVC: RSKImageCropViewControllerDelegate {
     func imageCropViewController(_ controller: RSKImageCropViewController, didCropImage croppedImage: UIImage, usingCropRect cropRect: CGRect, rotationAngle: CGFloat) {
-        self.profilePic.image = croppedImage
-        self.savePhoto(img: croppedImage)
+        //EditVC.savedImg = croppedImage
+        EditVC.savePhoto(img: croppedImage)
+        
         self.dismiss(animated: true, completion: nil)
+        
+        let sb = UIStoryboard(name: "ProfilePage", bundle:nil)
+        let nextVC = sb.instantiateViewController(withIdentifier: "EditPage")
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated: true, completion: nil)
     }
     
     func imageCropViewControllerDidCancelCrop(_ controller: RSKImageCropViewController) {
         self.dismiss(animated: true, completion: nil)
+
+        let sb = UIStoryboard(name: "ProfilePage", bundle:nil)
+        let nextVC = sb.instantiateViewController(withIdentifier: "EditPage")
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated: true, completion: nil)
     }
 }
 extension UIViewController {

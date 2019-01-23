@@ -235,6 +235,31 @@ SWIFT_CLASS("_TtC7Consent11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIViewX;
+
+SWIFT_CLASS("_TtC7Consent8CamPFPVC")
+@interface CamPFPVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified popUpView;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified importBtn;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified camBtn;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified cancelBtn;
+- (void)viewDidLoad;
+- (IBAction)cancel:(UIButtonX * _Nonnull)sender;
+- (IBAction)openCam:(UIButtonX * _Nonnull)sender;
+- (IBAction)openLib:(UIButtonX * _Nonnull)sender;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class RSKImageCropViewController;
+@class UIImage;
+
+@interface CamPFPVC (SWIFT_EXTENSION(Consent)) <RSKImageCropViewControllerDelegate>
+- (void)imageCropViewController:(RSKImageCropViewController * _Nonnull)controller didCropImage:(UIImage * _Nonnull)croppedImage usingCropRect:(CGRect)cropRect rotationAngle:(CGFloat)rotationAngle;
+- (void)imageCropViewControllerDidCancelCrop:(RSKImageCropViewController * _Nonnull)controller;
+@end
+
 
 SWIFT_CLASS("_TtC7Consent14ClickedEntryVC")
 @interface ClickedEntryVC : UIViewController
@@ -266,7 +291,6 @@ SWIFT_PROTOCOL("_TtP7Consent19YPSignatureDelegate_")
 @end
 
 @class YPDrawSignatureView;
-@class UIViewX;
 
 SWIFT_CLASS("_TtC7Consent19ConfirmConsentPopUp")
 @interface ConfirmConsentPopUp : UIViewController <YPSignatureDelegate>
@@ -334,19 +358,8 @@ SWIFT_CLASS("_TtC7Consent6EditVC")
 - (IBAction)saveEdits:(UIButtonX * _Nonnull)sender;
 - (IBAction)editPic:(UIButtonX * _Nonnull)sender;
 - (IBAction)back:(UIButtonX * _Nonnull)sender;
-- (IBAction)openCam:(UIButtonX * _Nonnull)sender;
-- (IBAction)openLib:(UIButtonX * _Nonnull)sender;
-- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class RSKImageCropViewController;
-@class UIImage;
-
-@interface EditVC (SWIFT_EXTENSION(Consent)) <RSKImageCropViewControllerDelegate>
-- (void)imageCropViewController:(RSKImageCropViewController * _Nonnull)controller didCropImage:(UIImage * _Nonnull)croppedImage usingCropRect:(CGRect)cropRect rotationAngle:(CGFloat)rotationAngle;
-- (void)imageCropViewControllerDidCancelCrop:(RSKImageCropViewController * _Nonnull)controller;
 @end
 
 

@@ -96,8 +96,12 @@ class ProfilePageVC: UIViewController {
             // Create a UIImage, add it to the array
             self.profilePic.hideSkeleton()
             pic = UIImage(data: data!)
-            self.profilePic.image = pic
-            ProfilePageVC.profilePicImg = pic
+            if(ProfilePageVC.profilePicImg == nil){
+                self.profilePic.image = pic
+                ProfilePageVC.profilePicImg = pic
+            }else{
+                self.profilePic.image = ProfilePageVC.profilePicImg
+            }
         }
     }
     @IBAction func mainBClicked(_ sender: UIButtonX){

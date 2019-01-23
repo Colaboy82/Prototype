@@ -320,10 +320,11 @@
             </objects>
             <point key="canvasLocation" x="869.60000000000002" y="139.880059970015"/>
         </scene>
-        <!--Loading-->
+        <!--ChangePfP-->
         <scene sceneID="cFd-As-TfX">
             <objects>
-                <viewController storyboardIdentifier="ChangePfP" title="Loading" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yvb-80-u2x" customClass="EditVC" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i7l-fe-FGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ChangePfP" title="ChangePfP" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yvb-80-u2x" customClass="CamPFPVC" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xTu-H4-nVy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -331,6 +332,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2m-hk-4NW" customClass="UIViewX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="55" y="203.5" width="265" height="260"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5g-ci-4fo" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="65" y="143" width="135" height="33"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                        <state key="normal" title="Import Picture"/>
+                                        <connections>
+                                            <action selector="openLib:" destination="Yvb-80-u2x" eventType="touchUpInside" id="iJG-2k-slw"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDS-d2-o8c" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="8" y="210" width="249" height="40"/>
                                         <color key="backgroundColor" name="Button"/>
@@ -341,35 +350,34 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5g-ci-4fo" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="65" y="127" width="135" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
-                                        <state key="normal" title="Import Picture"/>
                                         <connections>
-                                            <action selector="openLib:" destination="Ms0-fl-dsZ" eventType="touchUpInside" id="nOt-mn-xO0"/>
+                                            <action selector="cancel:" destination="Yvb-80-u2x" eventType="touchUpInside" id="ZR6-hb-uBU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpZ-V8-7C6" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="65" y="84" width="135" height="33"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                        <state key="normal" title="Open Camera"/>
+                                        <connections>
+                                            <action selector="openCam:" destination="Yvb-80-u2x" eventType="touchUpInside" id="MkP-aW-n1M"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="Secondary Background"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="qDS-d2-o8c" secondAttribute="trailing" constant="8" id="5WU-0M-bEv"/>
+                                    <constraint firstAttribute="trailing" secondItem="vpZ-V8-7C6" secondAttribute="trailing" constant="65" id="704-mF-HLO"/>
+                                    <constraint firstAttribute="trailing" secondItem="w5g-ci-4fo" secondAttribute="trailing" constant="65" id="89D-ol-GPY"/>
+                                    <constraint firstItem="w5g-ci-4fo" firstAttribute="top" secondItem="vpZ-V8-7C6" secondAttribute="bottom" constant="26" id="Gq2-vH-7CB"/>
+                                    <constraint firstItem="qDS-d2-o8c" firstAttribute="top" secondItem="w5g-ci-4fo" secondAttribute="bottom" constant="34" id="Mr5-FN-hNm"/>
                                     <constraint firstAttribute="bottom" secondItem="qDS-d2-o8c" secondAttribute="bottom" constant="10" id="YZ1-bo-WR2"/>
                                     <constraint firstItem="qDS-d2-o8c" firstAttribute="leading" secondItem="k2m-hk-4NW" secondAttribute="leading" constant="8" id="aS1-mY-lfQ"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="265" id="fkg-G8-1nE"/>
+                                    <constraint firstItem="w5g-ci-4fo" firstAttribute="leading" secondItem="k2m-hk-4NW" secondAttribute="leading" constant="65" id="lfM-nA-une"/>
+                                    <constraint firstItem="vpZ-V8-7C6" firstAttribute="leading" secondItem="k2m-hk-4NW" secondAttribute="leading" constant="65" id="mHU-YX-aZG"/>
                                     <constraint firstAttribute="height" constant="260" id="neh-mD-3Ry"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpZ-V8-7C6" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="122" y="237" width="135" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
-                                <state key="normal" title="Open Camera"/>
-                                <connections>
-                                    <action selector="openCam:" destination="Ms0-fl-dsZ" eventType="touchUpInside" id="YO0-Xl-lzR"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" name="Tint"/>
@@ -379,8 +387,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="31U-2f-KKK"/>
                     </view>
+                    <connections>
+                        <outlet property="camBtn" destination="vpZ-V8-7C6" id="QQJ-Io-xoR"/>
+                        <outlet property="cancelBtn" destination="qDS-d2-o8c" id="nN7-yy-X5S"/>
+                        <outlet property="importBtn" destination="w5g-ci-4fo" id="Vr3-Oh-siV"/>
+                        <outlet property="popUpView" destination="k2m-hk-4NW" id="cqJ-oa-hLk"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i7l-fe-FGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1585" y="140"/>
         </scene>
