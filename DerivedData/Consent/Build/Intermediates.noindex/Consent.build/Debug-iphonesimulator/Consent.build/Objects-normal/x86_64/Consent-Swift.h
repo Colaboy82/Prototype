@@ -375,11 +375,15 @@ SWIFT_CLASS("_TtC7Consent10ErrorPopUp")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UISwitch;
 
 SWIFT_CLASS("_TtC7Consent10InfoPageVC")
 @interface InfoPageVC : UIViewController
+@property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified modeToggle;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified logoPic;
 - (void)viewDidLoad;
 - (IBAction)back:(UIButtonX * _Nonnull)sender;
+- (IBAction)stateChangedWithSwitchState:(UISwitch * _Nonnull)switchState;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

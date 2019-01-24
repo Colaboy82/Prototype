@@ -6,29 +6,6 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>318C7463-67AC-4453-8AE5-C9216654ECFD</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>318C7463-67AC-4453-8AE5-C9216654ECFD.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>signature</key>
-			<string>Consent-bdxfmfwweqneyyctxhssvxuocxyy</string>
-			<key>timeStartedRecording</key>
-			<real>569911252.23156798</real>
-			<key>timeStoppedRecording</key>
-			<real>569911257.41554499</real>
-			<key>title</key>
-			<string>Build target Consent</string>
-			<key>uniqueIdentifier</key>
-			<string>318C7463-67AC-4453-8AE5-C9216654ECFD</string>
-		</dict>
 		<key>367DD267-4DF7-41D6-9E92-5BD890AE919F</key>
 		<dict>
 			<key>className</key>
@@ -189,6 +166,29 @@
 			<string>Build target RSKImageCropper</string>
 			<key>uniqueIdentifier</key>
 			<string>8D024064-3473-477A-B963-AA2CAF5A1A21</string>
+		</dict>
+		<key>9E9023BB-F085-4324-890C-8A4A72D22DBB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>9E9023BB-F085-4324-890C-8A4A72D22DBB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>signature</key>
+			<string>Consent-bdxfmfwweqneyyctxhssvxuocxyy</string>
+			<key>timeStartedRecording</key>
+			<real>570044027.37682796</real>
+			<key>timeStoppedRecording</key>
+			<real>570044028.08568299</real>
+			<key>title</key>
+			<string>Build target Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>9E9023BB-F085-4324-890C-8A4A72D22DBB</string>
 		</dict>
 		<key>BB830B51-7F1D-4873-A607-07B38AF9D393</key>
 		<dict>

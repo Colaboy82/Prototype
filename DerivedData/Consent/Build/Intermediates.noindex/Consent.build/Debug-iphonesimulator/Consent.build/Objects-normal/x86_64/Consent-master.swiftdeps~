@@ -1,10 +1,10 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "eaf83c2113f4aba78d7cce3a5d5ea767"
-build_time: [1548217955, 607713000]
+build_time: [1548350592, 451494000]
 inputs:
   "/Users/derrickmu/Desktop/Consent/Consent/Main/PwReset/PWResetVC.swift": [1548128766, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/ShaharExtensions.swift": [1548129491, 0]
-  "/Users/derrickmu/Desktop/Consent/Consent/Constants.swift": [1547926292, 0]
+  "/Users/derrickmu/Desktop/Consent/Consent/Constants.swift": [1548350375, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/YPDrawSignatureView.swift": [1547227019, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Main/MainVC.swift": [1548132566, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/DesignableX/UIGradientImage.swift": [1540690468, 0]
@@ -22,7 +22,7 @@ inputs:
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/DesignableX/UIButtonX.swift": [1547081055, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Main/ClickedEntryVC.swift": [1548029467, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/DesignableX/UIMask.swift": [1545277511, 0]
-  "/Users/derrickmu/Desktop/Consent/Consent/Main/InfoPage/InfoPageVC.swift": [1547227019, 0]
+  "/Users/derrickmu/Desktop/Consent/Consent/Main/InfoPage/InfoPageVC.swift": [1548350576, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/DesignableX/UIViewControllerX.swift": [1544320562, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Main/UserLogin/SignUpVC.swift": [1548194170, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Models/UserModel.swift": [1547227019, 0]
@@ -42,8 +42,8 @@ inputs:
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/DesignableX/UIImageViewX.swift": [1547316595, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Main/ProfilePage/EditVC.swift": [1548216173, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/AppDelegate.swift": [1547338615, 0]
-  "/Users/derrickmu/Desktop/Consent/Consent/Main/ProfilePage/ProfilePageVC.swift": [1548217953, 0]
-  "/Users/derrickmu/Desktop/Consent/Consent/Main/ProfilePage/CamPFPVC.swift": [1548214140, 0]
+  "/Users/derrickmu/Desktop/Consent/Consent/Main/ProfilePage/ProfilePageVC.swift": [1548217986, 0]
+  "/Users/derrickmu/Desktop/Consent/Consent/Main/ProfilePage/CamPFPVC.swift": [1548218420, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Helper Functions/SetFuncs.swift": [1547745781, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/DesignableX/UIScrollViewX.swift": [1544297188, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/ColorScheme.swift": [1547707193, 0]
