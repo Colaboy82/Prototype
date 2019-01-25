@@ -355,6 +355,7 @@ SWIFT_CLASS("_TtC7Consent6EditVC")
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified editPicB;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified saveB;
 - (void)viewDidLoad;
+- (void)shouldEnable;
 - (IBAction)saveEdits:(UIButtonX * _Nonnull)sender;
 - (IBAction)editPic:(UIButtonX * _Nonnull)sender;
 - (IBAction)back:(UIButtonX * _Nonnull)sender;

@@ -116,22 +116,25 @@ class MainVC: UIViewController, UITextFieldDelegate {
         }
     }
     func checkFailPopUp(){
-        let userRefFail = Database.database().reference().child("users").child(uid!).child("FailPopUp")
-        
-        //guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
-        userRefFail.observeSingleEvent(of: .value, with: {(snapshot) in
-            guard let bool = snapshot.value as? Bool else { return }
+        if Auth.auth().currentUser != nil {
+
+            let userRefFail = Database.database().reference().child("users").child(uid!).child("FailPopUp")
             
-            if bool == true {
-                let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+            //guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
+            userRefFail.observeSingleEvent(of: .value, with: {(snapshot) in
+                guard let bool = snapshot.value as? Bool else { return }
                 
-                let nextVC = sb.instantiateViewController(withIdentifier: "Error")
-                Constants.ErrorType = .SubmitFail
-                nextVC.modalTransitionStyle = .crossDissolve
-                self.timer.invalidate()
-                self.present(nextVC, animated:true, completion:nil)
-            }
-        })
+                if bool == true {
+                    let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                    
+                    let nextVC = sb.instantiateViewController(withIdentifier: "Error")
+                    Constants.ErrorType = .SubmitFail
+                    nextVC.modalTransitionStyle = .crossDissolve
+                    self.timer.invalidate()
+                    self.present(nextVC, animated:true, completion:nil)
+                }
+            })
+        }
     }
     override func viewDidLayoutSubviews() {
         infoBCenter = infoB.center

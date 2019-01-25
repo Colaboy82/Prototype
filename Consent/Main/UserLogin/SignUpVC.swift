@@ -250,6 +250,8 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     func createAccount(){
         Auth.auth().createUser(withEmail: email, password: pw) { (user, error) in
             
+            
+            
             func uploadProfilePic(_ img: UIImage, completion: @escaping (_ url: String?) -> ()){
                 guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
                 let profilePicRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("profile_images").child("user/\(uid)")
@@ -280,6 +282,8 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
                     let u = UserModel.init(email: self.email, pw: self.pw, firstName: self.pg2.firstName.text!, midName: self.pg2.middleName.text!, lastName: self.pg2.lastName.text!, phoneNum: self.pg2.phoneNum.text!, gender: self.pg3.chosenGender(), profilePic: self.pg4!.profilePicUrl, user: Auth.auth().currentUser!)
                     u.setValues()
                     
+                    self.updateDisplayName()
+                    
                     let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
                     let nextVC = sb.instantiateViewController(withIdentifier: "Success")
                     Constants.SuccessType = .AccountMade
@@ -294,7 +298,22 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
             }
         }
     }
-    
+    func updateDisplayName(){
+        let user = Auth.auth().currentUser
+        if let user = user {
+            let changeRequest = user.createProfileChangeRequest()
+            
+            changeRequest.displayName = user.uid.trunc(length: SetFuncs.uidCharacterLength)
+            changeRequest.photoURL = NSURL(string: self.pg4!.profilePicUrl)! as URL
+            changeRequest.commitChanges { error in
+                if error != nil {
+                    // An error happened.
+                } else {
+                    // Profile updated.
+                }
+            }
+        }
+    }
     @IBAction func next(_ sender: Any){
         currentPg+=1.0
         setPage(currPg: Float(currentPg))

@@ -14,7 +14,7 @@ dependencies: \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Private/FIRComponent.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainer.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentType.h \
-  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Private/FIRCoreConfigurable.h \
+  /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Private/FIRLibrary.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Private/FIROptionsInternal.h \
   /Users/derrickmu/Desktop/Consent/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h

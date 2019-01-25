@@ -22,10 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var sb = UIStoryboard(name: "SignUp", bundle: nil)
         var initialSB = sb.instantiateViewController(withIdentifier: "LoginVC")
         
-        if (Auth.auth().currentUser != nil){
+        /*if (Auth.auth().currentUser != nil){
             sb = UIStoryboard(name: "Main", bundle: nil)
             initialSB = sb.instantiateViewController(withIdentifier: "MainVC")
-        }
+        }*/
 
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
