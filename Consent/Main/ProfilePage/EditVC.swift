@@ -25,6 +25,8 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
     public static var savedImg: UIImage!
     let userRef = Database.database().reference().child("users").child(ProfilePageVC.currUid)
     
+    var timer: Timer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
@@ -40,6 +42,10 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
         uidLbl.text = ProfilePageVC.currUid
         
         originalImg = ProfilePageVC.profilePicImg
+        EditVC.savedImg = originalImg
+        
+        saveB.isEnabled = false
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(shouldEnable), userInfo: nil, repeats: true)
         
         if(EditVC.savedImg != nil){
             profilePic.image = EditVC.savedImg
@@ -50,7 +56,15 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
     public static func savePhoto(img: UIImage!){
         EditVC.savedImg = img
     }
+    @objc func shouldEnable(){
+        if (EditVC.savedImg != originalImg) || (!(genderEdit.text?.isEmpty)! && genderEdit.text != " " && genderEdit.text != ProfilePageVC.gender){
+            saveB.isEnabled = true
+        }else{
+            saveB.isEnabled = false
+        }
+    }
     @IBAction func saveEdits(_ sender: UIButtonX){
+        timer.invalidate()
         if (!(genderEdit.text?.isEmpty)! && genderEdit.text != " " && genderEdit.text != ProfilePageVC.gender){
             userRef.updateChildValues(["gender": genderEdit.text!])
         }
@@ -90,6 +104,7 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
         self.present(nextVC, animated: true, completion: nil)
     }
     @IBAction func back(_ sender: UIButtonX){
+        timer.invalidate()
         let sb = UIStoryboard(name: "ProfilePage", bundle:nil)
         let nextVC = sb.instantiateViewController(withIdentifier: "ProfilePage")
         nextVC.modalTransitionStyle = .crossDissolve

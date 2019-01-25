@@ -49,6 +49,18 @@ class UserModel{
                       "ConfirmPopUp": false,
                       "FailPopUp": false] as [String : Any]
         userRef.updateChildValues(values, withCompletionBlock: { (error, ref) in
+            self.addToUIDatabase()
+            if error != nil{
+                print(error!)
+                return
+            }
+        })
+    }
+    func addToUIDatabase(){
+        let uidRef = Database.database().reference().child("UIDatabase").child(user.uid)
+        let values = ["fullUID": user.uid,
+                      "shortUID": user.uid.trunc(length: SetFuncs.uidCharacterLength)] as [String : Any]
+        uidRef.updateChildValues(values, withCompletionBlock: { (error, ref) in
             if error != nil{
                 print(error!)
                 return
