@@ -54,9 +54,9 @@ class MainVC: UIViewController, UITextFieldDelegate {
     var initalTopTableViewConstraint: CGFloat!
     
     override func viewDidLoad() {
-
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        print(Auth.auth().currentUser?.displayName)
         
         self.initialTopBarConstraint = self.topSearchBarConstraint.constant
         self.initalTopTableViewConstraint = self.topTableViewConstraint.constant

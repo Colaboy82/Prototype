@@ -44,9 +44,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         self.hideKeyboardWhenTappedAround()
-        
         pg1 = pg1View as? Pg1View
         pg2 = pg2View as? Pg2View
         pg3 = pg3View as? Pg3View
@@ -87,6 +85,67 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
         setPage(currPg: Float(currentPg))
         
         SetFuncs.setButton(btn: nextB, color: #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setPg1Animation()
+        //setPg2Animation()
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //pg1Animation()
+        
+    }
+    func setPg1Animation(){
+        pg1.centerEmailConstraint.constant -= (view.bounds.width + 15)
+        pg1.centerPWConstraint.constant -= (view.bounds.width + 15)
+        pg1.centerPWConfirmConstraint.constant -= (view.bounds.width + 15)
+    }
+    func setPg2Animation(){
+        pg2.centerFirstConstraint.constant -= (pg2.bounds.width + 15)
+        pg2.centerMidConstraint.constant -= (pg2.bounds.width + 15)
+        pg2.centerLastConstraint.constant -= (pg2.bounds.width + 15)
+        pg2.centerPhoneNumConstraint.constant -= (pg2.bounds.width + 15)
+    }
+    func pg1Animation(){
+        UIView.animate(withDuration: 0.25, delay: 0, options: .curveLinear, animations: {
+            self.pg1.centerEmailConstraint.constant += (self.view.bounds.width + 15)
+            self.pg1.layoutIfNeeded()
+        }) { (true) in
+            UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear, animations: {
+                self.pg1.centerPWConstraint.constant += (self.view.bounds.width + 15)
+                self.pg1.layoutIfNeeded()
+            }) { (true) in
+                UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear, animations: {
+                    self.pg1.centerPWConfirmConstraint.constant += (self.view.bounds.width + 15)
+                    self.pg1.layoutIfNeeded()
+                })
+            }
+        }
+    }
+    func pg2Animation(){
+        UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear, animations: {
+            self.pg2.centerFirstConstraint.constant += (self.pg2.bounds.width + 15)
+            self.pg2.layoutIfNeeded()
+        }) { (true) in
+            UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear, animations: {
+                self.pg2.centerMidConstraint.constant += (self.pg2.bounds.width + 15)
+                self.pg2.layoutIfNeeded()
+            }) { (true) in
+                UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear, animations: {
+                    self.pg2.centerLastConstraint.constant += (self.pg2.bounds.width + 15)
+                    self.pg2.layoutIfNeeded()
+                }) { (true) in
+                    UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear, animations: {
+                        self.pg2.centerPhoneNumConstraint.constant += (self.pg2.bounds.width + 15)
+                        self.pg2.layoutIfNeeded()
+                    })
+                }
+            }
+        }
     }
     @objc func enableNextBtn(){
         if(shouldEnableNext()){
@@ -130,6 +189,9 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
             pg2View.isHidden = false
             pg1View.isHidden = true
             
+            setPg1Animation()
+            pg2Animation()
+            
             email = pg1.email.text!
             pw = pg1.pw.text!
         }else if(currPg == 1.0){
@@ -138,6 +200,9 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
             pg3View.isHidden = true
             pg2View.isHidden = true
             pg1View.isHidden = false
+            
+            setPg2Animation()
+            pg1Animation()
             
             pg1.email.text = ""
             pg1.pw.text = ""
@@ -249,9 +314,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     }
     func createAccount(){
         Auth.auth().createUser(withEmail: email, password: pw) { (user, error) in
-            
-            
-            
+    
             func uploadProfilePic(_ img: UIImage, completion: @escaping (_ url: String?) -> ()){
                 guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
                 let profilePicRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("profile_images").child("user/\(uid)")
@@ -412,6 +475,11 @@ class Pg1View: UIViewX {
     @IBOutlet weak var checkL: UIImageViewX!
     @IBOutlet weak var checkU: UIImageViewX!
     @IBOutlet weak var checkM: UIImageViewX!
+    
+    @IBOutlet weak var centerEmailConstraint: NSLayoutConstraint!
+    @IBOutlet weak var centerPWConstraint: NSLayoutConstraint!
+    @IBOutlet weak var centerPWConfirmConstraint: NSLayoutConstraint!
+    
 }
 
 class Pg2View: UIViewX {
@@ -419,6 +487,12 @@ class Pg2View: UIViewX {
     @IBOutlet weak var middleName: UITextFieldX!
     @IBOutlet weak var lastName: UITextFieldX!
     @IBOutlet weak var phoneNum: UITextFieldX!
+    
+    @IBOutlet weak var centerFirstConstraint: NSLayoutConstraint!
+    @IBOutlet weak var centerMidConstraint: NSLayoutConstraint!
+    @IBOutlet weak var centerLastConstraint: NSLayoutConstraint!
+    @IBOutlet weak var centerPhoneNumConstraint: NSLayoutConstraint!
+
 }
 
 class Pg3View: UIViewX{

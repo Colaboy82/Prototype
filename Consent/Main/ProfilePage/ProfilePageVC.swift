@@ -60,7 +60,11 @@ class ProfilePageVC: UIViewController {
             let first = snapshot.childSnapshot(forPath:"firstName").value as? String
             let mid = snapshot.childSnapshot(forPath:"middleName").value as? String
             let last = snapshot.childSnapshot(forPath:"lastName").value as? String
-            ProfilePageVC.name = first! + " " + mid! + " " + last!
+            if(mid != ""){
+                ProfilePageVC.name = first! + " " + mid! + " " + last!
+            }else{
+                ProfilePageVC.name = first! + " " + last!
+            }
             ProfilePageVC.profilePicUrl = snapshot.childSnapshot(forPath:"ProfilePic").value as? String
             ProfilePageVC.currUid = self.uid
             if(ProfilePageVC.profilePicUrl != nil){

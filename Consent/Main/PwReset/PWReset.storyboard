@@ -38,6 +38,9 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-Ts-sG5" customClass="UITextFieldX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="8" y="46" width="327" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="F4n-Ts-sG5" secondAttribute="height" multiplier="109:10" id="DTE-2g-azG"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
@@ -63,8 +66,7 @@
                                     <constraint firstAttribute="trailing" secondItem="dCQ-RH-2uv" secondAttribute="trailing" constant="92" id="1Hp-tm-nw8"/>
                                     <constraint firstItem="dCQ-RH-2uv" firstAttribute="leading" secondItem="jql-S6-Iwk" secondAttribute="leading" constant="92" id="Sah-TA-32M"/>
                                     <constraint firstItem="F4n-Ts-sG5" firstAttribute="top" secondItem="jql-S6-Iwk" secondAttribute="top" constant="46" id="Uhj-Xd-cEf"/>
-                                    <constraint firstAttribute="trailing" secondItem="F4n-Ts-sG5" secondAttribute="trailing" constant="8" id="pRS-jX-uPK"/>
-                                    <constraint firstItem="F4n-Ts-sG5" firstAttribute="leading" secondItem="jql-S6-Iwk" secondAttribute="leading" constant="8" id="uai-XF-FMC"/>
+                                    <constraint firstItem="F4n-Ts-sG5" firstAttribute="centerX" secondItem="jql-S6-Iwk" secondAttribute="centerX" id="w9T-aQ-e5I"/>
                                     <constraint firstItem="dCQ-RH-2uv" firstAttribute="top" secondItem="F4n-Ts-sG5" secondAttribute="bottom" constant="49" id="zed-qS-uhz"/>
                                 </constraints>
                             </view>
@@ -87,6 +89,7 @@
                         <viewLayoutGuide key="safeArea" id="iY5-Yd-ks7"/>
                     </view>
                     <connections>
+                        <outlet property="centerPWConstraint" destination="w9T-aQ-e5I" id="fsm-BS-MdP"/>
                         <outlet property="email" destination="F4n-Ts-sG5" id="9Kc-VZ-dHd"/>
                         <outlet property="resetB" destination="dCQ-RH-2uv" id="q0h-tz-vjY"/>
                     </connections>

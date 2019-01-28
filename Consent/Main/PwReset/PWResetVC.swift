@@ -17,6 +17,8 @@ class PWResetVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var email: UITextFieldX!
     @IBOutlet weak var resetB: UIButtonX!
     
+    @IBOutlet weak var centerPWConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
@@ -26,6 +28,20 @@ class PWResetVC: UIViewController, UITextFieldDelegate {
         
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self,
                     selector: #selector(PWResetVC.enableBtn), userInfo: nil, repeats: true)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        centerPWConstraint.constant -= (view.bounds.width)
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear, animations: {
+            self.centerPWConstraint.constant += self.view.bounds.width
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+        
     }
     @objc func enableBtn(){
         if(shouldEnableResetBtn()){

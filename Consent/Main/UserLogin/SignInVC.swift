@@ -19,7 +19,13 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loginB: UIButtonX!
     @IBOutlet weak var signUpB: UIButtonX!
     
+    @IBOutlet weak var loginView: UIViewX!
+    
+    @IBOutlet weak var centerEmailConstraint: NSLayoutConstraint!
+    @IBOutlet weak var centerPWConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
+        super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
 
         SetFuncs.setTextFields(field: email, img: #imageLiteral(resourceName: "EmailIcon"))
@@ -30,9 +36,27 @@ class SignInVC: UIViewController, UITextFieldDelegate {
         //signUpB.layer.cornerRadius = 15
         signUpB.clipsToBounds = true
         
-        super.viewDidLoad()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        centerEmailConstraint.constant -= (loginView.bounds.width + 15)
+        centerPWConstraint.constant -= (loginView.bounds.width + 15)
     
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear, animations: {
+            self.centerEmailConstraint.constant += (self.loginView.bounds.width + 15)
+            self.loginView.layoutIfNeeded()
+        }, completion: { (true) in
+            UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear, animations: {
+                self.centerPWConstraint.constant += (self.loginView.bounds.width + 15)
+                self.loginView.layoutIfNeeded()
+            })
+        })
+    
+    }
     @IBAction func signUp(_ sender: Any){
         let sb = UIStoryboard(name: "SignUp", bundle:nil)
         

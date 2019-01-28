@@ -70,7 +70,11 @@ extension MainVC: UITableViewDelegate {
         //main Page
         ClickedEntryVC.profilePicUrl = entry.profilePicUrl
         ClickedEntryVC.date = entry.date
-        ClickedEntryVC.name = entry.firstName + " " + entry.midName + " " + entry.lastName
+        if(entry.midName != ""){
+            ClickedEntryVC.name = entry.firstName + " " + entry.midName + " " + entry.lastName
+        }else{
+            ClickedEntryVC.name = entry.firstName + " " + entry.lastName
+        }
         ClickedEntryVC.gender = entry.gender
         ClickedEntryVC.email = entry.email
         

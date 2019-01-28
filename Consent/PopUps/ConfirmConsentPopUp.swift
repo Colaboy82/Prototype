@@ -66,7 +66,7 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     }
     @objc func checkFailPopUp(){
         guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
-        userRef.child(uid).child("FailPopUp").observeSingleEvent(of: .value, with: {(snapshot) in
+        userRef.child("users").child(uid).child("FailPopUp").observeSingleEvent(of: .value, with: {(snapshot) in
             guard let bool = snapshot.value as? Bool else { return }
             
             if bool == true {

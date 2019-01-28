@@ -4,11 +4,11 @@
 <array>
 	<string>GoogleMobileAds</string>
 	<string>RSKImageCropper</string>
-	<string>FirebasePerformance</string>
 	<string>CommonCrypto</string>
+	<string>FirebasePerformance</string>
+	<string>SafariServices</string>
 	<string>SkeletonView</string>
 	<string>FirebaseDynamicLinks</string>
-	<string>SafariServices</string>
 	<string>objc</string>
 	<string>FirebaseAuth</string>
 	<string>GoogleUtilities</string>
@@ -24,10 +24,10 @@
 	<string>FirebaseMLVisionLabelModel</string>
 	<string>FirebaseFirestore</string>
 	<string>FirebaseMLNLLanguageID</string>
-	<string>FirebaseMLVisionFaceModel</string>
-	<string>FirebaseDatabase</string>
-	<string>unicode</string>
 	<string>CoreServices</string>
+	<string>FirebaseMLVisionFaceModel</string>
+	<string>unicode</string>
+	<string>FirebaseDatabase</string>
 	<string>FirebaseRemoteConfig</string>
 	<string>WebKit</string>
 	<string>FirebaseMLNaturalLanguage</string>
@@ -38,12 +38,12 @@
 	<string>FirebaseMLVisionBarcodeModel</string>
 	<string>FirebaseMLVisionTextModel</string>
 	<string>Foundation</string>
-	<string>Consent</string>
+	<string>Security</string>
 	<string>WatchKit</string>
 	<string>FirebaseMLModelInterpreter</string>
 	<string>Fabric</string>
 	<string>FirebaseCrash</string>
-	<string>Security</string>
+	<string>Consent</string>
 	<string>GameKit</string>
 	<string>FirebaseInvites</string>
 	<string>netinet</string>

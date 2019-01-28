@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "eaf83c2113f4aba78d7cce3a5d5ea767"
-build_time: [1548447561, 572017000]
+build_time: [1548447758, 347204000]
 inputs:
   "/Users/derrickmu/Desktop/Consent/Consent/Main/PwReset/PWResetVC.swift": [1548128766, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/ShaharExtensions.swift": [1548129491, 0]
@@ -41,8 +41,8 @@ inputs:
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/DesignableX/UIViewAnchorPoint.swift": [1522964622, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/DesignableX/UIImageViewX.swift": [1547316595, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Main/ProfilePage/EditVC.swift": [1548447029, 0]
-  "/Users/derrickmu/Desktop/Consent/Consent/AppDelegate.swift": [1548445193, 0]
-  "/Users/derrickmu/Desktop/Consent/Consent/Main/ProfilePage/ProfilePageVC.swift": [1548443912, 0]
+  "/Users/derrickmu/Desktop/Consent/Consent/AppDelegate.swift": [1548447758, 0]
+  "/Users/derrickmu/Desktop/Consent/Consent/Main/ProfilePage/ProfilePageVC.swift": [1548447614, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Main/ProfilePage/CamPFPVC.swift": [1548218420, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Helper Functions/SetFuncs.swift": [1548443912, 0]
   "/Users/derrickmu/Desktop/Consent/Consent/Utils/DesignableX/UIScrollViewX.swift": [1544297188, 0]
