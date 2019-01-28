@@ -54,13 +54,13 @@ class ErrorPopUp: UIViewController {
         }else if(type == .REmailFail){
             msgText.text = "Error when resending the confirmation email. Please Refresh and Try Again"
         }else if(type == .AccountMadeFail){
-            msgText.text = "Error with Creating Account. Please Refresh and Try Again"
+            msgText.text = "Error with Creating Account. Please Exit and Try Again"
         }else if(type == .RPWFail){
-            msgText.text = "Error with Resetting Password. Please Refresh and Try Again"
+            msgText.text = "Error with Resetting Password. Please Exit and Try Again"
         }else if(type == .CamE){
             msgText.text = "Your camera seems to not be functional"
         }else if(type == .PermE){
-            msgText.text = "It appears we do not have that permission. Please go into your settings and give us access"
+            msgText.text = "It appears we do not have that permission. Please go into your settings and give us access."
         }else{
             msgText.text = "Error with App. Please Reset or Contact Employee"
         }

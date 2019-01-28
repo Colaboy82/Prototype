@@ -73,6 +73,24 @@ class ProfilePageVC: UIViewController {
         })
 
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        nameLbl.alpha = 0
+        emailLbl.alpha = 0
+        genderLbl.alpha = 0
+        uidLbl.alpha = 0
+        
+        profilePic.awakeFromNib()
+        mainMenuB.awakeFromNib()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        nameLbl.alpha = 1
+        emailLbl.alpha = 1
+        genderLbl.alpha = 1
+        uidLbl.alpha = 1
+    }
     override func viewDidLayoutSubviews() {
         resetBCenter = resetB.center
         editBCenter = editB.center

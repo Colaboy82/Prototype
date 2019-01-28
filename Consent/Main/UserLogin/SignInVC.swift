@@ -33,19 +33,19 @@ class SignInVC: UIViewController, UITextFieldDelegate {
         
         SetFuncs.setButton(btn:loginB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
         
-        //signUpB.layer.cornerRadius = 15
-        signUpB.clipsToBounds = true
-        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         centerEmailConstraint.constant -= (loginView.bounds.width + 15)
         centerPWConstraint.constant -= (loginView.bounds.width + 15)
+        
+        loginB.awakeFromNib()
     
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
         UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear, animations: {
             self.centerEmailConstraint.constant += (self.loginView.bounds.width + 15)
             self.loginView.layoutIfNeeded()
@@ -93,6 +93,4 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     @IBAction func privacyPolicy(_ sender: Any){
         
     }
-    
-    
 }

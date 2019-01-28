@@ -56,7 +56,6 @@ class MainVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        print(Auth.auth().currentUser?.displayName)
         
         self.initialTopBarConstraint = self.topSearchBarConstraint.constant
         self.initalTopTableViewConstraint = self.topTableViewConstraint.constant
@@ -91,6 +90,29 @@ class MainVC: UIViewController, UITextFieldDelegate {
                 }
             }
         }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        searchTypeB.awakeFromNib()
+        mainMenuB.awakeFromNib()
+        
+        searchView.alpha = 0
+        tableViewU.alpha = 0
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveLinear, animations: {
+            self.searchView.alpha = 1
+            self.view.layoutIfNeeded()
+        })
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveLinear, animations: {
+            self.tableViewU.alpha = 1
+            self.view.layoutIfNeeded()
+        })
+        
+        
     }
     func firebasePropertiesIntializer(){
         userRef = userRef.child(uid!)

@@ -90,6 +90,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        nextB.awakeFromNib()
         setPg1Animation()
         //setPg2Animation()
         
@@ -347,10 +348,10 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
                     
                     self.updateDisplayName()
                     
-                    let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                    /*let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
                     let nextVC = sb.instantiateViewController(withIdentifier: "Success")
                     Constants.SuccessType = .AccountMade
-                    self.present(nextVC, animated: true, completion: nil)
+                    self.present(nextVC, animated: true, completion: nil)*/
                     self.sendEmailVerification()
                 })
             } else {

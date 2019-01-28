@@ -49,10 +49,8 @@ class SuccessPopUp: UIViewController {
             msgText.text = "Email Confirmation has been Resent"
         }else if(type == .Submit){
             msgText.text = "Submitted Successfully"
-        }else if(type == .AccountMade){
-            msgText.text = "Lorem Ipsum Stuff"
         }else{
-            msgText.text = "Error with App. Please Reset or Contact Employee"
+             msgText.text = "Error with App. Please Reset or Contact Employee"
         }
     }
     @IBAction func closePopUp(_ sender: Any){

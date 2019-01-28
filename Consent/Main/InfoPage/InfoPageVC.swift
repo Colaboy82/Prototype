@@ -13,14 +13,30 @@ class InfoPageVC: UIViewController {
 
     @IBOutlet weak var modeToggle: UISwitch!
     @IBOutlet weak var logoPic: UIImageViewX!
-    
+    @IBOutlet weak var lightLbl: UILabelX!
+    @IBOutlet weak var darkLbl: UILabelX!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
         modeToggle.isOn = ColorScheme.isDark
         logoPic.setRounded()
-        //modeToggle.addTarget(self, action: Selector("stateChanged:"), for: .valueChanged)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        logoPic.awakeFromNib()
+        
+        lightLbl.alpha = 0
+        darkLbl.alpha = 0
+        modeToggle.alpha = 0
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        lightLbl.alpha = 1
+        darkLbl.alpha = 1
+        modeToggle.alpha = 1
     }
     @IBAction func back(_ sender: UIButtonX){
         let sb = UIStoryboard(name: "Main", bundle:nil)

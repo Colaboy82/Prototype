@@ -19,7 +19,7 @@
         <!--SignUpVC-->
         <scene sceneID="bDU-K3-aj9">
             <objects>
-                <viewController storyboardIdentifier="SignUpVC" title="SignUpVC" id="i79-gJ-zEO" customClass="SignUpVC" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" title="SignUpVC" modalTransitionStyle="crossDissolve" id="i79-gJ-zEO" customClass="SignUpVC" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hvH-qW-Oml">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -435,13 +435,16 @@
                                 <rect key="frame" x="101" y="171" width="173" height="2"/>
                                 <color key="progressTintColor" red="0.24216049910000001" green="0.35818958280000002" blue="0.4784591198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4R-ZV-nXA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4R-ZV-nXA" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="103" y="534" width="168" height="33"/>
                                 <color key="backgroundColor" red="0.24216049910000001" green="0.35818958280000002" blue="0.4784591198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="next:" destination="i79-gJ-zEO" eventType="touchUpInside" id="Kkc-GN-2Q1"/>
                                 </connections>
@@ -595,6 +598,12 @@
                                                 <real key="value" value="16"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="popInDelay">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="gradientStart">
+                                                <point key="value" x="0.0" y="0.0"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="login:" destination="7ME-mM-iyp" eventType="touchUpInside" id="vaL-LF-Xfg"/>

@@ -47,9 +47,7 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         profilePic.borderColor = #colorLiteral(red: 0.7607843137, green: 0.7647058824, blue: 0.7725490196, alpha: 1)
         profilePic.contentMode = .scaleAspectFill
         
-        profilePic.showAnimatedGradientSkeleton()
-        nameLbl.showAnimatedGradientSkeleton()
-        genderLbl.showAnimatedGradientSkeleton()
+        view.showAnimatedGradientSkeleton()
         
         signatureView.delegate = self
         signatureView.clear()
@@ -97,9 +95,7 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         storageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) -> Void in
             // Create a UIImage, add it to the array
             pic = UIImage(data: data!)
-            self.profilePic.hideSkeleton()
-            self.nameLbl.hideSkeleton()
-            self.genderLbl.hideSkeleton()
+            self.view.hideSkeleton()
             self.profilePic.image = pic
         }
         

@@ -21,6 +21,8 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
     @IBOutlet weak var editPicB: UIButtonX!
     @IBOutlet weak var saveB: UIButtonX!
     
+    @IBOutlet weak var centerGenderEdit: NSLayoutConstraint!
+    
     var originalImg: UIImage!
     public static var savedImg: UIImage!
     let userRef = Database.database().reference().child("users").child(ProfilePageVC.currUid)
@@ -30,6 +32,7 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        
         SetFuncs.setLblSettings(lbl: emailLbl)
         SetFuncs.setTextFields(field: genderEdit, img: nil)
         SetFuncs.setLblSettings(lbl: uidLbl)
@@ -52,6 +55,29 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
         } else{
             profilePic.image = ProfilePageVC.profilePicImg
         }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        centerGenderEdit.constant -= (view.bounds.width)
+        
+        nameLbl.alpha = 0
+        emailLbl.alpha = 0
+        uidLbl.alpha = 0
+        profilePic.awakeFromNib()
+        editPicB.awakeFromNib()
+        saveB.awakeFromNib()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear, animations: {
+            self.centerGenderEdit.constant += (self.view.bounds.width)
+            self.view.layoutIfNeeded()
+        }, completion: (nil))
+        nameLbl.alpha = 1
+        emailLbl.alpha = 1
+        uidLbl.alpha = 1
     }
     public static func savePhoto(img: UIImage!){
         EditVC.savedImg = img

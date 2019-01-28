@@ -23,6 +23,9 @@ class AddEntryVC: UIViewController {
     
     @IBOutlet weak var submitB: UIButtonX!
     
+    @IBOutlet weak var centerActionsConstraint: NSLayoutConstraint!
+    @IBOutlet weak var centerUIDConstraint: NSLayoutConstraint!
+
     var vidTimer: Timer!
     var btnTimer: Timer!
     
@@ -43,6 +46,36 @@ class AddEntryVC: UIViewController {
         
         setEntryFields()
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        submitB.awakeFromNib()
+        recordB.awakeFromNib()
+        vidImgView.awakeFromNib()
+        vidSavedIcon.awakeFromNib()
+        
+        descriptionLbl.alpha = 0
+        vidSavedLbl.alpha = 0
+        
+        centerActionsConstraint.constant -= (view.bounds.width)
+        centerUIDConstraint.constant -= (view.bounds.width)
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear, animations: {
+            self.centerActionsConstraint.constant += (self.view.bounds.width)
+            self.view.layoutIfNeeded()
+        }, completion: { (true) in
+            UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveLinear, animations: {
+                self.centerUIDConstraint.constant += (self.view.bounds.width)
+                self.view.layoutIfNeeded()
+            })
+        })
+        
+        descriptionLbl.alpha = 1
+        vidSavedLbl.alpha = 1
     }
     func setEntryFields(){
         SetFuncs.setButton(btn: submitB, color: #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))

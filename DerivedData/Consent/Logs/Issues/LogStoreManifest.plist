@@ -6,6 +6,29 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
+		<key>06EDA9C6-1A96-4D2F-A6FB-9D0A89C7EF59</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>06EDA9C6-1A96-4D2F-A6FB-9D0A89C7EF59.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>signature</key>
+			<string>Consent-bdxfmfwweqneyyctxhssvxuocxyy</string>
+			<key>timeStartedRecording</key>
+			<real>570390877.318578</real>
+			<key>timeStoppedRecording</key>
+			<real>570390880.69456804</real>
+			<key>title</key>
+			<string>Build target Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>06EDA9C6-1A96-4D2F-A6FB-9D0A89C7EF59</string>
+		</dict>
 		<key>07C4F97B-A0C9-4058-87E1-090847D7EA29</key>
 		<dict>
 			<key>className</key>
@@ -28,29 +51,6 @@
 			<string>Build target FirebaseCore</string>
 			<key>uniqueIdentifier</key>
 			<string>07C4F97B-A0C9-4058-87E1-090847D7EA29</string>
-		</dict>
-		<key>0CD8850F-B02E-426E-A78A-BA9F1A822483</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>0CD8850F-B02E-426E-A78A-BA9F1A822483.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>signature</key>
-			<string>Consent-bdxfmfwweqneyyctxhssvxuocxyy</string>
-			<key>timeStartedRecording</key>
-			<real>570347019.05322397</real>
-			<key>timeStoppedRecording</key>
-			<real>570347023.43074596</real>
-			<key>title</key>
-			<string>Build target Consent</string>
-			<key>uniqueIdentifier</key>
-			<string>0CD8850F-B02E-426E-A78A-BA9F1A822483</string>
 		</dict>
 		<key>15408478-CA93-435E-B3D8-DBEFF9326CCF</key>
 		<dict>

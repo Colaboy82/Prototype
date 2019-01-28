@@ -45,7 +45,7 @@
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCQ-RH-2uv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCQ-RH-2uv" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="92" y="125" width="159" height="50"/>
                                         <color key="backgroundColor" red="0.24216049910000001" green="0.35818958280000002" blue="0.4784591198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -55,6 +55,12 @@
                                         <state key="normal" title="Send Reset Email">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="popInDelay">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="resetPW:" destination="t23-EI-Y0Z" eventType="touchUpInside" id="YKw-CE-f5m"/>
                                         </connections>

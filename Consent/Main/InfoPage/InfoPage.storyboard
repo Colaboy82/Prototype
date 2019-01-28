@@ -87,6 +87,8 @@
                         <viewLayoutGuide key="safeArea" id="rBZ-Qk-9hc"/>
                     </view>
                     <connections>
+                        <outlet property="darkLbl" destination="Ccc-07-BQ8" id="oou-IC-EMp"/>
+                        <outlet property="lightLbl" destination="GSz-LH-jgo" id="z8n-CM-kD4"/>
                         <outlet property="logoPic" destination="aVC-Nx-n3L" id="bhH-GM-am3"/>
                         <outlet property="modeToggle" destination="7mf-4W-uqf" id="wha-Ku-DG2"/>
                     </connections>

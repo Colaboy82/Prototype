@@ -53,12 +53,26 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter User ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g5Y-8W-LRL" customClass="UITextFieldX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="16" y="338" width="343" height="30"/>
                                 <color key="tintColor" name="Tint"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="g5Y-8W-LRL" secondAttribute="height" multiplier="343:30" id="OPo-bz-4BW"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VidIcon" translatesAutoresizingMaskIntoConstraints="NO" id="so8-31-uj8" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="51" y="410" width="72" height="71"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVi-em-IqT" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="142" y="437" width="124.5" height="33"/>
@@ -70,6 +84,15 @@
                                 <state key="normal" title="Record">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="popInDelay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="record:" destination="aEd-S2-FPF" eventType="touchUpInside" id="fZf-G5-y7K"/>
                                 </connections>
@@ -81,6 +104,15 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="popInDelay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="submit:" destination="aEd-S2-FPF" eventType="touchUpInside" id="Pc9-wX-ELv"/>
                                 </connections>
@@ -97,22 +129,25 @@
                                     <constraint firstAttribute="width" secondItem="dmK-X1-Kx2" secondAttribute="height" multiplier="46:39" id="6JF-fE-6Cz"/>
                                     <constraint firstAttribute="height" constant="39" id="yJg-zu-d80"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="qtH-n6-hcI" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" id="Bpc-3G-qDg"/>
+                            <constraint firstItem="g5Y-8W-LRL" firstAttribute="centerX" secondItem="sKc-Zg-QFr" secondAttribute="centerX" id="H7P-7Z-4fO"/>
                             <constraint firstItem="qtH-n6-hcI" firstAttribute="bottom" secondItem="91j-bF-KKS" secondAttribute="bottom" id="K57-nS-gHl"/>
                             <constraint firstItem="VZ8-3c-uMO" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" constant="127" id="QHu-gL-x7a"/>
                             <constraint firstItem="WoZ-fp-MUZ" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" constant="16" id="QqI-H5-uZn"/>
                             <constraint firstItem="rod-1h-SMS" firstAttribute="top" secondItem="so8-31-uj8" secondAttribute="bottom" constant="90" id="Ssb-8J-l5c"/>
-                            <constraint firstItem="sc7-R8-Hir" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" constant="16" id="VET-Qe-lCl"/>
-                            <constraint firstItem="g5Y-8W-LRL" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" constant="16" id="XQE-b1-yv3"/>
+                            <constraint firstItem="sc7-R8-Hir" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" priority="750" constant="16" id="THY-G3-mvl"/>
                             <constraint firstItem="rod-1h-SMS" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" constant="95" id="Xf6-Fv-h28"/>
                             <constraint firstItem="91j-bF-KKS" firstAttribute="trailing" secondItem="WoZ-fp-MUZ" secondAttribute="trailing" constant="16" id="Xwr-tS-7Gb"/>
-                            <constraint firstItem="91j-bF-KKS" firstAttribute="trailing" secondItem="g5Y-8W-LRL" secondAttribute="trailing" constant="16" id="Zm5-P9-qxV"/>
                             <constraint firstItem="KVi-em-IqT" firstAttribute="leading" secondItem="so8-31-uj8" secondAttribute="trailing" constant="19" id="aRY-Fg-f4V"/>
                             <constraint firstItem="g5Y-8W-LRL" firstAttribute="top" secondItem="sc7-R8-Hir" secondAttribute="bottom" constant="50" id="agK-dH-dSo"/>
+                            <constraint firstItem="91j-bF-KKS" firstAttribute="trailing" secondItem="sc7-R8-Hir" secondAttribute="trailing" priority="750" constant="16" id="jy3-Q5-z4b"/>
                             <constraint firstItem="WoZ-fp-MUZ" firstAttribute="top" secondItem="91j-bF-KKS" secondAttribute="top" constant="34" id="k4m-Ng-TZV"/>
                             <constraint firstItem="dmK-X1-Kx2" firstAttribute="leading" secondItem="VZ8-3c-uMO" secondAttribute="trailing" constant="8" id="kMP-DM-ytO"/>
                             <constraint firstItem="sc7-R8-Hir" firstAttribute="top" secondItem="WoZ-fp-MUZ" secondAttribute="bottom" constant="8" id="lCQ-gm-jfE"/>
@@ -122,12 +157,14 @@
                             <constraint firstItem="so8-31-uj8" firstAttribute="leading" secondItem="91j-bF-KKS" secondAttribute="leading" constant="51" id="teL-d0-YTe"/>
                             <constraint firstItem="rod-1h-SMS" firstAttribute="top" secondItem="VZ8-3c-uMO" secondAttribute="bottom" constant="62" id="wa9-8x-Sn3"/>
                             <constraint firstItem="91j-bF-KKS" firstAttribute="trailing" secondItem="rod-1h-SMS" secondAttribute="trailing" constant="95" id="xcV-y5-9NZ"/>
-                            <constraint firstItem="91j-bF-KKS" firstAttribute="trailing" secondItem="sc7-R8-Hir" secondAttribute="trailing" constant="16" id="zc9-Et-ail"/>
+                            <constraint firstItem="sc7-R8-Hir" firstAttribute="centerX" secondItem="sKc-Zg-QFr" secondAttribute="centerX" id="yBL-rx-eJU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="91j-bF-KKS"/>
                     </view>
                     <connections>
                         <outlet property="agreedActionTextBox" destination="sc7-R8-Hir" id="BQT-SL-JNi"/>
+                        <outlet property="centerActionsConstraint" destination="yBL-rx-eJU" id="dPE-rN-fTz"/>
+                        <outlet property="centerUIDConstraint" destination="H7P-7Z-4fO" id="ONU-bR-MKr"/>
                         <outlet property="descriptionLbl" destination="WoZ-fp-MUZ" id="mkz-t6-D44"/>
                         <outlet property="recordB" destination="KVi-em-IqT" id="GR8-9H-Ajr"/>
                         <outlet property="submitB" destination="rod-1h-SMS" id="b3x-W1-cgQ"/>

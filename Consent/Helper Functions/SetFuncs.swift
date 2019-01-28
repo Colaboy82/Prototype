@@ -16,7 +16,7 @@ class SetFuncs{
     
     public static func setButton(btn: UIButtonX, color: CGColor!){
         btn.layer.cornerRadius = 16
-        btn.clipsToBounds = true
+        //btn.clipsToBounds = true
         btn.layer.backgroundColor = color
         btn.isSelected = false
     }

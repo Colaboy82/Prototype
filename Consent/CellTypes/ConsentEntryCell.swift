@@ -37,6 +37,7 @@ class ConsentEntryCell: UITableViewCell{
         profilePicImg.setRounded()
         SetFuncs.setLblSettings(lbl: nameLbl)
         SetFuncs.setLblSettings(lbl: dateLbl)
+                
     }
     func configCell(consentSubmission: ConsentEntryModel){//= nil means they do not have to have pictures
         self.consentEntry = consentSubmission

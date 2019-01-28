@@ -36,6 +36,11 @@ class ClickedEntryVC: UIViewController {
         setValues()
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        profilePic.awakeFromNib()
+
+    }
     
     func setValues(){
         var pic: UIImage!

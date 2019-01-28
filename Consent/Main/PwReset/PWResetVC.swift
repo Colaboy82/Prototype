@@ -32,6 +32,7 @@ class PWResetVC: UIViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        resetB.awakeFromNib()
         centerPWConstraint.constant -= (view.bounds.width)
         
     }

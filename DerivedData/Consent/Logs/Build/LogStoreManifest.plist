@@ -35,6 +35,122 @@
 			<key>uniqueIdentifier</key>
 			<string>00A8711A-3052-4C11-B827-FE0B0D0A59AA</string>
 		</dict>
+		<key>00D2E65B-0356-4980-8222-C888185AF1FC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>00D2E65B-0356-4980-8222-C888185AF1FC.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386135.71179295</real>
+			<key>timeStoppedRecording</key>
+			<real>570386139.27472794</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>00D2E65B-0356-4980-8222-C888185AF1FC</string>
+		</dict>
+		<key>021A517A-2D70-4B1F-A660-7FA56E2428C0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>021A517A-2D70-4B1F-A660-7FA56E2428C0.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570382618.051157</real>
+			<key>timeStoppedRecording</key>
+			<real>570382618.604936</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>021A517A-2D70-4B1F-A660-7FA56E2428C0</string>
+		</dict>
+		<key>067E63A5-AEF6-4CEA-902B-48147DE95C3F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>067E63A5-AEF6-4CEA-902B-48147DE95C3F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386466.0905</real>
+			<key>timeStoppedRecording</key>
+			<real>570386466.68827105</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>067E63A5-AEF6-4CEA-902B-48147DE95C3F</string>
+		</dict>
+		<key>0900E0E6-D04B-4398-B011-DADF0FA6CCAD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0900E0E6-D04B-4398-B011-DADF0FA6CCAD.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386497.260759</real>
+			<key>timeStoppedRecording</key>
+			<real>570386497.73734295</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>0900E0E6-D04B-4398-B011-DADF0FA6CCAD</string>
+		</dict>
 		<key>09B12131-490F-40D2-A314-D81BE1EE06D5</key>
 		<dict>
 			<key>className</key>
@@ -151,6 +267,35 @@
 			<key>uniqueIdentifier</key>
 			<string>0E56FE25-9BDC-4102-9534-A2478D81A645</string>
 		</dict>
+		<key>0F416C6A-2930-4F28-AD24-FF478B52DAA6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0F416C6A-2930-4F28-AD24-FF478B52DAA6.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570385843.59797096</real>
+			<key>timeStoppedRecording</key>
+			<real>570385847.53792</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>0F416C6A-2930-4F28-AD24-FF478B52DAA6</string>
+		</dict>
 		<key>116DE5DD-63BA-40EF-B085-EAE0195A5115</key>
 		<dict>
 			<key>className</key>
@@ -179,6 +324,35 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>116DE5DD-63BA-40EF-B085-EAE0195A5115</string>
+		</dict>
+		<key>11F5AA73-E75B-42F8-AC32-40E8853E580C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>11F5AA73-E75B-42F8-AC32-40E8853E580C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570390210.51011801</real>
+			<key>timeStoppedRecording</key>
+			<real>570390217.22485304</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>11F5AA73-E75B-42F8-AC32-40E8853E580C</string>
 		</dict>
 		<key>13901184-43AD-404C-9861-AFB2AD746A9C</key>
 		<dict>
@@ -237,6 +411,64 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>16456D97-C293-404F-A34A-ED732E01CB1C</string>
+		</dict>
+		<key>16E45D5F-A021-4F0D-9DA5-024452985C66</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>16E45D5F-A021-4F0D-9DA5-024452985C66.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386925.60240304</real>
+			<key>timeStoppedRecording</key>
+			<real>570386927.317783</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>16E45D5F-A021-4F0D-9DA5-024452985C66</string>
+		</dict>
+		<key>17C95D86-0ECF-4160-B0DC-E54AD53BB478</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>17C95D86-0ECF-4160-B0DC-E54AD53BB478.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570383565.45564795</real>
+			<key>timeStoppedRecording</key>
+			<real>570383568.22195899</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>17C95D86-0ECF-4160-B0DC-E54AD53BB478</string>
 		</dict>
 		<key>18C172E8-CD67-4D23-83A1-34A6A7F3D334</key>
 		<dict>
@@ -441,6 +673,35 @@
 			<key>uniqueIdentifier</key>
 			<string>240400FF-4A52-4446-B7D9-72371801D373</string>
 		</dict>
+		<key>25408478-8A24-4FA1-A556-B26C4C1CBF64</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>25408478-8A24-4FA1-A556-B26C4C1CBF64.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570385777.92343199</real>
+			<key>timeStoppedRecording</key>
+			<real>570385780.62346303</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>25408478-8A24-4FA1-A556-B26C4C1CBF64</string>
+		</dict>
 		<key>2E813D1C-9BAB-4496-9D1E-3C52924EC830</key>
 		<dict>
 			<key>className</key>
@@ -557,6 +818,64 @@
 			<key>uniqueIdentifier</key>
 			<string>2FD4C58F-CF5D-4D3A-A47D-0D922B031177</string>
 		</dict>
+		<key>3072CD72-C4AB-4AA0-894B-89919E7C1275</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3072CD72-C4AB-4AA0-894B-89919E7C1275.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570383057.74837506</real>
+			<key>timeStoppedRecording</key>
+			<real>570383058.39274395</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>3072CD72-C4AB-4AA0-894B-89919E7C1275</string>
+		</dict>
+		<key>310FDBF1-29D1-46C7-8E6A-C42315E1E067</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>310FDBF1-29D1-46C7-8E6A-C42315E1E067.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570383525.13623703</real>
+			<key>timeStoppedRecording</key>
+			<real>570383525.42114997</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>310FDBF1-29D1-46C7-8E6A-C42315E1E067</string>
+		</dict>
 		<key>32328F0A-7493-45FB-AB79-869320E324D1</key>
 		<dict>
 			<key>className</key>
@@ -585,6 +904,93 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>32328F0A-7493-45FB-AB79-869320E324D1</string>
+		</dict>
+		<key>3620A50D-28A6-4636-BEA0-065C8A0E435A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3620A50D-28A6-4636-BEA0-065C8A0E435A.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386721.73299396</real>
+			<key>timeStoppedRecording</key>
+			<real>570386724.96746302</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>3620A50D-28A6-4636-BEA0-065C8A0E435A</string>
+		</dict>
+		<key>3701AB02-10FB-4375-9182-9F2DD70A0FB6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3701AB02-10FB-4375-9182-9F2DD70A0FB6.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570383075.10484397</real>
+			<key>timeStoppedRecording</key>
+			<real>570383078.51650906</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>3701AB02-10FB-4375-9182-9F2DD70A0FB6</string>
+		</dict>
+		<key>3A4E1C8C-CD21-4CBF-9588-9A1FD59FF33D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3A4E1C8C-CD21-4CBF-9588-9A1FD59FF33D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570385334.50032997</real>
+			<key>timeStoppedRecording</key>
+			<real>570385338.87821805</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>3A4E1C8C-CD21-4CBF-9588-9A1FD59FF33D</string>
 		</dict>
 		<key>3ACDB293-26C6-488C-9042-FD5D8F5A737E</key>
 		<dict>
@@ -760,6 +1166,35 @@
 			<key>uniqueIdentifier</key>
 			<string>4A8F8CF4-BF22-4331-ABE9-C561D12FC087</string>
 		</dict>
+		<key>4DA6AABF-0F90-43D3-B30B-3ED5FAFC44A0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4DA6AABF-0F90-43D3-B30B-3ED5FAFC44A0.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570390277.55966794</real>
+			<key>timeStoppedRecording</key>
+			<real>570390280.25167298</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>4DA6AABF-0F90-43D3-B30B-3ED5FAFC44A0</string>
+		</dict>
 		<key>502F1FA7-0002-4B1E-8157-858D780F4B05</key>
 		<dict>
 			<key>className</key>
@@ -847,6 +1282,35 @@
 			<key>uniqueIdentifier</key>
 			<string>51C37D8B-14C8-4313-A26F-4D6B46651ABD</string>
 		</dict>
+		<key>520ECD9C-FAE3-4214-A623-4B5C8862C3C7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>520ECD9C-FAE3-4214-A623-4B5C8862C3C7.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570390693.11169302</real>
+			<key>timeStoppedRecording</key>
+			<real>570390698.34580803</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>520ECD9C-FAE3-4214-A623-4B5C8862C3C7</string>
+		</dict>
 		<key>5637AC6E-1DEF-411D-9315-12528ECCDBDA</key>
 		<dict>
 			<key>className</key>
@@ -904,6 +1368,64 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>56A20797-A288-401D-9280-D3BD8694938D</string>
+		</dict>
+		<key>590F7BD3-8D73-4E2A-9F9D-7B58B0ADEF9E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>590F7BD3-8D73-4E2A-9F9D-7B58B0ADEF9E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570387009.71603501</real>
+			<key>timeStoppedRecording</key>
+			<real>570387012.31904805</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>590F7BD3-8D73-4E2A-9F9D-7B58B0ADEF9E</string>
+		</dict>
+		<key>5C831440-A165-4945-9ECF-251F5925F355</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5C831440-A165-4945-9ECF-251F5925F355.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570385875.48895204</real>
+			<key>timeStoppedRecording</key>
+			<real>570385878.21884501</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>5C831440-A165-4945-9ECF-251F5925F355</string>
 		</dict>
 		<key>5F5EF685-189D-49A7-B5DA-1266C6DA62FA</key>
 		<dict>
@@ -1050,6 +1572,64 @@
 			<key>uniqueIdentifier</key>
 			<string>649FC060-DFC0-436F-A842-16A82B9F7246</string>
 		</dict>
+		<key>64D124D6-2FEF-46F5-BA58-DA0759E0D9D6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>64D124D6-2FEF-46F5-BA58-DA0759E0D9D6.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570382624.63105595</real>
+			<key>timeStoppedRecording</key>
+			<real>570382627.35141397</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>64D124D6-2FEF-46F5-BA58-DA0759E0D9D6</string>
+		</dict>
+		<key>6554D094-63A9-4E65-AE39-99444997B0C9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6554D094-63A9-4E65-AE39-99444997B0C9.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386864.15222895</real>
+			<key>timeStoppedRecording</key>
+			<real>570386867.66368496</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>6554D094-63A9-4E65-AE39-99444997B0C9</string>
+		</dict>
 		<key>6797B131-0087-4F0A-AB1C-3C3107C876F1</key>
 		<dict>
 			<key>className</key>
@@ -1078,6 +1658,64 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>6797B131-0087-4F0A-AB1C-3C3107C876F1</string>
+		</dict>
+		<key>6A566D62-5269-4CC8-97E7-0AE4D3A30F09</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6A566D62-5269-4CC8-97E7-0AE4D3A30F09.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570385688.19423103</real>
+			<key>timeStoppedRecording</key>
+			<real>570385688.91230702</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>6A566D62-5269-4CC8-97E7-0AE4D3A30F09</string>
+		</dict>
+		<key>6BA0B2EF-862A-4038-B960-032291D56A36</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6BA0B2EF-862A-4038-B960-032291D56A36.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386505.13285899</real>
+			<key>timeStoppedRecording</key>
+			<real>570386507.54764199</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>6BA0B2EF-862A-4038-B960-032291D56A36</string>
 		</dict>
 		<key>6EE386BB-F706-4A92-B0B5-7C1B10E3F0B2</key>
 		<dict>
@@ -1137,6 +1775,64 @@
 			<key>uniqueIdentifier</key>
 			<string>6F1DAB44-ECF9-40DF-A962-8F27FBBECC19</string>
 		</dict>
+		<key>6F80B957-F0BE-44FE-AD4F-A5127AFA6164</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6F80B957-F0BE-44FE-AD4F-A5127AFA6164.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386965.29212606</real>
+			<key>timeStoppedRecording</key>
+			<real>570386966.82917905</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>6F80B957-F0BE-44FE-AD4F-A5127AFA6164</string>
+		</dict>
+		<key>71CDCF70-E62F-4E61-9FAD-8BC5934D1E9F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>71CDCF70-E62F-4E61-9FAD-8BC5934D1E9F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570389845.846753</real>
+			<key>timeStoppedRecording</key>
+			<real>570389849.07685399</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>71CDCF70-E62F-4E61-9FAD-8BC5934D1E9F</string>
+		</dict>
 		<key>75C05F3E-7995-4B42-890B-CD58EC9655D6</key>
 		<dict>
 			<key>className</key>
@@ -1165,6 +1861,64 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>75C05F3E-7995-4B42-890B-CD58EC9655D6</string>
+		</dict>
+		<key>79E2835E-73F3-44B8-8DB4-974CF7E8D550</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>79E2835E-73F3-44B8-8DB4-974CF7E8D550.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570382435.40668797</real>
+			<key>timeStoppedRecording</key>
+			<real>570382438.302912</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>79E2835E-73F3-44B8-8DB4-974CF7E8D550</string>
+		</dict>
+		<key>7A77F94E-DE10-488B-9EED-3252D054E746</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7A77F94E-DE10-488B-9EED-3252D054E746.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570382605.99905205</real>
+			<key>timeStoppedRecording</key>
+			<real>570382606.54036701</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>7A77F94E-DE10-488B-9EED-3252D054E746</string>
 		</dict>
 		<key>7C4D0E8F-3BBF-4F61-A579-4175940B101B</key>
 		<dict>
@@ -1311,6 +2065,64 @@
 			<key>uniqueIdentifier</key>
 			<string>810A6554-DEB6-44FB-B7C2-BB2374BE88E0</string>
 		</dict>
+		<key>842B6375-39A2-4C88-8DB1-59BFB20A224E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>842B6375-39A2-4C88-8DB1-59BFB20A224E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386806.983549</real>
+			<key>timeStoppedRecording</key>
+			<real>570386811.37080395</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>842B6375-39A2-4C88-8DB1-59BFB20A224E</string>
+		</dict>
+		<key>888C01CD-BEE3-41F9-8F6E-D9A46A50CB2A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>888C01CD-BEE3-41F9-8F6E-D9A46A50CB2A.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570390415.51064396</real>
+			<key>timeStoppedRecording</key>
+			<real>570390418.39620697</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>888C01CD-BEE3-41F9-8F6E-D9A46A50CB2A</string>
+		</dict>
 		<key>8903C863-F8B7-4359-81D6-A9EE44231841</key>
 		<dict>
 			<key>className</key>
@@ -1398,6 +2210,35 @@
 			<key>uniqueIdentifier</key>
 			<string>8A6B4C83-23EA-472D-8893-54CBDA76C598</string>
 		</dict>
+		<key>8E12E7A6-39AE-4B4E-9B6C-E1C13E0C8AFB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8E12E7A6-39AE-4B4E-9B6C-E1C13E0C8AFB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570385616.63713801</real>
+			<key>timeStoppedRecording</key>
+			<real>570385618.41358995</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>8E12E7A6-39AE-4B4E-9B6C-E1C13E0C8AFB</string>
+		</dict>
 		<key>8F559A6C-1B8A-4D04-ABFC-E9BBA4613443</key>
 		<dict>
 			<key>className</key>
@@ -1426,6 +2267,93 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>8F559A6C-1B8A-4D04-ABFC-E9BBA4613443</string>
+		</dict>
+		<key>931BDFA9-942C-43D4-B4AF-FE641DE8073F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>931BDFA9-942C-43D4-B4AF-FE641DE8073F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386063.78047299</real>
+			<key>timeStoppedRecording</key>
+			<real>570386065.63273001</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>931BDFA9-942C-43D4-B4AF-FE641DE8073F</string>
+		</dict>
+		<key>9396630A-94C4-4964-8E8C-8CB931F25785</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9396630A-94C4-4964-8E8C-8CB931F25785.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570383226.15602005</real>
+			<key>timeStoppedRecording</key>
+			<real>570383227.55629897</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>9396630A-94C4-4964-8E8C-8CB931F25785</string>
+		</dict>
+		<key>948A64A1-BEC6-4666-8A03-E4F240D2E7B0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>948A64A1-BEC6-4666-8A03-E4F240D2E7B0.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570382746.74150395</real>
+			<key>timeStoppedRecording</key>
+			<real>570382751.86321998</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>948A64A1-BEC6-4666-8A03-E4F240D2E7B0</string>
 		</dict>
 		<key>94B4BE7F-C432-414B-90A1-02412E94860D</key>
 		<dict>
@@ -1543,6 +2471,35 @@
 			<key>uniqueIdentifier</key>
 			<string>9AD439C5-B75B-4F6D-8015-7A324636A2EF</string>
 		</dict>
+		<key>9F761B1C-F9F7-453E-8ECD-8F3DA16EF02C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9F761B1C-F9F7-453E-8ECD-8F3DA16EF02C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570384272.88204598</real>
+			<key>timeStoppedRecording</key>
+			<real>570384280.71172297</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>9F761B1C-F9F7-453E-8ECD-8F3DA16EF02C</string>
+		</dict>
 		<key>A019457A-AE79-4DCE-89BC-CA8310C829A5</key>
 		<dict>
 			<key>className</key>
@@ -1571,6 +2528,35 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>A019457A-AE79-4DCE-89BC-CA8310C829A5</string>
+		</dict>
+		<key>A17529F1-5CC2-40BB-AD50-39DD381442FD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A17529F1-5CC2-40BB-AD50-39DD381442FD.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570384314.73419702</real>
+			<key>timeStoppedRecording</key>
+			<real>570384317.17837</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>A17529F1-5CC2-40BB-AD50-39DD381442FD</string>
 		</dict>
 		<key>A32BD3C4-A84D-449D-A78A-FA0E9DDFF712</key>
 		<dict>
@@ -1601,6 +2587,64 @@
 			<key>uniqueIdentifier</key>
 			<string>A32BD3C4-A84D-449D-A78A-FA0E9DDFF712</string>
 		</dict>
+		<key>A3778861-6AEF-4E41-A1A1-B81C9BCA3380</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A3778861-6AEF-4E41-A1A1-B81C9BCA3380.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386905.99479604</real>
+			<key>timeStoppedRecording</key>
+			<real>570386910.42148101</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>A3778861-6AEF-4E41-A1A1-B81C9BCA3380</string>
+		</dict>
+		<key>A4357C3D-E073-4140-AB5C-508EE076674E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A4357C3D-E073-4140-AB5C-508EE076674E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570382367.69293797</real>
+			<key>timeStoppedRecording</key>
+			<real>570382371.88010097</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>A4357C3D-E073-4140-AB5C-508EE076674E</string>
+		</dict>
 		<key>A616F2A5-A288-4ED6-B713-62894136D72B</key>
 		<dict>
 			<key>className</key>
@@ -1630,6 +2674,35 @@
 			<key>uniqueIdentifier</key>
 			<string>A616F2A5-A288-4ED6-B713-62894136D72B</string>
 		</dict>
+		<key>A6924855-172E-4C9C-8B52-3720E6B295FF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A6924855-172E-4C9C-8B52-3720E6B295FF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570385771.89722395</real>
+			<key>timeStoppedRecording</key>
+			<real>570385772.52020705</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>A6924855-172E-4C9C-8B52-3720E6B295FF</string>
+		</dict>
 		<key>A92C4530-30BB-4A9C-A011-5AD7A2972B23</key>
 		<dict>
 			<key>className</key>
@@ -1658,6 +2731,64 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>A92C4530-30BB-4A9C-A011-5AD7A2972B23</string>
+		</dict>
+		<key>AAB68854-860B-4830-B7CA-19272D894012</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AAB68854-860B-4830-B7CA-19272D894012.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570390876.56348896</real>
+			<key>timeStoppedRecording</key>
+			<real>570390880.90818799</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>AAB68854-860B-4830-B7CA-19272D894012</string>
+		</dict>
+		<key>AAC0119C-BD02-4B83-BFDA-7CB7E84BABCE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AAC0119C-BD02-4B83-BFDA-7CB7E84BABCE.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570383420.86050606</real>
+			<key>timeStoppedRecording</key>
+			<real>570383426.69798899</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>AAC0119C-BD02-4B83-BFDA-7CB7E84BABCE</string>
 		</dict>
 		<key>ABF62378-8514-42E0-A083-079D859B0234</key>
 		<dict>
@@ -1774,6 +2905,122 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>ADD874D4-6413-4E28-AE9D-74FB04C1AA57</string>
+		</dict>
+		<key>B1D24100-49F4-4F4C-960C-6AE3C4501563</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B1D24100-49F4-4F4C-960C-6AE3C4501563.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570382574.03766</real>
+			<key>timeStoppedRecording</key>
+			<real>570382577.52720904</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>B1D24100-49F4-4F4C-960C-6AE3C4501563</string>
+		</dict>
+		<key>B219E1B5-1789-4D92-ADAB-C0A3D42C2B40</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B219E1B5-1789-4D92-ADAB-C0A3D42C2B40.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570390675.78533304</real>
+			<key>timeStoppedRecording</key>
+			<real>570390676.58784604</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>B219E1B5-1789-4D92-ADAB-C0A3D42C2B40</string>
+		</dict>
+		<key>B6A36D68-21E8-42C2-A117-5902F74DC82C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B6A36D68-21E8-42C2-A117-5902F74DC82C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570383514.24753904</real>
+			<key>timeStoppedRecording</key>
+			<real>570383517.12033498</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>B6A36D68-21E8-42C2-A117-5902F74DC82C</string>
+		</dict>
+		<key>B71093EF-D29D-4505-9D94-46E818A6CFAB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B71093EF-D29D-4505-9D94-46E818A6CFAB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570385562.62758994</real>
+			<key>timeStoppedRecording</key>
+			<real>570385563.52379799</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>B71093EF-D29D-4505-9D94-46E818A6CFAB</string>
 		</dict>
 		<key>B93FD236-C93F-49C8-9195-AF7C69775946</key>
 		<dict>
@@ -2094,6 +3341,35 @@
 			<key>uniqueIdentifier</key>
 			<string>C61BBAD3-788D-4D08-B85A-A7B48859999F</string>
 		</dict>
+		<key>C7B33140-9D83-4265-A2A9-8DCD41FB6960</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C7B33140-9D83-4265-A2A9-8DCD41FB6960.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386019.59132397</real>
+			<key>timeStoppedRecording</key>
+			<real>570386022.25302994</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>C7B33140-9D83-4265-A2A9-8DCD41FB6960</string>
+		</dict>
 		<key>CF357151-A3D6-4454-AB41-C1219CF082DD</key>
 		<dict>
 			<key>className</key>
@@ -2123,6 +3399,35 @@
 			<key>uniqueIdentifier</key>
 			<string>CF357151-A3D6-4454-AB41-C1219CF082DD</string>
 		</dict>
+		<key>CF7E4F5C-7831-45E1-8690-E30EF7715F5E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CF7E4F5C-7831-45E1-8690-E30EF7715F5E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386307.88454294</real>
+			<key>timeStoppedRecording</key>
+			<real>570386312.73746097</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>CF7E4F5C-7831-45E1-8690-E30EF7715F5E</string>
+		</dict>
 		<key>D1A3B030-58DD-481D-B611-C4FD36767F1D</key>
 		<dict>
 			<key>className</key>
@@ -2151,6 +3456,64 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>D1A3B030-58DD-481D-B611-C4FD36767F1D</string>
+		</dict>
+		<key>D364C51D-57F7-4D4C-8189-BC9C1354D5FF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D364C51D-57F7-4D4C-8189-BC9C1354D5FF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570385918.36847401</real>
+			<key>timeStoppedRecording</key>
+			<real>570385921.39520395</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>D364C51D-57F7-4D4C-8189-BC9C1354D5FF</string>
+		</dict>
+		<key>D475E176-99D1-4CE1-98C3-7EA82738EF34</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D475E176-99D1-4CE1-98C3-7EA82738EF34.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570383125.92796099</real>
+			<key>timeStoppedRecording</key>
+			<real>570383127.02127504</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>D475E176-99D1-4CE1-98C3-7EA82738EF34</string>
 		</dict>
 		<key>D6483341-D597-4905-94AA-1EE424935E87</key>
 		<dict>
@@ -2209,6 +3572,35 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>D66C5478-A85E-47BA-A194-2EF9AC9F9CD5</string>
+		</dict>
+		<key>D8A1925D-39DC-4F41-A09E-277A7627F3C6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D8A1925D-39DC-4F41-A09E-277A7627F3C6.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386073.98030198</real>
+			<key>timeStoppedRecording</key>
+			<real>570386079.12002599</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>D8A1925D-39DC-4F41-A09E-277A7627F3C6</string>
 		</dict>
 		<key>D982A984-E48D-48E4-A368-28CC06EB08EC</key>
 		<dict>
@@ -2297,6 +3689,93 @@
 			<key>uniqueIdentifier</key>
 			<string>E099AA32-EF94-45F8-875D-3180A3D94749</string>
 		</dict>
+		<key>E37FF5C4-F578-4573-9FBE-3591E3717A7F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E37FF5C4-F578-4573-9FBE-3591E3717A7F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570385811.10419798</real>
+			<key>timeStoppedRecording</key>
+			<real>570385814.69479406</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>E37FF5C4-F578-4573-9FBE-3591E3717A7F</string>
+		</dict>
+		<key>E47A3758-BABB-4A0D-816E-401AEBD53336</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E47A3758-BABB-4A0D-816E-401AEBD53336.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570382722.19820905</real>
+			<key>timeStoppedRecording</key>
+			<real>570382723.323107</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>E47A3758-BABB-4A0D-816E-401AEBD53336</string>
+		</dict>
+		<key>E7E2C8EB-30C2-4E99-8799-65A62234C080</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E7E2C8EB-30C2-4E99-8799-65A62234C080.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570386475.08734095</real>
+			<key>timeStoppedRecording</key>
+			<real>570386475.52523804</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>E7E2C8EB-30C2-4E99-8799-65A62234C080</string>
+		</dict>
 		<key>E97D3E06-1F9D-4D2B-83C5-8159F28C6CD4</key>
 		<dict>
 			<key>className</key>
@@ -2354,6 +3833,35 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>EA93C94D-E2CB-4030-9B19-32A32058589C</string>
+		</dict>
+		<key>EAFF3138-A345-4094-BAE4-65B53B0C996D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EAFF3138-A345-4094-BAE4-65B53B0C996D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570389893.88102305</real>
+			<key>timeStoppedRecording</key>
+			<real>570389896.59440601</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>EAFF3138-A345-4094-BAE4-65B53B0C996D</string>
 		</dict>
 		<key>F0731C8A-C9EF-4DA7-ACB1-095168AC125D</key>
 		<dict>
@@ -2442,6 +3950,64 @@
 			<key>uniqueIdentifier</key>
 			<string>F0912E1E-6F1B-40A5-B9F3-233715E487D0</string>
 		</dict>
+		<key>F10E1578-46A2-4300-AC54-A5EB8536171B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F10E1578-46A2-4300-AC54-A5EB8536171B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570382258.20040298</real>
+			<key>timeStoppedRecording</key>
+			<real>570382268.04506803</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>F10E1578-46A2-4300-AC54-A5EB8536171B</string>
+		</dict>
+		<key>F2438FDD-15D6-483E-90D0-7058846D695B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F2438FDD-15D6-483E-90D0-7058846D695B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570383448.35280597</real>
+			<key>timeStoppedRecording</key>
+			<real>570383451.25371003</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>F2438FDD-15D6-483E-90D0-7058846D695B</string>
+		</dict>
 		<key>F3DAC288-2C14-4221-91B4-2C512FD34D71</key>
 		<dict>
 			<key>className</key>
@@ -2471,6 +4037,35 @@
 			<key>uniqueIdentifier</key>
 			<string>F3DAC288-2C14-4221-91B4-2C512FD34D71</string>
 		</dict>
+		<key>F4142FEE-9ECC-48FB-96F1-45107B1D7082</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F4142FEE-9ECC-48FB-96F1-45107B1D7082.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570389370.91410995</real>
+			<key>timeStoppedRecording</key>
+			<real>570389375.95892799</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>F4142FEE-9ECC-48FB-96F1-45107B1D7082</string>
+		</dict>
 		<key>FAF6DC4A-C4EA-4428-B487-0AEADEF7FDB3</key>
 		<dict>
 			<key>className</key>
@@ -2499,6 +4094,35 @@
 			<string>Build Consent</string>
 			<key>uniqueIdentifier</key>
 			<string>FAF6DC4A-C4EA-4428-B487-0AEADEF7FDB3</string>
+		</dict>
+		<key>FC1D1ABD-7AE6-4C56-B2D2-45B667D59D23</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FC1D1ABD-7AE6-4C56-B2D2-45B667D59D23.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Consent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Consent</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Consent</string>
+			<key>timeStartedRecording</key>
+			<real>570382639.81708002</real>
+			<key>timeStoppedRecording</key>
+			<real>570382642.56487501</real>
+			<key>title</key>
+			<string>Build Consent</string>
+			<key>uniqueIdentifier</key>
+			<string>FC1D1ABD-7AE6-4C56-B2D2-45B667D59D23</string>
 		</dict>
 		<key>FF40B84E-CF8B-4FAA-A495-F5569E4803B0</key>
 		<dict>

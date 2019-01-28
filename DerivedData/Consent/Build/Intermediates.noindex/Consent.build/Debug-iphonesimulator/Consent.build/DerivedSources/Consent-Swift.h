@@ -191,6 +191,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class UITextFieldX;
 @class UIImageViewX;
 @class UIButtonX;
+@class NSLayoutConstraint;
 @class NSBundle;
 @class NSCoder;
 
@@ -204,7 +205,11 @@ SWIFT_CLASS("_TtC7Consent10AddEntryVC")
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified vidSavedLbl;
 @property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified vidSavedIcon;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified submitB;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerActionsConstraint;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerUIDConstraint;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)vidIconCheck;
 - (void)enableSubmitBtn;
 - (IBAction)submit:(UIButtonX * _Nonnull)sender;
@@ -269,6 +274,7 @@ SWIFT_CLASS("_TtC7Consent14ClickedEntryVC")
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified emailLbl;
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified genderLbl;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (IBAction)openContract:(UIButtonX * _Nonnull)sender;
 - (IBAction)back:(UIButtonX * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -354,7 +360,10 @@ SWIFT_CLASS("_TtC7Consent6EditVC")
 @property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified profilePic;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified editPicB;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified saveB;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerGenderEdit;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)shouldEnable;
 - (IBAction)saveEdits:(UIButtonX * _Nonnull)sender;
 - (IBAction)editPic:(UIButtonX * _Nonnull)sender;
@@ -382,7 +391,11 @@ SWIFT_CLASS("_TtC7Consent10InfoPageVC")
 @interface InfoPageVC : UIViewController
 @property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified modeToggle;
 @property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified logoPic;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified lightLbl;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified darkLbl;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (IBAction)back:(UIButtonX * _Nonnull)sender;
 - (IBAction)stateChangedWithSwitchState:(UISwitch * _Nonnull)switchState;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -400,7 +413,6 @@ SWIFT_CLASS("_TtC7Consent12LoadingPopUp")
 
 
 @class UITableViewX;
-@class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC7Consent6MainVC")
 @interface MainVC : UIViewController <UITextFieldDelegate>
@@ -415,6 +427,8 @@ SWIFT_CLASS("_TtC7Consent6MainVC")
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified topSearchBarConstraint;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified topTableViewConstraint;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLayoutSubviews;
 - (IBAction)mainBClicked:(UIButtonX * _Nonnull)sender;
 - (IBAction)infoBClicked:(UIButtonX * _Nonnull)sender;
@@ -453,7 +467,10 @@ SWIFT_CLASS("_TtC7Consent9PWResetVC")
 @interface PWResetVC : UIViewController <UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified email;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified resetB;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerPWConstraint;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)enableBtn;
 - (IBAction)resetPW:(id _Nonnull)sender;
 - (IBAction)back:(id _Nonnull)sender;
@@ -500,6 +517,9 @@ SWIFT_CLASS("_TtC7Consent7Pg1View")
 @property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified checkL;
 @property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified checkU;
 @property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified checkM;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerEmailConstraint;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerPWConstraint;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerPWConfirmConstraint;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -511,6 +531,10 @@ SWIFT_CLASS("_TtC7Consent7Pg2View")
 @property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified middleName;
 @property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified lastName;
 @property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified phoneNum;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerFirstConstraint;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerMidConstraint;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerLastConstraint;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerPhoneNumConstraint;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -563,6 +587,8 @@ SWIFT_CLASS("_TtC7Consent13ProfilePageVC")
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified uidLbl;
 @property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified profilePic;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLayoutSubviews;
 - (IBAction)mainBClicked:(UIButtonX * _Nonnull)sender;
 - (IBAction)resetBClicked:(UIButtonX * _Nonnull)sender;
@@ -599,7 +625,12 @@ SWIFT_CLASS("_TtC7Consent8SignInVC")
 @property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified password;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified loginB;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified signUpB;
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified loginView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerEmailConstraint;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerPWConstraint;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (IBAction)signUp:(id _Nonnull)sender;
 - (IBAction)login:(id _Nonnull)sender;
 - (IBAction)forgotPW:(id _Nonnull)sender;
@@ -622,6 +653,8 @@ SWIFT_CLASS("_TtC7Consent8SignUpVC")
 @property (nonatomic, weak) IBOutlet UIProgressView * _Null_unspecified progressBar;
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified progressBarLbl;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)enableNextBtn;
 - (IBAction)next:(id _Nonnull)sender;
 - (IBAction)back:(id _Nonnull)sender;
@@ -880,6 +913,12 @@ SWIFT_CLASS("_TtC7Consent12UITableViewX")
 - (BOOL)touchesShouldCancelInContentView:(UIView * _Nonnull)view SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UITextField (SWIFT_EXTENSION(Consent))
+@property (nonatomic) NSInteger maxLength;
+- (void)fixWithTextField:(UITextField * _Nonnull)textField;
 @end
 
 
