@@ -68,7 +68,7 @@ class MainVC: UIViewController {
                 self.firebasePropertiesIntializer()
                 
                 SetFuncs.setTextFields(field: self.searchBar, img: #imageLiteral(resourceName: "SearchIcon"), view: self)
-                SetFuncs.setButton(btn: self.searchTypeB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
+                SetFuncs.setButton(btn: self.searchTypeB, color: #colorLiteral(red: 0.3254901961, green: 0.6666666667, blue: 0.7843137255, alpha: 1))
                 
                 self.tableViewU.dataSource = self
                 self.tableViewU.delegate = self

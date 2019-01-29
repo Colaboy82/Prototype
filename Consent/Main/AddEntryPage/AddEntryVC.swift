@@ -79,7 +79,7 @@ class AddEntryVC: UIViewController {
     }
     func setEntryFields(){
         SetFuncs.setButton(btn: submitB, color: #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
-        SetFuncs.setButton(btn: recordB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
+        SetFuncs.setButton(btn: recordB, color: #colorLiteral(red: 0.3254901961, green: 0.6666666667, blue: 0.7843137255, alpha: 1))
         
         SetFuncs.setTextFields(field: uidTextBox, img: #imageLiteral(resourceName: "SearchIcon"), view: self)
         SetFuncs.setTextView(view: agreedActionTextBox)
@@ -107,7 +107,7 @@ class AddEntryVC: UIViewController {
     }
     @objc func enableSubmitBtn(){
         if (submitB.isEnabled){
-            submitB.backgroundColor = #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1)
+            submitB.backgroundColor = #colorLiteral(red: 0.3254901961, green: 0.6666666667, blue: 0.7843137255, alpha: 1)
         } else {
             submitB.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
         }

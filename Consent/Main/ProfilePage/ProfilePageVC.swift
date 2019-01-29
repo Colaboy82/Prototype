@@ -103,27 +103,29 @@ class ProfilePageVC: UIViewController {
     func setValues(){
         var pic: UIImage!
         
-        if (pic == nil){
-            profilePic.showAnimatedGradientSkeleton()
-        }
-        
         nameLbl.text = ProfilePageVC.name
         emailLbl.text = ProfilePageVC.email
         genderLbl.text = ProfilePageVC.gender
         uidLbl.text = ProfilePageVC.currUid
         
-        let storageRef = Storage.storage().reference(forURL: ProfilePageVC.profilePicUrl)
-        // Download the data, assuming a max size of 1MB (you can change this as necessary)
-        storageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) -> Void in
-            // Create a UIImage, add it to the array
-            self.profilePic.hideSkeleton()
-            pic = UIImage(data: data!)
-            if(ProfilePageVC.profilePicImg == nil){
-                self.profilePic.image = pic
-                ProfilePageVC.profilePicImg = pic
-            }else{
-                self.profilePic.image = ProfilePageVC.profilePicImg
+        if (ProfilePageVC.profilePicImg == nil){
+            profilePic.showAnimatedGradientSkeleton()
+            let storageRef = Storage.storage().reference(forURL: ProfilePageVC.profilePicUrl)
+            // Download the data, assuming a max size of 1MB (you can change this as necessary)
+            storageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) -> Void in
+                // Create a UIImage, add it to the array
+                self.profilePic.hideSkeleton()
+                pic = UIImage(data: data!)
+                if(ProfilePageVC.profilePicImg == nil){
+                    self.profilePic.image = pic
+                    ProfilePageVC.profilePicImg = pic
+                }else{
+                    self.profilePic.image = ProfilePageVC.profilePicImg
+                }
             }
+        }else{
+            profilePic.hideSkeleton()
+            profilePic.image = ProfilePageVC.profilePicImg
         }
     }
     @IBAction func mainBClicked(_ sender: UIButtonX){
@@ -159,6 +161,8 @@ class ProfilePageVC: UIViewController {
         self.present(nextVC, animated:true, completion:nil)
     }
     @IBAction func editBClicked(_ sender: UIButtonX){
+        EditVC.savedImg = ProfilePageVC.profilePicImg
+        
         let sb = UIStoryboard(name: "ProfilePage", bundle:nil)
         let nextVC = sb.instantiateViewController(withIdentifier: "EditPage")
         nextVC.modalTransitionStyle = .crossDissolve

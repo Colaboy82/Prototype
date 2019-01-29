@@ -433,17 +433,20 @@
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cl1-f6-ygM">
                                 <rect key="frame" x="101" y="171" width="173" height="2"/>
-                                <color key="progressTintColor" red="0.24216049910000001" green="0.35818958280000002" blue="0.4784591198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="progressTintColor" name="Button"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4R-ZV-nXA" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="103" y="534" width="168" height="33"/>
-                                <color key="backgroundColor" red="0.24216049910000001" green="0.35818958280000002" blue="0.4784591198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" name="Button"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="next:" destination="i79-gJ-zEO" eventType="touchUpInside" id="Kkc-GN-2Q1"/>
@@ -591,7 +594,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYu-9g-7F1" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
                                         <rect key="frame" x="92" y="137" width="159" height="50"/>
-                                        <color key="backgroundColor" red="0.24216049910000001" green="0.35818958280000002" blue="0.4784591198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" name="Button"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="LtH-8G-WIa"/>
                                         </constraints>
@@ -616,7 +619,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTp-dg-FjL">
-                                        <rect key="frame" x="106" y="182" width="131" height="30"/>
+                                        <rect key="frame" x="106" y="189" width="131" height="30"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                         <state key="normal" title="Forgot Password?">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -629,7 +632,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="cYu-9g-7F1" firstAttribute="top" secondItem="XQh-bL-mAv" secondAttribute="bottom" constant="32" id="2Fh-RH-jpi"/>
-                                    <constraint firstAttribute="bottom" secondItem="WTp-dg-FjL" secondAttribute="bottom" constant="-8" id="5yt-Et-67h"/>
+                                    <constraint firstAttribute="bottom" secondItem="WTp-dg-FjL" secondAttribute="bottom" constant="-15" id="5yt-Et-67h"/>
                                     <constraint firstItem="XQh-bL-mAv" firstAttribute="top" secondItem="N2o-yG-jcL" secondAttribute="bottom" constant="25" id="93T-4a-XSL"/>
                                     <constraint firstItem="N2o-yG-jcL" firstAttribute="top" secondItem="RkH-Bd-jgI" secondAttribute="top" constant="20" id="Cvg-l1-GGY"/>
                                     <constraint firstItem="XQh-bL-mAv" firstAttribute="centerX" secondItem="RkH-Bd-jgI" secondAttribute="centerX" id="FBG-8P-isK"/>
@@ -721,13 +724,16 @@
         <image name="key.png" width="512" height="512"/>
         <image name="return.png" width="512" height="512"/>
         <namedColor name="Background">
-            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Button">
+            <color red="0.32549019607843138" green="0.66666666666666663" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Secondary Background">
-            <color red="0.42352941176470588" green="0.35686274509803922" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.34901960784313724" green="0.28235294117647058" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Tint">
-            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

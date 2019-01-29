@@ -45,7 +45,6 @@ class EditVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCon
         uidLbl.text = ProfilePageVC.currUid
         
         originalImg = ProfilePageVC.profilePicImg
-        //EditVC.savedImg = originalImg
         
         saveB.isEnabled = false
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(shouldEnable), userInfo: nil, repeats: true)

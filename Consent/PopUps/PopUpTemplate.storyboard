@@ -340,6 +340,12 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*By pressing &quot;Confirm&quot; I understand and agree to all the conditions that allow the contract to be unvoided." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KL4-Js-U7a" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="37" y="384" width="246" height="20"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="8"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" name="Background"/>
                                 <constraints>
@@ -354,6 +360,7 @@
                                     <constraint firstItem="Smm-W9-Mmf" firstAttribute="leading" secondItem="Jpr-da-BTQ" secondAttribute="leading" constant="8" id="PWm-y4-58r"/>
                                     <constraint firstAttribute="trailing" secondItem="Isa-iL-wE3" secondAttribute="trailing" constant="8" id="Sqx-HE-GnP"/>
                                     <constraint firstItem="7r8-YL-YTN" firstAttribute="top" secondItem="8b0-Og-vSh" secondAttribute="bottom" constant="37" id="T9d-lb-ugI"/>
+                                    <constraint firstAttribute="trailing" secondItem="KL4-Js-U7a" secondAttribute="trailing" constant="36" id="bzY-WQ-uuy"/>
                                     <constraint firstAttribute="trailing" secondItem="qTU-gs-1rE" secondAttribute="trailing" constant="35" id="caf-he-c0f"/>
                                     <constraint firstItem="7r8-YL-YTN" firstAttribute="leading" secondItem="Jpr-da-BTQ" secondAttribute="leading" constant="42" id="dTk-5Y-WFS"/>
                                     <constraint firstAttribute="bottom" secondItem="Smm-W9-Mmf" secondAttribute="bottom" constant="8" id="dsE-WG-hM7"/>
@@ -362,6 +369,8 @@
                                     <constraint firstItem="Smm-W9-Mmf" firstAttribute="top" secondItem="V4X-cZ-IUU" secondAttribute="bottom" constant="5" id="kHE-LR-6xE"/>
                                     <constraint firstAttribute="trailing" secondItem="7r8-YL-YTN" secondAttribute="trailing" constant="42" id="mlv-8i-GAs"/>
                                     <constraint firstAttribute="trailing" secondItem="Smm-W9-Mmf" secondAttribute="trailing" constant="8" id="qQd-XV-9mB"/>
+                                    <constraint firstItem="KL4-Js-U7a" firstAttribute="top" secondItem="qTU-gs-1rE" secondAttribute="bottom" constant="5" id="wro-N3-tqH"/>
+                                    <constraint firstItem="KL4-Js-U7a" firstAttribute="leading" secondItem="Jpr-da-BTQ" secondAttribute="leading" constant="37" id="zEA-KP-zzo"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
@@ -405,7 +414,7 @@
                                 <rect key="frame" x="28" y="61" width="319" height="565"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzU-1F-pwB" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="35" y="405" width="249" height="38"/>
+                                        <rect key="frame" x="35" y="390" width="249" height="38"/>
                                         <color key="backgroundColor" name="Button"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="21"/>
                                         <state key="normal" title="Confirm">
@@ -429,7 +438,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:  Derrick S Mu" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jvi-kl-rlL" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="42" y="222" width="235" height="21"/>
+                                        <rect key="frame" x="42" y="210" width="235" height="21"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -465,7 +474,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender Identity: Male" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFA-Tf-aGh" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="42" y="262" width="235" height="21"/>
+                                        <rect key="frame" x="42" y="250" width="235" height="21"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -474,13 +483,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VidIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kzD-zI-2Kn" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="33" y="297" width="72" height="71"/>
+                                        <rect key="frame" x="33" y="285" width="72" height="71"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aA-rY-bXR" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="124" y="316" width="124.5" height="33"/>
+                                        <rect key="frame" x="124" y="304" width="124.5" height="33"/>
                                         <color key="backgroundColor" name="Button"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="Record">
@@ -503,13 +512,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Saved: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWO-nI-jtA" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="109" y="359" width="121" height="22"/>
+                                        <rect key="frame" x="109" y="347" width="121" height="22"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ErrorIcon" translatesAutoresizingMaskIntoConstraints="NO" id="RdS-Ax-swB" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="238" y="354" width="46" height="39"/>
+                                        <rect key="frame" x="238" y="342" width="46" height="39"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="RdS-Ax-swB" secondAttribute="height" multiplier="46:39" id="XMR-XG-2Ew"/>
                                             <constraint firstAttribute="height" constant="39" id="h96-Xe-SMM"/>
@@ -518,6 +527,12 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*By pressing &quot;Confirm&quot; I understand and agree to all the conditions that allow the contract to be unvoided." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nG9-WZ-l8D" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="36" y="431" width="246" height="20"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="8"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" name="Background"/>
                                 <constraints>
@@ -525,8 +540,9 @@
                                     <constraint firstItem="wS8-r0-nT4" firstAttribute="leading" secondItem="bRQ-ac-Owb" secondAttribute="leading" constant="8" id="3Lw-8y-fjp"/>
                                     <constraint firstItem="RdS-Ax-swB" firstAttribute="top" secondItem="4aA-rY-bXR" secondAttribute="bottom" constant="5" id="3a3-o5-d7x"/>
                                     <constraint firstAttribute="trailing" secondItem="jvi-kl-rlL" secondAttribute="trailing" constant="42" id="4tL-ue-uvZ"/>
+                                    <constraint firstItem="nG9-WZ-l8D" firstAttribute="top" secondItem="NzU-1F-pwB" secondAttribute="bottom" constant="3" id="5hq-dm-TQE"/>
                                     <constraint firstItem="4aA-rY-bXR" firstAttribute="top" secondItem="BFA-Tf-aGh" secondAttribute="bottom" constant="33" id="7Fr-tN-G0G"/>
-                                    <constraint firstItem="jvi-kl-rlL" firstAttribute="top" secondItem="OSa-wI-v7k" secondAttribute="bottom" constant="37" id="E05-Cl-rSx"/>
+                                    <constraint firstItem="jvi-kl-rlL" firstAttribute="top" secondItem="OSa-wI-v7k" secondAttribute="bottom" constant="25" id="E05-Cl-rSx"/>
                                     <constraint firstItem="RdS-Ax-swB" firstAttribute="leading" secondItem="NWO-nI-jtA" secondAttribute="trailing" constant="8" id="ErM-0l-xbC"/>
                                     <constraint firstAttribute="trailing" secondItem="NzU-1F-pwB" secondAttribute="trailing" constant="35" id="F8f-pD-rJh"/>
                                     <constraint firstItem="NWO-nI-jtA" firstAttribute="top" secondItem="4aA-rY-bXR" secondAttribute="bottom" constant="10" id="Kcn-Hu-G3Y"/>
@@ -537,10 +553,12 @@
                                     <constraint firstAttribute="trailing" secondItem="hON-Pg-rdE" secondAttribute="trailing" constant="8" id="TCK-Sa-M5r"/>
                                     <constraint firstItem="jvi-kl-rlL" firstAttribute="leading" secondItem="bRQ-ac-Owb" secondAttribute="leading" constant="42" id="Tor-Ra-tSJ"/>
                                     <constraint firstItem="kzD-zI-2Kn" firstAttribute="top" secondItem="BFA-Tf-aGh" secondAttribute="bottom" constant="14" id="U14-eP-3hh"/>
-                                    <constraint firstItem="wS8-r0-nT4" firstAttribute="top" secondItem="NzU-1F-pwB" secondAttribute="bottom" constant="11" id="bHS-fu-vF8"/>
                                     <constraint firstItem="hON-Pg-rdE" firstAttribute="top" secondItem="bRQ-ac-Owb" secondAttribute="top" constant="8" id="bXz-sc-m5t"/>
                                     <constraint firstAttribute="trailing" secondItem="BFA-Tf-aGh" secondAttribute="trailing" constant="42" id="eJa-v7-C3C"/>
                                     <constraint firstItem="EIo-S3-DAF" firstAttribute="leading" secondItem="bRQ-ac-Owb" secondAttribute="leading" constant="8" id="f5F-Mb-xKY"/>
+                                    <constraint firstItem="wS8-r0-nT4" firstAttribute="top" secondItem="nG9-WZ-l8D" secondAttribute="bottom" constant="3" id="gQL-6i-aFW"/>
+                                    <constraint firstAttribute="trailing" secondItem="nG9-WZ-l8D" secondAttribute="trailing" constant="37" id="ghJ-9o-HeI"/>
+                                    <constraint firstItem="nG9-WZ-l8D" firstAttribute="leading" secondItem="bRQ-ac-Owb" secondAttribute="leading" constant="36" id="glI-KC-pe0"/>
                                     <constraint firstAttribute="trailing" secondItem="4aA-rY-bXR" secondAttribute="trailing" constant="70.5" id="h4E-fx-z5b"/>
                                     <constraint firstItem="OSa-wI-v7k" firstAttribute="top" secondItem="bRQ-ac-Owb" secondAttribute="top" constant="55" id="isO-Fe-sYl"/>
                                     <constraint firstAttribute="trailing" secondItem="EIo-S3-DAF" secondAttribute="trailing" constant="8" id="jHV-S1-FRS"/>
@@ -592,16 +610,16 @@
         <image name="VidIcon" width="72" height="71"/>
         <image name="reload.png" width="512" height="512"/>
         <namedColor name="Background">
-            <color red="0.62745098039215685" green="0.63137254901960782" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Button">
-            <color red="0.36862745098039218" green="0.61176470588235299" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.32549019607843138" green="0.66666666666666663" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Secondary Background">
-            <color red="0.42352941176470588" green="0.35686274509803922" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.34901960784313724" green="0.28235294117647058" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Tint">
-            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

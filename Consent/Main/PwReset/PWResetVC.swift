@@ -52,7 +52,7 @@ class PWResetVC: UIViewController {
     }
     @objc func enableBtn(){
         if(shouldEnableResetBtn()){
-            resetB.layer.backgroundColor = #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1)
+            resetB.layer.backgroundColor = #colorLiteral(red: 0.3254901961, green: 0.6666666667, blue: 0.7843137255, alpha: 1)
         }else{
             resetB.layer.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
         }

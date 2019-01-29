@@ -53,7 +53,7 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         
         progressBar.setProgress(0, animated: true)
         
-        self.view.layer.borderColor = #colorLiteral(red: 0.7607843137, green: 0.7647058824, blue: 0.7725490196, alpha: 1)
+        self.view.layer.borderColor = #colorLiteral(red: 0.8, green: 0.8, blue: 0.8, alpha: 1)
         self.view.layer.borderWidth = 2
         
         SetFuncs.setTextFields(field: pg1.email, img: #imageLiteral(resourceName: "EmailIcon"), view: self)
@@ -70,11 +70,11 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         SetFuncs.setButtonImg(btn: pg3.femaleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
         SetFuncs.setButtonImg(btn: pg3.otherB, image: #imageLiteral(resourceName: "UnselectedIcon"))
         
-        SetFuncs.setButton(btn: pg4.openCamB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
-        SetFuncs.setButton(btn: pg4.openLibB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
+        SetFuncs.setButton(btn: pg4.openCamB, color: #colorLiteral(red: 0.3254901961, green: 0.6666666667, blue: 0.7843137255, alpha: 1))
+        SetFuncs.setButton(btn: pg4.openLibB, color: #colorLiteral(red: 0.3254901961, green: 0.6666666667, blue: 0.7843137255, alpha: 1))
         pg4.setPicImageView()
         
-        SetFuncs.setButton(btn: pg5.resendB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
+        SetFuncs.setButton(btn: pg5.resendB, color: #colorLiteral(red: 0.3254901961, green: 0.6666666667, blue: 0.7843137255, alpha: 1))
         
         setupPgViews(view: pg1View)
         setupPgViews(view: pg2View)

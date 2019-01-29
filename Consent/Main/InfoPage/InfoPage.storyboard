@@ -24,26 +24,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7mf-4W-uqf">
-                                <rect key="frame" x="163" y="476" width="51" height="31"/>
-                                <connections>
-                                    <action selector="stateChangedWithSwitchState:" destination="0eb-AR-CiU" eventType="touchUpInside" id="JiH-hc-BSA"/>
-                                </connections>
-                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© Derrick Mu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBo-BK-wA5" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="130" y="323" width="114" height="21"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccc-07-BQ8" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="227" y="481" width="96" height="21"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSz-LH-jgo" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="49" y="481" width="99" height="21"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -57,40 +39,49 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A70-PG-bdY">
-                                <rect key="frame" x="0.0" y="556" width="126" height="111"/>
+                                <rect key="frame" x="0.0" y="573" width="126" height="94"/>
                                 <state key="normal" title="Button" image="return.png"/>
                                 <connections>
                                     <action selector="back:" destination="0eb-AR-CiU" eventType="touchUpInside" id="2CS-Pp-NCA"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPw-kn-etf" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                <rect key="frame" x="83" y="424" width="209" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Button"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="See Contract Template">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="aVC-Nx-n3L" firstAttribute="leading" secondItem="rBZ-Qk-9hc" secondAttribute="leading" constant="83" id="3YX-2p-6v1"/>
                             <constraint firstItem="aVC-Nx-n3L" firstAttribute="top" secondItem="rBZ-Qk-9hc" secondAttribute="top" constant="50" id="62J-d6-7J1"/>
-                            <constraint firstItem="7mf-4W-uqf" firstAttribute="centerX" secondItem="dUV-YR-BVD" secondAttribute="centerX" id="9XZ-En-yBd"/>
-                            <constraint firstItem="Ccc-07-BQ8" firstAttribute="leading" secondItem="7mf-4W-uqf" secondAttribute="trailing" constant="15" id="BC2-GE-R7t"/>
                             <constraint firstItem="aVC-Nx-n3L" firstAttribute="width" secondItem="aVC-Nx-n3L" secondAttribute="height" multiplier="1:1" id="DtD-vJ-rzJ"/>
+                            <constraint firstItem="A70-PG-bdY" firstAttribute="top" secondItem="aVC-Nx-n3L" secondAttribute="bottom" constant="294" id="MYG-vF-OnH"/>
                             <constraint firstItem="rBZ-Qk-9hc" firstAttribute="trailing" secondItem="HBo-BK-wA5" secondAttribute="trailing" constant="131" id="RRR-I4-3Yb"/>
-                            <constraint firstItem="rBZ-Qk-9hc" firstAttribute="bottom" secondItem="GSz-LH-jgo" secondAttribute="bottom" constant="165" id="TWm-2P-BLn"/>
                             <constraint firstItem="A70-PG-bdY" firstAttribute="bottom" secondItem="rBZ-Qk-9hc" secondAttribute="bottom" id="VXE-Yj-l7t"/>
                             <constraint firstItem="A70-PG-bdY" firstAttribute="leading" secondItem="rBZ-Qk-9hc" secondAttribute="leading" id="aY1-iU-vwH"/>
-                            <constraint firstItem="rBZ-Qk-9hc" firstAttribute="bottom" secondItem="Ccc-07-BQ8" secondAttribute="bottom" constant="165" id="b91-5D-7LF"/>
-                            <constraint firstItem="7mf-4W-uqf" firstAttribute="leading" secondItem="GSz-LH-jgo" secondAttribute="trailing" constant="15" id="eGm-2X-h48"/>
                             <constraint firstItem="rBZ-Qk-9hc" firstAttribute="trailing" secondItem="A70-PG-bdY" secondAttribute="trailing" constant="249" id="g5f-lm-mf7"/>
                             <constraint firstItem="HBo-BK-wA5" firstAttribute="leading" secondItem="rBZ-Qk-9hc" secondAttribute="leading" constant="130" id="gy8-2w-cm5"/>
-                            <constraint firstItem="A70-PG-bdY" firstAttribute="top" secondItem="GSz-LH-jgo" secondAttribute="bottom" constant="54" id="l5o-YV-aQd"/>
                             <constraint firstItem="HBo-BK-wA5" firstAttribute="top" secondItem="aVC-Nx-n3L" secondAttribute="bottom" constant="44" id="oYU-gX-hAz"/>
-                            <constraint firstItem="rBZ-Qk-9hc" firstAttribute="bottom" secondItem="7mf-4W-uqf" secondAttribute="bottom" constant="160" id="ude-DJ-FHS"/>
                             <constraint firstItem="rBZ-Qk-9hc" firstAttribute="trailing" secondItem="aVC-Nx-n3L" secondAttribute="trailing" constant="83" id="yog-Ln-MxD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rBZ-Qk-9hc"/>
                     </view>
                     <connections>
-                        <outlet property="darkLbl" destination="Ccc-07-BQ8" id="oou-IC-EMp"/>
-                        <outlet property="lightLbl" destination="GSz-LH-jgo" id="z8n-CM-kD4"/>
                         <outlet property="logoPic" destination="aVC-Nx-n3L" id="bhH-GM-am3"/>
-                        <outlet property="modeToggle" destination="7mf-4W-uqf" id="wha-Ku-DG2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cle-ii-k9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -102,7 +93,10 @@
         <image name="ProfileIcon" width="41" height="41"/>
         <image name="return.png" width="512" height="512"/>
         <namedColor name="Background">
-            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Button">
+            <color red="0.32549019607843138" green="0.66666666666666663" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DisabledBtn">
             <color red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
