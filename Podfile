@@ -12,6 +12,7 @@ target 'Consent' do
   pod 'Firebase/Storage'
   pod 'RSKImageCropper'	
   pod 'SkeletonView'
+  pod 'SwiftKeychainWrapper'
 
   target 'ConsentTests' do
     inherit! :search_paths

@@ -192,6 +192,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class UIImageViewX;
 @class UIButtonX;
 @class NSLayoutConstraint;
+@class UITextField;
 @class NSBundle;
 @class NSCoder;
 
@@ -210,6 +211,7 @@ SWIFT_CLASS("_TtC7Consent10AddEntryVC")
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidAppear:(BOOL)animated;
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 - (void)vidIconCheck;
 - (void)enableSubmitBtn;
 - (IBAction)submit:(UIButtonX * _Nonnull)sender;
@@ -343,16 +345,8 @@ SWIFT_CLASS("_TtC7Consent10ContractVC")
 @end
 
 
-SWIFT_PROTOCOL("_TtP7Consent20UITextFieldXDelegate_")
-@protocol UITextFieldXDelegate <UITextFieldDelegate>
-@optional
-- (void)textFieldDidDeleteBackward:(UITextFieldX * _Nonnull)textField;
-- (BOOL)canPerformAction:(UITextFieldX * _Nonnull)textField :(SEL _Nonnull)action withSender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
 SWIFT_CLASS("_TtC7Consent6EditVC")
-@interface EditVC : UIViewController <UITextFieldXDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface EditVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified nameLbl;
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified emailLbl;
 @property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified genderEdit;
@@ -403,19 +397,11 @@ SWIFT_CLASS("_TtC7Consent10InfoPageVC")
 @end
 
 
-SWIFT_CLASS("_TtC7Consent12LoadingPopUp")
-@interface LoadingPopUp : UIViewController
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 
 @class UITableViewX;
 
 SWIFT_CLASS("_TtC7Consent6MainVC")
-@interface MainVC : UIViewController <UITextFieldDelegate>
+@interface MainVC : UIViewController
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified mainMenuB;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified infoB;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified profileB;
@@ -454,7 +440,6 @@ SWIFT_CLASS("_TtC7Consent6MainVC")
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
-@class UITextField;
 @class UIScrollView;
 
 @interface MainVC (SWIFT_EXTENSION(Consent))
@@ -464,7 +449,7 @@ SWIFT_CLASS("_TtC7Consent6MainVC")
 
 
 SWIFT_CLASS("_TtC7Consent9PWResetVC")
-@interface PWResetVC : UIViewController <UITextFieldDelegate>
+@interface PWResetVC : UIViewController
 @property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified email;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified resetB;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified centerPWConstraint;
@@ -610,8 +595,14 @@ SWIFT_CLASS("_TtC7Consent25SecondConfirmConsentPopUp")
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified agreeLbl;
 @property (nonatomic, weak) IBOutlet YPDrawSignatureView * _Null_unspecified signatureView;
 @property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified popUpView;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified vidImgView;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified recordB;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified vidSavedLbl;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified vidSavedIcon;
 - (void)viewDidLoad;
+- (void)vidIconCheck;
 - (void)shouldEnable;
+- (IBAction)record:(UIButtonX * _Nonnull)sender;
 - (IBAction)confirm:(UIButtonX * _Nonnull)sender;
 - (IBAction)cancel:(UIButtonX * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -619,8 +610,13 @@ SWIFT_CLASS("_TtC7Consent25SecondConfirmConsentPopUp")
 @end
 
 
+@interface SecondConfirmConsentPopUp (SWIFT_EXTENSION(Consent)) <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+@end
+
+
 SWIFT_CLASS("_TtC7Consent8SignInVC")
-@interface SignInVC : UIViewController <UITextFieldDelegate>
+@interface SignInVC : UIViewController
 @property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified email;
 @property (nonatomic, weak) IBOutlet UITextFieldX * _Null_unspecified password;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified loginB;
@@ -639,10 +635,25 @@ SWIFT_CLASS("_TtC7Consent8SignInVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+
+
+SWIFT_CLASS("_TtC7Consent12SignOutPopUp")
+@interface SignOutPopUp : UIViewController
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified dismissPopUpB;
+@property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified image;
+@property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified msgText;
+@property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified popUpView;
+- (void)viewDidLoad;
+- (IBAction)closePopUp:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIProgressView;
 
 SWIFT_CLASS("_TtC7Consent8SignUpVC")
-@interface SignUpVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
+@interface SignUpVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified nextB;
 @property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified backB;
 @property (nonatomic, weak) IBOutlet UIViewX * _Null_unspecified pg1View;
@@ -952,6 +963,13 @@ SWIFT_CLASS("_TtC7Consent12UITextFieldX")
 @end
 
 
+SWIFT_PROTOCOL("_TtP7Consent20UITextFieldXDelegate_")
+@protocol UITextFieldXDelegate <UITextFieldDelegate>
+@optional
+- (void)textFieldDidDeleteBackward:(UITextFieldX * _Nonnull)textField;
+- (BOOL)canPerformAction:(UITextFieldX * _Nonnull)textField :(SEL _Nonnull)action withSender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 
 
@@ -965,14 +983,15 @@ SWIFT_CLASS("_TtC7Consent17UIViewAnchorPoint")
 @end
 
 
-@interface UIViewController (SWIFT_EXTENSION(Consent))
-- (void)dismissKeyboard;
-@end
-
-
 @interface UIViewController (SWIFT_EXTENSION(Consent)) <UIViewControllerTransitioningDelegate>
 - (void)applyColorSchemeWithApplyBG:(BOOL)applyBG;
 - (void)setColors;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(Consent)) <UITextFieldXDelegate>
+- (void)dismissKeyboard;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

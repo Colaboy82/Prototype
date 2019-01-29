@@ -38,12 +38,12 @@ class ColorScheme {
     static let shadowScalar: Float = 2.5
     static let activityAnimationNamed: String = "Loading Animation"
     
-    static let primary = #colorLiteral(red: 0.2054004073, green: 0.3621505499, blue: 0.4895397425, alpha: 1)
-    static let secondary = #colorLiteral(red: 0.2054004073, green: 0.3621505499, blue: 0.4895397425, alpha: 1)
+    static let primary = #colorLiteral(red: 0.368627451, green: 0.6117647059, blue: 0.662745098, alpha: 1)
+    static let secondary = #colorLiteral(red: 0.6274509804, green: 0.631372549, blue: 0.6470588235, alpha: 1)
     static let gradient1 = #colorLiteral(red: 0.2784313725, green: 0.537254902, blue: 0.9294117647, alpha: 1)
     static let gradient2 = #colorLiteral(red: 0.4470588235, green: 0.8235294118, blue: 1, alpha: 1)
     
-    static let interactive = #colorLiteral(red: 0.5137254902, green: 0.1411764706, blue: 0.9764705882, alpha: 1)
+    static let interactive = #colorLiteral(red: 0.368627451, green: 0.6117647059, blue: 0.662745098, alpha: 1)
     static let interactiveD1 = #colorLiteral(red: 0.3074070139, green: 0.1102655593, blue: 0.5513277967, alpha: 1)
     static let interactiveGradient1 = #colorLiteral(red: 0.8078431373, green: 0.6156862745, blue: 0.9882352941, alpha: 1)
     static let interactiveGradient2 = #colorLiteral(red: 0.2235294118, green: 0.05490196078, blue: 0.6823529412, alpha: 1)

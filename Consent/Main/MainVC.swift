@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class MainVC: UIViewController, UITextFieldDelegate {
+class MainVC: UIViewController {
     
     @IBOutlet weak var mainMenuB: UIButtonX!
     @IBOutlet weak var infoB: UIButtonX!
@@ -67,7 +67,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
                 //UI thread
                 self.firebasePropertiesIntializer()
                 
-                SetFuncs.setTextFields(field: self.searchBar, img: #imageLiteral(resourceName: "SearchIcon"))
+                SetFuncs.setTextFields(field: self.searchBar, img: #imageLiteral(resourceName: "SearchIcon"), view: self)
                 SetFuncs.setButton(btn: self.searchTypeB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
                 
                 self.tableViewU.dataSource = self
@@ -111,8 +111,6 @@ class MainVC: UIViewController, UITextFieldDelegate {
             self.tableViewU.alpha = 1
             self.view.layoutIfNeeded()
         })
-        
-        
     }
     func firebasePropertiesIntializer(){
         userRef = userRef.child(uid!)
@@ -121,7 +119,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
     }
     func checkForConfirmPopUp(){
         if Auth.auth().currentUser != nil {
-        
+            
             let user = Auth.auth().currentUser?.uid.trunc(length: 10)
             let userRef = Database.database().reference().child("users").child(user!).child("ConfirmPopUp")
                 
@@ -305,6 +303,7 @@ extension MainVC {
                     }
                     self.tableViewU.reloadData()
                 })
+                self.entriesList.sort(by: {($0.firstName + $0.lastName ) < ($1.firstName + $1.lastName)})
                 self.filteredEntriesList = self.entriesList
                 //reloading the tableview
                 self.tableViewU.reloadData()
@@ -351,6 +350,8 @@ extension MainVC {
                         }
                     }
                 }
+                self.entriesList.sort(by: {($0.firstName + $0.lastName ) < ($1.firstName + $1.lastName)})
+                self.filteredEntriesList = self.entriesList
                 //reloading the tableview
                 self.tableViewU.reloadData()
             }

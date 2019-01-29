@@ -54,6 +54,7 @@
 		3DAF746321C1CA1E00235E9C /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF745021C1CA1E00235E9C /* Montserrat-Italic.ttf */; };
 		3DAF746421C1CA1E00235E9C /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF745121C1CA1E00235E9C /* Montserrat-SemiBoldItalic.ttf */; };
 		3DAF746521C1CA1E00235E9C /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF745221C1CA1E00235E9C /* Montserrat-ExtraBoldItalic.ttf */; };
+		3DC64AA722000C9200A5CC7E /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC64AA622000C9200A5CC7E /* LocalAuthentication.framework */; };
 		3DCA03E621B088350063B38E /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03E521B088350063B38E /* reload.png */; };
 		3DCA03E821B0883C0063B38E /* return.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03E721B0883C0063B38E /* return.png */; };
 		3DCA03EA21B0884E0063B38E /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03E921B0884E0063B38E /* key.png */; };
@@ -108,7 +109,7 @@
 		ECA08CE821D4A8B800565DC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CE721D4A8B800565DC5 /* Constants.swift */; };
 		ECA08CEA21D4AB3600565DC5 /* AccountValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CE921D4AB3600565DC5 /* AccountValidation.swift */; };
 		ECA08CEC21D525B600565DC5 /* ErrorPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CEB21D525B600565DC5 /* ErrorPopUp.swift */; };
-		ECA08CEE21D525D100565DC5 /* LoadingPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CED21D525D100565DC5 /* LoadingPopUp.swift */; };
+		ECA08CEE21D525D100565DC5 /* SignOutPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA08CED21D525D100565DC5 /* SignOutPopUp.swift */; };
 		ECCC233B21E565B500A77B41 /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC233A21E565B500A77B41 /* YPDrawSignatureView.swift */; };
 		ECCC233D21E6A0E300A77B41 /* SecondConfirmConsentPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC233C21E6A0E300A77B41 /* SecondConfirmConsentPopUp.swift */; };
 /* End PBXBuildFile section */
@@ -179,6 +180,7 @@
 		3DAF745021C1CA1E00235E9C /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
 		3DAF745121C1CA1E00235E9C /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		3DAF745221C1CA1E00235E9C /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		3DC64AA622000C9200A5CC7E /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		3DCA03E521B088350063B38E /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
 		3DCA03E721B0883C0063B38E /* return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = return.png; sourceTree = "<group>"; };
 		3DCA03E921B0884E0063B38E /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
@@ -237,7 +239,7 @@
 		EC58512421DD1BD600D53BF5 /* ConsentEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentEntryModel.swift; sourceTree = "<group>"; };
 		EC58512621DE903D00D53BF5 /* VideoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VideoIcon.png; sourceTree = "<group>"; };
 		EC58512821DFFBFB00D53BF5 /* ConfirmConsentPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmConsentPopUp.swift; sourceTree = "<group>"; };
-		ECA08CD221D470A000565DC5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ECA08CD221D470A000565DC5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		ECA08CD621D470BF00565DC5 /* PWReset.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PWReset.storyboard; sourceTree = "<group>"; };
 		ECA08CD721D470C200565DC5 /* PWResetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWResetVC.swift; sourceTree = "<group>"; };
 		ECA08CDE21D48D4C00565DC5 /* PopUpTemplate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUpTemplate.storyboard; sourceTree = "<group>"; };
@@ -245,7 +247,7 @@
 		ECA08CE721D4A8B800565DC5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ECA08CE921D4AB3600565DC5 /* AccountValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountValidation.swift; sourceTree = "<group>"; };
 		ECA08CEB21D525B600565DC5 /* ErrorPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPopUp.swift; sourceTree = "<group>"; };
-		ECA08CED21D525D100565DC5 /* LoadingPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPopUp.swift; sourceTree = "<group>"; };
+		ECA08CED21D525D100565DC5 /* SignOutPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutPopUp.swift; sourceTree = "<group>"; };
 		ECCC233A21E565B500A77B41 /* YPDrawSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPDrawSignatureView.swift; sourceTree = "<group>"; };
 		ECCC233C21E6A0E300A77B41 /* SecondConfirmConsentPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondConfirmConsentPopUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -255,6 +257,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC64AA722000C9200A5CC7E /* LocalAuthentication.framework in Frameworks */,
 				96EF5C14D393DFFB212E6A05 /* Pods_Consent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +466,7 @@
 		625E970B8701849A69AB0EA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DC64AA622000C9200A5CC7E /* LocalAuthentication.framework */,
 				7902611DD02A6C11C9BCF084 /* Pods_Consent.framework */,
 				0B732D2590BAE96187E1F71A /* Pods_ConsentTests.framework */,
 				5572DD0880A9922146B0638A /* Pods_ConsentUITests.framework */,
@@ -553,7 +557,7 @@
 			children = (
 				ECA08CE021D48FDF00565DC5 /* SuccessPopUp.swift */,
 				ECA08CEB21D525B600565DC5 /* ErrorPopUp.swift */,
-				ECA08CED21D525D100565DC5 /* LoadingPopUp.swift */,
+				ECA08CED21D525D100565DC5 /* SignOutPopUp.swift */,
 				EC58512821DFFBFB00D53BF5 /* ConfirmConsentPopUp.swift */,
 				ECCC233C21E6A0E300A77B41 /* SecondConfirmConsentPopUp.swift */,
 				ECA08CDE21D48D4C00565DC5 /* PopUpTemplate.storyboard */,
@@ -782,6 +786,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/RSKImageCropper/RSKImageCropper.framework",
 				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -791,6 +796,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSKImageCropper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -857,7 +863,7 @@
 				3D7C1E2D21F058A3000C53B8 /* UIViewXRadialGradient.swift in Sources */,
 				3D7C1E3621F058A3000C53B8 /* UIGradientLabel.swift in Sources */,
 				3D7C1E4221F058A3000C53B8 /* UIImageColors.swift in Sources */,
-				ECA08CEE21D525D100565DC5 /* LoadingPopUp.swift in Sources */,
+				ECA08CEE21D525D100565DC5 /* SignOutPopUp.swift in Sources */,
 				3D7C1E3A21F058A3000C53B8 /* UIViewX.swift in Sources */,
 				3D7C1E4121F058A3000C53B8 /* ColorUtils.swift in Sources */,
 				3D7C1E3521F058A3000C53B8 /* UIViewAnchorPoint.swift in Sources */,

@@ -3,11 +3,13 @@
 <plist version="1.0">
 <array>
 	<string>GoogleMobileAds</string>
+	<string>LocalAuthentication</string>
 	<string>RSKImageCropper</string>
 	<string>CommonCrypto</string>
 	<string>FirebasePerformance</string>
 	<string>SafariServices</string>
 	<string>SkeletonView</string>
+	<string>SwiftKeychainWrapper</string>
 	<string>FirebaseDynamicLinks</string>
 	<string>objc</string>
 	<string>FirebaseAuth</string>

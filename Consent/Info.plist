@@ -50,5 +50,7 @@
 	<string>You can choose photos to use as a profile picture.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Please give access to microphone</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Do you wanna use your face?</string>
 </dict>
 </plist>

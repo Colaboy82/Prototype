@@ -15,7 +15,7 @@ class UserModel{
     let pw: String
     
     let firstName: String
-    let midName: String
+    let midName: String?
     let lastName: String
     let phoneNum: String
     
@@ -25,11 +25,15 @@ class UserModel{
     
     let user: User
         
-    init(email: String, pw: String, firstName: String, midName: String, lastName: String, phoneNum: String, gender: String, profilePic: String, user: User){
+    init(email: String, pw: String, firstName: String, midName: String?, lastName: String, phoneNum: String, gender: String, profilePic: String, user: User){
         self.email = email
         self.pw = pw
         self.firstName = firstName
-        self.midName = midName
+        if (midName != nil){
+            self.midName = midName
+        }else{
+            self.midName = ""
+        }
         self.lastName = lastName
         self.phoneNum = phoneNum
         self.gender = gender

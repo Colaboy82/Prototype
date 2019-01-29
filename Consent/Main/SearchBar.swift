@@ -62,6 +62,7 @@ extension MainVC {
                     }
                 }
             }
+            self.filteredEntriesList.sort(by: {($0.firstName + $0.lastName ) < ($1.firstName + $1.lastName)})
         } else {
             for n in self.entriesList{
                 let date = n.date
@@ -72,6 +73,7 @@ extension MainVC {
                     }
                 }
             }
+            self.filteredEntriesList.sort(by: {($0.date) < ($1.date)})
         }
     }
     func updateDate(date: String) -> String {

@@ -37,7 +37,6 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         waitForArray = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(wait), userInfo: nil, repeats: false)
         failPopUpTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(checkFailPopUp), userInfo: nil, repeats: true)
     }
-    
     func setUp(){
         
         SetFuncs.setButton(btn: confirmBtn, color:#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
@@ -146,8 +145,6 @@ class ConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
                 print("success bitch")
             }
         }
-
-        
     }
     @IBAction func confirm(_ sender: UIButtonX){
         timer.invalidate()

@@ -172,10 +172,10 @@
             </objects>
             <point key="canvasLocation" x="1471" y="169"/>
         </scene>
-        <!--Loading-->
+        <!--SignOutPop-->
         <scene sceneID="Tms-uM-3FP">
             <objects>
-                <viewController storyboardIdentifier="Loading" title="Loading" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qEU-SL-0Pd" customClass="LoadingPopUp" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignOutPop" title="SignOutPop" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qEU-SL-0Pd" customClass="SignOutPopUp" customModule="Consent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mEt-RT-zaa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,8 +193,13 @@
                                         <state key="normal" title="Ok">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="closePopUp:" destination="qEU-SL-0Pd" eventType="touchUpInside" id="WMj-Y0-DL0"/>
+                                            <action selector="closePopUp:" destination="qEU-SL-0Pd" eventType="touchUpInside" id="MTA-jq-C6t"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gnJ-gB-bEj" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
@@ -229,6 +234,11 @@
                                     <constraint firstItem="HNw-ll-7Dq" firstAttribute="top" secondItem="RVo-iv-V2M" secondAttribute="top" constant="8" id="OZO-5t-AAK"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="265" id="xJ5-Xb-al5"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -240,10 +250,10 @@
                         <viewLayoutGuide key="safeArea" id="XI0-oC-133"/>
                     </view>
                     <connections>
-                        <outlet property="dismissPopUpB" destination="Doc-Gz-jLk" id="Dka-ih-xSD"/>
-                        <outlet property="image" destination="HNw-ll-7Dq" id="CrY-sf-ZyI"/>
-                        <outlet property="msgText" destination="gnJ-gB-bEj" id="LfF-Bz-ogS"/>
-                        <outlet property="popUpView" destination="RVo-iv-V2M" id="1zR-dV-jPL"/>
+                        <outlet property="dismissPopUpB" destination="Doc-Gz-jLk" id="1Cv-76-oqO"/>
+                        <outlet property="image" destination="HNw-ll-7Dq" id="hqF-dz-qA4"/>
+                        <outlet property="msgText" destination="gnJ-gB-bEj" id="VWk-nf-SAC"/>
+                        <outlet property="popUpView" destination="RVo-iv-V2M" id="h35-tu-pah"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSu-tH-KH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -395,7 +405,7 @@
                                 <rect key="frame" x="28" y="61" width="319" height="565"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzU-1F-pwB" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
-                                        <rect key="frame" x="35" y="341" width="249" height="38"/>
+                                        <rect key="frame" x="35" y="405" width="249" height="38"/>
                                         <color key="backgroundColor" name="Button"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="21"/>
                                         <state key="normal" title="Confirm">
@@ -463,27 +473,81 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VidIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kzD-zI-2Kn" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="297" width="72" height="71"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aA-rY-bXR" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="124" y="316" width="124.5" height="33"/>
+                                        <color key="backgroundColor" name="Button"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                        <state key="normal" title="Record">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animationType">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="popInDelay">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="record:" destination="XYI-Jl-mvP" eventType="touchUpInside" id="1Sv-Nf-wdY"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Saved: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWO-nI-jtA" customClass="UILabelX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="109" y="359" width="121" height="22"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ErrorIcon" translatesAutoresizingMaskIntoConstraints="NO" id="RdS-Ax-swB" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
+                                        <rect key="frame" x="238" y="354" width="46" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="RdS-Ax-swB" secondAttribute="height" multiplier="46:39" id="XMR-XG-2Ew"/>
+                                            <constraint firstAttribute="height" constant="39" id="h96-Xe-SMM"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="Background"/>
                                 <constraints>
+                                    <constraint firstItem="NWO-nI-jtA" firstAttribute="leading" secondItem="kzD-zI-2Kn" secondAttribute="trailing" constant="4" id="2Ne-KB-6ca"/>
                                     <constraint firstItem="wS8-r0-nT4" firstAttribute="leading" secondItem="bRQ-ac-Owb" secondAttribute="leading" constant="8" id="3Lw-8y-fjp"/>
+                                    <constraint firstItem="RdS-Ax-swB" firstAttribute="top" secondItem="4aA-rY-bXR" secondAttribute="bottom" constant="5" id="3a3-o5-d7x"/>
                                     <constraint firstAttribute="trailing" secondItem="jvi-kl-rlL" secondAttribute="trailing" constant="42" id="4tL-ue-uvZ"/>
+                                    <constraint firstItem="4aA-rY-bXR" firstAttribute="top" secondItem="BFA-Tf-aGh" secondAttribute="bottom" constant="33" id="7Fr-tN-G0G"/>
                                     <constraint firstItem="jvi-kl-rlL" firstAttribute="top" secondItem="OSa-wI-v7k" secondAttribute="bottom" constant="37" id="E05-Cl-rSx"/>
+                                    <constraint firstItem="RdS-Ax-swB" firstAttribute="leading" secondItem="NWO-nI-jtA" secondAttribute="trailing" constant="8" id="ErM-0l-xbC"/>
                                     <constraint firstAttribute="trailing" secondItem="NzU-1F-pwB" secondAttribute="trailing" constant="35" id="F8f-pD-rJh"/>
-                                    <constraint firstItem="NzU-1F-pwB" firstAttribute="top" secondItem="BFA-Tf-aGh" secondAttribute="bottom" constant="58" id="L0q-Ik-drP"/>
+                                    <constraint firstItem="NWO-nI-jtA" firstAttribute="top" secondItem="4aA-rY-bXR" secondAttribute="bottom" constant="10" id="Kcn-Hu-G3Y"/>
                                     <constraint firstItem="EIo-S3-DAF" firstAttribute="top" secondItem="wS8-r0-nT4" secondAttribute="bottom" constant="5" id="NTh-1A-vic"/>
                                     <constraint firstItem="BFA-Tf-aGh" firstAttribute="leading" secondItem="bRQ-ac-Owb" secondAttribute="leading" constant="42" id="OZC-lz-3Ja"/>
                                     <constraint firstItem="BFA-Tf-aGh" firstAttribute="top" secondItem="jvi-kl-rlL" secondAttribute="bottom" constant="19" id="Oag-R1-cTv"/>
                                     <constraint firstItem="OSa-wI-v7k" firstAttribute="leading" secondItem="bRQ-ac-Owb" secondAttribute="leading" constant="94" id="R0I-dG-zuF"/>
                                     <constraint firstAttribute="trailing" secondItem="hON-Pg-rdE" secondAttribute="trailing" constant="8" id="TCK-Sa-M5r"/>
                                     <constraint firstItem="jvi-kl-rlL" firstAttribute="leading" secondItem="bRQ-ac-Owb" secondAttribute="leading" constant="42" id="Tor-Ra-tSJ"/>
+                                    <constraint firstItem="kzD-zI-2Kn" firstAttribute="top" secondItem="BFA-Tf-aGh" secondAttribute="bottom" constant="14" id="U14-eP-3hh"/>
+                                    <constraint firstItem="wS8-r0-nT4" firstAttribute="top" secondItem="NzU-1F-pwB" secondAttribute="bottom" constant="11" id="bHS-fu-vF8"/>
                                     <constraint firstItem="hON-Pg-rdE" firstAttribute="top" secondItem="bRQ-ac-Owb" secondAttribute="top" constant="8" id="bXz-sc-m5t"/>
                                     <constraint firstAttribute="trailing" secondItem="BFA-Tf-aGh" secondAttribute="trailing" constant="42" id="eJa-v7-C3C"/>
                                     <constraint firstItem="EIo-S3-DAF" firstAttribute="leading" secondItem="bRQ-ac-Owb" secondAttribute="leading" constant="8" id="f5F-Mb-xKY"/>
+                                    <constraint firstAttribute="trailing" secondItem="4aA-rY-bXR" secondAttribute="trailing" constant="70.5" id="h4E-fx-z5b"/>
                                     <constraint firstItem="OSa-wI-v7k" firstAttribute="top" secondItem="bRQ-ac-Owb" secondAttribute="top" constant="55" id="isO-Fe-sYl"/>
                                     <constraint firstAttribute="trailing" secondItem="EIo-S3-DAF" secondAttribute="trailing" constant="8" id="jHV-S1-FRS"/>
                                     <constraint firstItem="NzU-1F-pwB" firstAttribute="leading" secondItem="bRQ-ac-Owb" secondAttribute="leading" constant="35" id="kXO-af-wj5"/>
+                                    <constraint firstItem="4aA-rY-bXR" firstAttribute="width" secondItem="4aA-rY-bXR" secondAttribute="height" multiplier="49:13" id="ki8-8I-xA5"/>
                                     <constraint firstAttribute="bottom" secondItem="EIo-S3-DAF" secondAttribute="bottom" constant="8" id="lHc-cx-9gn"/>
+                                    <constraint firstItem="4aA-rY-bXR" firstAttribute="leading" secondItem="kzD-zI-2Kn" secondAttribute="trailing" constant="19" id="p6W-PV-ttk"/>
                                     <constraint firstAttribute="trailing" secondItem="OSa-wI-v7k" secondAttribute="trailing" constant="95" id="x8d-bO-Qkn"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -509,24 +573,29 @@
                         <outlet property="nameLbl" destination="jvi-kl-rlL" id="Hwg-nA-KET"/>
                         <outlet property="popUpView" destination="bRQ-ac-Owb" id="NKf-0n-hAn"/>
                         <outlet property="profilePic" destination="OSa-wI-v7k" id="1qO-yd-BWf"/>
+                        <outlet property="recordB" destination="4aA-rY-bXR" id="rYd-rm-Ukb"/>
                         <outlet property="signatureView" destination="EIo-S3-DAF" id="Gsx-lO-auq"/>
+                        <outlet property="vidImgView" destination="RdS-Ax-swB" id="o9q-lm-83R"/>
+                        <outlet property="vidSavedIcon" destination="kzD-zI-2Kn" id="S3Q-th-oAf"/>
+                        <outlet property="vidSavedLbl" destination="NWO-nI-jtA" id="3J7-aV-HrY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uRK-5M-KjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3570" y="169"/>
+            <point key="canvasLocation" x="3568.8000000000002" y="168.6656671664168"/>
         </scene>
     </scenes>
     <resources>
         <image name="ErrorIcon" width="409.60000610351562" height="409.60000610351562"/>
         <image name="ProfileIcon" width="41" height="41"/>
         <image name="SuccessIcon" width="19.5" height="19.5"/>
+        <image name="VidIcon" width="72" height="71"/>
         <image name="reload.png" width="512" height="512"/>
         <namedColor name="Background">
-            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.62745098039215685" green="0.63137254901960782" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Button">
-            <color red="0.20784313725490197" green="0.36470588235294116" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.36862745098039218" green="0.61176470588235299" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Secondary Background">
             <color red="0.42352941176470588" green="0.35686274509803922" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

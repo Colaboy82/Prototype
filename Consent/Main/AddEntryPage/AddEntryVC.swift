@@ -81,7 +81,7 @@ class AddEntryVC: UIViewController {
         SetFuncs.setButton(btn: submitB, color: #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
         SetFuncs.setButton(btn: recordB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
         
-        SetFuncs.setTextFields(field: uidTextBox, img: #imageLiteral(resourceName: "SearchIcon"))
+        SetFuncs.setTextFields(field: uidTextBox, img: #imageLiteral(resourceName: "SearchIcon"), view: self)
         SetFuncs.setTextView(view: agreedActionTextBox)
         
         btnTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AddEntryVC.enableSubmitBtn), userInfo: nil, repeats: true)

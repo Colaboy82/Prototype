@@ -724,6 +724,38 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SwiftKeychainWrapper-Swift.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SwiftKeychainWrapper-umbrella.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "SwiftKeychainWrapper.h",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/Pods/SwiftKeychainWrapper/SwiftKeychainWrapper/SwiftKeychainWrapper.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/SwiftKeychainWrapper.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/derrickmu/Desktop/Consent/DerivedData/Consent/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Headers",
       'contents': [
         {

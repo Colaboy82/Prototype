@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import SkeletonView
+import MobileCoreServices
 
 class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     
@@ -22,6 +23,17 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
     @IBOutlet weak var signatureView: YPDrawSignatureView!
     
     @IBOutlet weak var popUpView: UIViewX!
+    
+    @IBOutlet weak var vidImgView: UIImageViewX!
+    @IBOutlet weak var recordB: UIButtonX!
+    @IBOutlet weak var vidSavedLbl: UILabelX!
+    @IBOutlet weak var vidSavedIcon: UIImageViewX!
+    
+    var vidTimer: Timer!
+    var btnTimer: Timer!
+    
+    var vidController = UIImagePickerController()
+    var savedVid: URL!
     
     var timer: Timer!
     var failPopUpTimer: Timer!
@@ -38,6 +50,7 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         setUp()
         
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(shouldEnable), userInfo: nil, repeats: true)
+        vidTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(SecondConfirmConsentPopUp.vidIconCheck), userInfo: nil, repeats: true)
         self.failPopUpTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {
             timer in
             
@@ -85,7 +98,6 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
                     // Create a UIImage, add it to the array
                     
                     self.view.hideSkeleton()
-                    
                     let pic = UIImage(data: data!)
                     self.profilePic.image = pic
                 }
@@ -97,13 +109,18 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
                 self.nameLbl.text = "Name: \(first) \(mid) \(last)"
                 let gender = snapshot.childSnapshot(forPath: "gender").value as! String
                 self.genderLbl.text = "Gender: \(gender)"
-                
             })
-            
         })
     }
+    @objc func vidIconCheck(){
+        if (savedVid != nil){
+            vidSavedIcon.image = #imageLiteral(resourceName: "SuccessIcon")
+        } else {
+            vidSavedIcon.image = #imageLiteral(resourceName: "ErrorIcon")
+        }
+    }
     @objc func shouldEnable(){
-        if (signatureView.doesContainSignature){
+        if (signatureView.doesContainSignature && savedVid != nil){
             confirmBtn.backgroundColor = #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1)
             confirmBtn.isEnabled = true
         } else {
@@ -241,6 +258,9 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
 
         //DELETE STORAGE OF VIDEO AND FIRST SIGNATURE
     }
+    @IBAction func record(_ sender: UIButtonX){
+        takeVid()
+    }
     @IBAction func confirm(_ sender: UIButtonX){
         timer.invalidate()
         failPopUpTimer.invalidate()
@@ -275,4 +295,46 @@ class SecondConfirmConsentPopUp: UIViewController, YPSignatureDelegate {
         dismiss(animated: true, completion: nil)
     }
 }
+
+extension SecondConfirmConsentPopUp: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        //called when a video is taken or chosen
+        if let selectedVideo:URL = (info[UIImagePickerController.InfoKey.mediaURL] as? URL) {
+            // Save video url
+            savedVid = selectedVideo
+        }
+        picker.dismiss(animated: true)
+    }
+    func uploadVid(vidURL: URL, otherUID: String){
+        guard let uid = Auth.auth().currentUser?.uid.trunc(length: SetFuncs.uidCharacterLength) else { return }
+        let vidRef = Storage.storage().reference(forURL: "gs://consent-bc442.appspot.com/").child("consent_vids").child("user/\(uid)").child("\(otherUID)").child(Constants.dateUsed + "2")
+        
+        vidRef.putFile(from: vidURL, metadata: nil, completion: {(metadata, error) in
+            if error == nil {
+                print("Successful video upload")
+            } else {
+                print(error!.localizedDescription)
+            }
+        })
+    }
+    func takeVid(){
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            // Present UIImagePickerController to take video
+            vidController.sourceType = .camera
+            vidController.mediaTypes = [kUTTypeMovie as String]
+            vidController.delegate = self
+            vidController.modalTransitionStyle = .crossDissolve
+            vidController.cameraDevice = .front
+            
+            self.present(vidController, animated: true, completion: nil)
+        }else{
+            let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+            
+            let nextVC = sb.instantiateViewController(withIdentifier: "Error")
+            Constants.ErrorType = .CamE
+            self.present(nextVC, animated:true, completion:nil)
+        }
+    }
+}
+
 

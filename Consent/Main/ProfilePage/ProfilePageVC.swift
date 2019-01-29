@@ -165,19 +165,10 @@ class ProfilePageVC: UIViewController {
         self.present(nextVC, animated:true, completion:nil)
     }
     @IBAction func signOut(){
-        if Auth.auth().currentUser != nil{
-            do{
-                try Auth.auth().signOut()
-                
-                let sb = UIStoryboard(name: "SignUp", bundle:nil)
-                let nextVC = sb.instantiateViewController(withIdentifier: "LoginVC")
-                nextVC.modalTransitionStyle = .crossDissolve
-                self.present(nextVC, animated:true, completion:nil)
-                
-            }catch let error as NSError {
-                print(error.localizedDescription)
-            }
-        }
+        let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+        let nextVC = sb.instantiateViewController(withIdentifier: "SignOutPop")
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated: true, completion: nil)
     }
     @IBAction func back(_ sender: UIButtonX){
         let sb = UIStoryboard(name: "Main", bundle:nil)

@@ -11,7 +11,7 @@ import Firebase
 import FirebaseAuth
 import RSKImageCropper
 
-class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var nextB: UIButtonX!
     @IBOutlet weak var backB: UIButtonX!
@@ -56,16 +56,16 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
         self.view.layer.borderColor = #colorLiteral(red: 0.7607843137, green: 0.7647058824, blue: 0.7725490196, alpha: 1)
         self.view.layer.borderWidth = 2
         
-        SetFuncs.setTextFields(field: pg1.email, img: #imageLiteral(resourceName: "EmailIcon"))
-        SetFuncs.setTextFields(field: pg1.pw, img: #imageLiteral(resourceName: "PasswordIcon"))
-        SetFuncs.setTextFields(field: pg1.pwConfirm, img: #imageLiteral(resourceName: "PasswordIcon"))
+        SetFuncs.setTextFields(field: pg1.email, img: #imageLiteral(resourceName: "EmailIcon"), view: self)
+        SetFuncs.setTextFields(field: pg1.pw, img: #imageLiteral(resourceName: "PasswordIcon"), view: self)
+        SetFuncs.setTextFields(field: pg1.pwConfirm, img: #imageLiteral(resourceName: "PasswordIcon"), view: self)
         
-        SetFuncs.setTextFields(field: pg2.firstName, img: #imageLiteral(resourceName: "NameIcon"))
-        SetFuncs.setTextFields(field: pg2.middleName, img: #imageLiteral(resourceName: "NameIcon"))
-        SetFuncs.setTextFields(field: pg2.lastName, img: #imageLiteral(resourceName: "NameIcon"))
-        SetFuncs.setTextFields(field: pg2.phoneNum, img: #imageLiteral(resourceName: "PhoneNumIcon"))
+        SetFuncs.setTextFields(field: pg2.firstName, img: #imageLiteral(resourceName: "NameIcon"), view: self)
+        SetFuncs.setTextFields(field: pg2.middleName, img: #imageLiteral(resourceName: "NameIcon"), view: self)
+        SetFuncs.setTextFields(field: pg2.lastName, img: #imageLiteral(resourceName: "NameIcon"), view: self)
+        SetFuncs.setTextFields(field: pg2.phoneNum, img: #imageLiteral(resourceName: "PhoneNumIcon"), view: self)
         
-        SetFuncs.setTextFields(field: pg3.otherText, img: nil)
+        SetFuncs.setTextFields(field: pg3.otherText, img: nil, view: self)
         SetFuncs.setButtonImg(btn: pg3.maleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
         SetFuncs.setButtonImg(btn: pg3.femaleB, image: #imageLiteral(resourceName: "UnselectedIcon"))
         SetFuncs.setButtonImg(btn: pg3.otherB, image: #imageLiteral(resourceName: "UnselectedIcon"))
@@ -233,7 +233,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
         let capTest = NSPredicate(format:"SELF MATCHES %@", capitalLetterRegEx)
         let capitalresult = capTest.evaluate(with: PW)
         
-        if(PW.count > 8){
+        if(PW.count >= 8){
             pg1.checkL.image = #imageLiteral(resourceName: "SuccessIcon")
         }
         if(capitalresult){
@@ -245,7 +245,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
             pg1.checkM.image = #imageLiteral(resourceName: "ErrorIcon")
         }
         
-        if(PW.count <= 8){
+        if(PW.count < 8){
             pg1.checkL.image = #imageLiteral(resourceName: "ErrorIcon")
             return false
         }else if(!capitalresult){
@@ -348,13 +348,16 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
                     
                     self.updateDisplayName()
                     
-                    /*let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
+                    let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
                     let nextVC = sb.instantiateViewController(withIdentifier: "Success")
                     Constants.SuccessType = .AccountMade
-                    self.present(nextVC, animated: true, completion: nil)*/
+                    SuccessPopUp.emailUsed = self.email
+                    self.present(nextVC, animated: true, completion: nil)
+                    
                     self.sendEmailVerification()
                 })
             } else {
+                print(error?.localizedDescription)
                 let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
                 let nextVC = sb.instantiateViewController(withIdentifier: "Error")
                 Constants.ErrorType = .AccountMadeFail
@@ -598,8 +601,6 @@ class Pg4View: UIViewX{
         let imageData = profilePicPreview.image?.jpegData(compressionQuality: 0.6)
         let compressedJPGImage = UIImage(data: imageData!)
         //UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
-        
-     
     }*/
     func createCameraOverlay(imagePicker: UIImagePickerController){
         //Create camera overlay

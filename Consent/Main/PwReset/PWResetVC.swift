@@ -9,8 +9,9 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import SwiftKeychainWrapper
 
-class PWResetVC: UIViewController, UITextFieldDelegate {
+class PWResetVC: UIViewController {
     
     var timer: Timer!
 
@@ -19,11 +20,16 @@ class PWResetVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var centerPWConstraint: NSLayoutConstraint!
     
+    let service = "Consent_Prototype"
+    var keychain: KeychainWrapper!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        keychain = KeychainWrapper(serviceName: service)
+
         self.hideKeyboardWhenTappedAround()
         
-        SetFuncs.setTextFields(field: email, img: #imageLiteral(resourceName: "EmailIcon"))
+        SetFuncs.setTextFields(field: email, img: #imageLiteral(resourceName: "EmailIcon"), view: self)
         SetFuncs.setButton(btn: resetB, color:#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1))
         
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self,
@@ -73,6 +79,7 @@ class PWResetVC: UIViewController, UITextFieldDelegate {
                 self.present(nextVC, animated:true, completion:nil)
                 print((error?.localizedDescription)!)
             }else{
+                self.keychain.removeAllKeys()
                 let sb = UIStoryboard(name: "PopUpTemplate", bundle:nil)
                 
                 let nextVC = sb.instantiateViewController(withIdentifier: "Success")

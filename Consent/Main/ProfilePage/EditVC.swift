@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import RSKImageCropper
 
-class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class EditVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var nameLbl: UILabelX!
     @IBOutlet weak var emailLbl: UILabelX!
@@ -34,7 +34,7 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
         self.hideKeyboardWhenTappedAround()
         
         SetFuncs.setLblSettings(lbl: emailLbl)
-        SetFuncs.setTextFields(field: genderEdit, img: nil)
+        SetFuncs.setTextFields(field: genderEdit, img: nil, view: self)
         SetFuncs.setLblSettings(lbl: uidLbl)
         SetFuncs.setLblSettings(lbl: nameLbl)
         profilePic.setRounded()
@@ -45,7 +45,7 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
         uidLbl.text = ProfilePageVC.currUid
         
         originalImg = ProfilePageVC.profilePicImg
-        EditVC.savedImg = originalImg
+        //EditVC.savedImg = originalImg
         
         saveB.isEnabled = false
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(shouldEnable), userInfo: nil, repeats: true)
@@ -83,6 +83,11 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
         EditVC.savedImg = img
     }
     @objc func shouldEnable(){
+        if(EditVC.savedImg != nil){
+            profilePic.image = EditVC.savedImg
+        } else{
+            profilePic.image = ProfilePageVC.profilePicImg
+        }
         if (EditVC.savedImg != originalImg) || (!(genderEdit.text?.isEmpty)! && genderEdit.text != " " && genderEdit.text != ProfilePageVC.gender){
             saveB.isEnabled = true
         }else{
@@ -136,5 +141,4 @@ class EditVC: UIViewController, UITextFieldXDelegate, UIImagePickerControllerDel
         nextVC.modalTransitionStyle = .crossDissolve
         self.present(nextVC, animated: true, completion: nil)
     }
-
 }

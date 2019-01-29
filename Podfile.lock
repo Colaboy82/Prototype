@@ -75,6 +75,7 @@ PODS:
   - nanopb/encode (0.3.901)
   - RSKImageCropper (2.2.1)
   - SkeletonView (1.4.1)
+  - SwiftKeychainWrapper (3.2.0)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -83,6 +84,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - RSKImageCropper
   - SkeletonView
+  - SwiftKeychainWrapper
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -101,6 +103,7 @@ SPEC REPOS:
     - nanopb
     - RSKImageCropper
     - SkeletonView
+    - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
@@ -118,7 +121,8 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
   SkeletonView: 60d6ce7edb0cb4c7758db33c74add50392b3c475
+  SwiftKeychainWrapper: 82c4c02cdc36f9a24f7edfcaab3e336401caa1a1
 
-PODFILE CHECKSUM: 29d85c1803be05f1e88960ad285b6fd7e0ce37d7
+PODFILE CHECKSUM: 1632ae99339efc430e849f6912ebd3c6e28c7851
 
 COCOAPODS: 1.5.3

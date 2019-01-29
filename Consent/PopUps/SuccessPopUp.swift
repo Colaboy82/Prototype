@@ -28,10 +28,12 @@ class SuccessPopUp: UIViewController {
     @IBOutlet weak var msgText: UILabelX!
     @IBOutlet weak var popUpView: UIViewX!
 
+    public static var emailUsed: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        SuccessPopUp.emailUsed = ""
         SetFuncs.setButton(btn: dismissPopUpB, color: #colorLiteral(red: 0.2078431373, green: 0.3647058824, blue: 0.4901960784, alpha: 1))
         
         popUpView.layer.cornerRadius = 20
@@ -49,6 +51,8 @@ class SuccessPopUp: UIViewController {
             msgText.text = "Email Confirmation has been Resent"
         }else if(type == .Submit){
             msgText.text = "Submitted Successfully"
+        }else if(type == .AccountMade){
+            msgText.text = "Sent Email Confirmation To \(SuccessPopUp.emailUsed as String)"
         }else{
              msgText.text = "Error with App. Please Reset or Contact Employee"
         }

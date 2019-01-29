@@ -413,10 +413,10 @@
         <image name="ProfileIcon" width="41" height="41"/>
         <image name="return.png" width="512" height="512"/>
         <namedColor name="Background">
-            <color red="0.76078431372549016" green="0.76470588235294112" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.62745098039215685" green="0.63137254901960782" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Button">
-            <color red="0.20784313725490197" green="0.36470588235294116" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.36862745098039218" green="0.61176470588235299" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DisabledBtn">
             <color red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
