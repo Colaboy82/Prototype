@@ -62,6 +62,7 @@
 		3DCA03EE21B0885C0063B38E /* phone-call.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03ED21B0885C0063B38E /* phone-call.png */; };
 		3DCA03F021B0886B0063B38E /* id-card.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03EF21B0886B0063B38E /* id-card.png */; };
 		3DCA03F221B08CE70063B38E /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA03F121B08CE70063B38E /* flag.png */; };
+		3DE1797B22069F8100FF5B0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DE1797A22069F8100FF5B0A /* GoogleService-Info.plist */; };
 		3DE215AD21F5450D00C6CBE2 /* ContractVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE215AC21F5450D00C6CBE2 /* ContractVC.swift */; };
 		3DE215AF21F6C5B400C6CBE2 /* SignOutPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE215AE21F6C5B400C6CBE2 /* SignOutPic.png */; };
 		3DE215B121F6D8FB00C6CBE2 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE215B021F6D8FB00C6CBE2 /* EditVC.swift */; };
@@ -77,7 +78,6 @@
 		3DF765A9216BD80900E78EE0 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF765A8216BD80900E78EE0 /* SignUpVC.swift */; };
 		3DF765AB216BD81900E78EE0 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF765AA216BD81900E78EE0 /* SignInVC.swift */; };
 		3DF765AD216BD82C00E78EE0 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF765AC216BD82C00E78EE0 /* SignUp.storyboard */; };
-		3DF765B3216BDACC00E78EE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DF765B2216BDACC00E78EE0 /* GoogleService-Info.plist */; };
 		4A72C9B3C0E4CAE1D6DDA466 /* Pods_ConsentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5572DD0880A9922146B0638A /* Pods_ConsentUITests.framework */; };
 		96EF5C14D393DFFB212E6A05 /* Pods_Consent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7902611DD02A6C11C9BCF084 /* Pods_Consent.framework */; };
 		CE0A751A2E79D04731516415 /* Pods_ConsentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B732D2590BAE96187E1F71A /* Pods_ConsentTests.framework */; };
@@ -188,6 +188,7 @@
 		3DCA03ED21B0885C0063B38E /* phone-call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-call.png"; sourceTree = "<group>"; };
 		3DCA03EF21B0886B0063B38E /* id-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "id-card.png"; sourceTree = "<group>"; };
 		3DCA03F121B08CE70063B38E /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		3DE1797A22069F8100FF5B0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3DE215AC21F5450D00C6CBE2 /* ContractVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractVC.swift; sourceTree = "<group>"; };
 		3DE215AE21F6C5B400C6CBE2 /* SignOutPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignOutPic.png; sourceTree = "<group>"; };
 		3DE215B021F6D8FB00C6CBE2 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
@@ -209,7 +210,6 @@
 		3DF765A8216BD80900E78EE0 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		3DF765AA216BD81900E78EE0 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		3DF765AC216BD82C00E78EE0 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
-		3DF765B2216BDACC00E78EE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54FFF556BF2819DEB79E6BA7 /* Pods-ConsentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConsentTests/Pods-ConsentTests.release.xcconfig"; sourceTree = "<group>"; };
 		5572DD0880A9922146B0638A /* Pods_ConsentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConsentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6304DAD8FA9856958EF75CDD /* Pods-Consent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Consent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Consent/Pods-Consent.debug.xcconfig"; sourceTree = "<group>"; };
@@ -411,7 +411,7 @@
 				3DF76580216BD76200E78EE0 /* Assets.xcassets */,
 				3DF76582216BD76200E78EE0 /* LaunchScreen.storyboard */,
 				3DF76585216BD76200E78EE0 /* Info.plist */,
-				3DF765B2216BDACC00E78EE0 /* GoogleService-Info.plist */,
+				3DE1797A22069F8100FF5B0A /* GoogleService-Info.plist */,
 				3DAF743F21C1CA1E00235E9C /* Montserrat */,
 			);
 			path = Consent;
@@ -678,6 +678,7 @@
 				3DAF745821C1CA1E00235E9C /* Montserrat-ExtraLight.ttf in Resources */,
 				3DAF745E21C1CA1E00235E9C /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				EC58510721DC1A7A00D53BF5 /* MainMenuBtn.png in Resources */,
+				3DE1797B22069F8100FF5B0A /* GoogleService-Info.plist in Resources */,
 				EC58510C21DC1F0F00D53BF5 /* AddEntryIcon.png in Resources */,
 				3DCA03EA21B0884E0063B38E /* key.png in Resources */,
 				EC27E46221D53000005B5A78 /* CheckedBox.png in Resources */,
@@ -689,7 +690,6 @@
 				3DF76581216BD76200E78EE0 /* Assets.xcassets in Resources */,
 				ECA08CD821D470C200565DC5 /* PWReset.storyboard in Resources */,
 				3DAF745C21C1CA1E00235E9C /* Montserrat-BlackItalic.ttf in Resources */,
-				3DF765B3216BDACC00E78EE0 /* GoogleService-Info.plist in Resources */,
 				3DAF746021C1CA1E00235E9C /* OFL.txt in Resources */,
 				3DF765AD216BD82C00E78EE0 /* SignUp.storyboard in Resources */,
 				3DAF746321C1CA1E00235E9C /* Montserrat-Italic.ttf in Resources */,

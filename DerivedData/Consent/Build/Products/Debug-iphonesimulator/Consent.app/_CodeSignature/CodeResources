@@ -22,7 +22,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		P3myGYWkQXqXL07KtOV5er/aHEc=
+		hj8bG8IPtxSZhz88i7r6BS1s0ec=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -633,13 +633,13 @@
 		<data>
 		of+jWZli6hsc8AhfsihGpshVwIs=
 		</data>
-		<key>GoogleService-Info.plist</key>
+		<key>GoogleService-Info-5.plist</key>
 		<data>
-		h6YZ049ezamyvHinhYymMM9AdCw=
+		qsE3jSkc4aE+PZvJog8C84qaWnM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6h61hMPsCoYNQMEImcgGYM78pno=
+		0I69vKhTiteZtuM+tQ86sqIcgzY=
 		</data>
 		<key>InfoIcon.png</key>
 		<data>
@@ -647,15 +647,23 @@
 		</data>
 		<key>InfoPage.storyboardc/0eb-AR-CiU-view-dUV-YR-BVD.nib</key>
 		<data>
-		Sto34bWLSH1YsS1md5wksm+QrGo=
+		j4F9X8Y0QbkPoWPR6KgHMnyJs9E=
+		</data>
+		<key>InfoPage.storyboardc/ContractTemplate.nib</key>
+		<data>
+		KuT30J4Up56WIB51F5v+dzi5xGk=
 		</data>
 		<key>InfoPage.storyboardc/Info.plist</key>
 		<data>
-		BZzBu3K7l3NEDPymvxLKOSCApV4=
+		Sfbb3hjJ5JQvewcbcRGX3qIGg1g=
 		</data>
 		<key>InfoPage.storyboardc/InfoPage.nib</key>
 		<data>
-		oZUIUep2WhPhgZNt27Op+6wNgaY=
+		Q72Urd3qgIv+7dTmURkDwpSFBBE=
+		</data>
+		<key>InfoPage.storyboardc/ncH-M5-UOC-view-hoq-0R-b2T.nib</key>
+		<data>
+		jWNeivzydvA2drCYl9Ips30izSo=
 		</data>
 		<key>MainMenuBtn.png</key>
 		<data>
@@ -936,7 +944,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aR1VDvmHEF/2y3CjoXvhGPAup+L/aw+N/tp/4Zufc60=
+			tgmrHpQ9DZTx5ECyghM/DHhoRzAXv3oaQIIcY1M1U1k=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -1701,11 +1709,11 @@
 			dNlYVZoVRG/iHVxbwDc3/gfgLmNF4i4fTF3HJN0S/4I=
 			</data>
 		</dict>
-		<key>GoogleService-Info.plist</key>
+		<key>GoogleService-Info-5.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kVdUXuagUKZbN7pGlJFi6cwIW/bS2XQjvw0mYfUYPH0=
+			w3RF+A9Qb3zuV3tRshC6x5IVzHMNZFY0XmOwluN3Al0=
 			</data>
 		</dict>
 		<key>InfoIcon.png</key>
@@ -1719,21 +1727,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4NLxUjMusnn4hlFNL2pOgI10G04MAdhMT5BrTXiToVU=
+			gihKMUDW7GmQ6G7wf8tETZC4huFEugj9FpQtPnp5D9c=
+			</data>
+		</dict>
+		<key>InfoPage.storyboardc/ContractTemplate.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MVFSnIMrPHlT8SGSq1xgdXS4ewXIJikAgl9J7vdhYuc=
 			</data>
 		</dict>
 		<key>InfoPage.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yoQZq2TQfFLa/pdrtiXxMnx22jPR0+QdimQrhpt4EpI=
+			MiLl9jwODeAv1V7lSKkZhAlkqrb6qQa83uZOu1VHJYE=
 			</data>
 		</dict>
 		<key>InfoPage.storyboardc/InfoPage.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bF3UJ2/x4QCGyI3B3jxIN3lC3jhTJAQ2eZTRumgwr5s=
+			zPRxa8gDjzQ5dHO0p7LmgNNrPTusY6IdkjVwl1+QryY=
+			</data>
+		</dict>
+		<key>InfoPage.storyboardc/ncH-M5-UOC-view-hoq-0R-b2T.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nzB9EwhEf3/jaaoQaqBY6ghKvj//ZMacvZtlkwYOvvE=
 			</data>
 		</dict>
 		<key>MainMenuBtn.png</key>
