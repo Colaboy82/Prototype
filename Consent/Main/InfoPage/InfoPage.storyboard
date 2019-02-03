@@ -30,7 +30,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="aVC-Nx-n3L" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIconSet" translatesAutoresizingMaskIntoConstraints="NO" id="aVC-Nx-n3L" customClass="UIImageViewX" customModule="Consent" customModuleProvider="target">
                                 <rect key="frame" x="83" y="70" width="209" height="209"/>
                                 <color key="tintColor" name="DisabledBtn"/>
                                 <userDefinedRuntimeAttributes>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPw-kn-etf" customClass="UIButtonX" customModule="Consent" customModuleProvider="target">
-                                <rect key="frame" x="83" y="424" width="209" height="34"/>
+                                <rect key="frame" x="83" y="424" width="220" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="Button"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
@@ -62,6 +62,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="openContractDraft:" destination="0eb-AR-CiU" eventType="touchUpInside" id="BN0-99-5BJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
@@ -81,6 +84,7 @@
                         <viewLayoutGuide key="safeArea" id="rBZ-Qk-9hc"/>
                     </view>
                     <connections>
+                        <outlet property="contractBtn" destination="DPw-kn-etf" id="yFJ-my-i7e"/>
                         <outlet property="logoPic" destination="aVC-Nx-n3L" id="bhH-GM-am3"/>
                     </connections>
                 </viewController>
@@ -88,9 +92,24 @@
             </objects>
             <point key="canvasLocation" x="196" y="137.18140929535232"/>
         </scene>
+        <!--ContractTemplate-->
+        <scene sceneID="XKS-Yj-zNP">
+            <objects>
+                <viewController restorationIdentifier="ContractTemplate" storyboardIdentifier="ContractTemplate" title="ContractTemplate" modalTransitionStyle="crossDissolve" id="ncH-M5-UOC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hoq-0R-b2T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <viewLayoutGuide key="safeArea" id="LpN-a1-bBv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIm-3I-JzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="137"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="ProfileIcon" width="41" height="41"/>
+        <image name="AppIconSet" width="46" height="47.5"/>
         <image name="return.png" width="512" height="512"/>
         <namedColor name="Background">
             <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

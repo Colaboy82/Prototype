@@ -16,27 +16,32 @@ class InfoPageVC: UIViewController {
     @IBOutlet weak var lightLbl: UILabelX!
     @IBOutlet weak var darkLbl: UILabelX!
 
+    @IBOutlet weak var contractBtn: UIButtonX!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
-        modeToggle.isOn = ColorScheme.isDark
+        //modeToggle.isOn = ColorScheme.isDark
         logoPic.setRounded()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         logoPic.awakeFromNib()
-        
-        lightLbl.alpha = 0
+        contractBtn.awakeFromNib()
+        /*lightLbl.alpha = 0
         darkLbl.alpha = 0
-        modeToggle.alpha = 0
+        modeToggle.alpha = 0*/
         
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        lightLbl.alpha = 1
+        /*lightLbl.alpha = 1
         darkLbl.alpha = 1
-        modeToggle.alpha = 1
+        modeToggle.alpha = 1*/
+    }
+    @IBAction func openContractDraft(_ sender: UIButtonX){
+        
     }
     @IBAction func back(_ sender: UIButtonX){
         let sb = UIStoryboard(name: "Main", bundle:nil)
@@ -44,7 +49,7 @@ class InfoPageVC: UIViewController {
         nextVC.modalTransitionStyle = .crossDissolve
         self.present(nextVC, animated:true, completion:nil)
     }
-    @IBAction func stateChanged(switchState: UISwitch) {
+    /*@IBAction func stateChanged(switchState: UISwitch) {
         if modeToggle.isOn {
             ColorScheme.isDark = true
             modeToggle.isOn = true
@@ -52,6 +57,6 @@ class InfoPageVC: UIViewController {
             ColorScheme.isDark = false
             modeToggle.isOn = false
         }
-    }
+    }*/
 
 }

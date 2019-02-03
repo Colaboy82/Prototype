@@ -20,6 +20,21 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>You can take photos to take profile pictures and film consent.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Do you wanna use your face?</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Please give access to microphone</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>You can choose photos to use as a profile picture.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>You can choose photos to use as a profile picture.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Montserrat_Medium.ttf</string>
+		<string>Montserrat_MediumItalic.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -37,20 +52,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Montserrat_Medium.ttf</string>
-		<string>Montserrat_MediumItalic.ttf</string>
-	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>You can take photos to take profile pictures and film consent.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>You can choose photos to use as a profile picture.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>You can choose photos to use as a profile picture.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Please give access to microphone</string>
-	<key>NSFaceIDUsageDescription</key>
-	<string>Do you wanna use your face?</string>
 </dict>
 </plist>

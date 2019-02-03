@@ -5,12 +5,12 @@
 	<string>GoogleMobileAds</string>
 	<string>LocalAuthentication</string>
 	<string>RSKImageCropper</string>
-	<string>CommonCrypto</string>
 	<string>FirebasePerformance</string>
-	<string>SafariServices</string>
+	<string>CommonCrypto</string>
+	<string>FirebaseDynamicLinks</string>
 	<string>SkeletonView</string>
 	<string>SwiftKeychainWrapper</string>
-	<string>FirebaseDynamicLinks</string>
+	<string>SafariServices</string>
 	<string>objc</string>
 	<string>FirebaseAuth</string>
 	<string>GoogleUtilities</string>
@@ -22,14 +22,14 @@
 	<string>sys</string>
 	<string>GTMSessionFetcher</string>
 	<string>FirebaseInstanceID</string>
-	<string>FirebaseAuthInterop</string>
+	<string>FirebaseMLVisionFaceModel</string>
 	<string>FirebaseMLVisionLabelModel</string>
 	<string>FirebaseFirestore</string>
 	<string>FirebaseMLNLLanguageID</string>
-	<string>CoreServices</string>
-	<string>FirebaseMLVisionFaceModel</string>
-	<string>unicode</string>
 	<string>FirebaseDatabase</string>
+	<string>CoreServices</string>
+	<string>unicode</string>
+	<string>FirebaseAuthInterop</string>
 	<string>FirebaseRemoteConfig</string>
 	<string>WebKit</string>
 	<string>FirebaseMLNaturalLanguage</string>
@@ -41,19 +41,19 @@
 	<string>FirebaseMLVisionTextModel</string>
 	<string>Foundation</string>
 	<string>Security</string>
-	<string>WatchKit</string>
 	<string>FirebaseMLModelInterpreter</string>
 	<string>Fabric</string>
 	<string>FirebaseCrash</string>
-	<string>Consent</string>
+	<string>WatchKit</string>
 	<string>GameKit</string>
+	<string>Consent</string>
 	<string>FirebaseInvites</string>
 	<string>netinet</string>
 	<string>FirebaseStorage</string>
 	<string>SystemConfiguration</string>
-	<string>CoreGraphics</string>
-	<string>FirebaseAnalytics</string>
 	<string>FirebaseFunctions</string>
+	<string>FirebaseAnalytics</string>
+	<string>CoreGraphics</string>
 	<string>UIKit</string>
 </array>
 </plist>

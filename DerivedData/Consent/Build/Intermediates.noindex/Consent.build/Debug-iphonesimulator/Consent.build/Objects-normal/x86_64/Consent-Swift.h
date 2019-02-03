@@ -332,13 +332,17 @@ SWIFT_CLASS("_TtC7Consent16ConsentEntryCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIScrollViewX;
 
 SWIFT_CLASS("_TtC7Consent10ContractVC")
 @interface ContractVC : UIViewController
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified agreedActionsLbl;
 @property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified sig1Pic;
 @property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified sig2Pic;
+@property (nonatomic, weak) IBOutlet UIScrollViewX * _Null_unspecified contractView;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified exportB;
 - (void)viewDidLoad;
+- (IBAction)export:(UIButtonX * _Nonnull)sender;
 - (IBAction)back:(UIButtonX * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -387,11 +391,12 @@ SWIFT_CLASS("_TtC7Consent10InfoPageVC")
 @property (nonatomic, weak) IBOutlet UIImageViewX * _Null_unspecified logoPic;
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified lightLbl;
 @property (nonatomic, weak) IBOutlet UILabelX * _Null_unspecified darkLbl;
+@property (nonatomic, weak) IBOutlet UIButtonX * _Null_unspecified contractBtn;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidAppear:(BOOL)animated;
+- (IBAction)openContractDraft:(UIButtonX * _Nonnull)sender;
 - (IBAction)back:(UIButtonX * _Nonnull)sender;
-- (IBAction)stateChangedWithSwitchState:(UISwitch * _Nonnull)switchState;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
